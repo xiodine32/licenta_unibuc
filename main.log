@@ -1,0 +1,604 @@
+This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6350 64-bit) (preloaded format=xelatex 2017.6.13)  13 JUN 2017 14:14
+entering extended mode
+**C:/Users/xiodine/Dropbox/Facultate/licenta/main.tex
+(C:/Users/xiodine/Dropbox/Facultate/licenta/main.tex
+LaTeX2e <2017-04-15>
+Babel <3.10> and hyphenation patterns for 75 language(s) loaded.
+(C:\MiKTeX\tex\latex\base\report.cls
+Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
+(C:\MiKTeX\tex\latex\base\size10.clo
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(C:\MiKTeX\tex\latex\hyperref\hyperref.sty
+Package: hyperref 2017/03/14 v6.85a Hypertext links for LaTeX
+
+(C:\MiKTeX\tex\generic\oberdiek\hobsub-hyperref.sty
+Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
+
+
+(C:\MiKTeX\tex\generic\oberdiek\hobsub-generic.sty
+Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: pdfTeX >= 1.30 not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode not found.
+Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
+)
+Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
+Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
+Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
+Package: xcolor-patch 2016/05/16 xcolor patch
+Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
+)
+(C:\MiKTeX\tex\latex\graphics\keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(C:\MiKTeX\tex\generic\ifxetex\ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+(C:\MiKTeX\tex\latex\oberdiek\auxhook.sty
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+)
+(C:\MiKTeX\tex\latex\oberdiek\kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+)
+\@linkdim=\dimen103
+\Hy@linkcounter=\count88
+\Hy@pagecounter=\count89
+
+(C:\MiKTeX\tex\latex\hyperref\pd1enc.def
+File: pd1enc.def 2017/03/14 v6.85a Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count90
+
+(C:\MiKTeX\tex\latex\00miktex\hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Hyper figures OFF on input line 4498.
+Package hyperref Info: Link nesting OFF on input line 4503.
+Package hyperref Info: Hyper index ON on input line 4506.
+Package hyperref Info: Plain pages OFF on input line 4513.
+Package hyperref Info: Backreferencing OFF on input line 4518.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4751.
+\c@Hy@tempcnt=\count91
+ (C:\MiKTeX\tex\latex\url\url.sty
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5104.
+\XeTeXLinkMargin=\dimen104
+\Fld@menulength=\count92
+\Field@Width=\dimen105
+\Fld@charsize=\dimen106
+Package hyperref Info: Hyper figures OFF on input line 6358.
+Package hyperref Info: Link nesting OFF on input line 6363.
+Package hyperref Info: Hyper index ON on input line 6366.
+Package hyperref Info: backreferencing OFF on input line 6373.
+Package hyperref Info: Link coloring OFF on input line 6378.
+Package hyperref Info: Link coloring with OCG OFF on input line 6383.
+Package hyperref Info: PDF/A mode OFF on input line 6388.
+LaTeX Info: Redefining \ref on input line 6428.
+LaTeX Info: Redefining \pageref on input line 6432.
+\Hy@abspage=\count93
+\c@Item=\count94
+\c@Hfootnote=\count95
+)
+
+Package hyperref Message: Driver (autodetected): hxetex.
+
+(C:\MiKTeX\tex\latex\hyperref\hxetex.def
+File: hxetex.def 2017/03/14 v6.85a Hyperref driver for XeTeX
+
+(C:\MiKTeX\tex\latex\hyperref\puenc.def
+File: puenc.def 2017/03/14 v6.85a Hyperref: PDF Unicode definition (HO)
+)
+(C:\MiKTeX\tex\generic\oberdiek\stringenc.sty
+Package: stringenc 2016/05/16 v1.11 Convert strings between diff. encodings (HO
+)
+)
+\pdfm@box=\box26
+\c@Hy@AnnotLevel=\count96
+\HyField@AnnotCount=\count97
+\Fld@listcount=\count98
+\c@bookmark@seq@number=\count99
+
+(C:\MiKTeX\tex\latex\oberdiek\rerunfilecheck.sty
+Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
+Package rerunfilecheck Info: Feature \pdfmdfivesum is not available
+(rerunfilecheck)             (e.g. pdfTeX or LuaTeX with package `pdftexcmds').
+
+(rerunfilecheck)             Therefore file contents cannot be checked efficien
+tly
+(rerunfilecheck)             and the loading of the package is aborted.
+)
+\Hy@SectionHShift=\skip43
+)
+(C:\MiKTeX\tex\latex\import\import.sty
+Package: import 2009/03/23  v 5.1
+)
+(C:\MiKTeX\tex\latex\subfigure\subfigure.sty
+Package: subfigure 2002/07/30 v2.1.4 subfigure package
+\subfigtopskip=\skip44
+\subfigcapskip=\skip45
+\subfigcaptopadj=\dimen107
+\subfigbottomskip=\skip46
+\subfigcapmargin=\dimen108
+\subfiglabelskip=\skip47
+\c@subfigure=\count100
+\c@lofdepth=\count101
+\c@subtable=\count102
+\c@lotdepth=\count103
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(C:\MiKTeX\tex\latex\subfigure\subfigure.cfg)
+\subfig@top=\skip48
+\subfig@bottom=\skip49
+)
+(C:\MiKTeX\tex\latex\titlesec\titlesec.sty
+Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
+\ttl@box=\box27
+\beforetitleunit=\skip50
+\aftertitleunit=\skip51
+\ttl@plus=\dimen109
+\ttl@minus=\dimen110
+\ttl@toksa=\toks15
+\titlewidth=\dimen111
+\titlewidthlast=\dimen112
+\titlewidthfirst=\dimen113
+)
+(C:\MiKTeX\tex\latex\biblatex\biblatex.sty
+Package: biblatex 2016/12/05 v3.7 programmable bibliographies (PK/JW/AB)
+
+(C:\MiKTeX\tex\latex\etoolbox\etoolbox.sty
+Package: etoolbox 2017/01/02 v2.4 e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count104
+)
+(C:\MiKTeX\tex\latex\logreq\logreq.sty
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count105
+ (C:\MiKTeX\tex\latex\logreq\logreq.def
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+)) (C:\MiKTeX\tex\latex\base\ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+) (C:\MiKTeX\tex\latex\xstring\xstring.sty (C:\MiKTeX\tex\generic\xstring\xstri
+ng.tex
+\@xs@message=\write3
+\integerpart=\count106
+\decimalpart=\count107
+)
+Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
+)
+\c@tabx@nest=\count108
+\c@listtotal=\count109
+\c@listcount=\count110
+\c@liststart=\count111
+\c@liststop=\count112
+\c@citecount=\count113
+\c@citetotal=\count114
+\c@multicitecount=\count115
+\c@multicitetotal=\count116
+\c@instcount=\count117
+\c@maxnames=\count118
+\c@minnames=\count119
+\c@maxitems=\count120
+\c@minitems=\count121
+\c@citecounter=\count122
+\c@savedcitecounter=\count123
+\c@uniquelist=\count124
+\c@uniquename=\count125
+\c@refsection=\count126
+\c@refsegment=\count127
+\c@maxextratitle=\count128
+\c@maxextratitleyear=\count129
+\c@maxextrayear=\count130
+\c@maxextraalpha=\count131
+\c@abbrvpenalty=\count132
+\c@highnamepenalty=\count133
+\c@lownamepenalty=\count134
+\c@maxparens=\count135
+\c@parenlevel=\count136
+\blx@tempcnta=\count137
+\blx@tempcntb=\count138
+\blx@tempcntc=\count139
+\blx@maxsection=\count140
+\blx@maxsegment@0=\count141
+\blx@notetype=\count142
+\blx@parenlevel@text=\count143
+\blx@parenlevel@foot=\count144
+\blx@sectionciteorder@0=\count145
+\labelnumberwidth=\skip52
+\labelalphawidth=\skip53
+\biblabelsep=\skip54
+\bibitemsep=\skip55
+\bibnamesep=\skip56
+\bibinitsep=\skip57
+\bibparsep=\skip58
+\bibhang=\skip59
+\blx@bcfin=\read1
+\blx@bcfout=\write4
+\c@mincomprange=\count146
+\c@maxcomprange=\count147
+\c@mincompwidth=\count148
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+
+(C:\MiKTeX\tex\latex\biblatex\blx-dm.def)
+Package biblatex Info: Trying to load biblatex style data model...
+Package biblatex Info: ... file 'numeric.dbx' not found.
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count149
+\c@savedafterword=\count150
+\c@annotator=\count151
+\c@savedannotator=\count152
+\c@author=\count153
+\c@savedauthor=\count154
+\c@bookauthor=\count155
+\c@savedbookauthor=\count156
+\c@commentator=\count157
+\c@savedcommentator=\count158
+\c@editor=\count159
+\c@savededitor=\count160
+\c@editora=\count161
+\c@savededitora=\count162
+\c@editorb=\count163
+\c@savededitorb=\count164
+\c@editorc=\count165
+\c@savededitorc=\count166
+\c@foreword=\count167
+\c@savedforeword=\count168
+\c@holder=\count169
+\c@savedholder=\count170
+\c@introduction=\count171
+\c@savedintroduction=\count172
+\c@namea=\count173
+\c@savednamea=\count174
+\c@nameb=\count175
+\c@savednameb=\count176
+\c@namec=\count177
+\c@savednamec=\count178
+\c@translator=\count179
+\c@savedtranslator=\count180
+\c@shortauthor=\count181
+\c@savedshortauthor=\count182
+\c@shorteditor=\count183
+\c@savedshorteditor=\count184
+\c@labelname=\count185
+\c@savedlabelname=\count186
+\c@institution=\count187
+\c@savedinstitution=\count188
+\c@lista=\count189
+\c@savedlista=\count190
+\c@listb=\count191
+\c@savedlistb=\count192
+\c@listc=\count193
+\c@savedlistc=\count194
+\c@listd=\count195
+\c@savedlistd=\count196
+\c@liste=\count197
+\c@savedliste=\count198
+\c@listf=\count199
+\c@savedlistf=\count266
+\c@location=\count267
+\c@savedlocation=\count268
+\c@organization=\count269
+\c@savedorganization=\count270
+\c@origlocation=\count271
+\c@savedoriglocation=\count272
+\c@origpublisher=\count273
+\c@savedorigpublisher=\count274
+\c@publisher=\count275
+\c@savedpublisher=\count276
+\c@language=\count277
+\c@savedlanguage=\count278
+\c@pageref=\count279
+\c@savedpageref=\count280
+\shorthandwidth=\skip60
+\shortjournalwidth=\skip61
+\shortserieswidth=\skip62
+\shorttitlewidth=\skip63
+\shortauthorwidth=\skip64
+\shorteditorwidth=\skip65
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+
+(C:\MiKTeX\tex\latex\biblatex\blx-compat.def
+File: blx-compat.def 2016/12/05 v3.7 biblatex compatibility (PK/JW/AB)
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+
+(C:\MiKTeX\tex\latex\biblatex\biblatex.def
+File: biblatex.def 2016/12/05 v3.7 biblatex compatibility (PK/JW/AB)
+\c@textcitecount=\count281
+\c@textcitetotal=\count282
+\c@textcitemaxnames=\count283
+\c@biburlnumpenalty=\count284
+\c@biburlucpenalty=\count285
+\c@biburllcpenalty=\count286
+\c@smartand=\count287
+)
+Package biblatex Info: Trying to load bibliography style 'numeric'...
+Package biblatex Info: ... file 'numeric.bbx' found.
+
+(C:\MiKTeX\tex\latex\biblatex\bbx\numeric.bbx
+File: numeric.bbx 2016/12/05 v3.7 biblatex bibliography style (PK/JW/AB)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+
+(C:\MiKTeX\tex\latex\biblatex\bbx\standard.bbx
+File: standard.bbx 2016/12/05 v3.7 biblatex bibliography style (PK/JW/AB)
+\c@bbx:relatedcount=\count288
+\c@bbx:relatedtotal=\count289
+))
+Package biblatex Info: Trying to load citation style 'numeric'...
+Package biblatex Info: ... file 'numeric.cbx' found.
+
+(C:\MiKTeX\tex\latex\biblatex\cbx\numeric.cbx
+File: numeric.cbx 2016/12/05 v3.7 biblatex citation style (PK/JW/AB)
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\supercite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\smartcites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+
+(C:\MiKTeX\tex\latex\biblatex\biblatex.cfg
+File: biblatex.cfg 
+))
+(C:\MiKTeX\tex\latex\graphics\graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:\MiKTeX\tex\latex\graphics\graphics.sty
+Package: graphics 2017/04/14 v1.1b Standard LaTeX Graphics (DPC,SPQR)
+
+(C:\MiKTeX\tex\latex\graphics\trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(C:\MiKTeX\tex\latex\graphics-cfg\graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: xetex.def on input line 99.
+
+(C:\MiKTeX\tex\latex\graphics-def\xetex.def
+File: xetex.def 2016/07/11 v4.10 LaTeX color/graphics driver for XeTeX (L3/RRM/
+JK)
+))
+\Gin@req@height=\dimen114
+\Gin@req@width=\dimen115
+)
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+
+(C:\MiKTeX\tex\latex\biblatex\lbx\english.lbx
+File: english.lbx 2016/12/05 v3.7 biblatex localization (PK/JW/AB)
+)
+\@quotelevel=\count290
+\@quotereset=\count291
+ (main.aux)
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+\AtBeginShipoutBox=\box28
+Package hyperref Info: Link coloring OFF on input line 26.
+
+(C:\MiKTeX\tex\latex\hyperref\nameref.sty
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+
+(C:\MiKTeX\tex\generic\oberdiek\gettitlestring.sty
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count292
+)
+LaTeX Info: Redefining \ref on input line 26.
+LaTeX Info: Redefining \pageref on input line 26.
+LaTeX Info: Redefining \nameref on input line 26.
+ (main.out) (main.out)
+\@outlinefile=\write5
+\openout5 = `main.out'.
+
+Package biblatex Info: XeTeX detected.
+(biblatex)             Assuming input encoding 'utf8'.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+\openout4 = `main.bcf'.
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'main.bbl' found.
+
+(main.bbl)
+Package biblatex Info: Reference section=0 on input line 26.
+Package biblatex Info: Reference segment=0 on input line 26.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 29.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 29.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 29.
+ (C:\MiKTeX\tex\generic\oberdiek\se-ascii-print.def
+File: se-ascii-print.def 2016/05/16 v1.11 stringenc: Printable ASCII characters
+
+) [1
+
+] (main.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 5.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 5.
+
+[1
+
+] [2])
+\tf@toc=\write6
+\openout6 = `main.toc'.
+
+ [3] (capitole/introducere.tex
+Capitolul 1.
+(capitole/introducere/de_ce_am_fost_angajat_eu.tex)
+(capitole/introducere/detalii_despre_firma_angajatoare.tex
+Overfull \hbox (5.442pt too wide) in paragraph at lines 2--3
+[]$[][][][][] [] [] [] [][][][][][][][][][][] [] [][] [] [][][][][][][][][][][]
+[][][][][][][][][][][][][][][][]$[]\TU/lmr/m/n/10 [[]5[]], în momentul achiz-
+ []
+
+[4
+
+]) (capitole/introducere/detalii_despre_relatia_firma_altex.tex)
+(capitole/introducere/detalii_despre_dezvoltarea_aplicatiei.tex
+File: ./capitole/../imagini/main.png Graphic file (type QTm)
+
+<use  "./capitole/../imagini/main.png" > [5])
+(capitole/introducere/despre_aplicatie.tex [6])) [7]
+(capitole/tehnologiile_folosite.tex
+Capitolul 2.
+(capitole/tehnologii_folosite/php.tex)
+(capitole/tehnologii_folosite/mentiuni_speciale.tex)
+(capitole/tehnologii_folosite/laravel.tex [8
+
+])
+(capitole/tehnologii_folosite/baza_de_date_mysql.tex)
+(capitole/tehnologii_folosite/composer.tex)
+(capitole/tehnologii_folosite/github.tex)
+(capitole/tehnologii_folosite/cloudflare.tex)
+(capitole/tehnologii_folosite/jquery.tex [9])
+(capitole/tehnologii_folosite/google_analytics.tex)
+(capitole/tehnologii_folosite/knockout_js.tex)
+(capitole/tehnologii_folosite/npm.tex)) [10] (capitole/structura_aplicatiei.tex
+Capitolul 3.
+(capitole/structura_aplicatiei/request_life_cycle.tex)
+(capitole/structura_aplicatiei/o_scurta_istorie_a_aplicatiei.tex
+Overfull \hbox (24.09004pt too wide) in paragraph at lines 2--1
+\TU/lmr/m/n/10 user-ul introduce adresa www.fandu.uk/claims este redirectat cat
+re https://fandu.info
+ []
+
+[11
+
+]) (capitole/structura_aplicatiei/baza_de_date.tex)
+(capitole/structura_aplicatiei/apache.tex)
+(capitole/structura_aplicatiei/mvc.tex
+(capitole/structura_aplicatiei/mvc/controllers.tex [12])
+(capitole/structura_aplicatiei/mvc/models.tex [13])
+(capitole/structura_aplicatiei/mvc/views.tex [14] [15])
+(capitole/structura_aplicatiei/mvc/helpers.tex))
+(capitole/structura_aplicatiei/excel.tex [16])) [17]
+(capitole/user_workflow.tex
+Capitolul 4.
+(capitole/user_workflow/administrative_interface.tex [18
+
+])
+(capitole/user_workflow/register_a_claim.tex)
+(capitole/user_workflow/responding_to_messages.tex)
+(capitole/user_workflow/settings.tex)
+(capitole/user_workflow/uplading_photos.tex
+Overfull \hbox (1.99892pt too wide) in paragraph at lines 2--1
+\TU/lmr/m/n/10 hidden DBA feature - register client - https://fandu.info/regist
+er backup - chunk-
+ []
+
+)) [19] (capitole/concluzii.tex
+Capitolul 5.
+(capitole/concluzii/business_continuity_plan.tex)
+(capitole/concluzii/luna_dec_teste_automate.tex)
+(capitole/concluzii/extragerea_din_modele.tex)
+(capitole/concluzii/sistem_modular_de_rapoarte.tex)) [20
+
+] [21]
+Overfull \hbox (19.79211pt too wide) in paragraph at lines 43--43
+[]\TU/lmr/m/n/10 Altex Romania S.R.L. \TU/lmr/m/it/10 Regulament Mobile Protect
+\TU/lmr/m/n/10 . \TU/lmr/m/sc/10 url\TU/lmr/m/n/10 : []$[][][][][] [] [] [] [][
+][][][][][][][][][] []
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 45.
+[22
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 45.
+ (main.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 45.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 45.
+Package logreq Info: Writing requests to 'main.run.xml'.
+\openout1 = `main.run.xml'.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 45.
+ ) 
+Here is how much of TeX's memory you used:
+ 15043 strings out of 427834
+ 237187 string characters out of 3155872
+ 699183 words of memory out of 3000000
+ 18792 multiletter control sequences out of 15000+200000
+ 6848 words of font info for 38 fonts, out of 3000000 for 9000
+ 1328 hyphenation exceptions out of 8191
+ 39i,6n,69p,973b,4366s stack positions out of 5000i,500n,10000p,200000b,50000s
+
+Output written on main.pdf (23 pages).

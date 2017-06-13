@@ -1,0 +1,27 @@
+\section{Mentiuni speciale}
+	\subsection{Shared hosting}
+		avantajul de protectie contra XSS prin disabling exec
+		dezavantajul de a nu putea rula migrarile pe serverul de productia
+		solutia de urcare pe productie
+		solutia de a separa app de public\_html pentru a preveni code exploit-ul.
+	\subsection{PhpStorm IDE}
+		avantajul de a putea vedea usor ce se intampla cu modelele
+		dezvantajul magic method-urilor laravel rezolvat cu proiectul de github.
+	\subsection{Organizarea cunostiintelor pe un kanban board - Trello}
+		construirea unui workflow de a incarca fiecare versiune noua pe serverul de productie
+			enable debug / maintenance mode
+			aplicare migrari
+			incarcare fisiere
+			incarcare in public\_html
+			disable debug
+	\subsection{Heroku}
+		rolling release
+		testare
+		free
+	\subsection{Amazon Web Services}
+		de ce am ales AWS
+		integrarea cu Laravel
+		mai intai a fost thumbnail + actual image - imagemagick
+		apoi ajungeam in probleme de push commands
+		asa ca pana la urma am ales sa mergem pe salvare in chior (fara compression / ceva)
+			pentru ca nu depaseam quota-ul de 5GB / luna estimat

@@ -1,0 +1,365 @@
+1. Motivație
+	✔ De ce - angajat @done (17-06-13 13:10)
+	 solutia anterioara era hostata de o alta companie, pe severul propriu.
+	 au dorit sa poata sa scoata rapoarte custom si sa integreze tot workflow-ul curent intr-o aplicatie.
+	 inainte, ei foloseau Excel - si au continuat sa foloseasca cat timp aplicatia a fost construita.
+		 pentru a asigura concordanta intre rapoartele facute de mana si scoase de aplicatie
+	✔ Firma este:  Fandu Holdings Ltd, Cyprus @done (17-06-13 13:10)
+	 www.fandu.uk/claims
+	 AmTrust International Underwriters Limited care a numit societatea Fandu Holdings Ltd, Cyprus. Toate întrebările legate de această poliță trebuie adresate (în limba română sau engleză) către Fandu Holdings Ltd la office@fandu.uk sau prin poștă la Fandu Holdings Ltd în Zinonos Kitieos nr. 8, Kato Lakatamia P.C. 2322, Nicosia, Cyprus.
+	✔ Se găsește in media galaxy folosit acolo etc. @done (17-06-13 13:10)
+		https://mediagalaxy.ro/regulament-mobile-protect
+	✔ Câți oameni lucrează - doar eu @done (17-06-13 13:10)
+	 singurul developer ce lucreaza la aplicatia
+	 fandu e format din doi CEO - Jeff & Ian, cu doi operatori de date. in total, 4.
+	 a trebuit sa gestionez
+		 structura bazei de date
+		 interactiunea cu user-ul.
+		 ce se salveaza / cum se salveaza / unde
+		 solutia de hostare
+		 solutia de backup
+		 securitatea datelor
+		 salvarea datelor in cloud (pro-bono pentru cei de la Fandu)
+		 business plan-ul.
+	✔ (Convingerea situației mele) @done (17-06-13 13:10)
+	 chiar daca lucrez in C# pentru web, prima mea interactiune a fost cu PHP.
+	 mi-a placut foarte mult sintaxa.
+	 laravel este o solutie moderna inspirata din Ruby on Rails.
+	 avea best code practice-urile.
+2. Tehnologii folosite
+	☐ PHP
+		☐ 5.6 avantaje
+	☐ Mentiuni speciale
+		☐ Shared Hosting - production server
+			avantajul de protectie contra XSS prin disabling exec
+			dezavantajul de a nu putea rula migrarile pe serverul de productia
+			solutia de urcare pe productie
+			solutia de a separa app de public_html pentru a preveni code exploit-ul.
+		☐ PhpStorm IDE
+			 avantajul de a putea vedea usor ce se intampla cu modelele
+			 dezvantajul magic method-urilor laravel rezolvat cu proiectul de github.
+		☐ Organizarea cunostiintelor pe un kanban board - Trello
+			construirea unui workflow de a incarca fiecare versiune noua pe serverul de productie
+				enable debug / maintenance mode
+				aplicare migrari
+				incarcare fisiere
+				incarcare in public_html
+				disable debug
+	☐ Heroku
+			rolling release
+			testare
+			free
+	☐ AWS
+		de ce am ales AWS
+		integrarea cu Laravel
+		mai intai a fost thumbnail + actual image - imagemagick
+		apoi ajungeam in probleme de push commands
+		asa ca pana la urma am ales sa mergem pe salvare in chior (fara compression / ceva)
+			pentru ca nu depaseam quota-ul de 5GB / luna estimat
+	☐ Laravel 5.3
+		☐ Forms / Html helpers
+			ajutatoare pentru Bootstrap / panel-uri
+		☐ Blade directives
+			blade extending
+			escape text
+			import
+			layout
+			Laravel transpiling to php (internally)
+		☐ security
+			csrf - xss
+		☐ good coding practices
+			migrations - artisan - database migrations
+			models - Eloquent ORM
+		☐ workflow
+			artisan make:commands
+			artisan routes:list
+			artisan make:auth
+		☐ Events
+			ca asa se face async cu o coada un sistem de a trimite mail-uri eficiente.
+			de ce nu am putut face deploy - shared hosting
+			ce am ales sa fac - sincron send mail
+	☐ MySQL
+		relatii
+		dbms.
+		export usor shared hosting - phpmyadmin
+		export / import usor testare.
+		interfata speciala de solutie de backup pentru a fi rulata automat.
+	☐ AWS
+		solutie cloud storage oferita de Amazon
+		oferta speciala de storage pentru primul an
+	☐ Composer
+	☐ GitHub
+		pastrarea istoricului codului
+		automatic deployment cu Heroku
+		todo: continuous integration
+	☐ CloudFlare
+		solutia de https dinainte
+		de ce n-a mai functionat - Chrome / Firefox blacklisting
+		solutie - folosirea unui certificat valid (semnat), dar ce trece prin Cloudflare pentru a asigura ca totusi e HTTPS si green icon.
+	☐ jQuery
+		orice modificare rapida de butoane
+		logica de administrare / incarcare rapoarte / export 
+		validare
+	☐ Google Analytics
+		unde se blocheaza / ce partea a interfetei e cea mai des folosita.
+	☐ Knockout
+		pentru a putea structura front-end-ul cu logica pe baza modelelor
+		logica asemanatoare pentru modele, ce au valori diferite
+		folosit mai ales la
+				exportul backup-ului
+				adaugarea pozelor ca utilizator
+	☐ npm
+		☐ integrarea cu laravel - laravel elixir
+		☐ ce asigura un up-to-date css / js file cu versioning
+		☐ agregarea css / scss / js -> webpack (minifier) -> versioning ->
+3. Structura aplicatiei
+	☐ Request life-cycle
+		user-ul introduce adresa www.fandu.uk/claims
+		este redirectat catre https://fandu.info
+		aplicatia laravel incarca environment-ul
+		se conteaza la baza de date
+		gaseste ruta pentru controller
+		ruleaza guard-urile pentru controller-ul respectiv.
+		ruleaza controller-ul pentru a primi un view
+		ruleaza view-ul (si-l compileaza daca e necesar - blade)
+		afiseaza pe ecran.
+		user-ul incepe sa completeze
+			daca este sa iasa din aplicatie, il intreaba daca vrea sa piarda tot ce a scris pana in acel moment.
+			drip - mentine sesiunea activa - token csrf
+		se face validarea client-side
+		se re-incepe request-ul, unde se valideaza back-end side si dupa ruleaza controller-ul respectiv rutei s.a.m.d.
+	☐ MDS-Related stuff
+		aici o sa vorbesc despre conceptele generale de a gestiona un proiect
+		UML
+		diagrame, la ce ajuta
+		☐ User stories
+		☐ States
+		☐ Application Lifecycle
+		☐ Tehnical Description
+	☐ O scurta istorie a aplicatiei
+		☐ Rapoarte - vizualizarea datelor => refactor
+			FileData - export to text / csv
+		☐ adaugarea campurilor de undecided / resolved / repaired
+		☐ legatura stransa dintre claim-sale
+			problemele aduse
+			cum se match-uiau inainte
+		☐ decuplarea
+			migrarea in pasi a datelor
+					separarea conceptuala
+					pastrarea in UI a generic sale-urilor.
+					stergerea lor si refactoring-ul spre solutia actuala - de a modifica iframe-ul.
+		☐ FileDataExcelAdaptor
+			& split-uirea codului pentru Facade in doua trait-uri (multumita PHP 5.4)
+		☐ matchuirea pentru rapoartele jmeky
+		☐ todo: includerea campului de external_id
+		☐ todo: decuplarea in one-to-one pentru a arata mai dragut / scoate rapoarte mai complicate cand o sa se ceara
+	☐ Layerele
+		☐ Baza de date
+			 tehnologia folosita: MySQL
+			 cum sunt salvate
+			 naming scheme Laravel de a numi tabelele cu pluralul lower_case.
+			☐ Assurances
+			☐ Chat Claims 
+			☐ Claims 
+			☐ Decisions + parent decision (many-to-many)
+			☐ Messages 
+			☐ Migrations 
+			☐ Password Resets 
+			☐ Photos 
+			☐ Products 
+			☐ Sales 
+			☐ Sessions 
+			☐ Users
+		☐ Apache / PHP
+			☐ MVC - Model View Controller
+				detalii despre abordare
+				de ce consider eu ca e cea mai buna - principiul de separare a "puterii"
+				cum ma ajuta Laravel sa obtin asta
+				☐ Excel
+					☐ Facade
+					☐ FileData
+					☐ FileDataExcelAdaptor
+					☐ Adaptors
+						☐ DailyAdaptor
+						☐ ExcelAdaptor
+						☐ ExcelHelper
+						☐ AltexGalaxyAdaptor
+						☐ SalesImportAdaptor
+						☐ OldAdaptor
+					☐ Outputers
+						☐ StatisticsOutputer
+						☐ DecisionsOutputer
+						☐ ProductsOutputer
+						☐ SalesOutputer
+						☐ AbstractDateOutputer
+						☐ ExcelOutputer
+						☐ YearlyOutputer
+							☐ NegativeSale
+						☐ todo: MonthlyOutputer
+				☐ Models - Eloquent ORM
+					ce aduce in plus ca functionalitate Laravel
+					jmekeria cu One-To-Many / Many-To-Many
+					detalii despre getXxxAttribute()
+					$hidden
+					detalii despre ce am adaugat si cum functioneaza pentru urmatoarele modele
+					getReadable - pentru a genera automat ceea ce poate sa vada administratorul aplicatiei - campuri.
+						☐ Assurance
+						☐ Claim
+						☐ Decision
+							factory manual
+							resolution to text
+							updateToPay
+							remaining
+							cum se calculeaza chestiile
+						☐ Message
+						☐ Photo
+							despre Factory method - in ce categorie se incadreaza.
+						☐ Product
+							faptul ca rotunjim la 2 valori price-ul
+						☐ Sale
+							generic sale factory
+							totale assurance / price
+				☐ Controllers - web.php routing
+					naming scheme
+					router REST-ful.
+					☐ functii ajutatoare - Helpers
+						☐ FormHelper
+						☐ Helpers
+						☐ TemporaryFiles
+							mai ales folositoare pentru rapoarte
+					☐ tipuri de request-uri.
+						ClaimRegisteredRequest
+						ReportRequest
+						StoreClaimRequest
+					☐ Admin
+						☐ Claims
+						☐ Decision
+						☐ Home
+						☐ Import
+						☐ Json - Search
+						☐ Reports
+						☐ Sales
+						☐ Products
+						☐ Assurances
+						☐ Export
+						☐ Backup
+						☐ Settings
+					☐ Auth
+						☐ ForgotPassword
+						☐ Register
+						☐ ResetPassword
+						☐ Login
+					☐ Claims
+					☐ Helper
+					☐ Json - Images
+					☐ Messages
+				☐ Views - blade chemat de Controller
+					o idee generala a structurii
+					☐ vendor pagination bootstrap
+					☐ settings
+						backup
+						index
+					☐ sales
+						☐ includes-urile
+					☐ reports
+						☐ includes-urile
+					☐ newclaim
+						☐ includes-urile
+					☐ messages
+					☐ mail
+						layout
+						☐ claim
+						☐ photos
+						☐ sales
+					☐ app layout
+					☐ import
+						cu tot js-ul de rigoare
+						☐ steps
+						☐ types
+					☐ errors - custom error handling
+					☐ decisions
+						☐ includes-urile
+					☐ components - html panels
+					☐ claims
+						☐ includes-urile
+					☐ auth
+				☐ Resources - js / scss
+					☐ bootstrap
+					☐ timepicker
+					☐ typeahead
+					☐ chart.js
+					☐ extensions
+						☐ postData
+						☐ postSimpleJson
+						☐ postJson
+					☐ custom app.scss stylesheet.
+				☐ .env ironment-ul
+					necesitatea unui app_key
+					conexiunea .env - db
+					conectiunea .env - mail system
+				☐ logging - laravel.log
+				☐ sistemul de event - notification - mail system
+ ☐ User workflow
+	 ☐ Registering a claim
+	 ☐ Uploading photos
+	 ☐ Responding to messages
+	 ☐ Administrative interface
+		 ☐ Claims view
+			 ☐ color code / quick search
+			 ☐ search / filter / navbar id
+			 ☐ view claim
+				 invoice automatic search
+				 duplicate imei
+				 view data
+			 ☐ editing data
+				 short notes
+				 reminders
+				 status
+				 comments
+				 decisions mandatory - cum / de ce s-a intamplat asta
+			 ☐ Reminders
+				 today
+				 past due
+		 ☐ Import
+			 ☐ Weekly Sale import
+				 de la altex
+			 ☐ Custom imports
+				 Daily import - format-ul vechi de daily tinut de Ramona pentru fiecare an
+				 Sales Import - import de date de la "decision" output-ul Fandu (excel stuff) - autocompletare campuri mai mult
+				 Old - old metadata import from Etonia etc. - ce momentan foloseste doar IMEI
+		 ☐ Sales
+			 search coloane, access rapid
+			 buton de remove / remove all logic
+			 ☐ view
+				 poti sa adaugi product
+				 poti sa stergi product
+				 poti sa adaugi assurance
+				 poti sa stergi assurance
+		 ☐ Decisions
+			 quick search
+			 detailed search
+			 de ce poti sa stergi - pentru ca daca nu ai asociat sale-ul corect, poti sa dai undo fara sa sufere nimic baza de date.
+			 ☐ view
+				 claim / messages / add old decision
+				 edit claim in urma analytics
+				 campurile explicate
+				 calculatorul
+		 ☐ Reports
+			 type of export (deprecated csv / excel)
+			 date start / end
+			 progress bar
+			 metadata when loading - especially yearly reports
+			 chunking 
+	 ☐ Settings
+		 hidden DBA feature - register client - https://fandu.info/register
+		 backup - chunking -> sql -> .tar.gz
+ ☐ cpanel administrator
+	 phpmyadmin - pentru a schimba email-ul in caz de typo.
+		 sugestia pentru a extinde asta cu un system de request-uri / approval-uri din partea unui admin mai mare -> ierarhie de administratori.
+	 code backup - chiar daca GitHub asigura, e mai bine redundancy. sugestie de backup automat - poate 
+4. Concluzia
+	☐ Business Continuity Plan
+	☐ Luna dec - teste automate
+	☐ Extragerea din modelele imens de mari in tabele cu informatii mai modulare.
+	☐ Fandu doreste sistem modular de rapoarte
+		ce inseamna asta pentru structura bazei de date

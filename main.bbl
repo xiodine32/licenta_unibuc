@@ -1,0 +1,206 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.8 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist[entry]{nty/global/}
+    \entry{aws}{online}{}
+      \name{author}{1}{}{%
+        {{hash=b3b3a6ac74ecbd56bcdbefa4799fb9df}{%
+           family={Amazon},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{b3b3a6ac74ecbd56bcdbefa4799fb9df}
+      \strng{fullhash}{b3b3a6ac74ecbd56bcdbefa4799fb9df}
+      \strng{authornamehash}{b3b3a6ac74ecbd56bcdbefa4799fb9df}
+      \strng{authorfullhash}{b3b3a6ac74ecbd56bcdbefa4799fb9df}
+      \field{sortinit}{A}
+      \field{sortinithash}{3248043b5fe8d0a34dab5ab6b8d4309b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Amazon Web Services S3}
+      \verb{url}
+      \verb https://aws.amazon.com/s3/
+      \endverb
+    \endentry
+    \entry{veracrypt}{online}{}
+      \name{author}{1}{}{%
+        {{hash=7dc40e9841a8b9d37742f90344b27121}{%
+           family={IDRIX},
+           familyi={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{7dc40e9841a8b9d37742f90344b27121}
+      \strng{fullhash}{7dc40e9841a8b9d37742f90344b27121}
+      \strng{authornamehash}{7dc40e9841a8b9d37742f90344b27121}
+      \strng{authorfullhash}{7dc40e9841a8b9d37742f90344b27121}
+      \field{sortinit}{I}
+      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{VeraCrypt \- Free Open source disk encryption with strong security for the Paranoid}
+      \verb{url}
+      \verb https://www.veracrypt.fr/en/Home.html
+      \endverb
+    \endentry
+    \entry{fandu_uk}{online}{}
+      \name{author}{1}{}{%
+        {{hash=02793f2027e7187875fe0df682694660}{%
+           family={Ltd.},
+           familyi={L\bibinitperiod},
+           given={Fandu\bibnamedelima Holdings},
+           giveni={F\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{02793f2027e7187875fe0df682694660}
+      \strng{fullhash}{02793f2027e7187875fe0df682694660}
+      \strng{authornamehash}{02793f2027e7187875fe0df682694660}
+      \strng{authorfullhash}{02793f2027e7187875fe0df682694660}
+      \field{sortinit}{L}
+      \field{sortinithash}{7bba64db83423e3c29ad597f3b682cf3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Fandu.UK}
+      \field{year}{2015}
+      \verb{url}
+      \verb http://www.fandu.uk/claims
+      \endverb
+    \endentry
+    \entry{wsgp_claims}{online}{}
+      \name{author}{1}{}{%
+        {{hash=06175ad123cca96e0d2bd3f4af706178}{%
+           family={Solutions},
+           familyi={S\bibinitperiod},
+           given={Warranty},
+           giveni={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{06175ad123cca96e0d2bd3f4af706178}
+      \strng{fullhash}{06175ad123cca96e0d2bd3f4af706178}
+      \strng{authornamehash}{06175ad123cca96e0d2bd3f4af706178}
+      \strng{authorfullhash}{06175ad123cca96e0d2bd3f4af706178}
+      \field{sortinit}{S}
+      \field{sortinithash}{3c1547c63380458f8ca90e40ed14b83e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Raportul avariilor}
+      \field{year}{2015}
+      \verb{url}
+      \verb http://wsgp.co.uk/claims/
+      \endverb
+    \endentry
+    \entry{media_galaxy}{online}{}
+      \name{author}{1}{}{%
+        {{hash=98e7da5c830a22b31611695dc38b8b85}{%
+           family={S.R.L.},
+           familyi={S\bibinitperiod},
+           given={Altex\bibnamedelima Romania},
+           giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{98e7da5c830a22b31611695dc38b8b85}
+      \strng{fullhash}{98e7da5c830a22b31611695dc38b8b85}
+      \strng{authornamehash}{98e7da5c830a22b31611695dc38b8b85}
+      \strng{authorfullhash}{98e7da5c830a22b31611695dc38b8b85}
+      \field{sortinit}{S}
+      \field{sortinithash}{3c1547c63380458f8ca90e40ed14b83e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Regulament Mobile Protect}
+      \verb{url}
+      \verb https://mediagalaxy.ro/regulament-mobile-protect
+      \endverb
+    \endentry
+    \entry{xservers}{online}{}
+      \name{author}{1}{}{%
+        {{hash=7bdcd754907543ba7a12dea1a7bd9608}{%
+           family={SRL},
+           familyi={S\bibinitperiod},
+           given={S.C.\bibnamedelimi CLAX\bibnamedelima TELECOM},
+           giveni={S\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+      }
+      \strng{namehash}{7bdcd754907543ba7a12dea1a7bd9608}
+      \strng{fullhash}{7bdcd754907543ba7a12dea1a7bd9608}
+      \strng{authornamehash}{7bdcd754907543ba7a12dea1a7bd9608}
+      \strng{authorfullhash}{7bdcd754907543ba7a12dea1a7bd9608}
+      \field{sortinit}{S}
+      \field{sortinithash}{3c1547c63380458f8ca90e40ed14b83e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Hosting | Servere dedicate | VPS - xServers}
+      \verb{url}
+      \verb https://www.xservers.ro/
+      \endverb
+    \endentry
+    \entry{laravel}{online}{}
+      \name{author}{1}{}{%
+        {{hash=b7b1e314614cf326c6e2b6eba1540682}{%
+           family={TODO},
+           familyi={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{b7b1e314614cf326c6e2b6eba1540682}
+      \strng{fullhash}{b7b1e314614cf326c6e2b6eba1540682}
+      \strng{authornamehash}{b7b1e314614cf326c6e2b6eba1540682}
+      \strng{authorfullhash}{b7b1e314614cf326c6e2b6eba1540682}
+      \field{sortinit}{T}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{https://laravel.com/}
+      \verb{url}
+      \verb TODO
+      \endverb
+    \endentry
+    \entry{laravel_complexity}{online}{}
+      \name{author}{1}{}{%
+        {{hash=b7b1e314614cf326c6e2b6eba1540682}{%
+           family={TODO},
+           familyi={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{b7b1e314614cf326c6e2b6eba1540682}
+      \strng{fullhash}{b7b1e314614cf326c6e2b6eba1540682}
+      \strng{authornamehash}{b7b1e314614cf326c6e2b6eba1540682}
+      \strng{authorfullhash}{b7b1e314614cf326c6e2b6eba1540682}
+      \field{sortinit}{T}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{TODO}
+      \verb{url}
+      \verb https://twitter.com/taylorotwell/status/817494232541839367
+      \endverb
+    \endentry
+    \entry{hotframeworks}{online}{}
+      \name{author}{1}{}{%
+        {{hash=b7b1e314614cf326c6e2b6eba1540682}{%
+           family={TODO},
+           familyi={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{b7b1e314614cf326c6e2b6eba1540682}
+      \strng{fullhash}{b7b1e314614cf326c6e2b6eba1540682}
+      \strng{authornamehash}{b7b1e314614cf326c6e2b6eba1540682}
+      \strng{authorfullhash}{b7b1e314614cf326c6e2b6eba1540682}
+      \field{sortinit}{T}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{TODO}
+      \verb{url}
+      \verb https://hotframeworks.com/
+      \endverb
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+

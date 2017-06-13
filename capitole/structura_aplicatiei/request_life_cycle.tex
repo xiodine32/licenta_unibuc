@@ -1,0 +1,15 @@
+\section{Request life-cycle}
+	user-ul introduce adresa www.fandu.uk/claims
+	este redirectat catre https://fandu.info
+	aplicatia laravel incarca environment-ul
+	se conteaza la baza de date
+	gaseste ruta pentru controller
+	ruleaza guard-urile pentru controller-ul respectiv.
+	ruleaza controller-ul pentru a primi un view
+	ruleaza view-ul (si-l compileaza daca e necesar - blade)
+	afiseaza pe ecran.
+	user-ul incepe sa completeze
+		daca este sa iasa din aplicatie, il intreaba daca vrea sa piarda tot ce a scris pana in acel moment.
+		drip - mentine sesiunea activa - token csrf
+	se face validarea client-side
+	se re-incepe request-ul, unde se valideaza back-end side si dupa ruleaza controller-ul respectiv rutei s.a.m.d.

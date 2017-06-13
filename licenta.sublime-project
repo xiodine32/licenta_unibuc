@@ -1,0 +1,17 @@
+{
+  "folders": [
+    {
+      "path": ".",
+      "file_exclude_patterns": ["*.log", "*.gz", "*.pdf", "*.aux", "*.toc", "*.sublime-project", "*.xml", "*.bbl", "*.bcf", "*.blg"]
+    }
+  ],
+  "settings": {
+    "TEXroot": "main.tex",
+    "font_face": "Cambria",
+    "font_size": 16,
+    "bibtex_file": "bibliografie.bib",
+    "spell_check": true,
+    "dictionary": "Packages/User/Romanian (Modern).dic",
+    "draw_white_space": "all",
+  },
+}

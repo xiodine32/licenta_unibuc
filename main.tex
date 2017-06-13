@@ -1,0 +1,45 @@
+%  xelatex
+\documentclass{report}
+
+% \usepackage[utf8]{inputenc}
+\usepackage[hidelinks]{hyperref}
+\usepackage{import}
+\usepackage{subfigure}
+\usepackage{titlesec}
+\usepackage[style=numeric]{biblatex}
+\usepackage{graphicx}
+\addbibresource{./bibliografie.bib}
+
+\setcounter{secnumdepth}{4}
+
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+\title{Sistem de gestionare a cererilor de despăgubire pentru o societate de asigurări}
+\author{Rareș-Neagu Florian}
+\date{\today}
+ 
+\renewcommand*\contentsname{Tabel de conținut}
+ \renewcommand*\chaptername{Capitolul}
+
+\begin{document}
+ 
+\maketitle
+ 
+\tableofcontents
+ 
+ \newpage
+\import*{./capitole/}{introducere}
+\newpage
+\import*{./capitole/}{tehnologiile_folosite}
+\newpage
+\import*{./capitole/}{structura_aplicatiei}
+\newpage
+\import*{./capitole/}{user_workflow}
+\newpage
+\import*{./capitole/}{concluzii}
+\newpage
+ \printbibliography[title={Bibliografie}]
+
+\end{document}
