@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6350 64-bit) (preloaded format=xelatex 2017.6.13)  14 JUN 2017 22:16
+This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6350 64-bit) (preloaded format=xelatex 2017.6.13)  14 JUN 2017 22:26
 entering extended mode
 **./main.tex
 (main.tex
@@ -534,14 +534,8 @@ Capitolul 2.
 (capitole/tehnologii_folosite/php.tex)
 (capitole/tehnologii_folosite/laravel.tex [8
 
-]
-Overfull \hbox (18.74203pt too wide) in paragraph at lines 36--37
-\TU/lmr/m/n/10 sidera parametrul unei funcții, deoarece sunt trimise prin metod
-a [][]\TU/lmtt/m/n/10 htmlspecialchars
- []
-
-[9] [10]
-Overfull \hbox (17.33pt too wide) in paragraph at lines 105--109
+] [9] [10]
+Overfull \hbox (17.33pt too wide) in paragraph at lines 106--110
 \TU/lmr/m/n/10 migrations - artisan - database migrations artisan make:commands
  artisan routes:list
  []
@@ -647,7 +641,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 47.
 Here is how much of TeX's memory you used:
  15432 strings out of 427834
  243593 string characters out of 3155872
- 706544 words of memory out of 3000000
+ 706417 words of memory out of 3000000
  19181 multiletter control sequences out of 15000+200000
  7769 words of font info for 42 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
