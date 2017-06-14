@@ -1,7 +1,7 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6350 64-bit) (preloaded format=xelatex 2017.6.13)  13 JUN 2017 14:14
+This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6350 64-bit) (preloaded format=xelatex 2017.6.13)  14 JUN 2017 14:48
 entering extended mode
-**C:/Users/xiodine/Dropbox/Facultate/licenta/main.tex
-(C:/Users/xiodine/Dropbox/Facultate/licenta/main.tex
+**./main.tex
+(main.tex
 LaTeX2e <2017-04-15>
 Babel <3.10> and hyphenation patterns for 75 language(s) loaded.
 (C:\MiKTeX\tex\latex\base\report.cls
@@ -532,7 +532,10 @@ Capitolul 2.
 (capitole/tehnologii_folosite/jquery.tex [9])
 (capitole/tehnologii_folosite/google_analytics.tex)
 (capitole/tehnologii_folosite/knockout_js.tex)
-(capitole/tehnologii_folosite/npm.tex)) [10] (capitole/structura_aplicatiei.tex
+(capitole/tehnologii_folosite/npm.tex) (capitole/tehnologii_folosite/latex.tex
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <14.4> on input line 1.
+)) [10] (capitole/structura_aplicatiei.tex
 Capitolul 3.
 (capitole/structura_aplicatiei/request_life_cycle.tex)
 (capitole/structura_aplicatiei/o_scurta_istorie_a_aplicatiei.tex
@@ -593,12 +596,12 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 45.
  ) 
 Here is how much of TeX's memory you used:
- 15043 strings out of 427834
- 237187 string characters out of 3155872
- 699183 words of memory out of 3000000
- 18792 multiletter control sequences out of 15000+200000
- 6848 words of font info for 38 fonts, out of 3000000 for 9000
+ 15051 strings out of 427834
+ 237285 string characters out of 3155872
+ 699247 words of memory out of 3000000
+ 18797 multiletter control sequences out of 15000+200000
+ 7769 words of font info for 42 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
- 39i,6n,69p,973b,4366s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 39i,6n,69p,932b,4366s stack positions out of 5000i,500n,10000p,200000b,50000s
 
 Output written on main.pdf (23 pages).

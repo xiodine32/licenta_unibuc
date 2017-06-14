@@ -2,7 +2,7 @@
   "folders": [
     {
       "path": ".",
-      "file_exclude_patterns": ["*.log", "*.gz", "*.pdf", "*.aux", "*.toc", "*.sublime-project", "*.xml", "*.bbl", "*.bcf", "*.blg"]
+      "file_exclude_patterns": ["*.log", "*.gz", "*.pdf", "*.aux", "*.toc", "*.sublime-project", "*.xml", "*.bbl", "*.bcf", "*.blg", "*.out"]
     }
   ],
   "settings": {
