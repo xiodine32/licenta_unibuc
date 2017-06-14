@@ -8,6 +8,8 @@
 \usepackage{titlesec}
 \usepackage[style=numeric]{biblatex}
 \usepackage{graphicx}
+\usepackage{fancyvrb}
+
 \addbibresource{./bibliografie.bib}
 
 \setcounter{secnumdepth}{4}
@@ -21,15 +23,15 @@
 \date{\today}
 \pagebreak
 \renewcommand*\contentsname{Tabel de conținut}
- \renewcommand*\chaptername{Capitolul}
+\renewcommand*\chaptername{Capitolul}
 
 \begin{document}
- 
+
 \maketitle
- 
+
 \tableofcontents
- 
- \newpage
+
+\newpage
 \import*{./capitole/}{introducere}
 \newpage
 \import*{./capitole/}{tehnologiile_folosite}
@@ -40,6 +42,6 @@
 \newpage
 \import*{./capitole/}{concluzii}
 \newpage
- \printbibliography[title={Bibliografie}]
+\printbibliography[title={Bibliografie}]
 
 \end{document}

@@ -1,4 +1,23 @@
 \section{GitHub}
-	pastrarea istoricului codului
-	automatic deployment cu Heroku
-	todo: continuous integration
+	Trebuie să ne asigurăm că păstrăm undeva codul sursă al aplicației, pentru a fi siguri că nu se vor corupe datele.
+	De asta am ales să folosesc un program de gestionare a codului.\cite{mercurial}
+
+	Sistemul de gestiune a codului se ocupă cu organizarea și aflarea modificărilor fișierelor cu cod, construind revizii pentru fiecare modificare în parte, ușoare de identificat.
+	De asemenea, comunică cu un server ce păstrează codul sursă și lasă programatorii să aibă o variantă ce funcționează pe mașina locală.
+
+	Funcționând pe un modelul tranzacțional, ajută enorm lucrului în echipă pentru că păstrează pentru cele mai des folosite operații (salvare, vizualizare istoric, revenind la modificări anterioare) sunt optimizare și deci rapide.
+	Modelul tranzacțional asigură și că nu vor apărea probleme la modificări concurente de două sau mai multe persoane asupra aceluiași fișier.
+
+	Un astfel de sistem de gestiune a versiunii (VCS), pentru a urmări schimbările fișierelor și coordonarea lucrului în echipă, este „Git”.\cite{git}
+	A fost conceput de „Linus Torvalds” în 2005 împreună cu alți dezvoltatori ai kernel-ului LInux pentru dezvoltarea kernel-ului.
+	Se concentrează asupra vitezei, integrității datelor și susținerea unui mod de lucru distribuit și neliniar.
+	Astfel, fiecare folder „Git” pe fiecare calculator conține istoricul complet al proiectului, independent de accesul la rețea.
+	Este cel mai folosit sistem, mulțumită multiplelor garanții împotriva coruperii datelor, iar conform unui studiu făcut în 2015, 69.3\% dezvoltatori folosesc activ „Git”.
+
+	Pentru că un sistem de gestiune a versiunii se folosește de un server, am ales varianta online și bazată pe web „GitHub”, ce folosește „Git” și adaugă și funcționalitate pentru lucrul în echipă, precum: \begin{itemize}
+		\item „bug tracking” - gestionarea problemelor în cod.
+		\item „feature requests” - gestionarea propunerilor pentru funcționalitate nouă.
+		\item „task management” - cine, ce, când are de modificat în cadrul proiectului.
+		\item „wiki” - un loc comun despre tot ce ține de documentația proiectului.
+	\end{itemize}
+	\cite{github}

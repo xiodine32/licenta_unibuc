@@ -1,23 +1,110 @@
 \section{Laravel 5.3}
-	\subsection{Extindere - Form / Html helper}
-		ajutatoare pentru Bootstrap / panel-uri
+
+	Laravel este o librărie gratuită de PHP.
+	Pentru Laravel 5.3, minimul necesar librăriei este PHP 5.5.9 sau mai nou.
+	Librăria a fost concepută de „Taylor Otwell”, pentru a construi aplicații web bazate pe arhitectura „Model-View-Controller”.
+	Printre numeroasele avantaje de a folosi Laravel se află sistemul modular de pachete, cu propriul său sistem de gestionare, moduri diferite de a accesa bazele de date relaționale, utilitare pentru scrierea și menținerea aplicației și orientarea spre expresivitatea codului.\cite{laravel_book}
+
+	Arhitectura „Model-View-Controller” se bazează pe cele trei componente inter-conectate slab ale unei aplicații: Modelul, Controller-ul, respectiv View-ul.
+	Modelul este componenta centrală a șablonului, pentru că se ocupă de datele, logica și regulile aplicației.
+	Acest model este gestionat de Controller, ce acceptă datele de la utilizator și le transformă în comenzi pentru model și/sau View.
+	View-ul este orice metodă de vizualizare a informației unui Model.\cite{poo_sa}
+
+	Avantajele arhitecturii, mulțumită separării conceptuale, ajută dezvoltarea simultană și ușurința modificărilor.
+	Astfel, mai multe persoane pot lucra simultan la o parte a aplicației.
+	Dar din păcate, trebuie studiată în detaliu, pentru că nu este ușoară de folosit pragmatic.
+
 	\subsection{Directive Blade}
-		blade extending
-		escape text
-		import
-		layout
-		Laravel transpiling to php (internally)
-	\subsection{Securitate}
-		csrf
-		xss
-	\subsection{Standarde de cod}
+		Un mare avantaj al librăriei este un simplu, dar foarte puternic și eficient sistem de șablonare --- Blade.
+		Spre deosebire de alte sisteme de șablon, Blade nu inhibă dezvoltatorul a folosi cod PHP în View-uri.
+		De fapt, toate View-urile Blade sunt traduse în cod simplu PHP și salvate până ce sunt modificate.
+		Astfel reușește să adauge aproape zero logică în plus aplicației.
+
+		Pentru a afișa ceva pe ecran folosind PHP în mijlocul codului HTML, ar trebui să scrii:
+			\begin{Verbatim}
+			<?= $variabila ?>
+			\end{Verbatim}
+		Dar asta te face vulnerabil la „XSS”.
+
+		XSS (Cross Side Scripting) este o vulnerabilitate a securității unei aplicații, des întâlnită în aplicațiile web, ce permite adăugarea oricărui cod, fie el malițios sau inocent, paginilor vizualizate de clienții normali.
+
+		Astfel, pentru a preveni exploatarea datelor trimise de la Controller, pentru a afișa valorile variabilelor trimise, directivele Blade indică folosirea sintagmei:
+			\begin{Verbatim}
+			{{$variabila}}
+			\end{Verbatim}
+
+		Desigur, nu ești limitat la doar nume de variabile, ci la orice s-ar putea considera parametrul unei funcții, deoarece sunt trimise prin metoda \verb|htmlspecialchars| a PHP-ului.
+
+		Printre cele mai folositoare beneficii folosind Blade se află și construirea fișierelor ce definesc structura HTML-ului aplicației.
+		Nu se definește practic o pagină principală, doar se specifică pentru paginile existente deja a se folosi structura găsită în pagina specificată prin comanda:
+		\begin{Verbatim}
+			@extends('layouts.app')
+		\end{Verbatim}
+		unde în acest caz în folderul „layouts” găsim fișierul „app.blade.php”.
+
+		Pentru a introduce conținutul paginii ce extinde șablonul, Blade folosește secțiuni.
+		Declarate în pagina principală, acestea indică locul unde se așteaptă conținut, putând fi denumite după nevoile șablonului.
+		De asemenea, în cazul definirii unei secțiuni, se poate folosi și o valoare implicită.
+		Cel mai des e folosit un șablon în definirea titlului, cu o valore implicită a numelui proiectului.
+		În cazul acestui proiect, am folosit ca sufix numele configurat în fișierul mediu, lăsând la dispoziția fiecărei pagini a seta titlul.
+
+		Folosind secțiuni, am descoperit o problemă la refolosirea unor componente vizuale.
+		Blade adaugă precum PHP conținutul fișierului ce trebuie să existe unde ai scris instrucțiunea respectivă folosind comanda:
+		\begin{Verbatim}
+@include('decisions.includes.search')
+// ce adaugă fișierul
+// resources/views/decisions/includes/search.blade.php
+		\end{Verbatim}
+
+		Continuând șirul dezvoltării, descopăr o altă problemă la introducerea a mai multor segmente de cod JavaScript în aplicație, din fișiere Blade separate.
+		Pentru a rezolva și această problemă, Blade se folosește de:
+		\begin{Verbatim}
+			@push('scripts')
+		\end{Verbatim}
+		pentru a adăuga informații într-o stivă, ce va fi afișată în pagina ce definește structura HTML prin simpla comandă:
+		\begin{Verbatim}
+			@stack('scripts')
+		\end{Verbatim}
+
+		Printre marile îmbunătățiri aduse de Blade, folosite în acest proiect, se numără și directivele.
+		Acestea sunt propriile comenzi, definite de programator, ce extind limbajul.
+		Sunt traduse în simple instrucțiuni de cod PHP.
+		Am scris astfel propria directivă de a construi automat codul necesar afișării, folosind HTML și librăria vizuală „Bootstrap”, a unui câmp dintr-un formular, cu nume, tip și validare proprie:
+		\begin{verbatim}
+			@input(['eveniment_strada', ['Strada', false]])
+			// unde 'eveniment_strada' - id-ul câmpului.
+			// unde 'Strada' - denumirea câmpului.
+			// unde 'false' - necesitatea completării câmpului.
+		\end{verbatim}
+		ajutatoare pentru Bootstrap / panel-uri
+	\subsection{Laravel Forms / HTML}
+
+		O mare parte a oricărei aplicații web este interacțiunea cu clientul.
+		Pentru asta, există formulare ce sunt trimise către calculatorul aplicației.
+		O fostă librărie inclusă în Laravel, dar acum extinsă și desprinsă este librăria ajutătoare pentru formulare și HTML.
+		Este întreținută de „Laravel Collective”, o comunitate ce se ocupă de menținerea componentelor scoase din Laravel de „Taylor Otwell”.
+		Astfel, el are prilejul de a se concentra pe munca sa (Laravel) și comunitatea susține componentele îndrăgite de programatori în viață, independent.\cite{laravel_collective_about}
+
+		Un astfel de proiect este „Forms \& Html” \cite{laravel_collective_forms}, ce simplifică codul ce trebuie scris de un programator Laravel.
+		În loc de a scris de fiecare dată ce câmp are ca referință ce obiect din model, se definește în schimb în momentul construirii formularului modelul de referință.
+		Când se construiește un câmp, trebuie doar să fie bine specificat identificatorul câmpului, iar când va fi trimis către client, va fi completat automat cu valoarea din model.
+		De asemenea, un al treilea parametru lasă loc programatorului să completeze celelalte atribute ale nodului HTML printr-un vector unde cheia reprezintă numele atributului și valoarea reprezintă conținutul.
+
+		Nu doar metode ajutătoare, „Forms \& Html” acceptă și componente specializate, definite de programator, ca șabloane Blade.
+		Prin definirea lor într-un folder special, acestea pot fi folosite precum cele deja definite, pentru a ușura clasele și atributele necesare pentru dezvoltatorii ce folosesc „Bootstrap”.
+		Cum acest proiect se folosește de Bootstrap și „Forms \& Html”, vă pot da un exemplu de două componente des folosite în aplicație:
+		\begin{Verbatim}
+{{Html::panel_begin('Delete Assurance', 'in')}}
+  // aici scriu cod...
+{{Html::panel_end()}}
+// unde 'Delete Assurance' - numele panoului
+// unde 'in' - starea panoului: de a fi deja deschis
+		\end{Verbatim}
+
+	\subsection{Artisan}
 		migrations - artisan - database migrations
-		models - Eloquent ORM
-	\subsection{Modul ajutator construire schele}
 		artisan make:commands
 		artisan routes:list
 		artisan make:auth
-	\subsection{Event-uri și notificări}
-		ca asa se face async cu o coada un sistem de a trimite mail-uri eficiente.
-		de ce nu am putut face deploy - shared hosting
-		ce am ales sa fac - sincron send mail
+	\subsection{Eloquent ORM}
+		models - Eloquent ORM

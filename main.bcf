@@ -2156,6 +2156,17 @@
     <bcf:citekey order="11">laravel</bcf:citekey>
     <bcf:citekey order="12">laravel_complexity</bcf:citekey>
     <bcf:citekey order="13">hotframeworks</bcf:citekey>
+    <bcf:citekey order="14">TheInformationRevolution</bcf:citekey>
+    <bcf:citekey order="15">cgi</bcf:citekey>
+    <bcf:citekey order="16">php_code</bcf:citekey>
+    <bcf:citekey order="17">php_supported_versions</bcf:citekey>
+    <bcf:citekey order="18">laravel_book</bcf:citekey>
+    <bcf:citekey order="19">poo_sa</bcf:citekey>
+    <bcf:citekey order="20">laravel_collective_about</bcf:citekey>
+    <bcf:citekey order="21">laravel_collective_forms</bcf:citekey>
+    <bcf:citekey order="22">mercurial</bcf:citekey>
+    <bcf:citekey order="23">git</bcf:citekey>
+    <bcf:citekey order="24">github</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="nty/global/" type="entry" sortscheme="nty" sortnamekeyscheme="global" labelprefix="">
   <bcf:sorting>

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6350 64-bit) (preloaded format=xelatex 2017.6.13)  14 JUN 2017 14:48
+This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6350 64-bit) (preloaded format=xelatex 2017.6.13)  14 JUN 2017 22:16
 entering extended mode
 **./main.tex
 (main.tex
@@ -419,37 +419,48 @@ JK)
 \Gin@req@height=\dimen114
 \Gin@req@width=\dimen115
 )
+(C:\MiKTeX\tex\latex\fancyvrb\fancyvrb.sty
+Package: fancyvrb 2008/02/07
+
+Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
+<2008/02/07> (tvz)
+\FV@CodeLineNo=\count290
+\FV@InFile=\read2
+\FV@TabBox=\box28
+\c@FancyVerbLine=\count291
+\FV@StepNumber=\count292
+\FV@OutFile=\write5
+)
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
-
-(C:\MiKTeX\tex\latex\biblatex\lbx\english.lbx
+ (C:\MiKTeX\tex\latex\biblatex\lbx\english.lbx
 File: english.lbx 2016/12/05 v3.7 biblatex localization (PK/JW/AB)
 )
-\@quotelevel=\count290
-\@quotereset=\count291
+\@quotelevel=\count293
+\@quotereset=\count294
  (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-\AtBeginShipoutBox=\box28
-Package hyperref Info: Link coloring OFF on input line 26.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+\AtBeginShipoutBox=\box29
+Package hyperref Info: Link coloring OFF on input line 28.
 
 (C:\MiKTeX\tex\latex\hyperref\nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -457,14 +468,14 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (C:\MiKTeX\tex\generic\oberdiek\gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count292
+\c@section@level=\count295
 )
-LaTeX Info: Redefining \ref on input line 26.
-LaTeX Info: Redefining \pageref on input line 26.
-LaTeX Info: Redefining \nameref on input line 26.
+LaTeX Info: Redefining \ref on input line 28.
+LaTeX Info: Redefining \pageref on input line 28.
+LaTeX Info: Redefining \nameref on input line 28.
  (main.out) (main.out)
-\@outlinefile=\write5
-\openout5 = `main.out'.
+\@outlinefile=\write6
+\openout6 = `main.out'.
 
 Package biblatex Info: XeTeX detected.
 (biblatex)             Assuming input encoding 'utf8'.
@@ -476,14 +487,14 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
 
 (main.bbl)
-Package biblatex Info: Reference section=0 on input line 26.
-Package biblatex Info: Reference segment=0 on input line 26.
+Package biblatex Info: Reference section=0 on input line 28.
+Package biblatex Info: Reference segment=0 on input line 28.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 29.
+(Font)              <12> on input line 31.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 29.
+(Font)              <8> on input line 31.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 29.
+(Font)              <6> on input line 31.
  (C:\MiKTeX\tex\generic\oberdiek\se-ascii-print.def
 File: se-ascii-print.def 2016/05/16 v1.11 stringenc: Printable ASCII characters
 
@@ -498,16 +509,16 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 [1
 
 ] [2])
-\tf@toc=\write6
-\openout6 = `main.toc'.
+\tf@toc=\write7
+\openout7 = `main.toc'.
 
  [3] (capitole/introducere.tex
 Capitolul 1.
 (capitole/introducere/de_ce_am_fost_angajat_eu.tex)
 (capitole/introducere/detalii_despre_firma_angajatoare.tex
-Overfull \hbox (5.442pt too wide) in paragraph at lines 2--3
+Overfull \hbox (10.442pt too wide) in paragraph at lines 2--3
 []$[][][][][] [] [] [] [][][][][][][][][][][] [] [][] [] [][][][][][][][][][][]
-[][][][][][][][][][][][][][][][]$[]\TU/lmr/m/n/10 [[]5[]], în momentul achiz-
+[][][][][][][][][][][][][][][][]$[]\TU/lmr/m/n/10 [[]18[]], în momentul achiz-
  []
 
 [4
@@ -521,21 +532,32 @@ File: ./capitole/../imagini/main.png Graphic file (type QTm)
 (capitole/tehnologiile_folosite.tex
 Capitolul 2.
 (capitole/tehnologii_folosite/php.tex)
-(capitole/tehnologii_folosite/mentiuni_speciale.tex)
 (capitole/tehnologii_folosite/laravel.tex [8
 
-])
-(capitole/tehnologii_folosite/baza_de_date_mysql.tex)
-(capitole/tehnologii_folosite/composer.tex)
-(capitole/tehnologii_folosite/github.tex)
+]
+Overfull \hbox (18.74203pt too wide) in paragraph at lines 36--37
+\TU/lmr/m/n/10 sidera parametrul unei funcții, deoarece sunt trimise prin metod
+a [][]\TU/lmtt/m/n/10 htmlspecialchars
+ []
+
+[9] [10]
+Overfull \hbox (17.33pt too wide) in paragraph at lines 105--109
+\TU/lmr/m/n/10 migrations - artisan - database migrations artisan make:commands
+ artisan routes:list
+ []
+
+) (capitole/tehnologii_folosite/baza_de_date_mysql.tex)
+(capitole/tehnologii_folosite/github.tex [11])
 (capitole/tehnologii_folosite/cloudflare.tex)
-(capitole/tehnologii_folosite/jquery.tex [9])
+(capitole/tehnologii_folosite/jquery.tex)
 (capitole/tehnologii_folosite/google_analytics.tex)
 (capitole/tehnologii_folosite/knockout_js.tex)
-(capitole/tehnologii_folosite/npm.tex) (capitole/tehnologii_folosite/latex.tex
+(capitole/tehnologii_folosite/latex.tex [12]
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <14.4> on input line 1.
-)) [10] (capitole/structura_aplicatiei.tex
+)
+(capitole/tehnologii_folosite/mentiuni_speciale.tex)) [13] [14]
+(capitole/structura_aplicatiei.tex
 Capitolul 3.
 (capitole/structura_aplicatiei/request_life_cycle.tex)
 (capitole/structura_aplicatiei/o_scurta_istorie_a_aplicatiei.tex
@@ -544,19 +566,19 @@ Overfull \hbox (24.09004pt too wide) in paragraph at lines 2--1
 re https://fandu.info
  []
 
-[11
+[15
 
 ]) (capitole/structura_aplicatiei/baza_de_date.tex)
 (capitole/structura_aplicatiei/apache.tex)
 (capitole/structura_aplicatiei/mvc.tex
-(capitole/structura_aplicatiei/mvc/controllers.tex [12])
-(capitole/structura_aplicatiei/mvc/models.tex [13])
-(capitole/structura_aplicatiei/mvc/views.tex [14] [15])
+(capitole/structura_aplicatiei/mvc/controllers.tex [16])
+(capitole/structura_aplicatiei/mvc/models.tex [17])
+(capitole/structura_aplicatiei/mvc/views.tex [18] [19])
 (capitole/structura_aplicatiei/mvc/helpers.tex))
-(capitole/structura_aplicatiei/excel.tex [16])) [17]
+(capitole/structura_aplicatiei/excel.tex [20])) [21]
 (capitole/user_workflow.tex
 Capitolul 4.
-(capitole/user_workflow/administrative_interface.tex [18
+(capitole/user_workflow/administrative_interface.tex [22
 
 ])
 (capitole/user_workflow/register_a_claim.tex)
@@ -568,40 +590,67 @@ Overfull \hbox (1.99892pt too wide) in paragraph at lines 2--1
 er backup - chunk-
  []
 
-)) [19] (capitole/concluzii.tex
+)) [23] (capitole/concluzii.tex
 Capitolul 5.
 (capitole/concluzii/business_continuity_plan.tex)
 (capitole/concluzii/luna_dec_teste_automate.tex)
 (capitole/concluzii/extragerea_din_modele.tex)
-(capitole/concluzii/sistem_modular_de_rapoarte.tex)) [20
+(capitole/concluzii/sistem_modular_de_rapoarte.tex)) [24
 
-] [21]
-Overfull \hbox (19.79211pt too wide) in paragraph at lines 43--43
+] [25]
+Overfull \hbox (20.70212pt too wide) in paragraph at lines 45--45
+[]\TU/lmr/m/n/10 Adam Engebretson. \TU/lmr/m/it/10 About The Collective\TU/lmr/
+m/n/10 . \TU/lmr/m/sc/10 url\TU/lmr/m/n/10 : []$[][][][][] [] [] [] [][][][][][
+][][][][][][][][][][][] []
+ []
+
+
+Overfull \hbox (1.44212pt too wide) in paragraph at lines 45--45
+[]\TU/lmr/m/n/10 Adam Engebretson. \TU/lmr/m/it/10 Forms & HTML\TU/lmr/m/n/10 .
+ \TU/lmr/m/sc/10 url\TU/lmr/m/n/10 : []$[][][][][] [] [] [] [][][][][][][][][][
+][][][][][][][] []
+ []
+
+
+Overfull \hbox (2.07211pt too wide) in paragraph at lines 45--45
+[]\TU/lmr/m/n/10 HotFrameworks. \TU/lmr/m/it/10 Web framework rankings\TU/lmr/m
+/n/10 . \TU/lmr/m/sc/10 url\TU/lmr/m/n/10 : []$[][][][][] [] [] [] [][][][][][]
+[][][][][][][] []
+ []
+
+[26
+
+]
+Overfull \hbox (24.79211pt too wide) in paragraph at lines 45--45
 []\TU/lmr/m/n/10 Altex Romania S.R.L. \TU/lmr/m/it/10 Regulament Mobile Protect
 \TU/lmr/m/n/10 . \TU/lmr/m/sc/10 url\TU/lmr/m/n/10 : []$[][][][][] [] [] [] [][
 ][][][][][][][][][] []
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 45.
-[22
 
-]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 45.
+Overfull \hbox (4.76pt too wide) in paragraph at lines 45--45
+[][][][][][][] [][] [][][][] [][] [][][][][] [][] [][] [][] [][][][][][][][][] 
+[][] [][][][][][][][][]$[] \TU/lmr/m/n/10 (visited on 07/09/2012). 
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 47.
+[27]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 47.
  (main.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 45.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 45.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 47.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 47.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 45.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 47.
  ) 
 Here is how much of TeX's memory you used:
- 15051 strings out of 427834
- 237285 string characters out of 3155872
- 699247 words of memory out of 3000000
- 18797 multiletter control sequences out of 15000+200000
+ 15432 strings out of 427834
+ 243593 string characters out of 3155872
+ 706544 words of memory out of 3000000
+ 19181 multiletter control sequences out of 15000+200000
  7769 words of font info for 42 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
- 39i,6n,69p,932b,4366s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 40i,6n,69p,932b,4495s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on main.pdf (23 pages).
+Output written on main.pdf (28 pages).
