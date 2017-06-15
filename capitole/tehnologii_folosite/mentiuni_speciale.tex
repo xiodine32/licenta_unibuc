@@ -129,17 +129,64 @@
 
 		Asigură deci rapiditatea și fluența necesară reparării unor probleme critice și a dezvoltării codului concis, după ghidul dorit de stil.
 	\subsection{Heroku}
-		rolling release
-		testare
-		free
+
+		N-ar trebui niciodată să scrii cod direct pe mediul de producție.
+		Dacă ceva nu merge de prima oară, ai clienți și operatori nemulțumiți.
+		Dar poate că nu ai testat destul pe mediul tău local schimbările făcute.
+		Nu ai avea de unde să-ți dai seama de toate scenariile posibile.
+
+		Pentru a minimiza impactul unei migrări de asemenea proporții, se recomandă un mediu de testare.
+		Heroku este o platformă distribuită ce oferă platforma sa ca un serviciu („PaaS”).
+		Oferă servicii pentru mai multe limbaje de programare, printre care și PHP.
+
+		Un mare avantaj al platformei Heroku nu este doar modelul gratuit (până la un punct) de implementare.
+		Este implementarea ultimelor modificări prin intermediul proiectului aflat în sistemul de gestiune a codului.
+		Preluând ultimele modificări, se pot verifica ultimele modificări aduse codului înainte de a fi urcate pe serverul de producție.
+
+		Oferind și acces în cadrul aplicației la consola Artisan, se pot verifica mai multe sisteme deodată, inclusiv testele automate.
+		Testele automate pot fi rulate înainte de a se schimba versiunea activă a mediului de testare pe ultima versiune, pentru a se asigura că nu s-a stricat nimic critic în aplicație.
+
+		Toate aceste motive fac din Heroku mediul meu de testare favorit, ce și-a văzut folosința în cadrul acestui proiect de gestionare a cererilor de despăgubire.
+		Mulțumită ușurinței de a schimba variabilele de mediu, am putut să testez de fiecare dată când modificam codul sursă al aplicației schimbările.
+		Folosesc în momentul actual o bază de date de test, inclusă gratuit în pachet.
+
+		Doresc să mai investesc timp și să înțeleg mai bine platforma de teste automate, pentru a mă asigura că majoritatea funcționalității existente, la o schimbare, va continua să funcționeze.
+
 	\subsection{Amazon Web Services}
-		de ce am ales AWS
-		integrarea cu Laravel
-		mai intai a fost thumbnail + actual image - imagemagick
-		apoi ajungeam in probleme de push commands
-		asa ca pana la urma am ales sa mergem pe salvare in chior (fara compression / ceva)
-			pentru ca nu depaseam quota-ul de 5GB / luna estimat
-	\subsection{npm și Composer}
+
+		Inițial, tot proiectul ar fi fost într-o platformă distribuită.
+		Dar problema datelor tot rămânea.
+		Trebuia să asigur existența și valabilitatea lor pentru o perioadă de minim doi ani.
+		Pentru asta, îmi trebuia un sistem distribuit de salvare a datelor.
+
+		Inițial, mă gândeam să aleg soluția oferită de Azure, pentru că mai interacționasem cu ei.
+		Dar după ce am mai prospectat piața, am ajuns la concluzia că ar fi mult mai benefic din punctul de vedere al costului întreținerii și a numărului mare de date să aleg „Amazon Web Services” --- S3.
+
+		\subsubsection{Integrarea cu Laravel}
+
+		Integrarea cu Laravel s-a făcut aproape instantaneu, mulțumită fișierului:
+		\begin{verbatim}
+		config/filesystems.php
+		\end{verbatim}
+		ce se ocupă cu gestionarea fișierelor aplicației.
+
+		Tot ce a trebuit să se modifice a fost valoarea implicită pentru „cloud” și să se introducă în fișierul de mediu cheia (publică și secretă), precum și regiunea server-ului S3 oferit de AWS.
+
+		Inițial gândisem un sistem de construire a unei imagini cu o rezoluție mult mai mică și a unei imagini normale ca dimensiuni, pentru a păstra cât mai mică dimensiunea imaginilor transferate.
+
+		După o scurtă perioadă de dezvoltare, după ce s-a ajuns la o variantă finală a algoritmului, descoperisem că până la urmă, problema era constrângerea de \verb|5000| de acțiuni de a pune în sistemul de date.
+		Optimizasem prematur o problemă inexistentă.
+		Astfel am renunțat la construirea imaginii cu rezoluție mult mai mică și nu mai modific imaginea normală.
+		Cu această modificare a crescut imens și numărul de tranzacții posibile de server-ul găzduit, pentru că nu mai trebuia să modifice fiecare imagine în parte.
+
+		Dar eram limitați și de numărul de „GET”-uri (i.e: afișarea unei poze de către un client web).
+		Am setat ca fiecare obiect încărcat să fie agresiv salvat în memoria clientului web.
+		Atunci când se redeschide cererea de despăgubire, se află deja salvat în „cache” și nu numai că nu mai face o cerere sistemului de date, dar se și încarcă instantaneu, ca prin magie.
+
+		O problemă ușor rezolvabilă este ștergerea datelor vechi.
+		Am propus și încă aștept un răspuns din partea firmei ca atunci când o cerere de despăgubire nu va mai fi valabilă, să poată să fie salvate pe calculatorul unei persoane autorizate din firmă datele încărcate de client și șterse din sistemul distribuit.
+
+	\subsection{NPM și Composer}
 		\subsubsection{integrarea cu laravel - laravel elixir}
 		\subsubsection{ce asigura un up-to-date css / js file cu versioning}
 		\subsubsection{agregarea css / scss / js -> webpack (minifier) -> versioning ->}
