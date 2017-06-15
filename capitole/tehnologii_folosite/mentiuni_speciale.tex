@@ -99,9 +99,35 @@
 		Trebuie să se copieze, în concluzie, codul și stilul și în acest director.
 
 	\subsection{PhpStorm IDE}
-	\label{sec:phpstorm}
-		avantajul de a putea vedea usor ce se intampla cu modelele
-		dezvantajul magic method-urilor laravel rezolvat cu proiectul de github.
+
+		Chiar dacă Laravel a fost gândit cu cât mai puține referințe, cu cât mai mult cod ajutător pentru dezvoltator și o grămadă de resurse valabile pe diverse site-uri, nu se poate compara cu un mediu de dezvoltare avansat, ce se ocupă de fișierele dependente, regulile de scriere și formatare a codului.
+
+		PhpStorm este un mediu de dezvoltare comercial, oferit de JetBrains. Suportă completarea avansată a codului PHP 5.6 (și mai nou 7.0), dar și analiza sintactică, prevenirea erorilor.
+		Suportă oficial și sistemul relațional de bază de date MySQL.
+		Chiar și directivele Blade sunt înțelese de analizatorul sintactic.
+		Stilul și codul scris în JavaScript, cunoștințele despre cum poți să rescrii mult mai ușor codul PHP.
+		Integrarea cu modul de depanare „XDebug” îl ajută să ajungă în fața multor simple editoare de text.
+		Pentru mine, este cel mai de nădejde prieten în bătălia cu codul dezorganizat și inabordabil.
+
+		Pentru a profita din plin de cunoștințele sintactice acestui mediu de dezvoltare, un pachet des întâlnit în PhpStorm când se construiește o aplicație folosind platforma Laravel este: \\
+		„Laravel PhpStorm IDE Helper” (\verb|barryvdh/laravel-ide-helper|)
+
+		Mulțumită „Eloquent ORM”, de cele mai multe ori PhpStorm nu poate înțelege de ce a fost apelată o metodă ce nu există - pentru că se va interpreta codul scris în metoda magică \verb|__callStatic|, ce va traduce numele metodei statice într-un text, iar apoi într-o clasă ce va construi o cerere SQL.
+		Dar aici intervine „phpDoc”, sistemul preferat de adnotare a funcțiilor, metodelor și variabilelor PHP.
+		Pachetul astfel introduce trei funcții ce pot fi apelate de dezvoltator prin intermediul consolei:
+			\begin{itemize}
+				\item
+				\verb|php artisan ide-helper:generate| - generare cod „phpDoc” pentru fațade.
+				\item
+				\verb|php artisan ide-helper:models| - generare cod „phpDoc” pentru modele.
+				\item
+				\verb|php artisan ide-helper:meta| - generare cod „phpDoc” pentru structura aplicației.
+			\end{itemize}
+
+		De asemenea, se integrează cu sistemul de gestiune a versiunii codului.
+		Poate să și încarce automat modificările făcute pe server-ul de producție, folosind protocolul FTP (encriptat, desigur).
+
+		Asigură deci rapiditatea și fluența necesară reparării unor probleme critice și a dezvoltării codului concis, după ghidul dorit de stil.
 	\subsection{Heroku}
 		rolling release
 		testare
