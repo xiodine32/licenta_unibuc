@@ -2179,6 +2179,8 @@
     <bcf:citekey order="34">jquery</bcf:citekey>
     <bcf:citekey order="35">jquery_ui</bcf:citekey>
     <bcf:citekey order="36">boostrap_validator</bcf:citekey>
+    <bcf:citekey order="37">knockout_js</bcf:citekey>
+    <bcf:citekey order="38">knockout_js_site</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="nty/global/" type="entry" sortscheme="nty" sortnamekeyscheme="global" labelprefix="">
   <bcf:sorting>

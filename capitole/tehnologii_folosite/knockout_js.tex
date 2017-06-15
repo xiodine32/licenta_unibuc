@@ -1,6 +1,22 @@
 \section{Knockout.js}
-	pentru a putea structura front-end-ul cu logica pe baza modelelor
-	logica asemanatoare pentru modele, ce au valori diferite
-	folosit mai ales la
+
+	Knockout este o implementare de sine stătătoare a structurii șablon de „Model-View-ViewModel”.
+	Structura se referă la o separare clară a datelor primite din exterior, a componentele și a datelor ce vor fi folosite pentru a fi afișate, dar și la prezența unui cod specializat de a gestiona relațiile dintre cele două (componente și interfață). \cite{knockout_js}
+
+	A fost concepută de „Steve Sanderson”, un angajat Microsoft, drept un proiect cu codul distribuit gratuit. \cite{knockout_js_site}
+	Mulțumită arhitecturii, Knockout simplifică relațiile complexe dintre componentele vizuale, ce ajută aplicația de a fi mult mai echilibrată și rapidă.
+
+	Am folosit Knockout pentru a rezolva problema codului duplicat.
+	În momentul actual, este folosit pentru a gestiona pozele încărcate de utilizator și de a salva extern baza de date.
+	Am ales tocmai în această arie cu probleme majore, pentru că dacă o componentă nu ar fi mers, tot sistemul ar fi fost inutilizabil.
+	Dar mulțumită codului modular și a folosirii șabloanelor ce repetă același element cu alte modele legate în spate, Knockout asigură funcționalitatea identică pentru toate modulele folosite.
+
+	Sistemul de gestiune a pozelor este împărțit în cele patru categorii:
+	\begin{itemize}
+		\item Facturi.
+		\item Pozele cu produsul avariat.
+		\item Foile cu termenii și condiții.
+		\item Raportul poliției, în caz de nevoie.
+	\end{itemize}
+
 		exportul backup-ului
-		adaugarea pozelor ca utilizator

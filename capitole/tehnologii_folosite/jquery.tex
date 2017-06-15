@@ -24,6 +24,11 @@
 	În acest moment, fiecare fișier este încărcat separat și preluat de sistem.
 	Se salvează rezultatul pentru fiecare fișier și la final se combină toate rezultate într-o interfață ce ajută persoana ce folosește sistemul de a înțelege ce a funcționat și ce nu.
 
+	Mai este folosit jQuery exhaustiv pentru a construi legătura dintre o vânzare și o cerere de despăgubire.
+	Sistemul astfel refolosește codul deja existent prin intermediul cadrelor HTML („iframe”) pentru a selecta vânzarea.
+	La final, reies mai multe câmpuri obligatorii, ce se completează automat dacă a fost ales o cerere de vânzare.
+	Din cauza problemelor rapoartelor de vânzare, această abordare oferea cea mai mare flexibilitate și un număr minim de linii de cod scrise.
+
 	O altă bună integrare cu „jQuery” vine din partea librăriei „Bootstrap Validator”, un „plug-in” simplu de folosit pentru a adăuga elemente de validare pentru formulare. \cite{boostrap_validator}
 	Mulțumită directivelor Blade, am integrat ușor construirea unor câmpuri cu validare necesară, pentru a ajuta utilizatorul să completeze cât mai corect formularul de despăgubire.
 

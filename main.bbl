@@ -387,6 +387,29 @@
       \verb https://www.veracrypt.fr/en/Home.html
       \endverb
     \endentry
+    \entry{knockout_js_site}{online}{}
+      \name{author}{1}{}{%
+        {{hash=5149d8f8ffb3d6177c386cbc3b7303ae}{%
+           family={knockoutjs.com},
+           familyi={k\bibinitperiod}}}%
+      }
+      \strng{namehash}{5149d8f8ffb3d6177c386cbc3b7303ae}
+      \strng{fullhash}{5149d8f8ffb3d6177c386cbc3b7303ae}
+      \strng{authornamehash}{5149d8f8ffb3d6177c386cbc3b7303ae}
+      \strng{authorfullhash}{5149d8f8ffb3d6177c386cbc3b7303ae}
+      \field{sortinit}{k}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Knockout}
+      \field{urlday}{14}
+      \field{urlmonth}{6}
+      \field{urlyear}{2017}
+      \field{urldateera}{ce}
+      \verb{url}
+      \verb http://knockoutjs.com/
+      \endverb
+    \endentry
     \entry{php_code}{online}{}
       \name{author}{1}{}{%
         {{hash=28790b8435b891845e6fde7247da305a}{%
@@ -437,6 +460,32 @@
       \verb{url}
       \verb http://www.fandu.uk/claims
       \endverb
+    \endentry
+    \entry{knockout_js}{book}{}
+      \name{author}{1}{}{%
+        {{hash=98402cd6541d32c4fc4b41bacac084e4}{%
+           family={Moran},
+           familyi={M\bibinitperiod},
+           given={Timothy},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Birmingham, UK}%
+      }
+      \list{publisher}{1}{%
+        {Packt Publishing}%
+      }
+      \strng{namehash}{98402cd6541d32c4fc4b41bacac084e4}
+      \strng{fullhash}{98402cd6541d32c4fc4b41bacac084e4}
+      \strng{authornamehash}{98402cd6541d32c4fc4b41bacac084e4}
+      \strng{authorfullhash}{98402cd6541d32c4fc4b41bacac084e4}
+      \field{sortinit}{M}
+      \field{sortinithash}{c26a05ef03e4429073ed5c825140fac3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{1783981008}
+      \field{title}{Mastering KnockoutJS : use and extend Knockout to deliver feature-rich, modern web applications}
+      \field{year}{2014}
     \endentry
     \entry{cgi}{book}{}
       \name{author}{2}{}{%

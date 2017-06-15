@@ -27,8 +27,8 @@
 	 laravel este o solutie moderna inspirata din Ruby on Rails.
 	 avea best code practice-urile.
 2. Tehnologii folosite
-	☐ PHP
-		☐ 5.6 avantaje
+	✔ PHP @done (17-06-15 17:53)
+		✔ 5.6 avantaje @done (17-06-15 17:53)
 	☐ Mentiuni speciale
 		☐ Shared Hosting - production server
 			avantajul de protectie contra XSS prin disabling exec
@@ -56,21 +56,21 @@
 		apoi ajungeam in probleme de push commands
 		asa ca pana la urma am ales sa mergem pe salvare in chior (fara compression / ceva)
 			pentru ca nu depaseam quota-ul de 5GB / luna estimat
-	☐ Laravel 5.3
-		☐ Forms / Html helpers
+	✔ Laravel 5.3 @done (17-06-15 17:54)
+		✔ Forms / Html helpers @done (17-06-15 17:54)
 			ajutatoare pentru Bootstrap / panel-uri
-		☐ Blade directives
+		✔ Blade directives @done (17-06-15 17:54)
 			blade extending
 			escape text
 			import
 			layout
 			Laravel transpiling to php (internally)
-		☐ security
+		✔ security @done (17-06-15 17:54)
 			csrf - xss
-		☐ good coding practices
+		✔ good coding practices @done (17-06-15 17:54)
 			migrations - artisan - database migrations
 			models - Eloquent ORM
-		☐ workflow
+		✔ workflow @done (17-06-15 17:54)
 			artisan make:commands
 			artisan routes:list
 			artisan make:auth
@@ -78,27 +78,24 @@
 			ca asa se face async cu o coada un sistem de a trimite mail-uri eficiente.
 			de ce nu am putut face deploy - shared hosting
 			ce am ales sa fac - sincron send mail
-	☐ MySQL
+	✔ MySQL @done (17-06-15 17:54)
 		relatii
 		dbms.
 		export usor shared hosting - phpmyadmin
 		export / import usor testare.
 		interfata speciala de solutie de backup pentru a fi rulata automat.
-	☐ AWS
-		solutie cloud storage oferita de Amazon
-		oferta speciala de storage pentru primul an
 	☐ Composer
-	☐ GitHub
+	✔ GitHub @done (17-06-15 17:54)
 		pastrarea istoricului codului
 		automatic deployment cu Heroku
 		todo: continuous integration
-	☐ CloudFlare
+	✔ CloudFlare @done (17-06-15 17:54)
 		solutia de https dinainte
 		de ce n-a mai functionat - Chrome / Firefox blacklisting
 		solutie - folosirea unui certificat valid (semnat), dar ce trece prin Cloudflare pentru a asigura ca totusi e HTTPS si green icon.
-	☐ jQuery
+	✔ jQuery @done (17-06-15 17:54)
 		orice modificare rapida de butoane
-		logica de administrare / incarcare rapoarte / export 
+		logica de administrare / incarcare rapoarte / export
 		validare
 	☐ Google Analytics
 		unde se blocheaza / ce partea a interfetei e cea mai des folosita.
@@ -159,16 +156,16 @@
 			 cum sunt salvate
 			 naming scheme Laravel de a numi tabelele cu pluralul lower_case.
 			☐ Assurances
-			☐ Chat Claims 
-			☐ Claims 
+			☐ Chat Claims
+			☐ Claims
 			☐ Decisions + parent decision (many-to-many)
-			☐ Messages 
-			☐ Migrations 
-			☐ Password Resets 
-			☐ Photos 
-			☐ Products 
-			☐ Sales 
-			☐ Sessions 
+			☐ Messages
+			☐ Migrations
+			☐ Password Resets
+			☐ Photos
+			☐ Products
+			☐ Sales
+			☐ Sessions
 			☐ Users
 		☐ Apache / PHP
 			☐ MVC - Model View Controller
@@ -349,14 +346,14 @@
 			 date start / end
 			 progress bar
 			 metadata when loading - especially yearly reports
-			 chunking 
+			 chunking
 	 ☐ Settings
 		 hidden DBA feature - register client - https://fandu.info/register
 		 backup - chunking -> sql -> .tar.gz
  ☐ cpanel administrator
 	 phpmyadmin - pentru a schimba email-ul in caz de typo.
 		 sugestia pentru a extinde asta cu un system de request-uri / approval-uri din partea unui admin mai mare -> ierarhie de administratori.
-	 code backup - chiar daca GitHub asigura, e mai bine redundancy. sugestie de backup automat - poate 
+	 code backup - chiar daca GitHub asigura, e mai bine redundancy. sugestie de backup automat - poate
 4. Concluzia
 	☐ Business Continuity Plan
 	☐ Luna dec - teste automate
