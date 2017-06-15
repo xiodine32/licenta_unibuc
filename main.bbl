@@ -415,16 +415,16 @@
     \endentry
     \entry{laravel_collective_forms}{online}{}
       \name{author}{1}{}{%
-        {{hash=bfef4a731e5f839d1a797f9e351ee5f3}{%
-           family={Engebretson},
-           familyi={E\bibinitperiod},
-           given={Adam},
-           giveni={A\bibinitperiod}}}%
+        {{hash=2c0c248fee2bb92822a6bfd6f1b2fa95}{%
+           family={Collective},
+           familyi={C\bibinitperiod},
+           given={Laravel},
+           giveni={L\bibinitperiod}}}%
       }
-      \strng{namehash}{bfef4a731e5f839d1a797f9e351ee5f3}
-      \strng{fullhash}{bfef4a731e5f839d1a797f9e351ee5f3}
-      \strng{authornamehash}{bfef4a731e5f839d1a797f9e351ee5f3}
-      \strng{authorfullhash}{bfef4a731e5f839d1a797f9e351ee5f3}
+      \strng{namehash}{2c0c248fee2bb92822a6bfd6f1b2fa95}
+      \strng{fullhash}{2c0c248fee2bb92822a6bfd6f1b2fa95}
+      \strng{authornamehash}{2c0c248fee2bb92822a6bfd6f1b2fa95}
+      \strng{authorfullhash}{2c0c248fee2bb92822a6bfd6f1b2fa95}
       \field{sortinit}{2}
       \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
       \field{labelnamesource}{author}
@@ -922,6 +922,94 @@
       \field{isbn}{1119144019}
       \field{title}{Google analytics breakthrough : from zero to business impact}
       \field{year}{2016}
+    \endentry
+    \entry{composer}{online}{}
+      \name{author}{2}{}{%
+        {{hash=cf7b7df86b9acd93594d7db9a7d263fc}{%
+           family={Nils\bibnamedelima Adermann},
+           familyi={N\bibinitperiod\bibinitdelim A\bibinitperiod},
+           given={Jordi\bibnamedelima Boggiano},
+           giveni={J\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=c87bc3ffd2abc34e6e67245283ead97d}{%
+           family={contributions},
+           familyi={c\bibinitperiod},
+           prefix={many\bibnamedelima community},
+           prefixi={m\bibinitperiod\bibinitdelim c\bibinitperiod}}}%
+      }
+      \strng{namehash}{7c1e549bb1fa0dcff9d45718fc656756}
+      \strng{fullhash}{7c1e549bb1fa0dcff9d45718fc656756}
+      \strng{authornamehash}{7c1e549bb1fa0dcff9d45718fc656756}
+      \strng{authorfullhash}{7c1e549bb1fa0dcff9d45718fc656756}
+      \field{sortinit}{4}
+      \field{sortinithash}{d221becdd544034cf9082056cd6e6d2d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Composer}
+      \field{urlday}{14}
+      \field{urlmonth}{6}
+      \field{urlyear}{2017}
+      \field{urldateera}{ce}
+      \verb{url}
+      \verb https://getcomposer.org/
+      \endverb
+    \endentry
+    \entry{npm}{online}{}
+      \name{author}{1}{}{%
+        {{hash=65e64f6404f032bdac341e94bffa3e23}{%
+           family={Schlueter},
+           familyi={S\bibinitperiod},
+           given={Isaac\bibnamedelima Z.},
+           giveni={I\bibinitperiod\bibinitdelim Z\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {GitHub}%
+      }
+      \strng{namehash}{65e64f6404f032bdac341e94bffa3e23}
+      \strng{fullhash}{65e64f6404f032bdac341e94bffa3e23}
+      \strng{authornamehash}{65e64f6404f032bdac341e94bffa3e23}
+      \strng{authorfullhash}{65e64f6404f032bdac341e94bffa3e23}
+      \field{sortinit}{4}
+      \field{sortinithash}{d221becdd544034cf9082056cd6e6d2d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{25}
+      \field{month}{3}
+      \field{title}{Forget CommonJS. It's dead. **We are server side JavaScript.**}
+      \field{urlday}{14}
+      \field{urlmonth}{6}
+      \field{urlyear}{2017}
+      \field{year}{2013}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{url}
+      \verb https://github.com/joyent/node/issues/5132#issuecomment-15432598
+      \endverb
+    \endentry
+    \entry{latex}{book}{}
+      \name{author}{1}{}{%
+        {{hash=f2aca6a6bffec8f78f1feff9cbc08caa}{%
+           family={Kottwitz},
+           familyi={K\bibinitperiod},
+           given={Stefan},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Birmingham, UK}%
+      }
+      \list{publisher}{1}{%
+        {Packt}%
+      }
+      \strng{namehash}{f2aca6a6bffec8f78f1feff9cbc08caa}
+      \strng{fullhash}{f2aca6a6bffec8f78f1feff9cbc08caa}
+      \strng{authornamehash}{f2aca6a6bffec8f78f1feff9cbc08caa}
+      \strng{authorfullhash}{f2aca6a6bffec8f78f1feff9cbc08caa}
+      \field{sortinit}{4}
+      \field{sortinithash}{d221becdd544034cf9082056cd6e6d2d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{1847199860}
+      \field{title}{LaTeX beginner's guide}
+      \field{year}{2011}
     \endentry
   \endsortlist
 \endrefsection

@@ -2160,6 +2160,9 @@
     <bcf:citekey order="38">knockout_js_site</bcf:citekey>
     <bcf:citekey order="39">google_analytics</bcf:citekey>
     <bcf:citekey order="40">xservers</bcf:citekey>
+    <bcf:citekey order="41">composer</bcf:citekey>
+    <bcf:citekey order="42">npm</bcf:citekey>
+    <bcf:citekey order="43">latex</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="none/global/" type="entry" sortscheme="none" sortnamekeyscheme="global" labelprefix="">
   <bcf:sorting>

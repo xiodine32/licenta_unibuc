@@ -11,7 +11,7 @@
 
 	Pentru a include diverse mici proiecte, scrise de alți oameni puși în aceeași situație, am folosit Composer împreună cu npm.
 
-	Iar pentru această lucrare de licență, pe care o citiți în acest moment (vorbind de spargerea celui de-al patrulea zid, nu?), am folosit Sublime Text 3 și \LaTeX.
+	Iar pentru lucrarea de licență am folosit Sublime Text 3 și \LaTeX .
 
 	\subsection{Google Analytics}
 
@@ -186,10 +186,114 @@
 		O problemă ușor rezolvabilă este ștergerea datelor vechi.
 		Am propus și încă aștept un răspuns din partea firmei ca atunci când o cerere de despăgubire nu va mai fi valabilă, să poată să fie salvate pe calculatorul unei persoane autorizate din firmă datele încărcate de client și șterse din sistemul distribuit.
 
-	\subsection{NPM și Composer}
-		\subsubsection{integrarea cu laravel - laravel elixir}
-		\subsubsection{ce asigura un up-to-date css / js file cu versioning}
-		\subsubsection{agregarea css / scss / js -> webpack (minifier) -> versioning ->}
+	\subsection{Composer}
+
+		Composer este un utilitar pentru a gestiona referințele externe într-un proiect PHP.
+		Permite dezvoltatorului să declare librăriile de care depinde proiectului tău și le va gestiona (instala sau actualiza) pentru tine.
+		Spre diferență de un sistem de gestionează pachetele pentru un sistem de operare bazat pe Linux (precum „Yum” sau „Apt”), acesta instalează pachetele în folderul proiectului numit \verb|„vendor”|, dar permite restrâns instalarea într-un spațiu \verb|„global”|, a unor referințe. \cite{composer}
+
+		Laravel depinde de Composer pentru a gestiona referințele.
+		Pentru a porni un nou proiect de Laravel, trebuie să-l descarci folosind comanda:
+		\begin{verbatim}
+			composer global require "laravel/installer"
+		\end{verbatim}
+
+		Am vorbit despre extensia mediului de dezvoltare PhpStorm prin pachetul „Laravel PhpStorm IDE Helper”.
+		Lista completă a pachetelor folosite, în detaliu, în afară de Laravel, a acestui proiect este:
+
+		\begin{itemize}
+			\item \verb|barryvdh/laravel-ide-helper| - extensia mediului de dezvoltare, vezi secțiunea în care prezint mediul de dezvoltare PhpStorm.
+			\item \verb|doctrine/dbal| - extensie ajutătoare pentru „Laravel PhpStorm IDE Helper”, pentru a afla toate interacțiunile cu modelele Eloquent.
+			\item \verb|laravelcollective/html| - extensia „Laravel - Forms \& Html”, întreținută de „Laravel Collective”.
+			\item \verb|phpoffice/phpexcel| - extensie ce ajută citirea și scrierea fișierelor în Excel.
+			\item \verb|guzzlehttp/guzzle| - extensie ajutătoare pentru AWS S3
+			\item \verb|league/flysystem-aws-s3-v3| - principala extensie pentru integrarea Laravel -- AWS S3
+			\item \verb|golonka/bbcodeparser| - librărie ce se ocupă de traducerea „BBCode -- HTML” și viceversa.
+		\end{itemize}
+
+		Composer mai are opțiuni de a porni mai multe aplicații după ce se asigură existența celor mai nou pachete, prin adăugarea următorului câmp obiect în \verb|composer.json|:
+		\begin{Verbatim}
+"post-update-cmd": [
+	"Illuminate\\Foundation\\ComposerScripts::postUpdate",
+	"php artisan ide-helper:generate",
+	"php artisan ide-helper:meta",
+	"php artisan ide-helper:models -W"
+]
+	\end{Verbatim}
+	După cum observați, comenzile adăugate generează codul ajutător pentru mediul meu de dezvoltare, asigurând un mediu gata de dezvoltare.
+
+	\subsection{npm și Laravel Elixir}
+
+		„npm” este un utilitar de gestionare a librăriilor pentru limbajul de programare JavaScript.
+		De asemenea, este utilitarul folosit implicit de mediul de dezvoltare „Node.js”.
+		Este compus dintr-un client accesibil prin linie de comandă și o bază de date pe internet formată din pachete publice, numit „npm registry”.
+		Registrul este accesat de client, iar pachetele valabile pot fi găsite și accesate prin intermediul website-ului npm.\cite{npm}
+
+		„gulp” este un utilitar găsit pe platforma „npm” ce are ca scop automatizarea elementelor ce necesită mult timp, precum compilarea și mutarea fișierelor dintr-o parte în alta.
+		Acesta preferă codul peste configurație, ce asigură un sistem rapid de dezvoltare, fără a scrie în fișiere intermediare pe disc.
+
+		Laravel a extins interfața sa ușoară de folosit și atunci când vine vorba despre trebuirile legate de „gulp”.
+		Elixir astfel știe despre cele mai des folosite procesoare de „CSS” (i.e: „SASS”) și JavaScript (i.e: „Webpack”).
+		Folosind sintaxa de a concatena metode una după alta, Elixir ajută dezvoltatorul a defini propria structură.
+
+		De asemenea, împreună cu Laravel, poate gestiona foarte ușor versionare fișierelor.
+		Asigura de fiecare dată când un client vizitează orice pagină că fișierele de stil și cod sunt actualizate.
+
+		În cadrul aplicației, am transformat simplul fișier dat implicit de Laravel \verb|„gulpfile.js”| într-o platformă elegantă.
+		Algoritmul constă în următorii pași:
+		\begin{enumerate}
+			\item Citesc toate fișierele aflate la calea:
+			\begin{verbatim}
+				resources/assets/js/pages/*
+			\end{verbatim}
+			\item
+			Construiesc pentru fiecare fișier în parte o variantă a sa minimizată și cu propriul nume (i.e: numele concatenat cu versiunea).
+			De asemenea, construiesc pentru principalul stil (\verb|app.scss|) și librăria de cod a aplicației (\verb|app.js|) la fel varianta minimizată cu propriul nume.
+			\item
+			La final, Laravel Elixir se ocupă de mutarea lor în fișierul public și modificarea referințelor prin fișierul JSON aflat la calea:
+			\begin{verbatim}
+				/public/build/rev-manifest.json
+			\end{verbatim}
+		\end{enumerate}
+
+		Folosesc „Webpack”, un utilitar ce combină mai multe fișiere JavaScript într-unul singur.
+		Prin intermediul „npm”, am instalat componentele necesare validării timpului, a afișării soluțiilor posibile și a diagramelor prin simplele comenzi:
+		\begin{verbatim}
+		// pentru sistemul vizual
+		require('./bootstrap');
+
+		// pentru validarea timpului
+		require('./components/timepicker.min');
+
+		// pentru afișarea soluțiilor posibile
+		require('./components/typeahead.min');
+
+		// pentru diagrame
+		require('chart.js');
+
+		// extensiile proprii
+		require('./extensions');
+		\end{verbatim}
+
 	\subsection{LaTeX și Sublime Text}
-		structura licentei
-		legatura cu sublime text
+
+	Din momentul în care m-am apucat să scriu licența, mi-am dat seama de importanța unui sistem ce îmi asigură legătura între tabelul de conținut și bibliografia.
+	Dar în același timp, trebuie să-mi ofere flexibilitatea de a putea modifica ordinea instantaneu și de a nu duplica informațiile.
+	Astfel am ajuns la concluzia că cel mai bun mod de a-mi scrie documentația este să folosesc \LaTeX.
+
+	TeX este un program de calculator pentru a redacta documente, conceput de „Donald Knuth”.
+	Programul preia un fișier pregătit și-l transformă într-un format ce poate fi tipărit în diferite moduri, cu diferite imprimante.
+
+	LaTeX este un set de macro-uri pentru TeX ce țintesc a reduce din treburile utilizatorului, pentru a se concentra pe scrisul propriu-zis. \cite{latex}
+
+	Știam că puteam să folosesc conceptele de la programarea „DRY” („Don't Repeat Yourself” - „Nu Te Repeta”) și astfel am împărțit fiecare capitol în fișierul său separat, cu fiecare fișier având la nevoie sub-directoare cu secțiunile importante.
+
+	Am ales să folosesc „Sublime Text 3” pentru că este unul dintre cele mai versatile editoare de text în momentul actual.
+	Folosind o extensie, m-a  ajutat să pot compila întregul proiect, oriunde m-aș afla în cadrul lui, în formatul PDF („Portable Document Format”), ce poate fi deschis pe orice calculator, cu orice sistem de operare.
+
+	Folosind gândirea de proiect, am setat în „Sublime Text 3” folosirea unui font cu diacritice. De asemenea, am activat și descărcat un dicționar gratuit pentru Română.
+
+	Asigurându-mă că văd doar ceea ce-mi trebuie în afișajul proiectului, am pornit la scris și nu m-am mai oprit până când nu am vrut să-mi salvez datele.
+	Știind cât de important este să ai mereu salvat documentele importante, am decis să-mi țin toată licența pe GitHub, pentru a-mi putea analiza modelul de lucru și orele cele mai productive.
+
+	Codul sursă \LaTeX \hspace{1pt} și setările proiectului „Sublime Text 3” se pot găsi la \url{https://github.com/xiodine32/licenta_unibuc}.
