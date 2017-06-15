@@ -2,13 +2,15 @@
 \documentclass{report}
 
 % \usepackage[utf8]{inputenc}
+\usepackage[romanian, english]{babel}
 \usepackage[hidelinks]{hyperref}
 \usepackage{import}
 \usepackage{subfigure}
 \usepackage{titlesec}
-\usepackage[style=numeric]{biblatex}
 \usepackage{graphicx}
 \usepackage{fancyvrb}
+\usepackage{csquotes}
+\usepackage[style=numeric]{biblatex}
 
 \addbibresource{./bibliografie.bib}
 
@@ -26,11 +28,9 @@
 \renewcommand*\chaptername{Capitolul}
 
 \begin{document}
-
+\selectlanguage{romanian}
 \maketitle
-
 \tableofcontents
-
 \newpage
 \import*{./capitole/}{introducere}
 \newpage
@@ -42,6 +42,7 @@
 \newpage
 \import*{./capitole/}{concluzii}
 \newpage
+\selectlanguage{english}
 \printbibliography[title={Bibliografie}]
 
 \end{document}

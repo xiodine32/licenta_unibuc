@@ -1,6 +1,63 @@
 \section{Baza de date - MySQL}
-	relatii
-	dbms.
-	export usor shared hosting - phpmyadmin
-	export / import usor testare.
-	interfata speciala de solutie de backup pentru a fi rulata automat.
+
+
+
+	Baza de date relațională cu sursa sa deschisă MySQL este un sistem de gestionare a unei baze de date relaționale.
+	Numele provine de la numele fiicei fondatorului „Michael Widenius”\cite{mysql_reference} și abrevierii SQL („Structured Query Language”).
+	Dezvoltarea sa, cu codul sub termenii licenței GNU GPL, a fost sponsorizată și proprietatea companiei suedeze „MySQL AB”.
+	În momentul actual, compania nu mai există, fiind cumpărată de corporația Oracle.
+
+	Această componentă vitală face parte din platforma cu codul deschis pentru dezvoltarea aplicațiilor web LAMP („Linux, Apache, MySQL, PHP/Perl/Python”).
+	Multe aplicații, de la cele pentru amatorii paginilor personale, a buletinelor de știri sau a canalelor de discuție, se bazează pe MySQL.
+	Printre marile companii ce folosesc MySQL, se numără:
+	\begin{itemize}
+		\item Google
+		\item Facebook
+		\item Twitter
+		\item Flickr
+		\item YouTube
+	\end{itemize}
+
+
+	\subsection{Relații}
+
+	În Octombrie 2005, corporația Oracle a achiziționat „Innobase OY”, o companie finlandeză ce a dezvoltat InnoDB. \cite{innodb}
+	Sistemul dezvoltat de salvare permite bazei de date MySQL a oferi tranzacții și „chei străine”.
+	După achiziție, Oracle a confirmat prelungirea contractului ce permite folosirea lui de către „MySQL AB”.
+
+	Cheile străine, în contextul bazelor de date relaționale, se referă la un câmp sau mai multe ce identifică unic o coloană sau o linie a unui tabel de alt tabel\cite{foreign_key}.
+	De asemenea, un tabel poate să aibă una sau mai multe referințe, ce se pot referi la alte tabele părinte, dar chiar și la el însuși (numindu-se „cheie străină recursivă”).
+	Pentru a păstra legăturile între tabele, atunci când se modifică date sau se șterg, se oferă următoarele opțiuni:
+	\begin{itemize}
+		\item \verb|CASCADE| - se șterge și referința.
+		\item \verb|RESTRICT| - nu se poate șterge linia atâta timp cât există o referință spre el.
+		\item \verb|NO ACTION| - asemănătoare \verb|RESTRICT|, ce se verifică în schimb la finalizarea tranzacției.
+		\item \verb|SET NULL| - referința se va transforma în \verb|NULL|.
+		\item \verb|SET DEFAULT| - referința se va transforma în variabila cu care este inițializat câmpul în mod implicit.
+	\end{itemize}
+
+	\subsection{PhpMyAdmin}
+
+	PhpMyAdmin este un sistem gratuit și cu codul liber de administrare a bazelor de date MySQL și MariaDB.
+	Ca o aplicație portabilă scrisă majoritar în PHP, a devenit una dintre cele mai populare sisteme de administrare, mai ales pentru serviciile de găzduire, precum xServers și nu numai.
+
+	A început dezvoltarea „Tobias Ratschiller”, un consultant IT și mai târziu fondator a companiei Maguma, a unei interfețe bazate pe PHP a bazei de date MySQL în 1998.
+	În anul 2000, din cauza lipsei de timp, a renunțat la proiect, dar până în acel moment, devenise deja una dintre cele mai populare aplicații administrative.
+	Având o comunitate mare, un grup de trei dezvoltatori, pentru a coordona mai bine numărul care tot creștea de modificări, înregistrează la SourceForce „The phpMyAdmin Project” și preiau dezvoltarea în 2001. \cite{phpmyadmin}
+
+	În continuare, principalul website a migrat spre un sistem distribuit și au mutat ulterior urmărirea problemelor pe GitHub.
+	Înainte de versiunea 4, ce folosește apeluri asincrone pentru a optimiza folosința, se foloseau cadre HTML.
+
+	În afară de a gestiona bazele de date și a oferi o interfață web, mai poate să:
+	\begin{itemize}
+		\item importe datele din CSV și SQL.
+		\item să salveze într-o multitudine de formate, printre care și CSV, SQL, XML, Excel.
+		\item caute orice date dintr-un context global sau local.
+		\item transforme orice „blob” într-un format predefinit.
+		\item ofere grafice actualizate în timp real pentru monitorizarea:
+			\begin{itemize}
+				\item conexiunilor
+				\item memoriei
+				\item consumului procesorului
+			\end{itemize}
+	\end{itemize}

@@ -1,4 +1,72 @@
-\section{CloudFlare}
-	solutia de https dinainte
-	de ce n-a mai functionat - Chrome / Firefox blacklisting
-	solutie - folosirea unui certificat valid (semnat), dar ce trece prin Cloudflare pentru a asigura ca totusi e HTTPS si green icon.
+\section{Certificat SSL}
+	Certificatele SSL sunt fișiere mici ce leagă digital o cheie criptografică de detaliile unei organizații.
+	Atunci când este instalat pe un server web, activează protocolul HTTPS și permite legăturilor encriptate de la server la clienți.
+	De obicei, SSL este folosit pentru a securiza tranzacțiile cu cărțile de credit și transferul de date sau de înregistrări.
+	Dar mai nou, este normal să fie folosit la orice, de la media la paginile personale.\cite{ssl}
+
+	Certificatele SSL leagă împreună:
+
+	\begin{itemize}
+		\item Un nume de domeniu sau server.
+		\item O identitate organizațională (i.e: numele companiei) și locația sa.
+	\end{itemize}
+
+	O autoritate de certificate este o entitate ce distribuie certificate digitale SSL.
+	Acesta acreditează deținătorul asupra unei chei publice cu numele său.
+	Astfel se asigură prin semnături digitale anumite presupuneri despre cheia privată.
+	Autoritatea de certificate are aici rolul de terță de încredere, pentru deținător și nu numai.
+
+	O astfel de autoritate de certificate este StartSSL.
+	StartSSL face partea din compania StartCom, fondată de „Eddu Nigg” în Israel.
+	Aceasta oferă gratuit certificate SSL clasa 1, ce funcționează pentru un singur domeniu al unui website.
+
+	Mai nou se promovează „Let's Encrypt”, o altă autoritate de certificate, ce oferă gratuit certificate HTTPS (SSL/TLS), pentru a opri terțele din a vedea traficul de la client la server.
+	Dar din păcate, pentru sistemele găzduite la comun, în acest caz xServers, această opțiune nu este valabilă și nici preferată.
+	Pentru că oricine poate să semneze un certificat, se pune problema legării acelui certificat la identitatea organizațională.
+
+	În concluzie, am preferat să mergem cu StartCom.
+
+	\subsection{StartCom}
+
+		La începutul dezvoltării aplicației, o mare necesitate era o puternică securitate a paginilor.
+		Pentru că mai folosisem înainte StartCom și aveam o oarecare încredere în ei, am ales pentru a activa rapid modulul HTTPS pe gazda de producție un certificat de la ei.
+
+		StartCom a fost achiziționat în secret de „WoSign Limited” (Shenzen, China), o altă autoritate de certificate.
+		Din cauza numeroaselor probleme cu ei, Mozilla, Apple și Google au anunțat retragerea încrederii în certificatele după 21 octombrie 2016 (Mozilla, Google), 30 septembrie 2016 (Apple).
+		În continuare, Google Chrome 57 va avea încredere în certificatele website-urilor în topul Alexa 1M, iar Chrome 58 va avea încredere în cele în topul 500000. \cite{chrome_wosign}
+
+		Din păcate, acest proiect de gestionare a cererilor de despăgubiri a fost prins la mijloc, pentru că aveam o oarecare încredere în această autoritate de certificate.
+		Apăruse astfel problema că după o perioadă de timp nu o să mai funcționeze sistemul HTTPS.
+
+	\subsection{CloudFlare}
+
+		Din fericire, știam o soluție temporară, ce după multe dezbateri cu personalul de la Fandu, a intrat în funcțiune cât de curând posibil.
+
+		CloudFlare este o companie în Statele Unite ale Americii.
+		Oferă un sistem de livrare al conținutului și un sistem distribuit de nume de domeniu.
+		Sistemul distribuit de nume de domeniu stă între serverul administratorului aplicației și aplicația mobilă a clientului.
+		Astfel, nu numai că poate să prevină orice atac malițios, dar poate să și optimizeze paginile trimise.
+
+		Un alt mare avantaj pentru CloudFlare, introdus recent, este un sistem de gestiune a certificatelor SSL.
+		Astfel, am putut folosi certificatul ce nu mai putea fi folosit pentru a face o legătură „Full SSL”:
+		\begin{itemize}
+			\item
+			Se asigură legătura client -- CloudFlare prin certificatul lor.
+			Apare iconița ce indică transmisia encriptată a datelor către server (lacătul verde).
+			\item
+			Se asigură legătura CloudFlare -- server prin certificatul deja existent pe Fandu.
+			Nu se trimite nicio informație nesecurizată prin Internet.
+		\end{itemize}
+
+		De asemenea, mai oferă și redirectarea automată a website-ului către domeniul securizat, dar deja se ocupă de asta Laravel.
+
+		Principalul motiv pentru care CloudFlare este în momentul actual indispensabil pentru Fandu este protecția de atacurile DDoS.
+		Un atac DDoS („Distributed Denial of Service”) poate să aducă în genunchi întreaga arhitectură.
+		Cum CloudFlare oferă o opțiune de „sunt sub asediu”, ce poate fi activată cât mai repede, poate să blocheze orice om frustrat.
+
+		Mulțumită juxtapoziției între server și client, se mai poate optimiza orice resursă trimisă.
+		Se poate renunța la spațiile inutile din stilul sau codul interactiv JavaScript.
+		Dar nu este nevoie de optimizarea la nivel de CloudFlare, deoarece se face la nivelul dezvoltării aplicației de Laravel.
+
+		Mulțumită „Laravel Mix”, se optimizează, concatenează și minimizează tot codul și stilul afișat utilizatorului.
+		Cu cât mai puține dependențe externe, cu atât mai bine pentru securitatea aplicației.

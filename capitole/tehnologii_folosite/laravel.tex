@@ -1,5 +1,6 @@
 \section{Laravel 5.3}
 
+
 	Laravel este o librărie gratuită de PHP.
 	Pentru Laravel 5.3, minimul necesar librăriei este PHP 5.5.9 sau mai nou.
 	Librăria a fost concepută de „Taylor Otwell”, pentru a construi aplicații web bazate pe arhitectura „Model-View-Controller”.
@@ -15,6 +16,8 @@
 	Dar din păcate, trebuie studiată în detaliu, pentru că nu este ușoară de folosit pragmatic.
 
 	\subsection{Directive Blade}
+
+
 		Un mare avantaj al librăriei este un simplu, dar foarte puternic și eficient sistem de șablonare --- Blade.
 		Spre deosebire de alte sisteme de șablon, Blade nu inhibă dezvoltatorul a folosi cod PHP în View-uri.
 		De fapt, toate View-urile Blade sunt traduse în cod simplu PHP și salvate până ce sunt modificate.
@@ -46,7 +49,7 @@
 		Pentru a introduce conținutul paginii ce extinde șablonul, Blade folosește secțiuni.
 		Declarate în pagina principală, acestea indică locul unde se așteaptă conținut, putând fi denumite după nevoile șablonului.
 		De asemenea, în cazul definirii unei secțiuni, se poate folosi și o valoare implicită.
-		Cel mai des e folosit un șablon în definirea titlului, cu o valore implicită a numelui proiectului.
+		Cel mai des e folosit un șablon în definirea titlului, cu o valoare implicită a numelui proiectului.
 		În cazul acestui proiect, am folosit ca sufix numele configurat în fișierul mediu, lăsând la dispoziția fiecărei pagini a seta titlul.
 
 		Folosind secțiuni, am descoperit o problemă la refolosirea unor componente vizuale.
@@ -80,6 +83,7 @@
 
 	\subsection{Laravel Forms / HTML}
 
+
 		O mare parte a oricărei aplicații web este interacțiunea cu clientul.
 		Pentru asta, există formulare ce sunt trimise către calculatorul aplicației.
 		O fostă librărie inclusă în Laravel, dar acum extinsă și desprinsă este librăria ajutătoare pentru formulare și HTML.
@@ -102,10 +106,59 @@
 // unde 'in' - starea panoului: de a fi deja deschis
 		\end{Verbatim}
 
-	\subsection{Artisan}
-		migrations - artisan - database migrations
-		artisan make:commands
-		artisan routes:list
-		artisan make:auth
+	\subsection{Consola Artisan}
+
+
+		Degeaba poți avea o soluție elegantă a unei probleme, dacă pentru a crea un Controller nou ai nevoie de a scrie o grămadă de linii de cod.
+		Este adevărat, poți să scurtezi mult din timpul prețios folosind șabloanele unui mediu inteligent de programare.
+		Dar poate uiți dacă trebuie să modifici în mai multe locuri.
+
+		Aici intervine consola „Artisan”, o interfață prietenoasă pentru programatorii obișnuiți cu liniile de comandă din „Ruby on Rails”.
+		Ajută programatorul la a construi mai rapid aplicația, bazată pe arhitectura „Symfony”.
+		Printre cele mai des folosite opțiuni se numără:
+		\begin{itemize}
+			\item Construirea rapidă a mai multor tipuri de clase (Migrare, Controller, Model, Request, Event).
+			\item Gestionarea migrărilor bazei de date.
+			\item Curățarea fișierelor precompilate sau aflarea rutelor definite.
+			\item Generarea codului necesar unui sistem rudimentar de înregistrare, intrare și resetare parolă, cât și filtrarea accesului utilizatorului în aplicație.
+		\end{itemize}
+		De menționat ar mai fi extensibilitatea consolei prin pachetele salvate, care pot adăuga funcții vitale pentru mediul de dezvoltare ales.
+		Aici mă refer la „Laravel PhpStorm IDE Helper” (\verb|barryvdh/laravel-ide-helper|), despre care voi discuta în subcapitolul despre PhpStorm.
 	\subsection{Eloquent ORM}
-		models - Eloquent ORM
+
+		Un ORM („Object-relational mapping”) este o tehnică de programare care traduce datele incompatibile (tabelele unei baze de date) în obiecte PHP, care pot fi folosite în cadrul aplicației.
+		Spre diferență de tehnicile tradiționale de a transforma un obiect dintr-un limbaj orientat pe obiecte într-o linie dintr-un tabel al unei baze de date relaționale, ORM-ul adesea reduce numărul liniilor de cod scrise.\cite{orm}
+
+		Folosit în conjuncție cu un ORM, șablonul de linie activă („active record pattern”) este folositor pentru a salva în memorie datele obiectului dintr-o bază de date relațională.
+		Interfața obiectului conceput care se conformează șablonului va avea metode de a adăuga, modifica, șterge linii din baza de date, dar și câmpuri care corespund mai mult sau mai puțin coloanelor tabelei care stă la baza obiectului.
+		Acest șablon arhitectural a fost denumit de „Martin Fowler” în 2003.
+		\cite{active_record}
+
+		Eloquent ORM, inclus cu Laravel, oferă programatorului o elegantă implementare a șablonului „Active Record”.
+		Fiecare tabel are un Model corespunzător, ce este folosit pentru a interacționa --- a adăuga sau modifica --- baza de date.
+
+		Laravel diferă de alte librării și se aseamănă cu ASP.NET cu puternica sa preferință a convențiilor împotriva configurației.
+		Este recomandat deci de a denumi tabelele cu litere mici cu sublinie (e.g: \verb|„test_cases”|), în cazul în care nu se specifică explicit tabelul folosit pentru model.
+		Numele modelului ar trebui să urmeze ghidul de denumire a claselor conform standardului PHP PSR-1 \cite{psr_1} (i.e.: \verb|„TestCase”|).
+
+	\subsection{Migrări}
+
+		Pentru a simplifica munca programatorilor, Laravel a ales să folosească un sistem de migrare a bazelor de date.
+		Asigura la pornirea aplicației că versiunea bazei de date corespunde ultimelor modificări aduse codului prin tabela numită \verb|„migrations”|.
+		Avantajul gestionării incrementale și reversibile a schimbărilor a schemei unei baze de date relaționare asigură pierderi minime a datelor de pe calculatorul de producție.
+		În avantajul programatorului mai există și ușurința de a reveni la varianta originală a bazei de date, când se dezvoltă o migrare nouă, în cazul în care aceasta are lipsuri sau se încearcă altă abordare.
+
+		Pentru a construi o migrare, se apelează comanda Artisan:
+		\begin{verbatim}
+		php artisan make:migration create_users_table --create=users
+		# sau, o variantă ce construiește și migrarea și modelul asociat
+		php artisan make:model --migration User
+		\end{verbatim}
+		Comanda construiește un nou fișier în folder-ul special pentru migrări și scrie în interiorul lui o clasă nouă \verb|CreateUsersTable|.
+
+		Se observă că această nouă clasă respectă principiul gestionării incrementale și reversibile a schimbărilor schemei bazei de date pentru că are două metode denumite „up”, „down”, pentru când se va aplica, respectiv scoate migrarea respectivă.
+
+		Clasa ce se ocupă de construirea tabelului are majoritatea funcțiilor ajutătoare pentru a construi orice schemă dorită de programator.
+		Păstrează în spatele sintaxei ușor de folosit abilitatea de a se putea aplica asupra oricărui sistem relațional de baze de date.
+		Avantajul programatorul este că nu trebuie să se mai complice cu duplicarea codului și testarea pe mai multe baze de date a migrării.
+		Totul este asigurat de Laravel.

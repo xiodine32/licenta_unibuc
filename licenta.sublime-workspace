@@ -11,33 +11,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "capitole/tehnologii_folosite/laravel.tex",
-			"settings":
-			{
-				"buffer_size": 3229,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "main.tex",
-			"settings":
-			{
-				"buffer_size": 1067,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "licenta.sublime-project",
-			"settings":
-			{
-				"buffer_size": 612,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "Packages/LaTeXTools/LaTeX.sublime-build",
 	"build_system_choices":
@@ -91,13 +64,33 @@
 			]
 		]
 	],
-	"build_varint": "",
+	"build_varint": "Basic Builder - XeLaTeX",
 	"command_palette":
 	{
-		"height": 152.0,
+		"height": 357.0,
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"tog ta",
+				"View: Toggle Tabs"
+			],
+			[
+				"word",
+				"Word Wrap: Toggle"
+			],
+			[
+				"menu",
+				"View: Toggle Menu"
+			],
+			[
+				"minim",
+				"View: Toggle Minimap"
+			],
+			[
+				"settings",
+				"Preferences: Settings"
+			],
 			[
 				"tog sta",
 				"View: Toggle Status Bar"
@@ -105,10 +98,6 @@
 			[
 				"tog mi",
 				"View: Toggle Minimap"
-			],
-			[
-				"tog ta",
-				"View: Toggle Tabs"
 			],
 			[
 				"json",
@@ -120,10 +109,6 @@
 			],
 			[
 				"wor",
-				"Word Wrap: Toggle"
-			],
-			[
-				"word",
 				"Word Wrap: Toggle"
 			],
 			[
@@ -312,7 +297,7 @@
 		"show_minimap": false,
 		"show_open_files": false,
 		"show_tabs": true,
-		"side_bar_visible": true,
+		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
 	"expanded_folders":
@@ -328,20 +313,32 @@
 	],
 	"file_history":
 	[
-		"/C/Users/xiodine/Desktop/licenta/capitole/tehnologiile_folosite.tex",
 		"/C/Users/xiodine/Desktop/licenta/main.tex",
-		"/C/Users/xiodine/Desktop/licenta/bibliografie.bib",
-		"/C/Users/xiodine/Desktop/licenta/capitole/tehnologii_folosite/mentiuni_speciale.tex",
-		"/C/Users/xiodine/Desktop/licenta/capitole/tehnologii_folosite/php.tex",
+		"/C/Users/xiodine/Desktop/licenta/capitole/structura_aplicatiei/request_life_cycle.tex",
 		"/C/Users/xiodine/Desktop/licenta/capitole/tehnologii_folosite/github.tex",
+		"/C/Users/xiodine/Desktop/licenta/capitole/tehnologii_folosite/jquery.tex",
+		"/C/Users/xiodine/Desktop/licenta/capitole/tehnologii_folosite/latex.tex",
+		"/C/Users/xiodine/Desktop/licenta/capitole/tehnologii_folosite/mentiuni_speciale.tex",
+		"/C/Users/xiodine/Desktop/licenta/capitole/tehnologii_folosite/cloudflare.tex",
+		"/C/Users/xiodine/Desktop/licenta/bibliografie.bib",
+		"/C/Users/xiodine/Desktop/licenta/capitole/introducere/de_ce_am_fost_angajat_eu.tex",
 		"/C/Users/xiodine/Desktop/licenta/capitole/introducere/despre_aplicatie.tex",
+		"/C/Users/xiodine/Desktop/licenta/capitole/tehnologii_folosite/laravel.tex",
+		"/C/Users/xiodine/Desktop/licenta/capitole/tehnologii_folosite/baza_de_date_mysql.tex",
+		"/C/Users/xiodine/Desktop/licenta/capitole/introducere.tex",
+		"/C/Users/xiodine/Desktop/licenta/capitole/introducere/detalii_despre_relatia_firma_altex.tex",
+		"/C/Users/xiodine/Desktop/licenta/capitole/introducere/detalii_despre_dezvoltarea_aplicatiei.tex",
+		"/C/Users/xiodine/Desktop/licenta/capitole/introducere/detalii_despre_firma_angajatoare.tex",
+		"/C/Users/xiodine/Downloads/Patterns_of_Enterprise_Application_Archi.bibtex",
+		"/C/Users/xiodine/Downloads/encrypted.html",
+		"/C/Users/xiodine/Desktop/licenta/licenta.sublime-project",
+		"/C/Users/xiodine/Desktop/licenta/capitole/tehnologiile_folosite.tex",
+		"/C/Users/xiodine/Desktop/licenta/capitole/tehnologii_folosite/php.tex",
 		"/C/Users/xiodine/Desktop/licenta/main.bbl",
 		"/C/Users/xiodine/Desktop/licenta/capitole/tehnologii_folosite/composer.tex",
 		"/C/Users/xiodine/Desktop/licenta/capitole/tehnologii_folosite/npm.tex",
 		"/C/Users/xiodine/Desktop/licenta/meeting.todo",
-		"/C/Users/xiodine/Desktop/licenta/licenta.sublime-project",
 		"/C/Users/xiodine/Desktop/licenta/capitole/structura_aplicatiei/mvc/controllers.tex",
-		"/C/Users/xiodine/Desktop/licenta/capitole/introducere/de_ce_am_fost_angajat_eu.tex",
 		"/C/Users/xiodine/Desktop/licenta/capitole/concluzii/luna_dec_teste_automate.tex",
 		"/C/Users/xiodine/Desktop/licenta/README.md",
 		"/C/Users/xiodine/Desktop/licenta/capitole/concluzii/sistem_modular_de_rapoarte.tex",
@@ -359,20 +356,11 @@
 		"/C/Users/xiodine/Desktop/licenta/capitole/structura_aplicatiei/dba_meta_administrator.tex",
 		"/C/Users/xiodine/Desktop/licenta/capitole/structura_aplicatiei/mvc.tex",
 		"/C/Users/xiodine/Desktop/licenta/capitole/structura_aplicatiei/o_scurta_istorie_a_aplicatiei.tex",
-		"/C/Users/xiodine/Desktop/licenta/capitole/structura_aplicatiei/request_life_cycle.tex",
-		"/C/Users/xiodine/Desktop/licenta/capitole/tehnologii_folosite/baza_de_date_mysql.tex",
-		"/C/Users/xiodine/Desktop/licenta/capitole/tehnologii_folosite/latex.tex",
-		"/C/Users/xiodine/Desktop/licenta/capitole/tehnologii_folosite/cloudflare.tex",
 		"/C/Users/xiodine/Desktop/licenta/capitole/tehnologii_folosite/google_analytics.tex",
-		"/C/Users/xiodine/Desktop/licenta/capitole/tehnologii_folosite/jquery.tex",
 		"/C/Users/xiodine/Desktop/licenta/capitole/tehnologii_folosite/knockout_js.tex",
-		"/C/Users/xiodine/Desktop/licenta/capitole/tehnologii_folosite/laravel.tex",
 		"/C/Users/xiodine/Desktop/licenta/capitole/structura_aplicatiei/mvc/helpers.tex",
 		"/C/Users/xiodine/Desktop/licenta/capitole/structura_aplicatiei/apache.tex",
-		"/C/Users/xiodine/Desktop/licenta/capitole/introducere/detalii_despre_firma_angajatoare.tex",
 		"/C/Users/xiodine/Desktop/licenta/capitole/user_workflow.tex",
-		"/C/Users/xiodine/Desktop/licenta/capitole/introducere/detalii_despre_relatia_firma_altex.tex",
-		"/C/Users/xiodine/Desktop/licenta/capitole/introducere/detalii_despre_dezvoltarea_aplicatiei.tex",
 		"/C/Users/xiodine/Desktop/licenta/main.out",
 		"/C/Users/xiodine/Desktop/licenta/nou",
 		"/C/Users/xiodine/Dropbox/Facultate/licenta/main.toc",
@@ -452,14 +440,11 @@
 		"/X/fandu/storage/temp/1497106724_3135.tmp",
 		"/X/fandu/storage/temp/1497106791_16875.tmp",
 		"/X/fandu/storage/temp/1497105757_22408.tmp",
-		"/X/fandu/storage/temp/1497037362_26201.tmp",
-		"/C/Users/xiodine/Dropbox/Programming Installs/Python Scripts/tata2 (1).py",
-		"/C/Users/xiodine/Dropbox/Programming Installs/Python Scripts/tata.py",
-		"/C/Users/xiodine/Dropbox/Programming Installs/Python Scripts/tata2.py"
+		"/X/fandu/storage/temp/1497037362_26201.tmp"
 	],
 	"find":
 	{
-		"height": 52.0
+		"height": 44.0
 	},
 	"find_in_files":
 	{
@@ -474,6 +459,17 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"\\{",
+			"itemize",
+			"begin",
+			"itemize",
+			"csquotes",
+			"LAMP",
+			"phpmyadmin",
+			"Google",
+			"ce",
+			".\n",
+			"@online{github,\n    author = {Alex William},\n    title = {GitHub Pours Energies into Enterprise. Raises \\$100 Million From Power VC Andreessen Horowitz},\n    url = {http://techcrunch.com/2012/07/09/github-pours-energies-into-enterprise-raises-100-million-from-power-vc-andreesen-horowitz/},\n    urldate = {2012-07-09}\n}",
 			"verbatim",
 			"Verbatim",
 			"_",
@@ -590,11 +586,7 @@
 			"wp-post",
 			"wp-posts",
 			"userlevel",
-			"Virtual Machine Name",
-			"test",
-			"Your VM Name",
-			"./VBoxManage.exe modifyvm \"macOS 10.12 Sierra\" --cpuidset 00000001 000106e5 00100800 0098e3fd bfebfbff\n./VBoxManage setextradata \"macOS 10.12 Sierra\" \"VBoxInternal/Devices/efi/0/Config/DmiSystemProduct\" \"iMac11,3\"\n./VBoxManage setextradata \"macOS 10.12 Sierra\" \"VBoxInternal/Devices/efi/0/Config/DmiSystemVersion\" \"1.0\"\n./VBoxManage setextradata \"macOS 10.12 Sierra\" \"VBoxInternal/Devices/efi/0/Config/DmiBoardProduct\" \"Iloveapple\"\n./VBoxManage setextradata \"macOS 10.12 Sierra\" \"VBoxInternal/Devices/smc/0/Config/DeviceKey\" \"ourhardworkbythesewordsguardedpleasedontsteal(c)AppleComputerInc\"\n./VBoxManage setextradata \"macOS 10.12 Sierra\" \"VBoxInternal/Devices/smc/0/Config/GetKeyFromRealSMC\" 1",
-			"Your VM Name"
+			"Virtual Machine Name"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -617,102 +609,14 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "capitole/tehnologii_folosite/laravel.tex",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3229,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2911,
-								2911
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1494.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "main.tex",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1067,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								259,
-								259
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "licenta.sublime-project",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 612,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								597,
-								597
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 315.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 52.0
+		"height": 28.0
 	},
 	"input":
 	{
@@ -751,13 +655,17 @@
 	},
 	"output.latextools":
 	{
-		"height": 154.0
+		"height": 149.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 106.0
 	},
 	"pinned_build_system": "",
 	"project": "licenta.sublime-project",
 	"replace":
 	{
-		"height": 98.0
+		"height": 52.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -767,16 +675,64 @@
 		"selected_items":
 		[
 			[
-				"m",
-				"main.tex"
+				"bib",
+				"bibliografie.bib"
+			],
+			[
+				"jqu",
+				"capitole\\tehnologii_folosite\\jquery.tex"
+			],
+			[
+				"bo",
+				"bibliografie.bib"
+			],
+			[
+				"cl",
+				"capitole\\tehnologii_folosite\\cloudflare.tex"
+			],
+			[
+				"ssl",
+				"capitole\\structura_aplicatiei\\request_life_cycle.tex"
+			],
+			[
+				"github",
+				"capitole\\tehnologii_folosite\\github.tex"
+			],
+			[
+				"late",
+				"capitole\\tehnologii_folosite\\latex.tex"
+			],
+			[
+				"de",
+				"capitole\\introducere\\despre_aplicatie.tex"
+			],
+			[
+				"intro",
+				"capitole\\introducere\\de_ce_am_fost_angajat_eu.tex"
 			],
 			[
 				"main",
 				"main.tex"
 			],
 			[
-				"bib",
+				"clod",
+				"capitole\\tehnologii_folosite\\cloudflare.tex"
+			],
+			[
+				"bi",
 				"bibliografie.bib"
+			],
+			[
+				"menti",
+				"capitole\\tehnologii_folosite\\mentiuni_speciale.tex"
+			],
+			[
+				"git",
+				"capitole\\tehnologii_folosite\\github.tex"
+			],
+			[
+				"m",
+				"main.tex"
 			],
 			[
 				"teh",
@@ -843,9 +799,9 @@
 	"settings":
 	{
 	},
-	"show_minimap": true,
+	"show_minimap": false,
 	"show_open_files": false,
-	"show_tabs": true,
+	"show_tabs": false,
 	"side_bar_visible": false,
 	"side_bar_width": 281.0,
 	"status_bar_visible": true,

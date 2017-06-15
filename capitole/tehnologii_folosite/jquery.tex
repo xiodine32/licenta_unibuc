@@ -1,4 +1,30 @@
 \section{jQuery \& jQuery UI}
-	orice modificare rapida de butoane
-	logica de administrare / incarcare rapoarte / export 
-	validare
+
+	Orice programator ce dorește o pagină interactivă o să interacționeze o dată măcar în viața lui cu jQuery.\cite{jquery}
+
+	jQuery este o librărie de JavaScript ce ajută la:
+	\begin{itemize}
+		\item navigarea DOM-ului („Document Object Model” --- toate componentele ce formează pagina)
+		\item găsirea ușoară a elementelor relative, precum a părinților sau a unor copii a unor noduri, folosind sintaxa similară CSS („Cascading Style Sheet”).
+		\item construirea ușoară a animațiilor și gestionarea ușoară a anunțurilor rezultate (și nu numai)
+		\item ușoara integrare a elementelor preluate dinamice din altă parte, folosind metodologia asincronă de a trimite și recepționa informații.
+	\end{itemize}
+
+	De asemenea, mulțumită arhitecturii, jQuery permite dezvoltatorilor a construi „plug-in”-uri, pentru a extinde funcționalitatea.
+	O astfel de librărie ce extinde jQuery este „jQuery UI” \cite{jquery_ui}.
+
+	jQuery UI este o colecție de elemente vizuale, animate, testate, ce permit dezvoltatorilor un timp mai scurt de a pune produsul pe piață.
+	Oferă efecte profesionale și „widget”-uri (elemente vizuale predefinite), precum un modul de a putea selecta data dintr-un calendar vizual.
+
+	Pentru sistemul de gestiune a cererilor de despăgubire, am folosit „jQuery” și „jQuery UI” pentru majoritatea interacțiunilor specifice paginilor.
+	Am și extins platforma, prin trei metode, pentru a trimite și primi mai ușor informațiile de la Laravel.
+
+	Spre exemplu, logica de a încărca vânzările săptămânale se bazează pe această platformă.
+	Utilizatorul o dată ce adaugă fișierul dorit de a fi încărcat în sistem, nu navighează de la pagina curentă, ci este întâmpinat cu o bară a progresului.
+	În acest moment, fiecare fișier este încărcat separat și preluat de sistem.
+	Se salvează rezultatul pentru fiecare fișier și la final se combină toate rezultate într-o interfață ce ajută persoana ce folosește sistemul de a înțelege ce a funcționat și ce nu.
+
+	O altă bună integrare cu „jQuery” vine din partea librăriei „Bootstrap Validator”, un „plug-in” simplu de folosit pentru a adăuga elemente de validare pentru formulare. \cite{boostrap_validator}
+	Mulțumită directivelor Blade, am integrat ușor construirea unor câmpuri cu validare necesară, pentru a ajuta utilizatorul să completeze cât mai corect formularul de despăgubire.
+
+	Am reușit astfel de a scurta timpul de dezvoltare și de a asigura o interfață unificată în modul de abordare a înfățișării aplicației, mulțumită acestor trei platforme.

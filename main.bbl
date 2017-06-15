@@ -19,6 +19,29 @@
 
 \refsection{0}
   \sortlist[entry]{nty/global/}
+    \entry{boostrap_validator}{online}{}
+      \name{author}{1}{}{%
+        {{hash=cd632360cfa455b66f80624ff96501dd}{%
+           family={1000hz},
+           familyi={1\bibinitperiod}}}%
+      }
+      \strng{namehash}{cd632360cfa455b66f80624ff96501dd}
+      \strng{fullhash}{cd632360cfa455b66f80624ff96501dd}
+      \strng{authornamehash}{cd632360cfa455b66f80624ff96501dd}
+      \strng{authorfullhash}{cd632360cfa455b66f80624ff96501dd}
+      \field{sortinit}{1}
+      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Bootstrap Validator}
+      \field{urlday}{14}
+      \field{urlmonth}{6}
+      \field{urlyear}{2017}
+      \field{urldateera}{ce}
+      \verb{url}
+      \verb http://1000hz.github.io/bootstrap-validator/
+      \endverb
+    \endentry
     \entry{aws}{online}{}
       \name{author}{1}{}{%
         {{hash=b3b3a6ac74ecbd56bcdbefa4799fb9df}{%
@@ -89,6 +112,112 @@
       \field{title}{Pattern-Oriented Software Architecture}
       \field{year}{1996}
     \endentry
+    \entry{chrome_wosign}{online}{}
+      \name{author}{1}{}{%
+        {{hash=65d5644b4049b4215a6faa532e7e5ad5}{%
+           family={Chromium},
+           familyi={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{65d5644b4049b4215a6faa532e7e5ad5}
+      \strng{fullhash}{65d5644b4049b4215a6faa532e7e5ad5}
+      \strng{authornamehash}{65d5644b4049b4215a6faa532e7e5ad5}
+      \strng{authorfullhash}{65d5644b4049b4215a6faa532e7e5ad5}
+      \field{sortinit}{C}
+      \field{sortinithash}{095692fd22cc3c74d7fe223d02314dbd}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{26}
+      \field{month}{1}
+      \field{title}{685826 - Restrict the set of domains for WoSign/StartCom certificates}
+      \field{urlday}{28}
+      \field{urlmonth}{4}
+      \field{urlyear}{2017}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{url}
+      \verb https://bugs.chromium.org/p/chromium/issues/detail?id=685826
+      \endverb
+    \endentry
+    \entry{foreign_key}{book}{}
+      \name{author}{2}{}{%
+        {{hash=758eaae77c675ad0e668bec356514064}{%
+           family={Coronel},
+           familyi={C\bibinitperiod},
+           given={Carlos},
+           giveni={C\bibinitperiod}}}%
+        {{hash=fa3e1b2b11fdefeb5bc9f843c32530fb}{%
+           family={Morris},
+           familyi={M\bibinitperiod},
+           given={Steven},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Course Technology}%
+      }
+      \strng{namehash}{afc5d088c36dc010b1dd83ed35aeccb5}
+      \strng{fullhash}{afc5d088c36dc010b1dd83ed35aeccb5}
+      \strng{authornamehash}{afc5d088c36dc010b1dd83ed35aeccb5}
+      \strng{authorfullhash}{afc5d088c36dc010b1dd83ed35aeccb5}
+      \field{sortinit}{C}
+      \field{sortinithash}{095692fd22cc3c74d7fe223d02314dbd}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{11}
+      \field{isbn}{9781285196145}
+      \field{month}{2}
+      \field{title}{Database Systems: Design, Implementation, \& Management}
+      \field{year}{2014}
+    \endentry
+    \entry{phpmyadmin}{book}{}
+      \name{author}{1}{}{%
+        {{hash=fa09cfa661034c1707649dc16e192f7a}{%
+           family={Delisle},
+           familyi={D\bibinitperiod},
+           given={Marc},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Packt Publishing}%
+      }
+      \strng{namehash}{fa09cfa661034c1707649dc16e192f7a}
+      \strng{fullhash}{fa09cfa661034c1707649dc16e192f7a}
+      \strng{authornamehash}{fa09cfa661034c1707649dc16e192f7a}
+      \strng{authorfullhash}{fa09cfa661034c1707649dc16e192f7a}
+      \field{sortinit}{D}
+      \field{sortinithash}{d10b5413de1f3d197b20897dd0d565bb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9781849517782}
+      \field{title}{Mastering phpMyAdmin 3.4 for Effective MySQL Management}
+      \field{year}{2012}
+    \endentry
+    \entry{jquery}{book}{}
+      \name{author}{1}{}{%
+        {{hash=84873f5a95c25fd4b6018acef0ed28af}{%
+           family={Duckett},
+           familyi={D\bibinitperiod},
+           given={Jon},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Indianapolis, IN}%
+      }
+      \list{publisher}{1}{%
+        {Wiley}%
+      }
+      \strng{namehash}{84873f5a95c25fd4b6018acef0ed28af}
+      \strng{fullhash}{84873f5a95c25fd4b6018acef0ed28af}
+      \strng{authornamehash}{84873f5a95c25fd4b6018acef0ed28af}
+      \strng{authorfullhash}{84873f5a95c25fd4b6018acef0ed28af}
+      \field{sortinit}{D}
+      \field{sortinithash}{d10b5413de1f3d197b20897dd0d565bb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{1118531647}
+      \field{title}{JavaScript \& jQuery : interactive front-end web development}
+      \field{year}{2014}
+    \endentry
     \entry{laravel_collective_about}{online}{}
       \name{author}{1}{}{%
         {{hash=bfef4a731e5f839d1a797f9e351ee5f3}{%
@@ -137,6 +266,58 @@
       \field{urldateera}{ce}
       \verb{url}
       \verb https://laravelcollective.com/docs/master/html
+      \endverb
+    \endentry
+    \entry{active_record}{book}{}
+      \name{author}{1}{}{%
+        {{hash=7d73be78bdae55dc3acc2220c86ecfb9}{%
+           family={Fowler},
+           familyi={F\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Addison-Wesley}%
+      }
+      \strng{namehash}{7d73be78bdae55dc3acc2220c86ecfb9}
+      \strng{fullhash}{7d73be78bdae55dc3acc2220c86ecfb9}
+      \strng{authornamehash}{7d73be78bdae55dc3acc2220c86ecfb9}
+      \strng{authorfullhash}{7d73be78bdae55dc3acc2220c86ecfb9}
+      \field{sortinit}{F}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780321127426}
+      \field{series}{A Martin Fowler signature book}
+      \field{title}{Patterns of Enterprise Application Architecture}
+      \field{year}{2003}
+      \verb{url}
+      \verb https://books.google.ro/books?id=FyWZt5DdvFkC
+      \endverb
+    \endentry
+    \entry{psr_1}{online}{}
+      \name{author}{1}{}{%
+        {{hash=0246394b6185f4f7f82134a6dc9f445a}{%
+           family={Group},
+           familyi={G\bibinitperiod},
+           given={PHP\bibnamedelimb Framework\bibnamedelima Interop},
+           giveni={P\bibinitperiod\bibinitdelim F\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+      }
+      \strng{namehash}{0246394b6185f4f7f82134a6dc9f445a}
+      \strng{fullhash}{0246394b6185f4f7f82134a6dc9f445a}
+      \strng{authornamehash}{0246394b6185f4f7f82134a6dc9f445a}
+      \strng{authorfullhash}{0246394b6185f4f7f82134a6dc9f445a}
+      \field{sortinit}{G}
+      \field{sortinithash}{618d986594b7198ba52cf8b00d348f3f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{PSR-1: Basic Coding Standard - PHP-FIG}
+      \field{urlday}{14}
+      \field{urlmonth}{6}
+      \field{urlyear}{2017}
+      \field{urldateera}{ce}
+      \verb{url}
+      \verb http://www.php-fig.org/psr/psr-1/
       \endverb
     \endentry
     \entry{php_supported_versions}{online}{}
@@ -312,6 +493,57 @@
       \field{title}{The Information Revolution}
       \field{year}{2005}
     \endentry
+    \entry{ssl}{book}{}
+      \name{author}{1}{}{%
+        {{hash=1510100b06a9344cccbe924758a87b1d}{%
+           family={Oppliger},
+           familyi={O\bibinitperiod},
+           given={Rolf},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Artech House}%
+      }
+      \strng{namehash}{1510100b06a9344cccbe924758a87b1d}
+      \strng{fullhash}{1510100b06a9344cccbe924758a87b1d}
+      \strng{authornamehash}{1510100b06a9344cccbe924758a87b1d}
+      \strng{authorfullhash}{1510100b06a9344cccbe924758a87b1d}
+      \field{sortinit}{O}
+      \field{sortinithash}{f5d80ef71b5b58852663ecfd775b175a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9781596934474}
+      \field{month}{8}
+      \field{title}{SSL and Tls: Theory and Practice (Artech House Information Security and Privacy)}
+      \field{year}{2009}
+    \endentry
+    \entry{innodb}{online}{}
+      \name{author}{1}{}{%
+        {{hash=30162ed78b6c10f731411f2fc440c24f}{%
+           family={Oracle},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{30162ed78b6c10f731411f2fc440c24f}
+      \strng{fullhash}{30162ed78b6c10f731411f2fc440c24f}
+      \strng{authornamehash}{30162ed78b6c10f731411f2fc440c24f}
+      \strng{authorfullhash}{30162ed78b6c10f731411f2fc440c24f}
+      \field{sortinit}{O}
+      \field{sortinithash}{f5d80ef71b5b58852663ecfd775b175a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{7}
+      \field{month}{10}
+      \field{title}{Oracle Announces the Acquisition of Open Source Software Company, Innobase}
+      \field{urlday}{16}
+      \field{urlmonth}{9}
+      \field{urlyear}{2012}
+      \field{year}{2005}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{url}
+      \verb http://www.oracle.com/us/corporate/press/016679_EN
+      \endverb
+    \endentry
     \entry{mercurial}{book}{}
       \name{author}{1}{}{%
         {{hash=cf41a05437be5ca2475dcc70a1d13940}{%
@@ -384,6 +616,32 @@
       \verb{url}
       \verb https://twitter.com/taylorotwell/status/817494232541839367
       \endverb
+    \endentry
+    \entry{jquery_ui}{book}{}
+      \name{author}{1}{}{%
+        {{hash=8b09e1cc6df2745609b561333368f89f}{%
+           family={Sarrion},
+           familyi={S\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Sebastopol, Calif}%
+      }
+      \list{publisher}{1}{%
+        {O'Reilly}%
+      }
+      \strng{namehash}{8b09e1cc6df2745609b561333368f89f}
+      \strng{fullhash}{8b09e1cc6df2745609b561333368f89f}
+      \strng{authornamehash}{8b09e1cc6df2745609b561333368f89f}
+      \strng{authorfullhash}{8b09e1cc6df2745609b561333368f89f}
+      \field{sortinit}{S}
+      \field{sortinithash}{3c1547c63380458f8ca90e40ed14b83e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{1449316999}
+      \field{title}{JQuery UI}
+      \field{year}{2012}
     \endentry
     \entry{git}{book}{}
       \name{author}{1}{}{%
@@ -485,6 +743,85 @@
       \verb{url}
       \verb https://www.xservers.ro/
       \endverb
+    \endentry
+    \entry{orm}{article}{}
+      \name{author}{2}{}{%
+        {{hash=77179d4dfec200cca876ab8a3bed0da4}{%
+           family={Stanienda},
+           familyi={S\bibinitperiod},
+           given={Torsten},
+           giveni={T\bibinitperiod}}}%
+        {{hash=8dd0d1db9d25f8d8c3b2927fe2f61884}{%
+           family={Barry},
+           familyi={B\bibinitperiod},
+           given={Douglas},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Los Alamitos, CA, USA}%
+      }
+      \list{publisher}{1}{%
+        {IEEE Computer Society}%
+      }
+      \strng{namehash}{ed6c6781217d510ee48904fd5eba4bd4}
+      \strng{fullhash}{ed6c6781217d510ee48904fd5eba4bd4}
+      \strng{authornamehash}{ed6c6781217d510ee48904fd5eba4bd4}
+      \strng{authorfullhash}{ed6c6781217d510ee48904fd5eba4bd4}
+      \field{sortinit}{S}
+      \field{sortinithash}{3c1547c63380458f8ca90e40ed14b83e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0018-9162}
+      \field{journaltitle}{Computer}
+      \field{title}{Solving the Java Object Storage Problem}
+      \field{volume}{31}
+      \field{year}{1998}
+      \field{pages}{33\bibrangedash 40}
+      \range{pages}{8}
+      \verb{doi}
+      \verb doi.ieeecomputersociety.org/10.1109/2.730734
+      \endverb
+    \endentry
+    \entry{mysql_reference}{book}{}
+      \name{author}{2}{}{%
+        {{hash=8096ce3f5d53abc406cd78d73548ffe3}{%
+           family={Widenius},
+           familyi={W\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=55f0c2545e718983acc16f64f4508c14}{%
+           family={Axmark},
+           familyi={A\bibinitperiod},
+           given={Davis},
+           giveni={D\bibinitperiod}}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=12e7c4b619db0b0f5d90c8769801a941}{%
+           family={DuBois},
+           familyi={D\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Sebastopol, CA, USA}%
+      }
+      \list{publisher}{1}{%
+        {O'Reilly \& Associates, Inc.}%
+      }
+      \strng{namehash}{da7e664f735c927f3fba2b8d21029430}
+      \strng{fullhash}{da7e664f735c927f3fba2b8d21029430}
+      \strng{authornamehash}{da7e664f735c927f3fba2b8d21029430}
+      \strng{authorfullhash}{da7e664f735c927f3fba2b8d21029430}
+      \strng{editornamehash}{12e7c4b619db0b0f5d90c8769801a941}
+      \strng{editorfullhash}{12e7c4b619db0b0f5d90c8769801a941}
+      \field{sortinit}{W}
+      \field{sortinithash}{6d25b3eefe5aa2147d1f339686808918}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{1st}
+      \field{isbn}{0596002653}
+      \field{title}{Mysql Reference Manual}
+      \field{year}{2002}
     \endentry
     \entry{github}{online}{}
       \name{author}{1}{}{%
