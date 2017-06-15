@@ -12,11 +12,29 @@
 	Dar mulțumită codului modular și a folosirii șabloanelor ce repetă același element cu alte modele legate în spate, Knockout asigură funcționalitatea identică pentru toate modulele folosite.
 
 	Sistemul de gestiune a pozelor este împărțit în cele patru categorii:
-	\begin{itemize}
+	\begin{enumerate}
 		\item Facturi.
 		\item Pozele cu produsul avariat.
 		\item Foile cu termenii și condiții.
 		\item Raportul poliției, în caz de nevoie.
-	\end{itemize}
+	\end{enumerate}
+	Pentru fiecare element, se construiește o funcție nouă, pentru că JavaScript nu are clase.
+	Funcția respectivă gestionează identic modelul și vizualizarea acestuia prin păstrarea detașată de celelalte modele a datelor proprii.
 
-		exportul backup-ului
+	Pentru a putea fi încărcate asincron, câte o poză pe rând spre soluția distribuită de stocare a datelor, combin Knockout.JS cu jQuery.
+	Astfel, datele sunt primite de la server, în format JSON, folosind o cale specială, determinată la momentul construirii rutelor.
+
+	Knockout fiind o librărie de sine stătătoare, nu oferă o legătură strânsă între datele primite de la server și reprezentarea internă a structurii, dar permite extensibilitatea cu orice alt limbaj, pentru că se folosește doar de spațiul de nume („namespace”) \verb|ko|.
+	Dar mulțumită librăriei ajutătoare jQuery și a metodelor scrise de mine, asigur o performanță și un număr redus de probleme ce pot apărea, pentru orice sistem al oricărui client, ce poate vizita website-ul.
+
+	Un alt exemplu pentru aplicație este metoda de a salva baza de date.
+	Primește de la server atunci când se încarcă o listă cu toate tabelele bazei de date.
+	Nu am specificat clar ce tabele sunt folosite, pentru a asigura independența codului de structura bazei.
+	În cazul în care apare o modificare, algoritmul va funcționa identic, incluzând și noul tabel.
+
+	După ce primește de la server o listă cu toate tabelele, atunci când utilizatorul dorește să scoată toate datele din sistem, pornește un contor.
+	Pentru fiecare tabel în ordine, se face o cerere sistemului de a salva tabelul respectiv într-o locație temporară.
+	La final, se face o cerere separată, cu toate numele fișierelor rezultante, pentru a concatena și trimite arhiva rezultantă utilizatorului sistemului.
+
+	Este accesibilă pentru oricine are nevoie de ea, atâta timp cât este un utilizator înregistrat, deci un membru al echipei Fandu.
+	Nu strică să ai o variantă actualizată înainte de a importa date în aplicație, decât o dată pe săptămână.

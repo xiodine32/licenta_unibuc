@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6350 64-bit) (preloaded format=xelatex 2017.6.13)  15 JUN 2017 17:45
+This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6350 64-bit) (preloaded format=xelatex 2017.6.13)  15 JUN 2017 19:53
 entering extended mode
 **./main.tex
 (main.tex
@@ -585,13 +585,8 @@ Capitolul 2.
 (capitole/tehnologii_folosite/laravel.tex [8
 
 ] [9] [10] [11] [12])
-(capitole/tehnologii_folosite/baza_de_date_mysql.tex
-Overfull \hbox (14.47293pt too wide) in paragraph at lines 10--13
-\TU/lmr/m/n/10 dezvoltarea aplicațiilor web LAMP („Linux, Apache, MySQL, PHP/Pe
-rl/Python”).
- []
-
-[13]) (capitole/tehnologii_folosite/github.tex [14])
+(capitole/tehnologii_folosite/baza_de_date_mysql.tex [13] [14])
+(capitole/tehnologii_folosite/github.tex)
 (capitole/tehnologii_folosite/cloudflare.tex [15]
 Overfull \hbox (1.38202pt too wide) in paragraph at lines 34--37
 []\TU/lmr/m/n/10 StartCom a fost achiziționat în secret de „WoSign Limited” (Sh
@@ -600,8 +595,7 @@ enzen, China),
 
 [16]) (capitole/tehnologii_folosite/jquery.tex [17])
 (capitole/tehnologii_folosite/knockout_js.tex [18])
-(capitole/tehnologii_folosite/latex.tex)
-(capitole/tehnologii_folosite/mentiuni_speciale.tex [19])) [20]
+(capitole/tehnologii_folosite/mentiuni_speciale.tex [19])) [20] [21]
 (capitole/structura_aplicatiei.tex
 Capitolul 3.
 (capitole/structura_aplicatiei/request_life_cycle.tex)
@@ -611,32 +605,32 @@ Overfull \hbox (24.09004pt too wide) in paragraph at lines 2--1
 re https://fandu.info
  []
 
-[21
+[22
 
 ]) (capitole/structura_aplicatiei/baza_de_date.tex)
 (capitole/structura_aplicatiei/apache.tex)
 (capitole/structura_aplicatiei/mvc.tex
-(capitole/structura_aplicatiei/mvc/controllers.tex [22])
-(capitole/structura_aplicatiei/mvc/models.tex [23])
-(capitole/structura_aplicatiei/mvc/views.tex [24] [25])
+(capitole/structura_aplicatiei/mvc/controllers.tex [23])
+(capitole/structura_aplicatiei/mvc/models.tex [24])
+(capitole/structura_aplicatiei/mvc/views.tex [25] [26])
 (capitole/structura_aplicatiei/mvc/helpers.tex))
-(capitole/structura_aplicatiei/excel.tex [26])) [27]
+(capitole/structura_aplicatiei/excel.tex [27])) [28]
 (capitole/user_workflow.tex
 Capitolul 4.
-(capitole/user_workflow/administrative_interface.tex [28
+(capitole/user_workflow/administrative_interface.tex [29
 
 ])
 (capitole/user_workflow/register_a_claim.tex)
 (capitole/user_workflow/responding_to_messages.tex)
 (capitole/user_workflow/settings.tex)
-(capitole/user_workflow/uplading_photos.tex)) [29] (capitole/concluzii.tex
+(capitole/user_workflow/uplading_photos.tex)) [30] (capitole/concluzii.tex
 Capitolul 5.
 (capitole/concluzii/business_continuity_plan.tex)
 (capitole/concluzii/luna_dec_teste_automate.tex)
 (capitole/concluzii/extragerea_din_modele.tex)
-(capitole/concluzii/sistem_modular_de_rapoarte.tex)) [30
+(capitole/concluzii/sistem_modular_de_rapoarte.tex)) [31
 
-] [31]
+] [32]
 Overfull \hbox (5.92545pt too wide) in paragraph at lines 46--46
 []\TU/lmr/m/n/10 1000hz. \TU/lmr/m/it/10 Bootstrap Validator\TU/lmr/m/n/10 . \T
 U/lmr/m/sc/10 url\TU/lmr/m/n/10 : []$[][][][] [] [] [] [][][][][][] [] [][][][]
@@ -671,7 +665,7 @@ Overfull \hbox (2.07211pt too wide) in paragraph at lines 46--46
 [][][][][][][] []
  []
 
-[32
+[33
 
 ]
 Overfull \hbox (1.40434pt too wide) in paragraph at lines 46--46
@@ -692,14 +686,14 @@ Overfull \hbox (24.79211pt too wide) in paragraph at lines 46--46
 ][][][][][][][][][] []
  []
 
-[33]
+[34]
 Overfull \hbox (4.76pt too wide) in paragraph at lines 46--46
 [][][][][][][] [][] [][][][] [][] [][][][][] [][] [][] [][] [][][][][][][][][] 
 [][] [][][][][][][][][]$[] \TU/lmr/m/n/10 (visited on 07/09/2012). 
  []
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 48.
-[34]
+[35]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 48.
  (main.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 48.
@@ -710,12 +704,12 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 48.
  ) 
 Here is how much of TeX's memory you used:
- 16397 strings out of 427834
- 257865 string characters out of 3155872
- 740980 words of memory out of 3000000
+ 16395 strings out of 427834
+ 257791 string characters out of 3155872
+ 739977 words of memory out of 3000000
  20131 multiletter control sequences out of 15000+200000
  6848 words of font info for 38 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
  44i,6n,69p,947b,4941s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on main.pdf (35 pages).
+Output written on main.pdf (36 pages).
