@@ -1,23 +1,87 @@
 \subsection{Models - Eloquent ORM}
-	ce aduce in plus ca functionalitate Laravel
-	jmekeria cu One-To-Many / Many-To-Many
-	detalii despre getXxxAttribute()
-	protected \$hidden
-	detalii despre ce am adaugat si cum functioneaza pentru urmatoarele modele
-	getReadable - pentru a genera automat ceea ce poate sa vada administratorul aplicatiei - campuri.
-	\subsubsection{Assurance}
-	\subsubsection{Claim}
-	\subsubsection{Decision}
-		factory manual
-		resolution to text
-		updateToPay
-		remaining
-		cum se calculeaza chestiile
-	\subsubsection{Message}
-	\subsubsection{Photo}
-		despre Factory method - in ce categorie se incadreaza.
-	\subsubsection{Product}
-		faptul ca rotunjim la 2 valori price-ul
-	\subsubsection{Sale}
-		generic sale factory
-		totale assurance / price
+
+	Baza noastră de date relațională conține multe relații.
+	Spre exemplu, cererea de despăgubire poate că este legată la o decizie.
+	Eloquent ORM ajută gestionarea și lucrul cu aceste legături foarte ușor și suportă majoritatea legăturilor, printre care:
+	\begin{enumerate}
+		\item One To One
+		\item One To Many
+		\item Many To Many
+	\end{enumerate}
+
+	Relațiile Eloquent sunt definite ca metode în clasele noastre.
+	Precum modelele în sine, acestea sunt folosite precum generatoare de sistem.
+	Definind relațiile precum funcții ajută la propagarea metodelor și concatenarea mai multor constrângeri, precum pozele facturii determinate de această metodă aflată în clasa cererii:
+\begin{Verbatim}
+public function factura_photos()
+{
+	return $this->hasMany('App\Photo')
+		->where('category', Photo::FACTURA);
+}
+\end{Verbatim}
+	În acest caz, pentru că fotografie se poate afla în oricare dintre cele patru categorii, se pune constrângerea ca ea să se afle în categoria facturii.
+	Punându-se în legătură mai multe poze la un singur obiect, această relație „One To Many” are nevoie de câmpul \verb|claims_id| să fie prezent în coloana tabelei de poze, conform convenției Laravel. \cite{laravel_relationships}
+
+	Acum că putem să accesăm toate pozele unei cereri, putem defini și relația inversă.
+	Schimbând registrul de la poze la decizii, putem accesa având decizia cererea din care provine.
+	Pentru asta, se folosește următoarea metodă în clasa deciziei:
+\begin{Verbatim}
+public function claim()
+{
+	return $this->belongsTo('App\Claim');
+}
+\end{Verbatim}
+	La fel, pentru că respectă convenției Laravel -- se regăsește câmpul \verb|claims_id| -- se va completa și încărca modelul Eloquent a cererii, atunci când va fi apelată metoda.
+
+	De asemenea, toate metodele folosite sunt „puturoase”.
+	Ele nu sunt interpretate și nu rețin rezultatul până când nu au fost chemate cel puțin o dată.
+
+	Presupunând că am dori să avem un număr rotund în loc de cel rotunjit cu virgulă mobilă cu o simplă precizie, am putea să definim un accesor.
+	Un accesor cu numele \verb|getFirstNameAttribute| va fi apelat în momentul apelării aflării valorii proprietății \verb|first_name|.
+	Cel mai bun exemplu este calcularea valorii de plată nete din modelul „Decision”:
+\begin{Verbatim}
+public function getNetPayableAttribute()
+{
+    if ($this->resolution == Decision::REPAIRED) {
+        return $this->repair_replace_cost - $this->franchise
+            + $this->courier_cost;
+    }
+    if ($this->resolution == Decision::REPLACED) {
+        return $this->payee_cost - $this->franchise
+            + $this->courier_cost;
+    }
+
+    return "N/A";
+}
+\end{Verbatim}
+
+	O altă problemă delicată ce ar putea apărea într-un sistem de legare relațională între obiecte și reprezentările bazei de date constă în câmpurile ce pot fi atribuite „la grămadă”.
+	O vulnerabilitate „la grămadă” apare atunci când un utilizator mai adaugă să spunem un câmp „Administrator” când se înregistrează și-l setează pe adevărat, ce este trimis apoi în metoda de creare a relației tabel -- obiect, escaladându-și astfel drepturile.
+
+	Pentru a nu fi vulnerabili, putem specifica doar variabilele ce pot fi atribuite „la grămadă”.
+	Asta împiedică atribuirea altor câmpuri existente, asupra modelului Eloquent.
+	Funcționează incluzând următoarea linie:
+	\begin{verbatim}
+		protected $fillable = ['nume',  'elemente', 'tabel'];
+	\end{verbatim}
+
+	Revenind la proiectul nostru, am mai definit o metodă numită \verb|getReadable|, pentru a afla ce câmpuri sunt obligatorii a fi completate, pentru a construi un nou model.
+
+	Următoarele modele au cod propriu interesant:
+	\begin{itemize}
+		\item \verb|Decision| - Se folosește de o metodă „Factory” (ce produce obiecte gata pregătite) pentru a construi obiecte din vânzări sau din elemente generice.
+
+		De asemenea se mai calculează prin intermediul metodelor \verb|„remaining”| și \verb|„updateToPay”| sumele rămase, respectiv de plătit.
+
+		\item \verb|Photo| - Se folosește o metodă „Factory” preia extensia și construiește un șir aleator din 32 de caractere, imposibil de ghicit.
+
+		După aceea se atribuie modelului categoria și cererea din care face parte.
+
+		În final, se încarcă pe S3 și se salvează în baza de date.
+
+		De asemenea, este extinsă metoda prin care se șterge modelul, asigurându-se ștergerea sa și de pe AWS S3.
+
+		\item \verb|Sale| - În afară de metoda ce compune un nou generic sale, ce nu mai e folosită, acest model mai oferă și două metode pentru calcularea prețului total al produselor și cantității lor.
+
+		De asemenea, mai oferă încă două metode pentru calcularea prețului total al asigurărilor și a cantităților lor.
+	\end{itemize}
