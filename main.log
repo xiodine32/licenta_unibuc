@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6350 64-bit) (preloaded format=xelatex 2017.6.13)  17 JUN 2017 00:28
+This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6350 64-bit) (preloaded format=xelatex 2017.6.13)  17 JUN 2017 02:54
 entering extended mode
 **./main.tex
 (main.tex
@@ -490,7 +490,137 @@ Package biblatex Info: ... file 'romanian.lbx' not found.
 Package biblatex Warning: Language 'romanian' not supported.
 (biblatex)                Using fallback language 'english' on input line 30.
 
-(main.aux)
+(main.aux
+
+LaTeX Warning: Label `fig:TEMP' multiply defined.
+
+
+LaTeX Warning: Label `fig:TEMP' multiply defined.
+
+
+LaTeX Warning: Label `fig:TEMP' multiply defined.
+
+
+LaTeX Warning: Label `fig:TEMP' multiply defined.
+
+
+LaTeX Warning: Label `fig:TEMP' multiply defined.
+
+
+LaTeX Warning: Label `fig:TEMP' multiply defined.
+
+
+LaTeX Warning: Label `fig:TEMP' multiply defined.
+
+
+LaTeX Warning: Label `fig:TEMP' multiply defined.
+
+
+LaTeX Warning: Label `fig:TEMP' multiply defined.
+
+
+LaTeX Warning: Label `fig:TEMP' multiply defined.
+
+
+LaTeX Warning: Label `fig:TEMP' multiply defined.
+
+
+LaTeX Warning: Label `fig:TEMP' multiply defined.
+
+
+LaTeX Warning: Label `fig:TEMP' multiply defined.
+
+
+LaTeX Warning: Label `fig:TEMP' multiply defined.
+
+
+LaTeX Warning: Label `fig:TEMP' multiply defined.
+
+
+LaTeX Warning: Label `fig:TEMP' multiply defined.
+
+
+LaTeX Warning: Label `fig:TEMP' multiply defined.
+
+
+LaTeX Warning: Label `fig:TEMP' multiply defined.
+
+
+LaTeX Warning: Label `fig:TEMP' multiply defined.
+
+
+LaTeX Warning: Label `fig:TEMP' multiply defined.
+
+
+LaTeX Warning: Label `fig:TEMP' multiply defined.
+
+
+LaTeX Warning: Label `fig:TEMP' multiply defined.
+
+
+LaTeX Warning: Label `fig:TEMP' multiply defined.
+
+
+LaTeX Warning: Label `fig:TEMP' multiply defined.
+
+
+LaTeX Warning: Label `fig:TEMP' multiply defined.
+
+
+LaTeX Warning: Label `fig:TEMP' multiply defined.
+
+
+LaTeX Warning: Label `fig:TEMP' multiply defined.
+
+
+LaTeX Warning: Label `fig:TEMP' multiply defined.
+
+
+LaTeX Warning: Label `fig:TEMP' multiply defined.
+
+
+LaTeX Warning: Label `fig:TEMP' multiply defined.
+
+
+LaTeX Warning: Label `fig:TEMP' multiply defined.
+
+
+LaTeX Warning: Label `fig:TEMP' multiply defined.
+
+
+LaTeX Warning: Label `fig:TEMP' multiply defined.
+
+
+LaTeX Warning: Label `fig:TEMP' multiply defined.
+
+
+LaTeX Warning: Label `fig:TEMP' multiply defined.
+
+
+LaTeX Warning: Label `fig:TEMP' multiply defined.
+
+
+LaTeX Warning: Label `fig:TEMP' multiply defined.
+
+
+LaTeX Warning: Label `fig:TEMP' multiply defined.
+
+
+LaTeX Warning: Label `fig:TEMP' multiply defined.
+
+
+LaTeX Warning: Label `fig:TEMP' multiply defined.
+
+
+LaTeX Warning: Label `fig:TEMP' multiply defined.
+
+
+LaTeX Warning: Label `fig:TEMP' multiply defined.
+
+
+LaTeX Warning: Label `fig:TEMP' multiply defined.
+
+)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
@@ -655,17 +785,159 @@ File: ./capitole/../imagini/backups.png Graphic file (type QTm)
 (capitole/structura_aplicatiei/excel.tex [46] [47] [48])) [49]
 (capitole/user_workflow.tex
 Capitolul 4.
-(capitole/user_workflow/register_a_claim.tex)
+(capitole/user_workflow/register_a_claim.tex
+File: ./capitole/../imagini/backups.png Graphic file (type QTm)
+
+<use  "./capitole/../imagini/backups.png" >
+File: ./capitole/../imagini/claim_mesaje.png Graphic file (type QTm)
+
+<use  "./capitole/../imagini/claim_mesaje.png" >
+File: ./capitole/../imagini/claims_edit.png Graphic file (type QTm)
+
+<use  "./capitole/../imagini/claims_edit.png" >
+File: ./capitole/../imagini/claims_edit_with_decision.png Graphic file (type QT
+m)
+
+<use  "./capitole/../imagini/claims_edit_with_decision.png" >
+File: ./capitole/../imagini/claims_filtered.png Graphic file (type QTm)
+
+<use  "./capitole/../imagini/claims_filtered.png" >
+File: ./capitole/../imagini/claims_import_filters.png Graphic file (type QTm)
+
+<use  "./capitole/../imagini/claims_import_filters.png" >
+File: ./capitole/../imagini/claims_manual_sale.png Graphic file (type QTm)
+
+<use  "./capitole/../imagini/claims_manual_sale.png" >
+File: ./capitole/../imagini/claims_match_sale.png Graphic file (type QTm)
+
+<use  "./capitole/../imagini/claims_match_sale.png" >
+File: ./capitole/../imagini/claims_normal.png Graphic file (type QTm)
+
+<use  "./capitole/../imagini/claims_normal.png" >
+File: ./capitole/../imagini/claims_reminder_view.png Graphic file (type QTm)
+
+<use  "./capitole/../imagini/claims_reminder_view.png" >
+File: ./capitole/../imagini/claims_reports.png Graphic file (type QTm)
+
+<use  "./capitole/../imagini/claims_reports.png" >
+File: ./capitole/../imagini/claims_search.png Graphic file (type QTm)
+
+<use  "./capitole/../imagini/claims_search.png" >
+File: ./capitole/../imagini/claims_tags.png Graphic file (type QTm)
+
+<use  "./capitole/../imagini/claims_tags.png" >
+File: ./capitole/../imagini/claims_view.png Graphic file (type QTm)
+
+<use  "./capitole/../imagini/claims_view.png" >
+File: ./capitole/../imagini/color_coding.png Graphic file (type QTm)
+
+<use  "./capitole/../imagini/color_coding.png" >
+File: ./capitole/../imagini/decisions_add_conirm.png Graphic file (type QTm)
+
+<use  "./capitole/../imagini/decisions_add_conirm.png" >
+File: ./capitole/../imagini/decisions_add_old.png Graphic file (type QTm)
+
+<use  "./capitole/../imagini/decisions_add_old.png" >
+File: ./capitole/../imagini/decisions_edit.png Graphic file (type QTm)
+
+<use  "./capitole/../imagini/decisions_edit.png" >
+File: ./capitole/../imagini/decisions_filter.png Graphic file (type QTm)
+
+<use  "./capitole/../imagini/decisions_filter.png" >
+File: ./capitole/../imagini/descriere_eveniment.png Graphic file (type QTm)
+
+<use  "./capitole/../imagini/descriere_eveniment.png" >
+File: ./capitole/../imagini/home_page.png Graphic file (type QTm)
+
+<use  "./capitole/../imagini/home_page.png" >
+File: ./capitole/../imagini/imports.png Graphic file (type QTm)
+
+<use  "./capitole/../imagini/imports.png" >
+File: ./capitole/../imagini/login.png Graphic file (type QTm)
+
+<use  "./capitole/../imagini/login.png" >
+File: ./capitole/../imagini/main.png Graphic file (type QTm)
+
+<use  "./capitole/../imagini/main.png" >
+File: ./capitole/../imagini/message_mail_from_office.png Graphic file (type QTm
+)
+
+<use  "./capitole/../imagini/message_mail_from_office.png" >
+File: ./capitole/../imagini/message_mail_from_person.png Graphic file (type QTm
+)
+
+<use  "./capitole/../imagini/message_mail_from_person.png" >
+File: ./capitole/../imagini/message_mail_weekly_import.png Graphic file (type Q
+Tm)
+
+<use  "./capitole/../imagini/message_mail_weekly_import.png" >
+File: ./capitole/../imagini/message_new_claim.png Graphic file (type QTm)
+
+<use  "./capitole/../imagini/message_new_claim.png" >
+File: ./capitole/../imagini/register_avariator.png Graphic file (type QTm)
+
+<use  "./capitole/../imagini/register_avariator.png" >
+File: ./capitole/../imagini/register_cerere_despagubire.png Graphic file (type 
+QTm)
+
+<use  "./capitole/../imagini/register_cerere_despagubire.png" >
+File: ./capitole/../imagini/register_decurs.png Graphic file (type QTm)
+
+<use  "./capitole/../imagini/register_decurs.png" >
+File: ./capitole/../imagini/register_deteriorat.png Graphic file (type QTm)
+
+<use  "./capitole/../imagini/register_deteriorat.png" >
+File: ./capitole/../imagini/register_informatii_generale.png Graphic file (type
+ QTm)
+
+<use  "./capitole/../imagini/register_informatii_generale.png" >
+
+LaTeX Warning: Float too large for page by 31.15752pt on input line 167.
+
+File: ./capitole/../imagini/register_poze.png Graphic file (type QTm)
+<use  "./capitole/../imagini/register_poze.png" >
+File: ./capitole/../imagini/report_incarcare_poze.png Graphic file (type QTm)
+
+<use  "./capitole/../imagini/report_incarcare_poze.png" >
+File: ./capitole/../imagini/reports.png Graphic file (type QTm)
+
+<use  "./capitole/../imagini/reports.png" >
+File: ./capitole/../imagini/sales.png Graphic file (type QTm)
+
+<use  "./capitole/../imagini/sales.png" >
+File: ./capitole/../imagini/sales_add_assurance.png Graphic file (type QTm)
+
+<use  "./capitole/../imagini/sales_add_assurance.png" >
+File: ./capitole/../imagini/sales_add_product.png Graphic file (type QTm)
+
+<use  "./capitole/../imagini/sales_add_product.png" >
+File: ./capitole/../imagini/sales_delete_assurance.png Graphic file (type QTm)
+
+<use  "./capitole/../imagini/sales_delete_assurance.png" >
+File: ./capitole/../imagini/sales_delete_product.png Graphic file (type QTm)
+
+<use  "./capitole/../imagini/sales_delete_product.png" >
+File: ./capitole/../imagini/sales_search.png Graphic file (type QTm)
+
+<use  "./capitole/../imagini/sales_search.png" >
+File: ./capitole/../imagini/sales_view.png Graphic file (type QTm)
+
+<use  "./capitole/../imagini/sales_view.png" >
+File: ./capitole/../imagini/statistics.png Graphic file (type QTm)
+
+<use  "./capitole/../imagini/statistics.png" >)
 (capitole/user_workflow/responding_to_messages.tex)
 (capitole/user_workflow/administrative_interface.tex [50
 
-])
+] [51] [52] [53]
+[54] [55] [56] [57] [58] [59] [60] [61] [62] [63] [64] [65] [66])
 (capitole/user_workflow/settings.tex)
-(capitole/user_workflow/uploading_photos.tex)) [51] (capitole/concluzii.tex
+(capitole/user_workflow/uploading_photos.tex)) [67] [68]
+(capitole/concluzii.tex [69] [70] [71] [72] [73] [74] [75]
 (capitole/concluzii/business_continuity_plan.tex)
 (capitole/concluzii/luna_dec_teste_automate.tex)
 (capitole/concluzii/extragerea_din_modele.tex)
-(capitole/concluzii/sistem_modular_de_rapoarte.tex)) [52
+(capitole/concluzii/sistem_modular_de_rapoarte.tex)) [76
 
 ]
 Overfull \hbox (24.79211pt too wide) in paragraph at lines 48--48
@@ -688,7 +960,7 @@ m/n/10 . \TU/lmr/m/sc/10 url\TU/lmr/m/n/10 : []$[][][][][] [] [] [] [][][][][][
 ][][][][][][][][][][][] []
  []
 
-[53
+[77
 
 ]
 Overfull \hbox (6.68214pt too wide) in paragraph at lines 48--48
@@ -722,25 +994,29 @@ U/lmr/m/sc/10 url\TU/lmr/m/n/10 : []$[][][][] [] [] [] [][][][][][] [] [][][][]
 [][] [] [][] [] [][][][][][][][][] [][]
  []
 
-[54]
+[78]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 50.
- [55]
+ [79]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 50.
  (main.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 50.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 50.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 50.
  ) 
 Here is how much of TeX's memory you used:
- 16463 strings out of 427834
- 260149 string characters out of 3155872
- 738757 words of memory out of 3000000
- 20165 multiletter control sequences out of 15000+200000
+ 16536 strings out of 427834
+ 262488 string characters out of 3155872
+ 738833 words of memory out of 3000000
+ 20201 multiletter control sequences out of 15000+200000
  6856 words of font info for 39 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
  44i,7n,69p,960b,4941s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on main.pdf (56 pages).
+Output written on main.pdf (80 pages).

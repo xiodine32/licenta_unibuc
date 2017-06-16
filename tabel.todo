@@ -60,6 +60,7 @@
 4. Concluzia
 	☐ Business Continuity Plan
 	☐ Luna dec - teste automate
+	☐ Gestionarea cererilor expirate si a datelor lor.
 	☐ Refactoring din modelele imens de mari in tabele modulare.
 	☐ Fandu doreste sistem modular de rapoarte
 		ce inseamna asta pentru structura bazei de date
