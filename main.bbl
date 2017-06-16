@@ -1037,6 +1037,31 @@
       \field{title}{Agile software development, principles, patterns, and practices}
       \field{year}{2014}
     \endentry
+    \entry{laravel_controllers}{online}{}
+      \name{author}{1}{}{%
+        {{hash=014fa26b3b0c59e1bdec61314fc8d11b}{%
+           family={Otwell},
+           familyi={O\bibinitperiod},
+           given={Taylor},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{014fa26b3b0c59e1bdec61314fc8d11b}
+      \strng{fullhash}{014fa26b3b0c59e1bdec61314fc8d11b}
+      \strng{authornamehash}{014fa26b3b0c59e1bdec61314fc8d11b}
+      \strng{authorfullhash}{014fa26b3b0c59e1bdec61314fc8d11b}
+      \field{sortinit}{4}
+      \field{sortinithash}{d221becdd544034cf9082056cd6e6d2d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Controllers - Laravel - The PHP Framework For Web Artisans}
+      \field{urlday}{14}
+      \field{urlmonth}{6}
+      \field{urlyear}{2017}
+      \field{urldateera}{ce}
+      \verb{url}
+      \verb https://laravel.com/docs/5.3/controllers
+      \endverb
+    \endentry
     \entry{testare_automata}{book}{}
       \name{author}{1}{}{%
         {{hash=fb8fa1c4f6c03b0e5e2a6c36e5fbbdcb}{%
