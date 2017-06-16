@@ -1,79 +1,5 @@
-1. Motivație
-	☐ Layerele
-		☐ Apache / PHP
-			☐ MVC - Model View Controller
-				detalii despre abordare
-				de ce consider eu ca e cea mai buna - principiul de separare a "puterii"
-				cum ma ajuta Laravel sa obtin asta
-				☐ Excel
-					☐ Facade
-					☐ FileData
-					☐ FileDataExcelAdaptor
-					☐ Adaptors
-						☐ DailyAdaptor
-						☐ ExcelAdaptor
-						☐ ExcelHelper
-						☐ AltexGalaxyAdaptor
-						☐ SalesImportAdaptor
-						☐ OldAdaptor
-					☐ Outputers
-						☐ StatisticsOutputer
-						☐ DecisionsOutputer
-						☐ ProductsOutputer
-						☐ SalesOutputer
-						☐ AbstractDateOutputer
-						☐ ExcelOutputer
-						☐ YearlyOutputer
-							☐ NegativeSale
-					☐ functii ajutatoare - Helpers
-						☐ FormHelper
-						☐ Helpers
-						☐ TemporaryFiles
-							mai ales folositoare pentru rapoarte
-					☐ tipuri de request-uri.
-						ClaimRegisteredRequest
-						ReportRequest
-						StoreClaimRequest
-				☐ Views - blade chemat de Controller
-					o idee generala a structurii
-					☐ vendor pagination bootstrap
-					☐ settings
-						backup
-						index
-					☐ sales
-						☐ includes-urile
-					☐ reports
-						☐ includes-urile
-					☐ newclaim
-						☐ includes-urile
-					☐ messages
-					☐ mail
-						layout
-						☐ claim
-						☐ photos
-						☐ sales
-					☐ app layout
-					☐ import
-						cu tot js-ul de rigoare
-						☐ steps
-						☐ types
-					☐ errors - custom error handling
-					☐ decisions
-						☐ includes-urile
-					☐ components - html panels
-					☐ claims
-						☐ includes-urile
-					☐ auth
-						☐ postData
-						☐ postSimpleJson
-						☐ postJson
-				☐ .env ironment-ul
-					necesitatea unui app_key
-					conexiunea .env - db
-					conectiunea .env - mail system
-				☐ logging - laravel.log
-				☐ sistemul de event - notification - mail system
- ☐ User workflow
+☐ mail system?
+ ☐ Manualul de utilizare
 	 ☐ Registering a claim
 	 ☐ Uploading photos
 	 ☐ Responding to messages
@@ -134,13 +60,86 @@
 4. Concluzia
 	☐ Business Continuity Plan
 	☐ Luna dec - teste automate
-	☐ Extragerea din modelele imens de mari in tabele cu informatii mai modulare.
+	☐ Refactoring din modelele imens de mari in tabele modulare.
 	☐ Fandu doreste sistem modular de rapoarte
 		ce inseamna asta pentru structura bazei de date
+	☐ Cereri de modificari campuri, ce ar fi validate de "super administatori" - definiti de DBA.
 
 
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
+	✔ vendor pagination bootstrap @done (17-06-17 00:40)
+	✔ types @done (17-06-17 00:40)
+	✔ tipuri de request-uri. @done (17-06-17 00:40)
+		ClaimRegisteredRequest
+		ReportRequest
+		StoreClaimRequest
+	✔ steps @done (17-06-17 00:40)
+	✔ settings @done (17-06-17 00:40)
+		backup
+		index
+	✔ sales @done (17-06-17 00:40)
+	✔ sales @done (17-06-17 00:40)
+	✔ reports @done (17-06-17 00:40)
+	✔ postSimpleJson @done (17-06-17 00:40)
+	✔ postJson @done (17-06-17 00:40)
+	✔ postData @done (17-06-17 00:40)
+	✔ photos @done (17-06-17 00:40)
+	✔ newclaim @done (17-06-17 00:40)
+	✔ messages @done (17-06-17 00:40)
+	✔ mail @done (17-06-17 00:40)
+		layout
+	✔ includes-urile @done (17-06-17 00:40)
+	✔ includes-urile @done (17-06-17 00:40)
+	✔ includes-urile @done (17-06-17 00:40)
+	✔ includes-urile @done (17-06-17 00:40)
+	✔ includes-urile @done (17-06-17 00:40)
+	✔ import @done (17-06-17 00:40)
+		cu tot js-ul de rigoare
+	✔ functii ajutatoare - Helpers @done (17-06-17 00:40)
+	✔ errors - custom error handling @done (17-06-17 00:40)
+	✔ decisions @done (17-06-17 00:40)
+	✔ components - html panels @done (17-06-17 00:40)
+	✔ claims @done (17-06-17 00:40)
+	✔ claim @done (17-06-17 00:40)
+	✔ auth @done (17-06-17 00:40)
+	✔ app layout @done (17-06-17 00:40)
+	✔ YearlyOutputer @done (17-06-17 00:40)
+	✔ Views - blade chemat de Controller @done (17-06-17 00:40)
+		o idee generala a structurii
+	✔ TemporaryFiles @done (17-06-17 00:40)
+		mai ales folositoare pentru rapoarte
+	✔ StatisticsOutputer @done (17-06-17 00:40)
+	✔ SalesOutputer @done (17-06-17 00:40)
+	✔ SalesImportAdaptor @done (17-06-17 00:40)
+	✔ ProductsOutputer @done (17-06-17 00:40)
+	✔ Outputers @done (17-06-17 00:40)
+	✔ OldAdaptor @done (17-06-17 00:40)
+	✔ NegativeSale @done (17-06-17 00:40)
+	✔ MVC - Model View Controller @done (17-06-17 00:40)
+		detalii despre abordare
+		de ce consider eu ca e cea mai buna - principiul de separare a "puterii"
+		cum ma ajuta Laravel sa obtin asta
+	✔ Layerele @done (17-06-17 00:40)
+	✔ Helpers @done (17-06-17 00:40)
+	✔ FormHelper @done (17-06-17 00:40)
+	✔ FileDataExcelAdaptor @done (17-06-17 00:40)
+	✔ FileData @done (17-06-17 00:40)
+	✔ Facade @done (17-06-17 00:40)
+	✔ ExcelOutputer @done (17-06-17 00:40)
+	✔ ExcelHelper @done (17-06-17 00:40)
+	✔ ExcelAdaptor @done (17-06-17 00:40)
+	✔ Excel @done (17-06-17 00:40)
+	✔ DecisionsOutputer @done (17-06-17 00:40)
+	✔ DailyAdaptor @done (17-06-17 00:40)
+	✔ Apache / PHP @done (17-06-17 00:40)
+	✔ AltexGalaxyAdaptor @done (17-06-17 00:40)
+	✔ Adaptors @done (17-06-17 00:40)
+	✔ AbstractDateOutputer @done (17-06-17 00:40)
+	✔ .env ironment-ul @done (17-06-17 00:40)
+		necesitatea unui app_key
+		conexiunea .env - db
+		conectiunea .env - mail system
 	✘ todo: MonthlyOutputer @cancelled (17-06-16 10:37)
 	✔ Composer @done (17-06-16 10:37)
 	✔ typeahead @done (17-06-16 10:36)
