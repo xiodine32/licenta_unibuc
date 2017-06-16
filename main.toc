@@ -92,248 +92,248 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.2}Baza de date}{34}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}MVC - Model View Controller}{34}{section.4.3}
+\contentsline {section}{\numberline {4.3}Laravel MVC}{35}{section.4.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.3.1}Controllers}{35}{subsection.4.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.1.1}Namespace-ul default}{35}{subsubsection.4.3.1.1}
+\contentsline {subsubsection}{\numberline {4.3.1.1}Namespace-ul default}{36}{subsubsection.4.3.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {4.3.1.1.1}Claims}{35}{paragraph.4.3.1.1.1}
+\contentsline {paragraph}{\numberline {4.3.1.1.1}Claims}{36}{paragraph.4.3.1.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {4.3.1.1.2}Helper}{35}{paragraph.4.3.1.1.2}
+\contentsline {paragraph}{\numberline {4.3.1.1.2}Helper}{36}{paragraph.4.3.1.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {4.3.1.1.3}Json - Images}{35}{paragraph.4.3.1.1.3}
+\contentsline {paragraph}{\numberline {4.3.1.1.3}Json - Images}{36}{paragraph.4.3.1.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {4.3.1.1.4}Messages}{35}{paragraph.4.3.1.1.4}
+\contentsline {paragraph}{\numberline {4.3.1.1.4}Messages}{36}{paragraph.4.3.1.1.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.1.2}Admin}{35}{subsubsection.4.3.1.2}
+\contentsline {subsubsection}{\numberline {4.3.1.2}Admin}{36}{subsubsection.4.3.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {4.3.1.2.1}Claims}{35}{paragraph.4.3.1.2.1}
+\contentsline {paragraph}{\numberline {4.3.1.2.1}Claims}{36}{paragraph.4.3.1.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {4.3.1.2.2}Decision}{35}{paragraph.4.3.1.2.2}
+\contentsline {paragraph}{\numberline {4.3.1.2.2}Decision}{36}{paragraph.4.3.1.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {4.3.1.2.3}Home}{35}{paragraph.4.3.1.2.3}
+\contentsline {paragraph}{\numberline {4.3.1.2.3}Home}{36}{paragraph.4.3.1.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {4.3.1.2.4}Import}{35}{paragraph.4.3.1.2.4}
+\contentsline {paragraph}{\numberline {4.3.1.2.4}Import}{36}{paragraph.4.3.1.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {4.3.1.2.5}Json - Search}{35}{paragraph.4.3.1.2.5}
+\contentsline {paragraph}{\numberline {4.3.1.2.5}Json - Search}{36}{paragraph.4.3.1.2.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {4.3.1.2.6}Reports}{35}{paragraph.4.3.1.2.6}
+\contentsline {paragraph}{\numberline {4.3.1.2.6}Reports}{36}{paragraph.4.3.1.2.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {4.3.1.2.7}Sales}{35}{paragraph.4.3.1.2.7}
+\contentsline {paragraph}{\numberline {4.3.1.2.7}Sales}{36}{paragraph.4.3.1.2.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {4.3.1.2.8}Products}{35}{paragraph.4.3.1.2.8}
+\contentsline {paragraph}{\numberline {4.3.1.2.8}Products}{36}{paragraph.4.3.1.2.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {4.3.1.2.9}Assurances}{35}{paragraph.4.3.1.2.9}
+\contentsline {paragraph}{\numberline {4.3.1.2.9}Assurances}{36}{paragraph.4.3.1.2.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {4.3.1.2.10}Export}{35}{paragraph.4.3.1.2.10}
+\contentsline {paragraph}{\numberline {4.3.1.2.10}Export}{36}{paragraph.4.3.1.2.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {4.3.1.2.11}Backup}{35}{paragraph.4.3.1.2.11}
+\contentsline {paragraph}{\numberline {4.3.1.2.11}Backup}{36}{paragraph.4.3.1.2.11}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {4.3.1.2.12}Settings}{35}{paragraph.4.3.1.2.12}
+\contentsline {paragraph}{\numberline {4.3.1.2.12}Settings}{36}{paragraph.4.3.1.2.12}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.1.3}Auth}{35}{subsubsection.4.3.1.3}
+\contentsline {subsubsection}{\numberline {4.3.1.3}Auth}{36}{subsubsection.4.3.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {4.3.1.3.1}ForgotPassword}{35}{paragraph.4.3.1.3.1}
+\contentsline {paragraph}{\numberline {4.3.1.3.1}ForgotPassword}{36}{paragraph.4.3.1.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {4.3.1.3.2}Register}{35}{paragraph.4.3.1.3.2}
+\contentsline {paragraph}{\numberline {4.3.1.3.2}Register}{36}{paragraph.4.3.1.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {4.3.1.3.3}ResetPassword}{35}{paragraph.4.3.1.3.3}
+\contentsline {paragraph}{\numberline {4.3.1.3.3}ResetPassword}{36}{paragraph.4.3.1.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {4.3.1.3.4}Login}{35}{paragraph.4.3.1.3.4}
+\contentsline {paragraph}{\numberline {4.3.1.3.4}Login}{36}{paragraph.4.3.1.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.2}Models - Eloquent ORM}{35}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.2}Models - Eloquent ORM}{36}{subsection.4.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.2.1}Assurance}{36}{subsubsection.4.3.2.1}
+\contentsline {subsubsection}{\numberline {4.3.2.1}Assurance}{37}{subsubsection.4.3.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.2.2}Claim}{36}{subsubsection.4.3.2.2}
+\contentsline {subsubsection}{\numberline {4.3.2.2}Claim}{37}{subsubsection.4.3.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.2.3}Decision}{36}{subsubsection.4.3.2.3}
+\contentsline {subsubsection}{\numberline {4.3.2.3}Decision}{37}{subsubsection.4.3.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.2.4}Message}{36}{subsubsection.4.3.2.4}
+\contentsline {subsubsection}{\numberline {4.3.2.4}Message}{37}{subsubsection.4.3.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.2.5}Photo}{36}{subsubsection.4.3.2.5}
+\contentsline {subsubsection}{\numberline {4.3.2.5}Photo}{37}{subsubsection.4.3.2.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.2.6}Product}{36}{subsubsection.4.3.2.6}
+\contentsline {subsubsection}{\numberline {4.3.2.6}Product}{37}{subsubsection.4.3.2.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.2.7}Sale}{36}{subsubsection.4.3.2.7}
+\contentsline {subsubsection}{\numberline {4.3.2.7}Sale}{37}{subsubsection.4.3.2.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.2.8}Views}{36}{subsubsection.4.3.2.8}
+\contentsline {subsubsection}{\numberline {4.3.2.8}Views}{37}{subsubsection.4.3.2.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {4.3.2.8.1}vendor pagination bootstrap}{36}{paragraph.4.3.2.8.1}
+\contentsline {paragraph}{\numberline {4.3.2.8.1}vendor pagination bootstrap}{37}{paragraph.4.3.2.8.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {4.3.2.8.2}settings}{36}{paragraph.4.3.2.8.2}
+\contentsline {paragraph}{\numberline {4.3.2.8.2}settings}{37}{paragraph.4.3.2.8.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subparagraph}{backup}{36}{paragraph.4.3.2.8.2}
+\contentsline {subparagraph}{backup}{37}{paragraph.4.3.2.8.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subparagraph}{index}{36}{paragraph.4.3.2.8.2}
+\contentsline {subparagraph}{index}{37}{paragraph.4.3.2.8.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {4.3.2.8.3}sales}{36}{paragraph.4.3.2.8.3}
+\contentsline {paragraph}{\numberline {4.3.2.8.3}sales}{37}{paragraph.4.3.2.8.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subparagraph}{includes}{36}{paragraph.4.3.2.8.3}
+\contentsline {subparagraph}{includes}{37}{paragraph.4.3.2.8.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {4.3.2.8.4}reports}{36}{paragraph.4.3.2.8.4}
+\contentsline {paragraph}{\numberline {4.3.2.8.4}reports}{37}{paragraph.4.3.2.8.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subparagraph}{includes}{36}{paragraph.4.3.2.8.4}
+\contentsline {subparagraph}{includes}{37}{paragraph.4.3.2.8.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {4.3.2.8.5}newclaim}{36}{paragraph.4.3.2.8.5}
+\contentsline {paragraph}{\numberline {4.3.2.8.5}newclaim}{37}{paragraph.4.3.2.8.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subparagraph}{includes}{36}{paragraph.4.3.2.8.5}
+\contentsline {subparagraph}{includes}{37}{paragraph.4.3.2.8.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {4.3.2.8.6}messages}{37}{paragraph.4.3.2.8.6}
+\contentsline {paragraph}{\numberline {4.3.2.8.6}messages}{38}{paragraph.4.3.2.8.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {4.3.2.8.7}mail - layout}{37}{paragraph.4.3.2.8.7}
+\contentsline {paragraph}{\numberline {4.3.2.8.7}mail - layout}{38}{paragraph.4.3.2.8.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {4.3.2.8.8}claim}{37}{paragraph.4.3.2.8.8}
+\contentsline {paragraph}{\numberline {4.3.2.8.8}claim}{38}{paragraph.4.3.2.8.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {4.3.2.8.9}photos}{37}{paragraph.4.3.2.8.9}
+\contentsline {paragraph}{\numberline {4.3.2.8.9}photos}{38}{paragraph.4.3.2.8.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {4.3.2.8.10}sales}{37}{paragraph.4.3.2.8.10}
+\contentsline {paragraph}{\numberline {4.3.2.8.10}sales}{38}{paragraph.4.3.2.8.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {4.3.2.8.11}app layout}{37}{paragraph.4.3.2.8.11}
+\contentsline {paragraph}{\numberline {4.3.2.8.11}app layout}{38}{paragraph.4.3.2.8.11}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {4.3.2.8.12}import}{37}{paragraph.4.3.2.8.12}
+\contentsline {paragraph}{\numberline {4.3.2.8.12}import}{38}{paragraph.4.3.2.8.12}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {4.3.2.8.13}errors - custom error handling}{37}{paragraph.4.3.2.8.13}
+\contentsline {paragraph}{\numberline {4.3.2.8.13}errors - custom error handling}{38}{paragraph.4.3.2.8.13}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {4.3.2.8.14}decisions}{37}{paragraph.4.3.2.8.14}
+\contentsline {paragraph}{\numberline {4.3.2.8.14}decisions}{38}{paragraph.4.3.2.8.14}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {4.3.2.8.15}import}{37}{paragraph.4.3.2.8.15}
+\contentsline {paragraph}{\numberline {4.3.2.8.15}import}{38}{paragraph.4.3.2.8.15}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {4.3.2.8.16}components - html panels}{37}{paragraph.4.3.2.8.16}
+\contentsline {paragraph}{\numberline {4.3.2.8.16}components - html panels}{38}{paragraph.4.3.2.8.16}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {4.3.2.8.17}reports}{37}{paragraph.4.3.2.8.17}
+\contentsline {paragraph}{\numberline {4.3.2.8.17}reports}{38}{paragraph.4.3.2.8.17}
 \defcounter {refsection}{0}\relax 
-\contentsline {subparagraph}{includes}{37}{paragraph.4.3.2.8.17}
+\contentsline {subparagraph}{includes}{38}{paragraph.4.3.2.8.17}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {4.3.2.8.18}claims}{37}{paragraph.4.3.2.8.18}
+\contentsline {paragraph}{\numberline {4.3.2.8.18}claims}{38}{paragraph.4.3.2.8.18}
 \defcounter {refsection}{0}\relax 
-\contentsline {subparagraph}{auth}{37}{paragraph.4.3.2.8.18}
+\contentsline {subparagraph}{auth}{38}{paragraph.4.3.2.8.18}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.2.9}Resources - js / scss}{37}{subsubsection.4.3.2.9}
+\contentsline {subsubsection}{\numberline {4.3.2.9}Resources - js / scss}{38}{subsubsection.4.3.2.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {4.3.2.9.1}bootstrap}{37}{paragraph.4.3.2.9.1}
+\contentsline {paragraph}{\numberline {4.3.2.9.1}bootstrap}{38}{paragraph.4.3.2.9.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {4.3.2.9.2}timepicker}{37}{paragraph.4.3.2.9.2}
+\contentsline {paragraph}{\numberline {4.3.2.9.2}timepicker}{38}{paragraph.4.3.2.9.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {4.3.2.9.3}typeahead}{37}{paragraph.4.3.2.9.3}
+\contentsline {paragraph}{\numberline {4.3.2.9.3}typeahead}{38}{paragraph.4.3.2.9.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {4.3.2.9.4}chart.js}{37}{paragraph.4.3.2.9.4}
+\contentsline {paragraph}{\numberline {4.3.2.9.4}chart.js}{38}{paragraph.4.3.2.9.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {4.3.2.9.5}extensions}{37}{paragraph.4.3.2.9.5}
+\contentsline {paragraph}{\numberline {4.3.2.9.5}extensions}{38}{paragraph.4.3.2.9.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {4.3.2.9.6}custom app.scss stylesheet.}{38}{paragraph.4.3.2.9.6}
+\contentsline {paragraph}{\numberline {4.3.2.9.6}custom app.scss stylesheet.}{39}{paragraph.4.3.2.9.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.3}functii ajutatoare - Helpers}{38}{subsection.4.3.3}
+\contentsline {subsection}{\numberline {4.3.3}functii ajutatoare - Helpers}{39}{subsection.4.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.3.1}FormHelper}{38}{subsubsection.4.3.3.1}
+\contentsline {subsubsection}{\numberline {4.3.3.1}FormHelper}{39}{subsubsection.4.3.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.3.2}Helpers}{38}{subsubsection.4.3.3.2}
+\contentsline {subsubsection}{\numberline {4.3.3.2}Helpers}{39}{subsubsection.4.3.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.3.3}TemporaryFiles}{38}{subsubsection.4.3.3.3}
+\contentsline {subsubsection}{\numberline {4.3.3.3}TemporaryFiles}{39}{subsubsection.4.3.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.4}Request-uri}{38}{subsection.4.3.4}
+\contentsline {subsection}{\numberline {4.3.4}Request-uri}{39}{subsection.4.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.5}.env ironment-ul}{38}{subsection.4.3.5}
+\contentsline {subsection}{\numberline {4.3.5}.env ironment-ul}{39}{subsection.4.3.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.6}Logging}{39}{subsection.4.3.6}
+\contentsline {subsection}{\numberline {4.3.6}Logging}{40}{subsection.4.3.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.7}Event - Notification - Mail system}{39}{subsection.4.3.7}
+\contentsline {subsection}{\numberline {4.3.7}Event - Notification - Mail system}{40}{subsection.4.3.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.8}Excel}{39}{subsection.4.3.8}
+\contentsline {subsection}{\numberline {4.3.8}Excel}{40}{subsection.4.3.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.8.1}Facade}{39}{subsubsection.4.3.8.1}
+\contentsline {subsubsection}{\numberline {4.3.8.1}Facade}{40}{subsubsection.4.3.8.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.8.2}FileData}{39}{subsubsection.4.3.8.2}
+\contentsline {subsubsection}{\numberline {4.3.8.2}FileData}{40}{subsubsection.4.3.8.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.8.3}FileDataExcelAdaptor}{39}{subsubsection.4.3.8.3}
+\contentsline {subsubsection}{\numberline {4.3.8.3}FileDataExcelAdaptor}{40}{subsubsection.4.3.8.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.8.4}Adaptors}{39}{subsubsection.4.3.8.4}
+\contentsline {subsubsection}{\numberline {4.3.8.4}Adaptors}{40}{subsubsection.4.3.8.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {4.3.8.4.1}DailyAdaptor}{39}{paragraph.4.3.8.4.1}
+\contentsline {paragraph}{\numberline {4.3.8.4.1}DailyAdaptor}{40}{paragraph.4.3.8.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {4.3.8.4.2}ExcelAdaptor}{39}{paragraph.4.3.8.4.2}
+\contentsline {paragraph}{\numberline {4.3.8.4.2}ExcelAdaptor}{40}{paragraph.4.3.8.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {4.3.8.4.3}ExcelHelper}{39}{paragraph.4.3.8.4.3}
+\contentsline {paragraph}{\numberline {4.3.8.4.3}ExcelHelper}{40}{paragraph.4.3.8.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {4.3.8.4.4}AltexGalaxyAdaptor}{39}{paragraph.4.3.8.4.4}
+\contentsline {paragraph}{\numberline {4.3.8.4.4}AltexGalaxyAdaptor}{40}{paragraph.4.3.8.4.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {4.3.8.4.5}SalesImportAdaptor}{39}{paragraph.4.3.8.4.5}
+\contentsline {paragraph}{\numberline {4.3.8.4.5}SalesImportAdaptor}{40}{paragraph.4.3.8.4.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {4.3.8.4.6}OldAdaptor}{39}{paragraph.4.3.8.4.6}
+\contentsline {paragraph}{\numberline {4.3.8.4.6}OldAdaptor}{40}{paragraph.4.3.8.4.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.8.5}Outputers}{39}{subsubsection.4.3.8.5}
+\contentsline {subsubsection}{\numberline {4.3.8.5}Outputers}{40}{subsubsection.4.3.8.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {4.3.8.5.1}StatisticsOutputer}{39}{paragraph.4.3.8.5.1}
+\contentsline {paragraph}{\numberline {4.3.8.5.1}StatisticsOutputer}{40}{paragraph.4.3.8.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {4.3.8.5.2}DecisionsOutputer}{39}{paragraph.4.3.8.5.2}
+\contentsline {paragraph}{\numberline {4.3.8.5.2}DecisionsOutputer}{40}{paragraph.4.3.8.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {4.3.8.5.3}ProductsOutputer}{39}{paragraph.4.3.8.5.3}
+\contentsline {paragraph}{\numberline {4.3.8.5.3}ProductsOutputer}{40}{paragraph.4.3.8.5.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {4.3.8.5.4}SalesOutputer}{39}{paragraph.4.3.8.5.4}
+\contentsline {paragraph}{\numberline {4.3.8.5.4}SalesOutputer}{40}{paragraph.4.3.8.5.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {4.3.8.5.5}AbstractDateOutputer}{39}{paragraph.4.3.8.5.5}
+\contentsline {paragraph}{\numberline {4.3.8.5.5}AbstractDateOutputer}{40}{paragraph.4.3.8.5.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {4.3.8.5.6}ExcelOutputer}{39}{paragraph.4.3.8.5.6}
+\contentsline {paragraph}{\numberline {4.3.8.5.6}ExcelOutputer}{40}{paragraph.4.3.8.5.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {4.3.8.5.7}YearlyOutputer}{39}{paragraph.4.3.8.5.7}
+\contentsline {paragraph}{\numberline {4.3.8.5.7}YearlyOutputer}{40}{paragraph.4.3.8.5.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subparagraph}{NegativeSale}{39}{paragraph.4.3.8.5.7}
+\contentsline {subparagraph}{NegativeSale}{40}{paragraph.4.3.8.5.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {4.3.8.5.8}MonthlyOutputer}{39}{paragraph.4.3.8.5.8}
+\contentsline {paragraph}{\numberline {4.3.8.5.8}MonthlyOutputer}{40}{paragraph.4.3.8.5.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Manual de utilizare}{41}{chapter.5}
+\contentsline {chapter}{\numberline {5}Manual de utilizare}{42}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Administrative interface}{41}{section.5.1}
+\contentsline {section}{\numberline {5.1}Administrative interface}{42}{section.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.1}Claims view}{41}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.1}Claims view}{42}{subsection.5.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.1.1.1}Color code}{41}{subsubsection.5.1.1.1}
+\contentsline {subsubsection}{\numberline {5.1.1.1}Color code}{42}{subsubsection.5.1.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.1.1.2}Search}{41}{subsubsection.5.1.1.2}
+\contentsline {subsubsection}{\numberline {5.1.1.2}Search}{42}{subsubsection.5.1.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {5.1.1.2.1}Navbar ID}{41}{paragraph.5.1.1.2.1}
+\contentsline {paragraph}{\numberline {5.1.1.2.1}Navbar ID}{42}{paragraph.5.1.1.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.1.1.3}View claim}{41}{subsubsection.5.1.1.3}
+\contentsline {subsubsection}{\numberline {5.1.1.3}View claim}{42}{subsubsection.5.1.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.1.1.4}Edit Claim}{41}{subsubsection.5.1.1.4}
+\contentsline {subsubsection}{\numberline {5.1.1.4}Edit Claim}{42}{subsubsection.5.1.1.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.1.1.5}Reminders}{41}{subsubsection.5.1.1.5}
+\contentsline {subsubsection}{\numberline {5.1.1.5}Reminders}{42}{subsubsection.5.1.1.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.2}Import}{41}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.2}Import}{42}{subsection.5.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.1.2.1}Weekly Sale import}{41}{subsubsection.5.1.2.1}
+\contentsline {subsubsection}{\numberline {5.1.2.1}Weekly Sale import}{42}{subsubsection.5.1.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.1.2.2}Custom imports}{41}{subsubsection.5.1.2.2}
+\contentsline {subsubsection}{\numberline {5.1.2.2}Custom imports}{42}{subsubsection.5.1.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.3}Sales}{42}{subsection.5.1.3}
+\contentsline {subsection}{\numberline {5.1.3}Sales}{43}{subsection.5.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.1.3.1}View}{42}{subsubsection.5.1.3.1}
+\contentsline {subsubsection}{\numberline {5.1.3.1}View}{43}{subsubsection.5.1.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.4}Decisions}{42}{subsection.5.1.4}
+\contentsline {subsection}{\numberline {5.1.4}Decisions}{43}{subsection.5.1.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.1.4.1}View}{42}{subsubsection.5.1.4.1}
+\contentsline {subsubsection}{\numberline {5.1.4.1}View}{43}{subsubsection.5.1.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.5}Reports}{42}{subsection.5.1.5}
+\contentsline {subsection}{\numberline {5.1.5}Reports}{43}{subsection.5.1.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Registering a claim}{42}{section.5.2}
+\contentsline {section}{\numberline {5.2}Registering a claim}{43}{section.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}Responding to messages}{42}{section.5.3}
+\contentsline {section}{\numberline {5.3}Responding to messages}{43}{section.5.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.4}Settings}{42}{section.5.4}
+\contentsline {section}{\numberline {5.4}Settings}{43}{section.5.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.5}Uploading photos}{42}{section.5.5}
+\contentsline {section}{\numberline {5.5}Uploading photos}{43}{section.5.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Concluzii}{43}{chapter.6}
+\contentsline {chapter}{\numberline {6}Concluzii}{44}{chapter.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Business Continuity Plan}{43}{section.6.1}
+\contentsline {section}{\numberline {6.1}Business Continuity Plan}{44}{section.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}Teste automate}{43}{section.6.2}
+\contentsline {section}{\numberline {6.2}Teste automate}{44}{section.6.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.3}Modularizarea tabelelor}{43}{section.6.3}
+\contentsline {section}{\numberline {6.3}Modularizarea tabelelor}{44}{section.6.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.3.1}Modificări necesare asupra structurii bazei de date}{43}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.1}Modificări necesare asupra structurii bazei de date}{44}{subsection.6.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.4}Sistem modular de rapoarte}{43}{section.6.4}
+\contentsline {section}{\numberline {6.4}Sistem modular de rapoarte}{44}{section.6.4}
 \defcounter {refsection}{0}\relax 
 \select@language {english}

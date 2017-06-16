@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6350 64-bit) (preloaded format=xelatex 2017.6.13)  16 JUN 2017 07:03
+This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6350 64-bit) (preloaded format=xelatex 2017.6.13)  16 JUN 2017 07:24
 entering extended mode
 **./main.tex
 (main.tex
@@ -624,30 +624,30 @@ Capitolul 4.
 File: ./capitole/../imagini/database_diagram.pdf Graphic file (type QTm)
 
 <use  "./capitole/../imagini/database_diagram.pdf" >
-Overfull \hbox (67.97081pt too wide) in paragraph at lines 24--26
+Overfull \hbox (67.97081pt too wide) in paragraph at lines 9--11
  []|  [] 
  []
 
-) (capitole/structura_aplicatiei/mvc.tex
-(capitole/structura_aplicatiei/mvc/controllers.tex [34])
-(capitole/structura_aplicatiei/mvc/models.tex [35])
-(capitole/structura_aplicatiei/mvc/views.tex [36])
-(capitole/structura_aplicatiei/mvc/helpers.tex [37]))
-(capitole/structura_aplicatiei/excel.tex [38])) [39]
-(capitole/user_workflow.tex [40]
+) [34] (capitole/structura_aplicatiei/mvc.tex
+(capitole/structura_aplicatiei/mvc/controllers.tex [35])
+(capitole/structura_aplicatiei/mvc/models.tex [36])
+(capitole/structura_aplicatiei/mvc/views.tex [37])
+(capitole/structura_aplicatiei/mvc/helpers.tex [38]))
+(capitole/structura_aplicatiei/excel.tex [39])) [40]
+(capitole/user_workflow.tex [41]
 Capitolul 5.
-(capitole/user_workflow/administrative_interface.tex [41
+(capitole/user_workflow/administrative_interface.tex [42
 
 ])
 (capitole/user_workflow/register_a_claim.tex)
 (capitole/user_workflow/responding_to_messages.tex)
 (capitole/user_workflow/settings.tex)
-(capitole/user_workflow/uplading_photos.tex)) [42] (capitole/concluzii.tex
+(capitole/user_workflow/uplading_photos.tex)) [43] (capitole/concluzii.tex
 Capitolul 6.
 (capitole/concluzii/business_continuity_plan.tex)
 (capitole/concluzii/luna_dec_teste_automate.tex)
 (capitole/concluzii/extragerea_din_modele.tex)
-(capitole/concluzii/sistem_modular_de_rapoarte.tex)) [43
+(capitole/concluzii/sistem_modular_de_rapoarte.tex)) [44
 
 ]
 Overfull \hbox (24.79211pt too wide) in paragraph at lines 48--48
@@ -670,7 +670,7 @@ m/n/10 . \TU/lmr/m/sc/10 url\TU/lmr/m/n/10 : []$[][][][][] [] [] [] [][][][][][
 ][][][][][][][][][][][] []
  []
 
-[44
+[45
 
 ]
 Overfull \hbox (6.68214pt too wide) in paragraph at lines 48--48
@@ -704,9 +704,9 @@ U/lmr/m/sc/10 url\TU/lmr/m/n/10 : []$[][][][] [] [] [] [][][][][][] [] [][][][]
 [][] [] [][] [] [][][][][][][][][] [][]
  []
 
-[45]
+[46]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 50.
- [46]
+ [47]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 50.
  (main.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 50.
@@ -719,10 +719,10 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 50.
 Here is how much of TeX's memory you used:
  16448 strings out of 427834
  259656 string characters out of 3155872
- 738353 words of memory out of 3000000
+ 738335 words of memory out of 3000000
  20157 multiletter control sequences out of 15000+200000
  6856 words of font info for 39 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
  44i,6n,69p,960b,4941s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on main.pdf (47 pages).
+Output written on main.pdf (48 pages).

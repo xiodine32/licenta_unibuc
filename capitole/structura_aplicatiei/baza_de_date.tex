@@ -2,6 +2,17 @@
 
 	Tabelele din baza de date sunt denumite cu pluralul obiectului la care se referă, folosind în loc de spații sublinia „\_”.
 	Puteți observa în detaliu diagrama bazei de date la figura~\ref{fig:database_diagram}
+
+	\begin{figure}[ht]
+		\centering
+		\vspace*{-2in}
+		\hspace*{-1in}
+     		\includegraphics[width=1.4\textwidth,height=1.4\textheight,keepaspectratio]{../imagini/database_diagram.pdf}
+		\caption{Diagrama bazei de date}
+		\label{fig:database_diagram}
+	\end{figure}
+
+
 	Aceasta este salvată o dată pe săptămână și conține datele despre:
 	\begin{enumerate}
 		\item \verb|claims| - Cererile de despăgubire.
@@ -18,11 +29,4 @@
 		\item \verb|photos| - Legăturile între locația pozelor și cererea, respectiv categoriilor lor, ce depinde de tabelul de cereri.
 	\end{enumerate}
 
-	\begin{figure}[ht]
-		\centering
-		\vspace*{-2in}
-		\hspace*{-1in}
-     		\includegraphics[width=1.4\textwidth,height=1.4\textheight,keepaspectratio]{../imagini/database_diagram.pdf}
-		\caption{Diagrama bazei de date}
-		\label{fig:database_diagram}
-	\end{figure}
+	\pagebreak

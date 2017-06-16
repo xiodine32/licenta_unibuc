@@ -41,7 +41,7 @@
 \BOOKMARK [0][-]{chapter.4}{Structura Aplicației}{}% 41
 \BOOKMARK [1][-]{section.4.1}{Un\040exemplu\040de\040cerere}{chapter.4}% 42
 \BOOKMARK [1][-]{section.4.2}{Baza\040de\040date}{chapter.4}% 43
-\BOOKMARK [1][-]{section.4.3}{MVC\040-\040Model\040View\040Controller}{chapter.4}% 44
+\BOOKMARK [1][-]{section.4.3}{Laravel\040MVC}{chapter.4}% 44
 \BOOKMARK [2][-]{subsection.4.3.1}{Controllers}{section.4.3}% 45
 \BOOKMARK [2][-]{subsection.4.3.2}{Models\040-\040Eloquent\040ORM}{section.4.3}% 46
 \BOOKMARK [2][-]{subsection.4.3.3}{functii\040ajutatoare\040-\040Helpers}{section.4.3}% 47
