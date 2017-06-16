@@ -106,100 +106,62 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {4.3.4.2}Mediul de dezvoltare}{47}{subsubsection.4.3.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.5}Excel}{48}{subsection.4.3.5}
+\contentsline {section}{\numberline {4.4}Excel}{47}{section.4.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.5.1}Facade}{48}{subsubsection.4.3.5.1}
+\contentsline {subsection}{\numberline {4.4.1}Implementarea platformei de rapoarte Excel}{48}{subsection.4.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.5.2}FileData}{48}{subsubsection.4.3.5.2}
+\contentsline {chapter}{\numberline {5}Manual de utilizare}{51}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.5.3}FileDataExcelAdaptor}{48}{subsubsection.4.3.5.3}
+\contentsline {section}{\numberline {5.1}Administrative interface}{51}{section.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.5.4}Adaptors}{48}{subsubsection.4.3.5.4}
+\contentsline {subsection}{\numberline {5.1.1}Claims view}{51}{subsection.5.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {4.3.5.4.1}DailyAdaptor}{48}{paragraph.4.3.5.4.1}
+\contentsline {subsubsection}{\numberline {5.1.1.1}Color code}{51}{subsubsection.5.1.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {4.3.5.4.2}ExcelAdaptor}{48}{paragraph.4.3.5.4.2}
+\contentsline {subsubsection}{\numberline {5.1.1.2}Search}{51}{subsubsection.5.1.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {4.3.5.4.3}ExcelHelper}{48}{paragraph.4.3.5.4.3}
+\contentsline {paragraph}{\numberline {5.1.1.2.1}Navbar ID}{51}{paragraph.5.1.1.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {4.3.5.4.4}AltexGalaxyAdaptor}{48}{paragraph.4.3.5.4.4}
+\contentsline {subsubsection}{\numberline {5.1.1.3}View claim}{51}{subsubsection.5.1.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {4.3.5.4.5}SalesImportAdaptor}{48}{paragraph.4.3.5.4.5}
+\contentsline {subsubsection}{\numberline {5.1.1.4}Edit Claim}{51}{subsubsection.5.1.1.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {4.3.5.4.6}OldAdaptor}{48}{paragraph.4.3.5.4.6}
+\contentsline {subsubsection}{\numberline {5.1.1.5}Reminders}{51}{subsubsection.5.1.1.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.5.5}Outputers}{48}{subsubsection.4.3.5.5}
+\contentsline {subsection}{\numberline {5.1.2}Import}{51}{subsection.5.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {4.3.5.5.1}StatisticsOutputer}{48}{paragraph.4.3.5.5.1}
+\contentsline {subsubsection}{\numberline {5.1.2.1}Weekly Sale import}{51}{subsubsection.5.1.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {4.3.5.5.2}DecisionsOutputer}{48}{paragraph.4.3.5.5.2}
+\contentsline {subsubsection}{\numberline {5.1.2.2}Custom imports}{51}{subsubsection.5.1.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {4.3.5.5.3}ProductsOutputer}{48}{paragraph.4.3.5.5.3}
+\contentsline {subsection}{\numberline {5.1.3}Sales}{52}{subsection.5.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {4.3.5.5.4}SalesOutputer}{48}{paragraph.4.3.5.5.4}
+\contentsline {subsubsection}{\numberline {5.1.3.1}View}{52}{subsubsection.5.1.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {4.3.5.5.5}AbstractDateOutputer}{48}{paragraph.4.3.5.5.5}
+\contentsline {subsection}{\numberline {5.1.4}Decisions}{52}{subsection.5.1.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {4.3.5.5.6}ExcelOutputer}{48}{paragraph.4.3.5.5.6}
+\contentsline {subsubsection}{\numberline {5.1.4.1}View}{52}{subsubsection.5.1.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {4.3.5.5.7}YearlyOutputer}{48}{paragraph.4.3.5.5.7}
+\contentsline {subsection}{\numberline {5.1.5}Reports}{52}{subsection.5.1.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subparagraph}{NegativeSale}{48}{paragraph.4.3.5.5.7}
+\contentsline {section}{\numberline {5.2}Registering a claim}{52}{section.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {4.3.5.5.8}MonthlyOutputer}{48}{paragraph.4.3.5.5.8}
+\contentsline {section}{\numberline {5.3}Responding to messages}{52}{section.5.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Manual de utilizare}{49}{chapter.5}
+\contentsline {section}{\numberline {5.4}Settings}{52}{section.5.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Administrative interface}{49}{section.5.1}
+\contentsline {section}{\numberline {5.5}Uploading photos}{52}{section.5.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.1}Claims view}{49}{subsection.5.1.1}
+\contentsline {chapter}{\numberline {6}Concluzii}{53}{chapter.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.1.1.1}Color code}{49}{subsubsection.5.1.1.1}
+\contentsline {section}{\numberline {6.1}Business Continuity Plan}{53}{section.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.1.1.2}Search}{49}{subsubsection.5.1.1.2}
+\contentsline {section}{\numberline {6.2}Teste automate}{53}{section.6.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {5.1.1.2.1}Navbar ID}{49}{paragraph.5.1.1.2.1}
+\contentsline {section}{\numberline {6.3}Modularizarea tabelelor}{53}{section.6.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.1.1.3}View claim}{49}{subsubsection.5.1.1.3}
+\contentsline {subsection}{\numberline {6.3.1}Modificări necesare asupra structurii bazei de date}{53}{subsection.6.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.1.1.4}Edit Claim}{49}{subsubsection.5.1.1.4}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.1.1.5}Reminders}{49}{subsubsection.5.1.1.5}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.2}Import}{49}{subsection.5.1.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.1.2.1}Weekly Sale import}{49}{subsubsection.5.1.2.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.1.2.2}Custom imports}{49}{subsubsection.5.1.2.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.3}Sales}{50}{subsection.5.1.3}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.1.3.1}View}{50}{subsubsection.5.1.3.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.4}Decisions}{50}{subsection.5.1.4}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.1.4.1}View}{50}{subsubsection.5.1.4.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.5}Reports}{50}{subsection.5.1.5}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Registering a claim}{50}{section.5.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}Responding to messages}{50}{section.5.3}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.4}Settings}{50}{section.5.4}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.5}Uploading photos}{50}{section.5.5}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Concluzii}{51}{chapter.6}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Business Continuity Plan}{51}{section.6.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}Teste automate}{51}{section.6.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.3}Modularizarea tabelelor}{51}{section.6.3}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.3.1}Modificări necesare asupra structurii bazei de date}{51}{subsection.6.3.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.4}Sistem modular de rapoarte}{51}{section.6.4}
+\contentsline {section}{\numberline {6.4}Sistem modular de rapoarte}{53}{section.6.4}
 \defcounter {refsection}{0}\relax 
 \select@language {english}

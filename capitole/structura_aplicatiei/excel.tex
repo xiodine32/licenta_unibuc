@@ -1,21 +1,87 @@
-\subsection{Excel}
-	\subsubsection{Facade}
-	\subsubsection{FileData}
-	\subsubsection{FileDataExcelAdaptor}
-	\subsubsection{Adaptors}
-		\paragraph{DailyAdaptor}
-		\paragraph{ExcelAdaptor}
-		\paragraph{ExcelHelper}
-		\paragraph{AltexGalaxyAdaptor}
-		\paragraph{SalesImportAdaptor}
-		\paragraph{OldAdaptor}
-	\subsubsection{Outputers}
-		\paragraph{StatisticsOutputer}
-		\paragraph{DecisionsOutputer}
-		\paragraph{ProductsOutputer}
-		\paragraph{SalesOutputer}
-		\paragraph{AbstractDateOutputer}
-		\paragraph{ExcelOutputer}
-		\paragraph{YearlyOutputer}
-			\subparagraph{NegativeSale}
-		\paragraph{MonthlyOutputer}
+\section{Excel}
+
+	Pentru a asigura compatibilitatea cu sistemele folosite de personalul companiei, s-a dorit un ușor acces pentru rapoartele extrase.
+	S-a decis la începutul dezvoltării folosirii sistemului „.csv”, a valorilor delimitate de virgulă.
+	Mulțumită suportului nativ a PHP-ului pentru aceste valori, s-a construit rapid o clasă ajutătoare ce prin intermediul platformei Laravel salvează rapoartele.
+
+	Mulțumită pachetului de dezvoltare \verb|phpoffice/phpexcel|, am putut integra, la finalul construirii modulelor, un sistem ce salvează direct în formatul Excel.
+	Apăruse, folosind o implementare naivă a algoritmului de salvare în Excel, o problemă de timp.
+	Consuma din ce în ce mai multe resurse și eram în impas, având următoarele opțiuni:
+	\begin{itemize}
+		\item Să-l las așa cum este, dar dacă numărul de linii o să crească, s-ar putea să rămână fără memorie sistemul.
+		\item Să-l optimizez cât de bine pot și să adaug o interfață ce anunță utilizatorul într-un mod interactiv care-i situația curentă.
+	\end{itemize}
+
+	Până la urmă am ales să optimizez cât de bine pot, pentru a reduce din complexitatea programului, făcând următoarele modificări:
+	\begin{enumerate}
+		\item Majoritatea vectorilor în cadrul aplicației ce interacționează cu sistemele de raportare au fost înlocuite cu \verb|SplFixedArray|.
+		Astfel se reduce memoria și se optimizează accesul la elementele vectorului, prin declararea de la începutul construirii obiectului a dimensiunii vectorului.
+		\item S-a activa folosirea unei baze de date auxiliare pentru „PhpExcel”, pentru a reduce consumul memorie.
+		\item Atunci când se trimit informațiile către librăria de „PhpExcel”, se trimite tot vectorul deodată.
+		Înainte, se trimitea fiecare element, rând cu rând, coloană cu coloană.
+		\item Împărțirea memoriei ce trebuia gestionată prin apeluri secvențiale și la final concatenarea lor.
+		Această metodă a fost folosită des în sistemele distribuite -- „Map-Reduce”:
+		\begin{enumerate}
+			\item Se aplică metoda de calcul dorită informației împărțită în mod egal --- „Map”.
+			\item Se combină la final toate rezultatele parțiale în cel final --- „Reduce”.
+		\end{enumerate}
+	\end{enumerate}
+
+	Soluția finală astfel se poate încadra în 256MB RAM, pentru un tabel Excel cu peste 33000 linii, iar pentru sistemul găzduit pe xServers, ce are limita de memorie 128MB, se poate calcula un întreg an.
+
+	\subsection{Implementarea platformei de rapoarte Excel}
+
+	Pentru gestionarea platformei, am construit următoarele clase:
+
+	\begin{itemize}
+		\item \verb|Facade| - Clasă ce conține doar metode statice, ce ajută introducerea unui raport în sistemul de gestiune a cererilor și despăgubirilor.
+		Se folosește de două „trait”-uri, \verb|AdaptorFacade| și \verb|OutputFacade|, ce conțin metodele statice pentru a scoate, respectiv a introduce rapoartele din sau în sistem.
+
+		De menționat ar fi că în funcție de șablonul dorit, clasa \verb|Facade| se ocupă de construirea clasei respective, prin următorul cod:
+\begin{Verbatim}
+$adaptorName = 'App\\Excel\\Adaptors\\' . ucfirst(
+	camel_case($shorthand)
+) . 'Adaptor';
+
+return new $adaptorName;
+ \end{Verbatim}
+
+		\item \verb|FileData| - Clasă scrisă inițial ce traduce un vector de vectori, unde prima linie reprezintă capul de tabel, într-un fișier „.csv” sau în ââcazul în care se dorește o reprezentare \verb|readable|, într-un tabel format din caractere ASCII.
+		\item \verb|FileDataExcelAdaptor| - Clasă ce primește ca un constructor o altă clasă \verb|FileData|, ce traduce atunci când este folosită ca un șir de date ce reprezintă echivalentul fișierului Excel formatat.
+		\item Directorul \verb|Adaptors|, ce conține următoarele adaptoare, în funcție de nevoia fișierului de importat
+		\begin{itemize}
+			\item \verb|DailyAdaptor| - Importul datelor din fostul principal Excel SpreadSheet.
+			S-a dovedit o provocare construirea unui algoritm ce ține cont de toate posibilitățile câmpurilor, dar mulțumită clasei ajutătoare \verb|ExcelHelper|, o dată ce am definitivat datele ce trebuiesc scoase din acest fișier cu operatorii sistemului, am reușit să trec peste și acest obstacol.
+
+			Această clasă construiește și cereri și deciziile asociate cererilor.
+			Se asigură astfel continuitatea aplicației din punctul de vedere al rapoartelor și existența datelor în cazul în care va fi nevoie de o căutare în anii anteriori.
+
+			\item \verb|ExcelAdaptor| - Interfață implementată de toate adaptoarele.
+
+			\item \verb|ExcelHelper| - clasă utilitară ce spune coloana unde se află un text, dat de prima linie a raportului de introdus.
+			Astfel se putea definitiva o structură aleatoare când vine vorba de organizarea coloanelor, dar ce mereu va putea fi introdusă în sistem mulțumită căutării după text.
+
+			S-a aplicat o normalizare a valorilor numelor coloanelor primei linii a raportului, prin scoatere spațiilor și a semnelor de punctuație des folosite, dar și transformarea șirului pentru a conține doar litere mari.
+			\item \verb|AltexGalaxyAdaptor| - Principalul import de rapoarte.
+
+			Acesta se folosește exhaustiv de clasa ajutătoare \verb|ExcelHelper| pentru a asigura datele vitale sunt introduse corect din raport în aplicație.
+			\item \verb|SalesImportAdaptor| - Clasă cu rol secundar, ce introduce datele din rapoartele existente până în momentul actual a vânzărilor produselor.
+			\item \verb|OldAdaptor| - Clasă cu rol secundar, ce introduce doar IMEI-ul din vechile rapoarte trimise de soluția anterioară în cadrul cererilor de despăgubire.
+		\end{itemize}
+		\item Directorul \verb|Outputers|, ce conține următoarele rapoarte:
+		\begin{itemize}
+			\item \verb|StatisticsOutputer| - Pentru statistici rapide (câte cereri de despăgubire, decizii au fost create în perioada respectivă de timp.)
+			\item \verb|DecisionsOutputer| - Pentru rapoartele cu toate deciziile plătite în perioada de timp specificată.
+			\item \verb|ProductsOutputer| - Pentru numărul de asigurări, grupate în funcție de tipul de asigurare și prețul ei, în perioada respectivă.
+			\item \verb|SalesOutputer| - Pentru numărul vânzărilor asigurărilor grupate în funcție de magazinul ce a făcut vânzarea.
+
+			Se mai adaugă și perioada când s-a vândut primul și ultimul produs.
+			\item \verb|AbstractDateOutputer| - Clasă abstractă ce toate rapoartele momentan „sub-clasează”, pentru că toate rapoartele sunt delimitate de data de început și sfârșit a raportului.
+			\item \verb|ExcelOutputer| - Interfața implementată de toate clasele din acest director.
+			\item \verb|YearlyOutputer|, împreună cu clasa suport \verb|NegativeSale|, scoate un raport detaliat despre produsele ce încă sunt asigurate, împreună cu posibila cerere de despăgubire asociată.
+
+			Momentan trebuie să fie luate la rând toate asocierile rezultante, deoarece nu mai sunt corelate vânzările de cererile de despăgubire și există un algoritm euristic în locul lui.
+			\item \verb|MonthlyOutputer| - Clasă ce adaugă raportului generat de \\
+			\verb|YearlyOutputer| câmpul lunii.
+		\end{itemize}
+	\end{itemize}
