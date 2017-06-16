@@ -1,0 +1,17 @@
+\section{Problema datelor reale săptămânale introduse în sistem}
+
+	Sistemul de importare al datelor săptămânale, primite de la Altex / Media Galaxy se face printr-un fișier Excel.
+	Din păcate, nu știam și nu aveam experiența să întreb despre ce format de raport trebuia aplicația mea să suporte, deci din punctul lor de vedere îmi luasem angajamentul de a importa cu succes toate tipurile de rapoarte existente de-a lungul timpului.
+
+	Când am început dezvoltarea, aveam un singur format ce trebuia respectat și am gândit baza de date astfel încât să nu mai păstrez câmpurile redundante, precum categoria și codul de bare al produsului.
+	Din păcate, trebuia să revin asupra algoritmului de a introduce datele aproape pentru fiecare săptămână, când am primit toate vânzările anterioare.
+	Acest modul a fost în dezvoltare continuă, inclusiv pe perioada dezvoltării altor module, din cauza discrepanțelor datelor rapoartelor săptămânale.
+
+	În aceeași perioadă se termină sistemul de încărcare al pozelor spre Amazon Web Services și trimiterea clienților un email de confirmare în momentul înregistrării cererii de despăgubire.
+
+	Algoritmul final, finalizat în Ianuarie 2017, ținea cont nu de liniile și de coloanele prestabilite, ci de ce câmpuri se aflau pe prima linie în raport.
+	Se normalizau și se foloseau pentru a determina ce coloane apăreau sau nu în raport.
+
+	Au fost puține rapoarte ce nu s-au putut importa din cauza lipsei unei coloane obligatorii --- a numelui clientului.
+	Au încercat șefii companiei să discute cu Altex / Media Galaxy și au primit confirmarea schimbării rapoartelor pe modelul vechi, dar nu au primit rapoartele modificate.
+	S-a ajuns în final la un compromis de a pune numele clientului „GENERIC”, pentru că existența lor ca o vânzare în perioada respectivă era mai importantă decât legătura (ce în momentul compromisului nu mai exista) între decizie și vânzare.

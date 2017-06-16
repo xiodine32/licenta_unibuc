@@ -1011,6 +1011,84 @@
       \field{title}{LaTeX beginner's guide}
       \field{year}{2011}
     \endentry
+    \entry{agile}{book}{}
+      \name{author}{1}{}{%
+        {{hash=1041ae168df991c8f9f3f43285c134c1}{%
+           family={Martin},
+           familyi={M\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Harlow, Essex}%
+      }
+      \list{publisher}{1}{%
+        {Pearson}%
+      }
+      \strng{namehash}{1041ae168df991c8f9f3f43285c134c1}
+      \strng{fullhash}{1041ae168df991c8f9f3f43285c134c1}
+      \strng{authornamehash}{1041ae168df991c8f9f3f43285c134c1}
+      \strng{authorfullhash}{1041ae168df991c8f9f3f43285c134c1}
+      \field{sortinit}{4}
+      \field{sortinithash}{d221becdd544034cf9082056cd6e6d2d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{1292025948}
+      \field{title}{Agile software development, principles, patterns, and practices}
+      \field{year}{2014}
+    \endentry
+    \entry{testare_automata}{book}{}
+      \name{author}{1}{}{%
+        {{hash=fb8fa1c4f6c03b0e5e2a6c36e5fbbdcb}{%
+           family={Huizinga},
+           familyi={H\bibinitperiod},
+           given={Dorota},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Hoboken, N.J}%
+      }
+      \list{publisher}{1}{%
+        {Wiley-Interscience IEEE Computer Society}%
+      }
+      \strng{namehash}{fb8fa1c4f6c03b0e5e2a6c36e5fbbdcb}
+      \strng{fullhash}{fb8fa1c4f6c03b0e5e2a6c36e5fbbdcb}
+      \strng{authornamehash}{fb8fa1c4f6c03b0e5e2a6c36e5fbbdcb}
+      \strng{authorfullhash}{fb8fa1c4f6c03b0e5e2a6c36e5fbbdcb}
+      \field{sortinit}{4}
+      \field{sortinithash}{d221becdd544034cf9082056cd6e6d2d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{0-470-04212-5}
+      \field{title}{Automated defect prevention : best practices in software management}
+      \field{year}{2007}
+    \endentry
+    \entry{integrare_continua}{book}{}
+      \name{author}{1}{}{%
+        {{hash=e4f07715269e006a4d4a4efa3ce3f996}{%
+           family={Booch},
+           familyi={B\bibinitperiod},
+           given={Grady},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Redwood City, Calif}%
+      }
+      \list{publisher}{1}{%
+        {Benjamin/Cummings Pub. Co}%
+      }
+      \strng{namehash}{e4f07715269e006a4d4a4efa3ce3f996}
+      \strng{fullhash}{e4f07715269e006a4d4a4efa3ce3f996}
+      \strng{authornamehash}{e4f07715269e006a4d4a4efa3ce3f996}
+      \strng{authorfullhash}{e4f07715269e006a4d4a4efa3ce3f996}
+      \field{sortinit}{4}
+      \field{sortinithash}{d221becdd544034cf9082056cd6e6d2d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780805300918}
+      \field{title}{Object oriented design with applications}
+      \field{year}{1991}
+    \endentry
   \endsortlist
 \endrefsection
 \endinput

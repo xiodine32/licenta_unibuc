@@ -1,0 +1,45 @@
+Baza de date a fost gândită în jurul a trei obiecte: cererea, decizia și vânzarea.
+
+Cererea este scrisă de clientul ce are produsul avariat și îl dorește înlocuit sau reparat.
+Constă din detaliile despre sine, obiect, circumstanțe, locație.
+Este legată conceptual și relațional de pozele pentru:
+\begin{itemize}
+	\item Paginile contractului.
+	\item Raportul poliției în caz de furt agravat.
+	\item Copia bonului cu ștampilă.
+	\item Copia actului de identitate.
+	\item Pozele produsului.
+\end{itemize}
+Aceasta poate să fie ori respinsă, ori acceptată, construindu-se astfel o decizie.
+
+Decizia este construită în momentul acceptării cererii de despăgubire.
+Conține datele relevante pentru rapoartele de vânzare, precum:
+\begin{itemize}
+	\item Prețul reparației.
+	\item Fostele decizii asociate. (i.e: foste reparații)
+	\item Franciza.
+	\item Data livrării produsului în service.
+	\item Costul inspecției și a curierului.
+\end{itemize}
+Aceasta, pentru o bună perioadă de timp, era legată obligatoriu de o decizie și de o vânzare.
+
+De la un punct, când trebuia să se importe toate vechile vânzări din raportul păstrat în Excel, s-a luat decizia de a se decupla aceste două entități.
+Se construiau până în acel moment vânzări generice, ce nu existau.
+Practic, existau într-un raport vânzările respective, dar nu puteau fi găsite din cauza lipsei informațiilor din partea rapoartelor de la Altex / Media Galaxy.
+Nu se putea lega IMEI-ul sau numărul facturii, din cauza modului de organizare a organizației.
+Aveau nevoie urgentă de rapoartele de vânzare, așa că am fost anevoios de acord să decuplez legătura dintre decizie și vânzare.
+
+Mai nou decizia conține numele produsului, prețul, data achiziționării și perioada asigurată, deși informațiile tot se citesc din tabelul de vânzări.
+
+Vânzarea conține:
+\begin{itemize}
+	\item Numele produsului.
+	\item Prețul produsului.
+	\item Data achiziționării.
+	\item Perioada de asigurare.
+	\item Numele clientului (ce poate lipsi)
+\end{itemize}
+O vânzare poate conține una sau mai multe asigurări, precum unul sau mai multe produse.
+
+
+

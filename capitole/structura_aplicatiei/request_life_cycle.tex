@@ -1,15 +1,36 @@
-\section{Request life-cycle}
-	user-ul introduce adresa www.fandu.uk/claims
-	este redirectat catre https://fandu.info
-	aplicatia laravel incarca environment-ul
-	se conteaza la baza de date
-	gaseste ruta pentru controller
-	ruleaza guard-urile pentru controller-ul respectiv.
-	ruleaza controller-ul pentru a primi un view
-	ruleaza view-ul (si-l compileaza daca e necesar - blade)
-	afiseaza pe ecran.
-	user-ul incepe sa completeze
-		daca este sa iasa din aplicatie, il intreaba daca vrea sa piarda tot ce a scris pana in acel moment.
-		drip - mentine sesiunea activa - token csrf
-	se face validarea client-side
-	se re-incepe request-ul, unde se valideaza back-end side si dupa ruleaza controller-ul respectiv rutei s.a.m.d.
+\section{Un exemplu de cerere}
+
+	Pentru a recapitula tehnologiile folosite și pentru a putea intra în detalii despre cum funcționează aplicația per ansamblu, voi detalia cum interacționează un utilizator cu acest sistem de gestiune a cererilor de despăgubire, bazat pe Laravel.
+	Cererea pornește de la premiza accesării paginii scrise în regulamentul contractului „Mobile Protect” și parcurge pașii unui client web (ceea ce nu se observă când se încarcă pagina).
+	\begin{enumerate}
+		\item
+			Clientul navighează spre \url{www.fandu.uk/claims}.
+		\item
+			El este redirectat spre \url{https://fandu.info}, prin intermediul „header”-ului, pagina livrată fiind goală.
+		\item
+			Folosind un sistem distribuit de nume de domeniu, presupunând că domeniul nu a fost descoperit până acum de client, se face cererea către CloudFlare.
+			Presupunem că nu este un atac malițios, altfel ar fi fost oprit în acest punct și ar fi fost posibil obligat să rezolve o serie de întrebări pentru a continua.
+			Depinde de severitatea atacului.
+		\item
+			Aplicația Laravel se încarcă. Își identifică astfel mediul de lucru și variabilele definite.
+		\item
+			Se conectează la baza de date MySQL și încearcă să identifice sesiunea clientului, în funcție de „cookie”-ul denumit „laravel\_session”.
+			Pentru că presupunem că este un client nou, nu va găsi o sesiune deja existentă.
+			Nu este un client înregistrat.
+		\item
+			Laravel observă rutele predefinite și încearcă să găsească o rută ce se potrivește căii, reținând contextul.
+		\item
+			În acest moment, Laravel deține numele Controller-ului, numele metodei ce va fi apelate și toate denumirile scurte ale claselor intermediare ce trebuiesc validate pentru a ajunge cererea la metoda clasei, aceste clase mijlocii fiind denumite „middleware”.
+
+			Un exemplu bun al unei clase middleware este „auth”, ce asigură un utilizator înregistrat, cu o sesiune activă.
+		\item
+			Se construiește Controller-ul folosind calea determinată la pasul anterior și se actualizează (în cazul în care apare cod de adăugare unei clase „middleware” în interiorul metodei ce construiește obiectul) lista de „middleware”.
+		\item
+			Se construiește și se validează fiecare clasă „middleware”, iar în cazul unui eșec, nu se va continua mai departe.
+		\item
+			Se apelează metoda clasei asigurându-se prin intermediul unui obiect ce rezolvă legăturile dintre obiectele dorite și cele existente trimiși ca parametrii metodei Controller-ului.
+			Se va primi un răspuns.
+		\item
+			În cazul în care răspunsul nu este o directivă Blade, se va afișa sau va redirecționa clientul web.
+			Altfel, se va compila directiva Blade dacă nu există fișierul deja compilat, sau dacă timpul ultimei modificări directivei e mai recent decât timpul ultimului rezultat al compilării.
+	\end{enumerate}

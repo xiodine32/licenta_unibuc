@@ -27,56 +27,43 @@
 \BOOKMARK [2][-]{subsection.2.8.4}{Heroku}{section.2.8}% 27
 \BOOKMARK [2][-]{subsection.2.8.5}{Amazon\040Web\040Services}{section.2.8}% 28
 \BOOKMARK [2][-]{subsection.2.8.6}{Composer}{section.2.8}% 29
-\BOOKMARK [2][-]{subsection.2.8.7}{npm și Laravel Elixir}{section.2.8}% 30
+\BOOKMARK [2][-]{subsection.2.8.7}{Laravel Elixir și npm}{section.2.8}% 30
 \BOOKMARK [2][-]{subsection.2.8.8}{LaTeX și Sublime Text}{section.2.8}% 31
-\BOOKMARK [0][-]{chapter.3}{Structura Aplicației}{}% 32
-\BOOKMARK [1][-]{section.3.1}{Request\040life-cycle}{chapter.3}% 33
-\BOOKMARK [1][-]{section.3.2}{O\040scurta\040istorie\040a\040aplicatiei}{chapter.3}% 34
-\BOOKMARK [2][-]{subsection.3.2.1}{Rapoarte\040-\040vizualizarea\040datelor\040=>\040refactor}{section.3.2}% 35
-\BOOKMARK [2][-]{subsection.3.2.2}{adaugarea\040campurilor\040de\040undecided\040/\040resolved\040/\040repaired}{section.3.2}% 36
-\BOOKMARK [2][-]{subsection.3.2.3}{legatura\040stransa\040dintre\040claim-sale}{section.3.2}% 37
-\BOOKMARK [2][-]{subsection.3.2.4}{decuplarea}{section.3.2}% 38
-\BOOKMARK [2][-]{subsection.3.2.5}{FileDataExcelAdaptor}{section.3.2}% 39
-\BOOKMARK [2][-]{subsection.3.2.6}{matchuirea\040pentru\040rapoartele\040jmeky}{section.3.2}% 40
-\BOOKMARK [2][-]{subsection.3.2.7}{todo:\040includerea\040campului\040de\040external_id}{section.3.2}% 41
-\BOOKMARK [2][-]{subsection.3.2.8}{todo:\040decuplarea\040in\040one-to-one\040pentru\040a\040arata\040mai\040dragut\040/\040scoate\040rapoarte\040mai\040complicate\040cand\040o\040sa\040se\040ceara}{section.3.2}% 42
-\BOOKMARK [1][-]{section.3.3}{Baza\040de\040date}{chapter.3}% 43
-\BOOKMARK [2][-]{subsection.3.3.1}{Assurance}{section.3.3}% 44
-\BOOKMARK [2][-]{subsection.3.3.2}{Chat\040Claims}{section.3.3}% 45
-\BOOKMARK [2][-]{subsection.3.3.3}{Claims}{section.3.3}% 46
-\BOOKMARK [2][-]{subsection.3.3.4}{Decisions\040+\040parent\040decision\040\(many-to-many\)}{section.3.3}% 47
-\BOOKMARK [2][-]{subsection.3.3.5}{Messages}{section.3.3}% 48
-\BOOKMARK [2][-]{subsection.3.3.6}{Migrations}{section.3.3}% 49
-\BOOKMARK [2][-]{subsection.3.3.7}{Password\040Resets}{section.3.3}% 50
-\BOOKMARK [2][-]{subsection.3.3.8}{Photos}{section.3.3}% 51
-\BOOKMARK [2][-]{subsection.3.3.9}{Products}{section.3.3}% 52
-\BOOKMARK [2][-]{subsection.3.3.10}{Sales}{section.3.3}% 53
-\BOOKMARK [2][-]{subsection.3.3.11}{Sessions}{section.3.3}% 54
-\BOOKMARK [2][-]{subsection.3.3.12}{User}{section.3.3}% 55
-\BOOKMARK [1][-]{section.3.4}{Apache\040&\040PHP}{chapter.3}% 56
-\BOOKMARK [1][-]{section.3.5}{MVC\040-\040Model\040View\040Controller}{chapter.3}% 57
-\BOOKMARK [2][-]{subsection.3.5.1}{Controllers}{section.3.5}% 58
-\BOOKMARK [2][-]{subsection.3.5.2}{Models\040-\040Eloquent\040ORM}{section.3.5}% 59
-\BOOKMARK [2][-]{subsection.3.5.3}{functii\040ajutatoare\040-\040Helpers}{section.3.5}% 60
-\BOOKMARK [2][-]{subsection.3.5.4}{Request-uri}{section.3.5}% 61
-\BOOKMARK [2][-]{subsection.3.5.5}{.env\040ironment-ul}{section.3.5}% 62
-\BOOKMARK [2][-]{subsection.3.5.6}{Logging}{section.3.5}% 63
-\BOOKMARK [2][-]{subsection.3.5.7}{Event\040-\040Notification\040-\040Mail\040system}{section.3.5}% 64
-\BOOKMARK [2][-]{subsection.3.5.8}{Excel}{section.3.5}% 65
-\BOOKMARK [0][-]{chapter.4}{Manual\040de\040utilizare}{}% 66
-\BOOKMARK [1][-]{section.4.1}{Administrative\040interface}{chapter.4}% 67
-\BOOKMARK [2][-]{subsection.4.1.1}{Claims\040view}{section.4.1}% 68
-\BOOKMARK [2][-]{subsection.4.1.2}{Import}{section.4.1}% 69
-\BOOKMARK [2][-]{subsection.4.1.3}{Sales}{section.4.1}% 70
-\BOOKMARK [2][-]{subsection.4.1.4}{Decisions}{section.4.1}% 71
-\BOOKMARK [2][-]{subsection.4.1.5}{Reports}{section.4.1}% 72
-\BOOKMARK [1][-]{section.4.2}{Registering\040a\040claim}{chapter.4}% 73
-\BOOKMARK [1][-]{section.4.3}{Responding\040to\040messages}{chapter.4}% 74
-\BOOKMARK [1][-]{section.4.4}{Settings}{chapter.4}% 75
-\BOOKMARK [1][-]{section.4.5}{Uploading\040photos}{chapter.4}% 76
-\BOOKMARK [0][-]{chapter.5}{Concluzii}{}% 77
-\BOOKMARK [1][-]{section.5.1}{Business\040Continuity\040Plan}{chapter.5}% 78
-\BOOKMARK [1][-]{section.5.2}{Teste\040automate}{chapter.5}% 79
-\BOOKMARK [1][-]{section.5.3}{Modularizarea\040tabelelor}{chapter.5}% 80
-\BOOKMARK [2][-]{subsection.5.3.1}{Modificări necesare asupra structurii bazei de date}{section.5.3}% 81
-\BOOKMARK [1][-]{section.5.4}{Sistem\040modular\040de\040rapoarte}{chapter.5}% 82
+\BOOKMARK [0][-]{chapter.3}{O scurtă istorie a dezvoltării aplicației}{}% 32
+\BOOKMARK [1][-]{section.3.1}{Primul\040modul}{chapter.3}% 33
+\BOOKMARK [1][-]{section.3.2}{Problema datelor reale săptămânale introduse în sistem}{chapter.3}% 34
+\BOOKMARK [1][-]{section.3.3}{Modulul de rapoarte și decizii}{chapter.3}% 35
+\BOOKMARK [1][-]{section.3.4}{Decuplarea deciziilor de vânzări}{chapter.3}% 36
+\BOOKMARK [2][-]{subsection.3.4.1}{Modificări în viitorul apropiat}{section.3.4}% 37
+\BOOKMARK [1][-]{section.3.5}{După planul inițial de dezvoltare}{chapter.3}% 38
+\BOOKMARK [2][-]{subsection.3.5.1}{Introducerea datelor și rapoartele avansate}{section.3.5}% 39
+\BOOKMARK [2][-]{subsection.3.5.2}{În continuare}{section.3.5}% 40
+\BOOKMARK [0][-]{chapter.4}{Structura Aplicației}{}% 41
+\BOOKMARK [1][-]{section.4.1}{Un\040exemplu\040de\040cerere}{chapter.4}% 42
+\BOOKMARK [1][-]{section.4.2}{Baza\040de\040date}{chapter.4}% 43
+\BOOKMARK [1][-]{section.4.3}{MVC\040-\040Model\040View\040Controller}{chapter.4}% 44
+\BOOKMARK [2][-]{subsection.4.3.1}{Controllers}{section.4.3}% 45
+\BOOKMARK [2][-]{subsection.4.3.2}{Models\040-\040Eloquent\040ORM}{section.4.3}% 46
+\BOOKMARK [2][-]{subsection.4.3.3}{functii\040ajutatoare\040-\040Helpers}{section.4.3}% 47
+\BOOKMARK [2][-]{subsection.4.3.4}{Request-uri}{section.4.3}% 48
+\BOOKMARK [2][-]{subsection.4.3.5}{.env\040ironment-ul}{section.4.3}% 49
+\BOOKMARK [2][-]{subsection.4.3.6}{Logging}{section.4.3}% 50
+\BOOKMARK [2][-]{subsection.4.3.7}{Event\040-\040Notification\040-\040Mail\040system}{section.4.3}% 51
+\BOOKMARK [2][-]{subsection.4.3.8}{Excel}{section.4.3}% 52
+\BOOKMARK [0][-]{chapter.5}{Manual\040de\040utilizare}{}% 53
+\BOOKMARK [1][-]{section.5.1}{Administrative\040interface}{chapter.5}% 54
+\BOOKMARK [2][-]{subsection.5.1.1}{Claims\040view}{section.5.1}% 55
+\BOOKMARK [2][-]{subsection.5.1.2}{Import}{section.5.1}% 56
+\BOOKMARK [2][-]{subsection.5.1.3}{Sales}{section.5.1}% 57
+\BOOKMARK [2][-]{subsection.5.1.4}{Decisions}{section.5.1}% 58
+\BOOKMARK [2][-]{subsection.5.1.5}{Reports}{section.5.1}% 59
+\BOOKMARK [1][-]{section.5.2}{Registering\040a\040claim}{chapter.5}% 60
+\BOOKMARK [1][-]{section.5.3}{Responding\040to\040messages}{chapter.5}% 61
+\BOOKMARK [1][-]{section.5.4}{Settings}{chapter.5}% 62
+\BOOKMARK [1][-]{section.5.5}{Uploading\040photos}{chapter.5}% 63
+\BOOKMARK [0][-]{chapter.6}{Concluzii}{}% 64
+\BOOKMARK [1][-]{section.6.1}{Business\040Continuity\040Plan}{chapter.6}% 65
+\BOOKMARK [1][-]{section.6.2}{Teste\040automate}{chapter.6}% 66
+\BOOKMARK [1][-]{section.6.3}{Modularizarea\040tabelelor}{chapter.6}% 67
+\BOOKMARK [2][-]{subsection.6.3.1}{Modificări necesare asupra structurii bazei de date}{section.6.3}% 68
+\BOOKMARK [1][-]{section.6.4}{Sistem\040modular\040de\040rapoarte}{chapter.6}% 69

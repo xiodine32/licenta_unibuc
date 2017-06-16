@@ -1,16 +1,28 @@
 \section{Baza de date}
-	tehnologia folosita: MySQL
-	cum sunt salvate
-	naming scheme Laravel de a numi tabelele cu pluralul lower\_case.
-	\subsection{Assurance}
-	\subsection{Chat Claims}
-	\subsection{Claims}
-	\subsection{Decisions + parent decision (many-to-many)}
-	\subsection{Messages}
-	\subsection{Migrations}
-	\subsection{Password Resets}
-	\subsection{Photos}
-	\subsection{Products}
-	\subsection{Sales}
-	\subsection{Sessions}
-	\subsection{User}
+
+	Tabelele din baza de date sunt denumite cu pluralul obiectului la care se referă, folosind în loc de spații sublinia „\_”.
+	Puteți observa în detaliu diagrama bazei de date la figura~\ref{fig:database_diagram}
+	Aceasta este salvată o dată pe săptămână și conține datele despre:
+	\begin{enumerate}
+		\item \verb|claims| - Cererile de despăgubire.
+		\item \verb|sales| - Vânzări, cu legăturile de cheie primară (una-la-multe) la următoarele tabele:
+			\begin{enumerate}
+				\item \verb|products| - Produse
+				\item \verb|assurances| - Asigurări
+			\end{enumerate}
+		\item \verb|decisions| - Decizii, cu legătura circulară folosind tabelul \\ \verb|decisions_decisions|.
+		\item \verb|chat_claims| - Mesajele trimise în cadrul cererilor între utilizatorii sistemului, ce depinde de tabelul de cereri.
+		\item \verb|messages| - Mesajele trimise în cadrul cererilor între client și  utilizatorii sistemului, ce depinde de tabelul de cereri.
+		\item \verb|migrations| - Migrările schemei bazei de date, menținut de Laravel.
+		\item \verb|users| - Utilizatorii aplicației, cu parola encriptată.
+		\item \verb|photos| - Legăturile între locația pozelor și cererea, respectiv categoriilor lor, ce depinde de tabelul de cereri.
+	\end{enumerate}
+
+	\begin{figure}[ht]
+		\centering
+		\vspace*{-2in}
+		\hspace*{-1in}
+     		\includegraphics[width=1.4\textwidth,height=1.4\textheight,keepaspectratio]{../imagini/database_diagram.pdf}
+		\caption{Diagrama bazei de date}
+		\label{fig:database_diagram}
+	\end{figure}

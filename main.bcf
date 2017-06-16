@@ -2163,6 +2163,9 @@
     <bcf:citekey order="41">composer</bcf:citekey>
     <bcf:citekey order="42">npm</bcf:citekey>
     <bcf:citekey order="43">latex</bcf:citekey>
+    <bcf:citekey order="44">agile</bcf:citekey>
+    <bcf:citekey order="45">testare_automata</bcf:citekey>
+    <bcf:citekey order="46">integrare_continua</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="none/global/" type="entry" sortscheme="none" sortnamekeyscheme="global" labelprefix="">
   <bcf:sorting>
