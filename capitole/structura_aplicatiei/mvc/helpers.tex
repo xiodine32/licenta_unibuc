@@ -1,15 +1,42 @@
-\subsection{functii ajutatoare - Helpers}
-	\subsubsection{FormHelper}
-	\subsubsection{Helpers}
-	\subsubsection{TemporaryFiles}
-	mai ales folositoare pentru rapoarte
-\subsection{Request-uri}
-	ClaimRegisteredReques
-	ReportRequest
-	StoreClaimRequest
-\subsection{.env ironment-ul}
-	necesitatea unui app\_key
-	conexiunea .env - db
-	conectiunea .env - mail system
-\subsection{Logging}
-\subsection{Event - Notification - Mail system}
+\subsection{Funcții ajutătoare}
+
+	Funcțiile ajutătoare sunt pentru a minimiza timpul dezvoltatorului de lucru.
+	Fișierele astfel folositoare sunt:
+
+	\begin{enumerate}
+		\item \verb|FormHelper| - Utilitar ce înregistrează o directivă Blade de compunere, ce sunt traduse în simple instrucțiuni de cod PHP.
+		Am scris astfel propria directivă de a construi automat codul necesar afișării, folosind HTML și librăria vizuală „Bootstrap”, a unui câmp dintr-un formular, cu nume, tip și validare proprie:
+		\begin{verbatim}
+			@input(['p_varsta', ['Varsta', true]])
+			// unde 'p_varsta' - id-ul câmpului.
+			// unde 'Varsta' - denumirea câmpului.
+			// unde 'true' - necesitatea completării câmpului.
+		\end{verbatim}
+		\item \verb|Helpers| -
+		Funcțiile ce traduc o variabilă în ceva mai util, precum un șir ce poate fi citit mult mai ușor, dar ce și traduc starea actuală a unei cereri sau decizii în clasa specială CSS.
+		\item \verb|TemporaryFiles| - O clasă ce se ocupă de gestiunea fișierelor temporare.
+
+		Este necesară pentru împărțirea în mai multe fișiere a unor cereri mari de date, pentru a nu intra în probleme de memorie.
+	\end{enumerate}
+
+	\subsubsection{Request-uri}
+
+	O cerere, presupunând că a fost completată corect pe partea clientului, trebuie să fie verificată și pe partea server-ului.
+
+	În loc să se verifice în fiecare metodă de fiecare dată validitatea cererii, se poate abstractiza și a se face referire la o clasă de tipul Request din Laravel.
+
+	Următoarele clase de tip Request apar, nu sunt goale și sunt folosite în proiect:
+	\begin{enumerate}
+		\item \verb|ClaimRegisteredRequest| - verificarea existenței unui IMEI înregistrat în ultimele 24 ore.
+		\item \verb|StoreClaim| - asigură toate câmpurile unei cereri respectă anumite reguli, declarate folosind sintaxă specială Laravel.
+	\end{enumerate}
+
+	\subsubsection{Mediul de dezvoltare}
+
+	Pentru a folosi o aplicație bazată pe Laravel, trebuie să ai configurate anumite servicii, precum tipul de conexiune la o bază de date, ce sistem de mail folosești sau locație aplicației tale pe internet.
+
+	Mulțumită fișierului \verb|„.env”|, nu mai trebuie a te complica cu setarea variabilelor globale sau a variabilelor de mediu, acestea vor fi automat preluate în cazul în care nu există variabila de mediu, din acest fișier.
+
+	O importantă precizare este necesitatea unei chei din acest fișier, \verb|„APP_KEY”|, ce trebuie să existe.
+
+	Această cheie este folosită într-un algoritm de încriptare pentru a face sesiunea utilizatorului cât mai sigură.

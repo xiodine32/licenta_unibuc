@@ -1,172 +1,5 @@
 1. Motivație
-	✔ De ce - angajat @done (17-06-13 13:10)
-	 solutia anterioara era hostata de o alta companie, pe severul propriu.
-	 au dorit sa poata sa scoata rapoarte custom si sa integreze tot workflow-ul curent intr-o aplicatie.
-	 inainte, ei foloseau Excel - si au continuat sa foloseasca cat timp aplicatia a fost construita.
-		 pentru a asigura concordanta intre rapoartele facute de mana si scoase de aplicatie
-	✔ Firma este:  Fandu Holdings Ltd, Cyprus @done (17-06-13 13:10)
-	 www.fandu.uk/claims
-	 AmTrust International Underwriters Limited care a numit societatea Fandu Holdings Ltd, Cyprus. Toate întrebările legate de această poliță trebuie adresate (în limba română sau engleză) către Fandu Holdings Ltd la office@fandu.uk sau prin poștă la Fandu Holdings Ltd în Zinonos Kitieos nr. 8, Kato Lakatamia P.C. 2322, Nicosia, Cyprus.
-	✔ Se găsește in media galaxy folosit acolo etc. @done (17-06-13 13:10)
-		https://mediagalaxy.ro/regulament-mobile-protect
-	✔ Câți oameni lucrează - doar eu @done (17-06-13 13:10)
-	 singurul developer ce lucreaza la aplicatia
-	 fandu e format din doi CEO - Jeff & Ian, cu doi operatori de date. in total, 4.
-	 a trebuit sa gestionez
-		 structura bazei de date
-		 interactiunea cu user-ul.
-		 ce se salveaza / cum se salveaza / unde
-		 solutia de hostare
-		 solutia de backup
-		 securitatea datelor
-		 salvarea datelor in cloud (pro-bono pentru cei de la Fandu)
-		 business plan-ul.
-	✔ (Convingerea situației mele) @done (17-06-13 13:10)
-	 chiar daca lucrez in C# pentru web, prima mea interactiune a fost cu PHP.
-	 mi-a placut foarte mult sintaxa.
-	 laravel este o solutie moderna inspirata din Ruby on Rails.
-	 avea best code practice-urile.
-2. Tehnologii folosite
-	✔ PHP @done (17-06-15 17:53)
-		✔ 5.6 avantaje @done (17-06-15 17:53)
-	☐ Mentiuni speciale
-		☐ Shared Hosting - production server
-			avantajul de protectie contra XSS prin disabling exec
-			dezavantajul de a nu putea rula migrarile pe serverul de productia
-			solutia de urcare pe productie
-			solutia de a separa app de public_html pentru a preveni code exploit-ul.
-		☐ PhpStorm IDE
-			 avantajul de a putea vedea usor ce se intampla cu modelele
-			 dezvantajul magic method-urilor laravel rezolvat cu proiectul de github.
-		☐ Organizarea cunostiintelor pe un kanban board - Trello
-			construirea unui workflow de a incarca fiecare versiune noua pe serverul de productie
-				enable debug / maintenance mode
-				aplicare migrari
-				incarcare fisiere
-				incarcare in public_html
-				disable debug
-	☐ Heroku
-			rolling release
-			testare
-			free
-	☐ AWS
-		de ce am ales AWS
-		integrarea cu Laravel
-		mai intai a fost thumbnail + actual image - imagemagick
-		apoi ajungeam in probleme de push commands
-		asa ca pana la urma am ales sa mergem pe salvare in chior (fara compression / ceva)
-			pentru ca nu depaseam quota-ul de 5GB / luna estimat
-	✔ Laravel 5.3 @done (17-06-15 17:54)
-		✔ Forms / Html helpers @done (17-06-15 17:54)
-			ajutatoare pentru Bootstrap / panel-uri
-		✔ Blade directives @done (17-06-15 17:54)
-			blade extending
-			escape text
-			import
-			layout
-			Laravel transpiling to php (internally)
-		✔ security @done (17-06-15 17:54)
-			csrf - xss
-		✔ good coding practices @done (17-06-15 17:54)
-			migrations - artisan - database migrations
-			models - Eloquent ORM
-		✔ workflow @done (17-06-15 17:54)
-			artisan make:commands
-			artisan routes:list
-			artisan make:auth
-		☐ Events
-			ca asa se face async cu o coada un sistem de a trimite mail-uri eficiente.
-			de ce nu am putut face deploy - shared hosting
-			ce am ales sa fac - sincron send mail
-	✔ MySQL @done (17-06-15 17:54)
-		relatii
-		dbms.
-		export usor shared hosting - phpmyadmin
-		export / import usor testare.
-		interfata speciala de solutie de backup pentru a fi rulata automat.
-	☐ Composer
-	✔ GitHub @done (17-06-15 17:54)
-		pastrarea istoricului codului
-		automatic deployment cu Heroku
-		todo: continuous integration
-	✔ CloudFlare @done (17-06-15 17:54)
-		solutia de https dinainte
-		de ce n-a mai functionat - Chrome / Firefox blacklisting
-		solutie - folosirea unui certificat valid (semnat), dar ce trece prin Cloudflare pentru a asigura ca totusi e HTTPS si green icon.
-	✔ jQuery @done (17-06-15 17:54)
-		orice modificare rapida de butoane
-		logica de administrare / incarcare rapoarte / export
-		validare
-	☐ Google Analytics
-		unde se blocheaza / ce partea a interfetei e cea mai des folosita.
-	☐ Knockout
-		pentru a putea structura front-end-ul cu logica pe baza modelelor
-		logica asemanatoare pentru modele, ce au valori diferite
-		folosit mai ales la
-				exportul backup-ului
-				adaugarea pozelor ca utilizator
-	☐ npm
-		☐ integrarea cu laravel - laravel elixir
-		☐ ce asigura un up-to-date css / js file cu versioning
-		☐ agregarea css / scss / js -> webpack (minifier) -> versioning ->
-3. Structura aplicatiei
-	☐ Request life-cycle
-		user-ul introduce adresa www.fandu.uk/claims
-		este redirectat catre https://fandu.info
-		aplicatia laravel incarca environment-ul
-		se conteaza la baza de date
-		gaseste ruta pentru controller
-		ruleaza guard-urile pentru controller-ul respectiv.
-		ruleaza controller-ul pentru a primi un view
-		ruleaza view-ul (si-l compileaza daca e necesar - blade)
-		afiseaza pe ecran.
-		user-ul incepe sa completeze
-			daca este sa iasa din aplicatie, il intreaba daca vrea sa piarda tot ce a scris pana in acel moment.
-			drip - mentine sesiunea activa - token csrf
-		se face validarea client-side
-		se re-incepe request-ul, unde se valideaza back-end side si dupa ruleaza controller-ul respectiv rutei s.a.m.d.
-	☐ MDS-Related stuff
-		aici o sa vorbesc despre conceptele generale de a gestiona un proiect
-		UML
-		diagrame, la ce ajuta
-		☐ User stories
-		☐ States
-		☐ Application Lifecycle
-		☐ Tehnical Description
-	☐ O scurta istorie a aplicatiei
-		☐ Rapoarte - vizualizarea datelor => refactor
-			FileData - export to text / csv
-		☐ adaugarea campurilor de undecided / resolved / repaired
-		☐ legatura stransa dintre claim-sale
-			problemele aduse
-			cum se match-uiau inainte
-		☐ decuplarea
-			migrarea in pasi a datelor
-					separarea conceptuala
-					pastrarea in UI a generic sale-urilor.
-					stergerea lor si refactoring-ul spre solutia actuala - de a modifica iframe-ul.
-		☐ FileDataExcelAdaptor
-			& split-uirea codului pentru Facade in doua trait-uri (multumita PHP 5.4)
-		☐ matchuirea pentru rapoartele jmeky
-		☐ todo: includerea campului de external_id
-		☐ todo: decuplarea in one-to-one pentru a arata mai dragut / scoate rapoarte mai complicate cand o sa se ceara
 	☐ Layerele
-		☐ Baza de date
-			 tehnologia folosita: MySQL
-			 cum sunt salvate
-			 naming scheme Laravel de a numi tabelele cu pluralul lower_case.
-			☐ Assurances
-			☐ Chat Claims
-			☐ Claims
-			☐ Decisions + parent decision (many-to-many)
-			☐ Messages
-			☐ Migrations
-			☐ Password Resets
-			☐ Photos
-			☐ Products
-			☐ Sales
-			☐ Sessions
-			☐ Users
 		☐ Apache / PHP
 			☐ MVC - Model View Controller
 				detalii despre abordare
@@ -192,33 +25,6 @@
 						☐ ExcelOutputer
 						☐ YearlyOutputer
 							☐ NegativeSale
-						☐ todo: MonthlyOutputer
-				☐ Models - Eloquent ORM
-					ce aduce in plus ca functionalitate Laravel
-					jmekeria cu One-To-Many / Many-To-Many
-					detalii despre getXxxAttribute()
-					$hidden
-					detalii despre ce am adaugat si cum functioneaza pentru urmatoarele modele
-					getReadable - pentru a genera automat ceea ce poate sa vada administratorul aplicatiei - campuri.
-						☐ Assurance
-						☐ Claim
-						☐ Decision
-							factory manual
-							resolution to text
-							updateToPay
-							remaining
-							cum se calculeaza chestiile
-						☐ Message
-						☐ Photo
-							despre Factory method - in ce categorie se incadreaza.
-						☐ Product
-							faptul ca rotunjim la 2 valori price-ul
-						☐ Sale
-							generic sale factory
-							totale assurance / price
-				☐ Controllers - web.php routing
-					naming scheme
-					router REST-ful.
 					☐ functii ajutatoare - Helpers
 						☐ FormHelper
 						☐ Helpers
@@ -228,28 +34,6 @@
 						ClaimRegisteredRequest
 						ReportRequest
 						StoreClaimRequest
-					☐ Admin
-						☐ Claims
-						☐ Decision
-						☐ Home
-						☐ Import
-						☐ Json - Search
-						☐ Reports
-						☐ Sales
-						☐ Products
-						☐ Assurances
-						☐ Export
-						☐ Backup
-						☐ Settings
-					☐ Auth
-						☐ ForgotPassword
-						☐ Register
-						☐ ResetPassword
-						☐ Login
-					☐ Claims
-					☐ Helper
-					☐ Json - Images
-					☐ Messages
 				☐ Views - blade chemat de Controller
 					o idee generala a structurii
 					☐ vendor pagination bootstrap
@@ -280,16 +64,9 @@
 					☐ claims
 						☐ includes-urile
 					☐ auth
-				☐ Resources - js / scss
-					☐ bootstrap
-					☐ timepicker
-					☐ typeahead
-					☐ chart.js
-					☐ extensions
 						☐ postData
 						☐ postSimpleJson
 						☐ postJson
-					☐ custom app.scss stylesheet.
 				☐ .env ironment-ul
 					necesitatea unui app_key
 					conexiunea .env - db
@@ -360,3 +137,231 @@
 	☐ Extragerea din modelele imens de mari in tabele cu informatii mai modulare.
 	☐ Fandu doreste sistem modular de rapoarte
 		ce inseamna asta pentru structura bazei de date
+
+
+＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
+Archive:
+	✘ todo: MonthlyOutputer @cancelled (17-06-16 10:37)
+	✔ Composer @done (17-06-16 10:37)
+	✔ typeahead @done (17-06-16 10:36)
+	✔ timepicker @done (17-06-16 10:36)
+	✔ extensions @done (17-06-16 10:36)
+	✔ custom app.scss stylesheet. @done (17-06-16 10:36)
+	✔ chart.js @done (17-06-16 10:36)
+	✔ bootstrap @done (17-06-16 10:36)
+	✔ Settings @done (17-06-16 10:36)
+	✔ Sales @done (17-06-16 10:36)
+	✔ Sale @done (17-06-16 10:36)
+		generic sale factory
+		totale assurance / price
+	✔ Resources - js / scss @done (17-06-16 10:36)
+	✔ ResetPassword @done (17-06-16 10:36)
+	✔ Reports @done (17-06-16 10:36)
+	✔ Register @done (17-06-16 10:36)
+	✔ Products @done (17-06-16 10:36)
+	✔ Product @done (17-06-16 10:36)
+		faptul ca rotunjim la 2 valori price-ul
+	✔ Messages @done (17-06-16 10:36)
+	✔ Login @done (17-06-16 10:36)
+	✔ Json - Search @done (17-06-16 10:36)
+	✔ Json - Images @done (17-06-16 10:36)
+	✔ Import @done (17-06-16 10:36)
+	✔ Home @done (17-06-16 10:36)
+	✔ Helper @done (17-06-16 10:36)
+	✔ ForgotPassword @done (17-06-16 10:36)
+	✔ Export @done (17-06-16 10:36)
+	✔ Decision @done (17-06-16 10:36)
+	✔ Controllers - web.php routing @done (17-06-16 10:36)
+		naming scheme
+		router REST-ful.
+	✔ Claims @done (17-06-16 10:36)
+	✔ Claims @done (17-06-16 10:36)
+	✔ Backup @done (17-06-16 10:36)
+	✔ Auth @done (17-06-16 10:36)
+	✔ Assurances @done (17-06-16 10:36)
+	✔ Admin @done (17-06-16 10:36)
+	✘ User stories @cancelled (17-06-16 10:35)
+	✘ Tehnical Description @cancelled (17-06-16 10:35)
+	✘ States @cancelled (17-06-16 10:35)
+	✘ MDS-Related stuff @cancelled (17-06-16 10:35)
+		aici o sa vorbesc despre conceptele generale de a gestiona un proiect
+		UML
+		diagrame, la ce ajuta
+	✘ Application Lifecycle @cancelled (17-06-16 10:35)
+	✔ todo: includerea campului de external_id @done (17-06-16 10:35)
+	✔ todo: decuplarea in one-to-one pentru a arata mai dragut / scoate rapoarte mai complicate cand o sa se ceara @done (17-06-16 10:35)
+	✔ npm @done (17-06-16 10:35)
+	✔ matchuirea pentru rapoartele jmeky @done (17-06-16 10:35)
+	✔ legatura stransa dintre claim-sale @done (17-06-16 10:35)
+		problemele aduse
+		cum se match-uiau inainte
+	✔ integrarea cu laravel - laravel elixir @done (17-06-16 10:35)
+	✔ decuplarea @done (17-06-16 10:35)
+		migrarea in pasi a datelor
+		separarea conceptuala
+		pastrarea in UI a generic sale-urilor.
+		stergerea lor si refactoring-ul spre solutia actuala - de a modifica iframe-ul.
+	✔ ce asigura un up-to-date css / js file cu versioning @done (17-06-16 10:35)
+	✔ agregarea css / scss / js -> webpack (minifier) -> versioning -> @done (17-06-16 10:35)
+		3. Structura aplicatiei
+	✔ adaugarea campurilor de undecided / resolved / repaired @done (17-06-16 10:35)
+	✔ Users @done (17-06-16 10:35)
+	✔ Sessions @done (17-06-16 10:35)
+	✔ Sales @done (17-06-16 10:35)
+	✔ Request life-cycle @done (17-06-16 10:35)
+		user-ul introduce adresa www.fandu.uk/claims
+		este redirectat catre https://fandu.info
+		aplicatia laravel incarca environment-ul
+		se conteaza la baza de date
+		gaseste ruta pentru controller
+		ruleaza guard-urile pentru controller-ul respectiv.
+		ruleaza controller-ul pentru a primi un view
+		ruleaza view-ul (si-l compileaza daca e necesar - blade)
+		afiseaza pe ecran.
+		user-ul incepe sa completeze
+		daca este sa iasa din aplicatie, il intreaba daca vrea sa piarda tot ce a scris pana in acel moment.
+		drip - mentine sesiunea activa - token csrf
+		se face validarea client-side
+		se re-incepe request-ul, unde se valideaza back-end side si dupa ruleaza controller-ul respectiv rutei s.a.m.d.
+	✔ Rapoarte - vizualizarea datelor => refactor @done (17-06-16 10:35)
+		FileData - export to text / csv
+	✔ Products @done (17-06-16 10:35)
+	✔ Photos @done (17-06-16 10:35)
+	✔ Photo @done (17-06-16 10:35)
+		despre Factory method - in ce categorie se incadreaza.
+	✔ Password Resets @done (17-06-16 10:35)
+	✔ O scurta istorie a aplicatiei @done (17-06-16 10:35)
+	✔ Models - Eloquent ORM @done (17-06-16 10:35)
+		ce aduce in plus ca functionalitate Laravel
+		jmekeria cu One-To-Many / Many-To-Many
+		detalii despre getXxxAttribute()
+		$hidden
+		detalii despre ce am adaugat si cum functioneaza pentru urmatoarele modele
+		getReadable - pentru a genera automat ceea ce poate sa vada administratorul aplicatiei - campuri.
+	✔ Migrations @done (17-06-16 10:35)
+	✔ Messages @done (17-06-16 10:35)
+	✔ Message @done (17-06-16 10:35)
+	✔ Knockout @done (17-06-16 10:35)
+		pentru a putea structura front-end-ul cu logica pe baza modelelor
+		logica asemanatoare pentru modele, ce au valori diferite
+		folosit mai ales la
+		exportul backup-ului
+		adaugarea pozelor ca utilizator
+	✔ FileDataExcelAdaptor @done (17-06-16 10:35)
+		& split-uirea codului pentru Facade in doua trait-uri (multumita PHP 5.4)
+	✔ Decisions + parent decision (many-to-many) @done (17-06-16 10:35)
+	✔ Decision @done (17-06-16 10:35)
+		factory manual
+		resolution to text
+		updateToPay
+		remaining
+		cum se calculeaza chestiile
+	✔ Claims @done (17-06-16 10:35)
+	✔ Claim @done (17-06-16 10:35)
+	✔ Chat Claims @done (17-06-16 10:35)
+	✔ Baza de date @done (17-06-16 10:35)
+		tehnologia folosita: MySQL
+		cum sunt salvate
+		naming scheme Laravel de a numi tabelele cu pluralul lower_case.
+	✔ Assurances @done (17-06-16 10:35)
+	✔ Assurance @done (17-06-16 10:35)
+	✘ Organizarea cunostiintelor pe un kanban board - Trello @cancelled (17-06-16 10:34)
+		construirea unui workflow de a incarca fiecare versiune noua pe serverul de productie
+		enable debug / maintenance mode
+		aplicare migrari
+		incarcare fisiere
+		incarcare in public_html
+		disable debug
+	✘ Events @cancelled (17-06-16 10:34)
+		ca asa se face async cu o coada un sistem de a trimite mail-uri eficiente.
+		de ce nu am putut face deploy - shared hosting
+		ce am ales sa fac - sincron send mail
+	✔ Shared Hosting - production server @done (17-06-16 10:34)
+		avantajul de protectie contra XSS prin disabling exec
+		dezavantajul de a nu putea rula migrarile pe serverul de productia
+		solutia de urcare pe productie
+		solutia de a separa app de public_html pentru a preveni code exploit-ul.
+	✔ PhpStorm IDE @done (17-06-16 10:34)
+		avantajul de a putea vedea usor ce se intampla cu modelele
+		dezvantajul magic method-urilor laravel rezolvat cu proiectul de github.
+	✔ Mentiuni speciale @done (17-06-16 10:34)
+	✔ Heroku @done (17-06-16 10:34)
+		rolling release
+		testare
+		free
+	✔ Google Analytics @done (17-06-16 10:34)
+		unde se blocheaza / ce partea a interfetei e cea mai des folosita.
+	✔ AWS @done (17-06-16 10:34)
+		de ce am ales AWS
+		integrarea cu Laravel
+		mai intai a fost thumbnail + actual image - imagemagick
+		apoi ajungeam in probleme de push commands
+		asa ca pana la urma am ales sa mergem pe salvare in chior (fara compression / ceva)
+		pentru ca nu depaseam quota-ul de 5GB / luna estimat
+	✔ workflow @done (17-06-15 17:54)
+		artisan make:commands
+		artisan routes:list
+		artisan make:auth
+	✔ security @done (17-06-15 17:54)
+		csrf - xss
+	✔ jQuery @done (17-06-15 17:54)
+		orice modificare rapida de butoane
+		logica de administrare / incarcare rapoarte / export
+		validare
+	✔ good coding practices @done (17-06-15 17:54)
+		migrations - artisan - database migrations
+		models - Eloquent ORM
+	✔ MySQL @done (17-06-15 17:54)
+		relatii
+		dbms.
+		export usor shared hosting - phpmyadmin
+		export / import usor testare.
+		interfata speciala de solutie de backup pentru a fi rulata automat.
+	✔ Laravel 5.3 @done (17-06-15 17:54)
+	✔ GitHub @done (17-06-15 17:54)
+		pastrarea istoricului codului
+		automatic deployment cu Heroku
+		todo: continuous integration
+	✔ Forms / Html helpers @done (17-06-15 17:54)
+		ajutatoare pentru Bootstrap / panel-uri
+	✔ CloudFlare @done (17-06-15 17:54)
+		solutia de https dinainte
+		de ce n-a mai functionat - Chrome / Firefox blacklisting
+		solutie - folosirea unui certificat valid (semnat), dar ce trece prin Cloudflare pentru a asigura ca totusi e HTTPS si green icon.
+	✔ Blade directives @done (17-06-15 17:54)
+		blade extending
+		escape text
+		import
+		layout
+		Laravel transpiling to php (internally)
+	✔ PHP @done (17-06-15 17:53)
+	✔ 5.6 avantaje @done (17-06-15 17:53)
+	✔ Se găsește in media galaxy folosit acolo etc. @done (17-06-13 13:10)
+		https://mediagalaxy.ro/regulament-mobile-protect
+	✔ Firma este:  Fandu Holdings Ltd, Cyprus @done (17-06-13 13:10)
+		www.fandu.uk/claims
+		AmTrust International Underwriters Limited care a numit societatea Fandu Holdings Ltd, Cyprus. Toate întrebările legate de această poliță trebuie adresate (în limba română sau engleză) către Fandu Holdings Ltd la office@fandu.uk sau prin poștă la Fandu Holdings Ltd în Zinonos Kitieos nr. 8, Kato Lakatamia P.C. 2322, Nicosia, Cyprus.
+	✔ De ce - angajat @done (17-06-13 13:10)
+		solutia anterioara era hostata de o alta companie, pe severul propriu.
+		au dorit sa poata sa scoata rapoarte custom si sa integreze tot workflow-ul curent intr-o aplicatie.
+		inainte, ei foloseau Excel - si au continuat sa foloseasca cat timp aplicatia a fost construita.
+		pentru a asigura concordanta intre rapoartele facute de mana si scoase de aplicatie
+	✔ Câți oameni lucrează - doar eu @done (17-06-13 13:10)
+		singurul developer ce lucreaza la aplicatia
+		fandu e format din doi CEO - Jeff & Ian, cu doi operatori de date. in total, 4.
+		a trebuit sa gestionez
+		structura bazei de date
+		interactiunea cu user-ul.
+		ce se salveaza / cum se salveaza / unde
+		solutia de hostare
+		solutia de backup
+		securitatea datelor
+		salvarea datelor in cloud (pro-bono pentru cei de la Fandu)
+		business plan-ul.
+	✔ (Convingerea situației mele) @done (17-06-13 13:10)
+		chiar daca lucrez in C# pentru web, prima mea interactiune a fost cu PHP.
+		mi-a placut foarte mult sintaxa.
+		laravel este o solutie moderna inspirata din Ruby on Rails.
+		avea best code practice-urile.
+		2. Tehnologii folosite
+

@@ -1,45 +1,61 @@
 \subsection{Views}
-	blade chemat de Controller
-	o idee generala a structurii
-	\subsubsection{vendor pagination bootstrap}
-	\subsubsection{settings}
-		\paragraph{backup}
-		\paragraph{index}
-	\subsubsection{sales}
-		\paragraph{includes}
-	\subsubsection{reports}
-		\paragraph{includes}
-	\subsubsection{newclaim}
-		\paragraph{includes}
-	\subsubsection{messages}
-	\subsubsection{mail - layout}
-	\subsubsection{claim}
-	\subsubsection{photos}
-	\subsubsection{sales}
-	\subsubsection{app layout}
-	\subsubsection{import}
-		cu tot js-ul de rigoare
-		\begin{itemize}
-			\item steps
-			\item types
-		\end{itemize}
-	\subsubsection{errors - custom error handling}
-	\subsubsection{decisions}
-	\subsubsection{import}
-	\subsubsection{components - html panels}
-	\subsubsection{reports}
-		\paragraph{includes}
-	\subsubsection{claims}
-		\paragraph{auth}
-	\subsubsection{Resources - js / scss}
-	\subsubsection{bootstrap}
-	\subsubsection{timepicker}
-	\subsubsection{typeahead}
-	\subsubsection{chart.js}
-	\subsubsection{extensions}
-			\begin{itemize}
-				\item postData
-				\item postSimpleJson
-				\item postJson
-			\end{itemize}
-	\subsubsection{custom app.scss stylesheet.}
+
+	Gândirea pe care am urmat-o dezvoltând aplicația de gestiune a cereri de despăgubiri, când vine vorba de interfața grafică, a fost bazată pe module.
+
+	De menționat că multe directoare conțin un director numit „includes”.
+	Acest director conține directive Blade parțiale ce sunt utilizate pe parcursul afișării, modificării sau interacțiunii cu paginile principale.
+
+	Astfel, interfața e împărțită în mai multe directoare:
+
+	\begin{itemize}
+		\item \verb|vendor| - elementele de paginație extrase din context, ce permit păstrarea parametrilor „GET” în momentul folosirii paginației.
+
+		Am ales să fac modificarea implicită de a adăuga doar câmpurile folosite la momentul respectiv pentru că era singurul scenariu în care se puteau pagina rezultatele.
+
+		\item \verb|settings| - elementele vizuale ce afișează setările și interfața de a salva datele aplicației.
+		\item \verb|sales| - elementele ce permit vizualizarea, crearea, modificarea și ștergea produselor și asigurărilor, în cazul coruperii datelor.
+		\item \verb|reports| - elementele de paginație ce permit construirea rapoartelor.
+
+		Se folosesc de Laravel Elixir pentru a adăuga codul scris în fișierul JavaScript \verb|reports.js| în pagină.
+
+		Astfel se asigură viteza optimă de distribuire a resurselor și funcționalitate cu tipurile de raport.
+
+		Integrarea cu Knockout se face implicit prin declararea includerea din componenta vizuală de șablon a aplicației a fișierului \verb|app.js|.
+		\item \verb|newclaim| - elementele de paginație ce sunt vizualizate prima oară de clienții aplicației.
+
+		Directorul \verb|includes| conține împărțit pe componente toate marile arii acoperite de cererea de despăgubire, printre care și un parțial inclus în mail-ul trimis mai departe.
+		Acest parțial Blade se referă la actele necesare a fi încărcate în a doua parte a aplicației. (partea de încărcare imagini)
+		\item \verb|messages| - elementele de paginație ce sunt incluse cu fiecare tranzacție, ce asigură un canal de comunicare între client și operatorul aplicației.
+		\item \verb|mail| - Înăuntrul acestui director se află fișierul \verb|layout.blade.php|, ce conține stilul general valabil tuturor email-urilor trimise.
+
+		De asemenea include pentru fiecare tip de obiect o acțiune desăvârșită ca nume.
+		\item \verb|layouts| - conține singurul fișier \verb|app.blade.php|, de care depinde toate celelalte View-uri.
+
+		În cazul în care utilizatorul nu este înregistrat, nu îi se arată bara de navigație în cadrul aplicației de administrare.
+
+		De asemenea, conține referințe la Laravel Elixir, mai ales la stilul și codul precompilat și optimizat de „gulp” (pentru că până la urmă, gulp lucrează cel mai mult).
+
+		În afară de aceste mici modificări, împreună cu Google Analytics și metoda specială de a picura câte o cerere de actualizare a sesiunii la câteva minute, tranformă această pagină a aplicației într-un adevărat utilitar și arată funcționalitatea pe deplină a directivelor Blade.
+
+		\item \verb|import| - elementele de paginație ce sunt vizualizate de cei ce doresc să introducerii date în sistem.
+
+		Directorul \verb|steps| conține împărțit pe componente toate rezultatele posibile introducerii standard de date, dar și celor modificate.
+
+		Directorul \verb|types| conține rezultatele introducerii datelor în sistem, în formatul standard de date.
+
+		\item \verb|errors| - elementele de paginație ce vor fi afișate în caz de erori cu numărul respectiv.
+
+		\item \verb|decisions| - elementele de paginație extrase pentru decizii.
+
+		Conține și o metodă eficientă și rapidă, folosind jQuery , de a sorta informațiile prin apăsarea butoanelor colorate din capul tabelului.
+		\item \verb|components| - elementele de paginație extrase din context, ce-mi permite să scriu mai puțin cod pentru a folosi panourile din Bootstrap.
+		\item \verb|claims| -  elementele de paginație extrase pentru cereri.
+
+		Conține și o metodă eficientă și rapidă, folosind jQuery , de a sorta informațiile prin apăsarea butoanelor colorate din capul tabelului.
+
+		Directorul \verb|includes| conține componenta de căutare și componenta de modificare a cererii de despăguipre dacă persoana era autorizată (înregistrată și cu o sesiune activă).
+
+		\item \verb|auth| - elementele originale de înregistrare, logare și resetare parolă.
+		\item \verb|home.blade.php| - Pagina de introducere când intri în sistem.
+	\end{itemize}
+.
