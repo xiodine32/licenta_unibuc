@@ -39,7 +39,9 @@
 		\label{fig:home_page}
 	\end{figure}
 
-	\subsection{Modulul de administrare a cererilor de despăgubire}
+	\subsection{Modulul cererilor de despăgubire}
+
+	Modulul cererilor de despăgubire se poate accesa prin butonul „Claims” din bara de meniu.
 
 	\begin{figure}
 		\subfigure[Structura culorilor] {
@@ -65,9 +67,7 @@
 	Pe pagina principală a modului se vizualizează ultimele 100 cereri de despăgubire în funcție data sosirii lor în sistem.
 	Fiecare cerere are patru butoane:
 	\begin{enumerate}
-		\item \verb|Decide| - pentru a naviga rapid la decizia cererii de despăgubire.
-		Se va crea o decizie în cazul în care nu există.
-		Dacă nu se poate construi automat decizia în funcție de numărul facturii, utilizatorul va fi rugat de a lega manual decizia de o vânzare sau de a construi el manual vânzarea în cauza lipsei acesteia.
+		\item \verb|Decide| - pentru a naviga rapid la decizia cererii de despăgubire. Vezi asdasdasd
 		\item \verb|View| - vizualizarea cererii de despăgubire scrise de client.
 		\item \verb|Edit| - modificarea cererii de despăgubire
 		\item \verb|Delete| - iconița de gunoi reprezintă ascunderea cererii din interfața principală.
@@ -80,6 +80,19 @@
 	Figura~\ref{fig:color_coding} reprezintă un exemplu a datelor din tabel, figura~\ref{fig:claims_filtered} reprezintă cererile filtrate după „Repairment” (reparare), figura~\ref{fig:claims_search} arată sistemul de căutare în acțiune, iar figura~\ref{fig:claims_tags} prezintă o cerere cu informații adiționale.
 
 	\subsubsection{Vizualizarea și modificarea cererilor}
+
+
+	Când se vizualizează o cerere, apar date folositoare utilizatorului, conform figurii~\ref{fig:claims_view}, precum:
+	\begin{enumerate}
+		\item Dacă cererea de despăgubire are un IMEI duplicat cu o altă cerere anterioară de despăgubire.
+		\item Dacă nu s-a putut identifica vânzarea, după numărul facturii.
+	\end{enumerate}
+
+	\begin{figure}
+		\includegraphics[width=\linewidth]{../imagini/claims_view.png}
+		\caption{Date suplimentare pentru utilizator în cadrul vizualizării unei cereri}
+		\label{fig:claims_view}
+	\end{figure}
 
 	Pentru a modifica cererea, este obligatorie o decizie.
 	Utilizatorul nu poate salva niciun câmp, după cum se vede în figura~\ref{fig:claims_edit}.
@@ -106,7 +119,7 @@
 			\item \verb|Today| - Cererile ce trebuiesc actualizate exclusiv azi.
 			\item \verb|Past Due| - Cererile ce trebuiau actualizate, aranjate după când trebuiau actualizate.
 		\end{enumerate}
-		Ambele secțiuni arată precum figura\ref{fig:claims_reminders}.
+		Ambele secțiuni arată precum figura~\ref{fig:claims_reminders}.
 		\begin{figure}
 			\includegraphics[width=\linewidth]{../imagini/claims_reminder_view.png}
 			\caption{Sistemul de aducere aminte a cererilor de despăgubire}
@@ -155,26 +168,220 @@
 			\caption{Rezultate posibile la introducerea datelor în sistem}
 		\end{figure}
 
-	\subsection{Sales}
-		search coloane, access rapid
-		buton de remove / remove all logic
-		\subsubsection{View}
-				poti sa adaugi product
-				poti sa stergi product
-				poti sa adaugi assurance
-				poti sa stergi assurance
-	\subsection{Decisions}
-		quick search
-		detailed search
-		de ce poti sa stergi - pentru ca daca nu ai asociat sale-ul corect, poti sa dai undo fara sa sufere nimic baza de date.
-		\subsubsection{View}
-				claim / messages / add old decision
-				edit claim in urma analytics
-				campurile explicate
-				calculatorul
-	\subsection{Reports}
-		type of export (deprecated csv / excel)
-		date start / end
-		progress bar
-		metadata when loading - especially yearly reports
-		chunking
+	\subsection{Modulul de vânzări}
+
+		Modulul de vânzări se poate accesa prin butonul „Sales” din bara de meniu.
+		Conform figurii~\ref{fig:sales}, sunt afișate într-un tabel vânzările, cu opțiunea de a intra în detalii apăsând pe butonul „View” și de a șterge vânzarea (sau vânzările, dacă se apasă pe butonul „Remove More”) prin apăsarea iconiței în forma unui coș de gunoi.
+
+		Căutarea după numele produsului „Product” sau numele clientului „Customer”, cât și intervalul vânzării produsului se pot vedea în figura~\ref{fig:sales_search}.
+		Funcționalitatea este identică pentru momentul legării unei decizii de o vânzare.
+
+	\begin{figure}
+		\centering
+			\subfigure[Exemplu vânzări] {
+				\includegraphics[width=0.4\linewidth]{../imagini/sales.png}
+				\label{fig:sales}
+			}
+			\subfigure[Exemplu căutare vânzări] {
+				\includegraphics[width=0.4\linewidth]{../imagini/sales_search.png}
+				\label{fig:sales_search}
+			}
+		\caption{Exemplu modul vânzări}
+	\end{figure}
+
+
+		\subsubsection{Vizualizarea vânzării}
+
+			Dacă se apasă pe butonul de vizualizare a unei vânzări, vor apărea din baza de date detaliile vânzării, precum în figura~\ref{fig:sales_view}.
+
+			Din această perspectivă, se pot apăsa următoarele butoane:
+			\begin{enumerate}
+				\item \verb|Details| - Vizualizarea detaliilor vânzării~\ref{fig:sales_view}.
+				\item \verb|Delete Product| - Ștergerea unui produs~\ref{fig:sales_delete_product}
+				\item \verb|Delete Assurance| - Ștergerea unei asigurări~\ref{fig:sales_delete_assurance}
+				\item \verb|Add Product| - Adăugarea unui produs~\ref{fig:sales_add_product}
+				\item \verb|Add Assurance| - Adăugarea unei asigurări~\ref{fig:sales_add_assurance}
+			\end{enumerate}
+		\begin{figure}
+			\includegraphics[width=\linewidth]{../imagini/sales_view.png}
+			\caption{Detaliile vânzării}
+			\label{fig:sales_view}
+		\end{figure}
+		\begin{figure}
+			\centering
+			\subfigure[Interfața de adăugare a unei asigurări] {
+				\includegraphics[width=0.4\linewidth]{../imagini/sales_add_assurance.png}
+				\label{fig:sales_add_assurance}
+			}
+			\subfigure[Interfața de adăugare a unui produs] {
+				\includegraphics[width=0.4\linewidth]{../imagini/sales_add_product.png}
+				\label{fig:sales_add_product}
+			}
+			\\
+			\subfigure[Interfața de ștergere a unei asigurări] {
+				\includegraphics[width=0.4\linewidth]{../imagini/sales_delete_assurance.png}
+				\label{fig:sales_delete_assurance}
+			}
+			\subfigure[Interfața de ștergere a unui produs] {
+				\includegraphics[width=0.4\linewidth]{../imagini/sales_delete_product.png}
+				\label{fig:sales_delete_product}
+			}
+		\caption{Detalii vânzare}
+	\end{figure}
+	\pagebreak
+	\subsection{Crearea unei decizii}
+
+		Crearea unei decizii se face apăsând butonul „Decision” în cadrul vizualizării tabelului cererilor sau vizualizării / modificării unei cereri.
+
+		În care nu există, se va crea o nouă decizie urmărind următorii pași:
+		\begin{enumerate}
+			\item Dacă se poate găsi automat o vânzare în funcție de numărul facturii, se va sări pasul~\ref{itm:asociere_manuala} și se va trece la pasul~\ref{itm:asociere_vanzare}.
+			\item
+			Dacă nu se poate găsi automat o vânzare, se va afișa pagina de asociere manuală a vânzării, precum în figura~\ref{fig:claims_match_sale}.
+			\label{itm:asociere_manuala}
+			\item Dacă nu se poate găsi vânzarea, se poate apăsa butonul „Manual Sale”, de a introduce manual valorile necesari construirii deciziei, precum în figura~\ref{fig:claims_manual_sale}.
+
+			Acest pas este ultimul în cazul construirii legăturii manuale.
+
+			\item Ecranul va arăta precum în figura~\ref{fig:claims_match_confirm}, pentru a valida produsul și asigurarea asociată vânzării.
+			\label{itm:asociere_vanzare}
+		\end{enumerate}
+
+	\begin{figure}
+		\includegraphics[width=\linewidth]{../imagini/claims_match_confirm.png}
+		\caption{Confirmarea legăturii între cerere și vânzare}
+		\label{fig:claims_match_confirm}
+	\end{figure}
+
+	\begin{figure}
+		\includegraphics[width=\linewidth]{../imagini/claims_match_sale.png}
+		\caption{Selectarea manuală a vânzării}
+		\label{fig:claims_match_sale}
+	\end{figure}
+
+	\begin{figure}
+		\includegraphics[width=\linewidth]{../imagini/claims_manual_sale.png}
+		\caption{Construirea manuală a vânzării}
+		\label{fig:claims_manual_sale}
+	\end{figure}
+
+
+	\subsection{Modulul de decizii}
+
+		Modulul de decizii se poate accesa prin butonul „Decision” din bara de meniu.
+		Conform figurii~\ref{fig:decisions_filter}, sunt afișate într-un tabel deciziile, cu opțiunea de a intra în detalii apăsând pe butonul „View” și de a șterge decizia prin apăsarea iconiței în forma unui coș de gunoi.
+		Opțiunea de a șterge decizia există pentru a se putea reface aceasta în cazul alegerii unei vânzări proaste.
+
+		De asemenea, la fel ca la modulul de vânzări, se reprezintă fiecare linie din tabel cu un sistem de culori, regăsit deasupra capului de tabel.
+		Dacă se apasă un element din acesta, se filtrează cererile de pe pagina curentă după elementul respectiv.
+
+		Căutarea se pot vedea în figura~\ref{fig:sales_search}.
+		Este o combinație între căutarea vânzării și a datelor aflate în decizie.
+		Căutarea după dată caută momentul construirii deciziei.
+		Funcționalitatea este identică când se dorește adăugarea unei decizii soluționate anterior în cadrul „Add Old Decision”, când se modifică decizia vizualizată.
+
+		\begin{figure}
+			\centering
+				\subfigure[Exemplu decizii deja filtrate după condiția de a fi reparate] {
+					\includegraphics[width=0.4\linewidth]{../imagini/decisions_filter.png}
+					\label{fig:decisions_filter}
+				}
+				\subfigure[Exemplu căutare decizii] {
+					\includegraphics[width=0.4\linewidth]{../imagini/decisions_search.png}
+					\label{fig:decisions_search}
+				}
+			\caption{Exemplu modul vânzări}
+		\end{figure}
+
+		\subsubsection{Modificarea deciziilor}
+
+			Interfața de modificare a deciziilor se regăsește la figura~\ref{fig:decisions_edit}.
+			Se navighează la cerere, vânzare sau mesaje, dar se poate și adăuga o decizie soluționată deja, pentru a calcula automat ce valoare a rămas acoperită pentru repararea produsului pentru polița de asigurare respectivă, folosind următoarele butoane:
+			\begin{enumerate}
+				\item \verb|Decision| - Navigarea la detaliile deciziei, vizibilă în momentul încărcării paginii.
+				\item \verb|Claim| - Vizualizarea cererii de despăgubire.
+				\item \verb|Messages| - Vizualizarea mesajelor interschimbate de utilizatorii aplicației și client.
+				\item \verb|Add Old Decision| - Adăugarea deciziilor soluționate anterioare.
+				Pentru această interfață se poate vizualiza figura~\ref{fig:decisions_add_old}.
+				După ce se selectează decizia anterioară, trebuie confirmată conform figurii~\ref{fig:decisions_add_conirm} înainte de a fi introdusă legătura în baza de date.
+				\item \verb|Edit Claim| - Legătură rapidă către modificarea datelor cererii de despăgubire.
+				Acest buton a fost adăugat în urma analizei funcționării programului de către utilizatori.
+			\end{enumerate}
+
+			Următoarele câmpuri sunt calculate automat și nu pot fi modificate:
+			\begin{itemize}
+				\item \verb|Client Price To Pay| - Valoarea de plătit de către client, în cazul care nu este acoperită total repararea sau înlocuirea telefonului de polița de asigurare.
+				\item \verb|Franchise| - În cazul înlocuirii telefonului, franciza se calculează automat în funcție de prețul telefonului.
+				\item \verb|Net Payable| - Suma de plătit către firma de asigurare de operatorii sistemului de gestiune a cererilor de despăgubire.
+			\end{itemize}
+			\label{lst:itemize}
+
+			Dacă soluția este să se înlocuiască produsul (conform câmpului „Resolution”), se va ascunde câmpul \\
+			\verb|Repair / Replace Cost|, pentru că suma de înlocuit produsul va fi prețul din câmpul \verb|Payee Cost|.
+
+			În partea de jos a paginii se găsește un calculator interactiv, ce lasă utilizatorul să vadă estimarea câmpurilor calculate automat, conform listei \hyperref[lst:itemize]{de mai sus}.
+
+			\begin{figure}
+				\includegraphics[width=\linewidth]{../imagini/decisions_edit.png}
+				\caption{Interfața de modificare a deciziilor}
+				\label{fig:decisions_edit}
+			\end{figure}
+
+
+		\begin{figure}
+			\includegraphics[width=\linewidth]{../imagini/decisions_add_old.png}
+			\caption{Interfața de adăugare a unei decizii soluționate anterior}
+			\label{fig:decisions_add_old}
+		\end{figure}
+
+		\begin{figure}
+			\includegraphics[width=\linewidth]{../imagini/decisions_add_conirm.png}
+			\caption{Confirmarea adăugării deciziei soluționate anterior}
+			\label{fig:decisions_add_conirm}
+		\end{figure}
+
+	\subsection{Modulul de raportări}
+
+		Modulul de raportări se poate accesa prin butonul „Reports” din bara de meniu.
+
+		Fiecare raport poate fi descărcat sau vizualizat în cadrul paginii, alegând „Type” -> „Download” sau „View”.
+
+		Când se alege descărcarea raportului, apare câmpul „Download Type”.
+		Sunt valabile următoarele opțiuni:
+		\begin{enumerate}
+			\item \verb|Excel| - Se va descărca un fișier Excel.
+			\item \verb|CSV| - Se va descărca un fișier în formatul \verb|.csv|.
+		\end{enumerate}
+
+		Pentru fiecare raport se poate specifica o dată de început și sfârșit a perioadei raportului.
+
+		În cazul în care lipsește data de început, raportul va începe cu prime elemente ale bazei de date până la data de sfârșit.
+		În cazul în care lipsește data de sfârșit, se vor include în raport toate elemente de la data de început.
+		În cazul lipsei ambelor perioadelor, se generează raportul cu toate datele existente în baza de date.
+
+		În momentul apăsării butonului „Submit”, generarea raportului se va vedea în bara de progres.
+
+		Conform figurii~\ref{fig:reports}, sunt disponibile următoarele rapoarte:
+		\begin{enumerate}
+			\item \verb|Statistics| - Statistici rapide (câte cereri de despăgubire, decizii au fost create în perioada respectivă de timp).
+			Sunt implicit vizualizate în interfața web, precum în figura~\ref{fig:statistics}.
+			\item \verb|Decisions| - Raport cu toate deciziile plătite într-o anumită perioada de timp.
+			\item \verb|Products| - Raport cu numărul de asigurări, grupate în funcție de tipul de asigurare și prețul ei, în perioada respectivă.
+			\item \verb|Sales| - Raport cu numărul vânzărilor asigurărilor grupate în funcție de magazinul ce a făcut vânzarea, împreună cu perioada când s-a vândut primul și ultimul produs.
+			\item \verb|Yearly Statistics| - Raport detaliat despre produsele ce încă sunt asigurate, împreună cu posibila cerere de despăgubire asociată.
+
+			Momentan toate asocierile cu cererile de despăgubire trebuie verificate manual, deoarece nu mai sunt corelate vânzările de cererile de despăgubire.
+			\item \verb|Monthly Statistics| - Raportul asemănător generat de \verb|Yearly Statistics|, cu câmpul lunii adăugat.
+		\end{enumerate}
+
+		\begin{figure}
+			\includegraphics[width=\linewidth]{../imagini/statistics.png}
+			\caption{Statistici}
+			\label{fig:statistics}
+		\end{figure}
+
+		\begin{figure}
+			\includegraphics[width=\linewidth]{../imagini/reports.png}
+			\caption{Sistemul de raportare}
+			\label{fig:reports}
+		\end{figure}

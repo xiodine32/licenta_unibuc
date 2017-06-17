@@ -1,74 +1,74 @@
-☐ mail system?
- ☐ Manualul de utilizare
-	 ☐ Registering a claim
-	 ☐ Uploading photos
-	 ☐ Responding to messages
-	 ☐ Administrative interface
-		 ☐ Claims view
-			 ☐ color code / quick search
-			 ☐ search / filter / navbar id
-			 ☐ view claim
-				 invoice automatic search
-				 duplicate imei
-				 view data
-			 ☐ editing data
-				 short notes
-				 reminders
-				 status
-				 comments
-				 decisions mandatory - cum / de ce s-a intamplat asta
-			 ☐ Reminders
-				 today
-				 past due
-		 ☐ Import
-			 ☐ Weekly Sale import
-				 de la altex
-			 ☐ Custom imports
-				 Daily import - format-ul vechi de daily tinut de Ramona pentru fiecare an
-				 Sales Import - import de date de la "decision" output-ul Fandu (excel stuff) - autocompletare campuri mai mult
-				 Old - old metadata import from Etonia etc. - ce momentan foloseste doar IMEI
-		 ☐ Sales
-			 search coloane, access rapid
-			 buton de remove / remove all logic
-			 ☐ view
-				 poti sa adaugi product
-				 poti sa stergi product
-				 poti sa adaugi assurance
-				 poti sa stergi assurance
-		 ☐ Decisions
-			 quick search
-			 detailed search
-			 de ce poti sa stergi - pentru ca daca nu ai asociat sale-ul corect, poti sa dai undo fara sa sufere nimic baza de date.
-			 ☐ view
-				 claim / messages / add old decision
-				 edit claim in urma analytics
-				 campurile explicate
-				 calculatorul
-		 ☐ Reports
-			 type of export (deprecated csv / excel)
-			 date start / end
-			 progress bar
-			 metadata when loading - especially yearly reports
-			 chunking
-	 ☐ Settings
-		 hidden DBA feature - register client - https://fandu.info/register
-		 backup - chunking -> sql -> .tar.gz
- ☐ cpanel administrator
-	 phpmyadmin - pentru a schimba email-ul in caz de typo.
-		 sugestia pentru a extinde asta cu un system de request-uri / approval-uri din partea unui admin mai mare -> ierarhie de administratori.
-	 code backup - chiar daca GitHub asigura, e mai bine redundancy. sugestie de backup automat - poate
-4. Concluzia
-	☐ Business Continuity Plan
-	☐ Luna dec - teste automate
-	☐ Gestionarea cererilor expirate si a datelor lor.
-	☐ Refactoring din modelele imens de mari in tabele modulare.
-	☐ Fandu doreste sistem modular de rapoarte
-		ce inseamna asta pentru structura bazei de date
-	☐ Cereri de modificari campuri, ce ar fi validate de "super administatori" - definiti de DBA.
+☐ Business Continuity Plan
+☐ Luna dec - teste automate
+☐ Gestionarea cererilor expirate si a datelor lor.
+☐ Refactoring din modelele imens de mari in tabele modulare.
+☐ Fandu doreste sistem modular de rapoarte
+	ce inseamna asta pentru structura bazei de date
+☐ Cereri de modificari campuri, ce ar fi validate de "super administatori" - definiti de DBA.
 
 
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
+	✔ view claim @done (17-06-17 20:00)
+		invoice automatic search
+		duplicate imei
+		view data
+	✔ view @done (17-06-17 20:00)
+		poti sa adaugi product
+		poti sa stergi product
+		poti sa adaugi assurance
+		poti sa stergi assurance
+	✔ view @done (17-06-17 20:00)
+		claim / messages / add old decision
+		edit claim in urma analytics
+		campurile explicate
+		calculatorul
+	✔ search / filter / navbar id @done (17-06-17 20:00)
+	✔ mail system? @done (17-06-17 20:00)
+	✔ editing data @done (17-06-17 20:00)
+		short notes
+		reminders
+		status
+		comments
+		decisions mandatory - cum / de ce s-a intamplat asta
+	✔ cpanel administrator @done (17-06-17 20:00)
+		phpmyadmin - pentru a schimba email-ul in caz de typo.
+		sugestia pentru a extinde asta cu un system de request-uri / approval-uri din partea unui admin mai mare -> ierarhie de administratori.
+		code backup - chiar daca GitHub asigura, e mai bine redundancy. sugestie de backup automat - poate
+		4. Concluzia
+	✔ color code / quick search @done (17-06-17 20:00)
+	✔ Weekly Sale import @done (17-06-17 20:00)
+		de la altex
+	✔ Uploading photos @done (17-06-17 20:00)
+	✔ Settings @done (17-06-17 20:00)
+		hidden DBA feature - register client - https://fandu.info/register
+		backup - chunking -> sql -> .tar.gz
+	✔ Sales @done (17-06-17 20:00)
+		search coloane, access rapid
+		buton de remove / remove all logic
+	✔ Responding to messages @done (17-06-17 20:00)
+	✔ Reports @done (17-06-17 20:00)
+		type of export (deprecated csv / excel)
+		date start / end
+		progress bar
+		metadata when loading - especially yearly reports
+		chunking
+	✔ Reminders @done (17-06-17 20:00)
+		today
+		past due
+	✔ Registering a claim @done (17-06-17 20:00)
+	✔ Manualul de utilizare @done (17-06-17 20:00)
+	✔ Import @done (17-06-17 20:00)
+	✔ Decisions @done (17-06-17 20:00)
+		quick search
+		detailed search
+		de ce poti sa stergi - pentru ca daca nu ai asociat sale-ul corect, poti sa dai undo fara sa sufere nimic baza de date.
+	✔ Custom imports @done (17-06-17 20:00)
+		Daily import - format-ul vechi de daily tinut de Ramona pentru fiecare an
+		Sales Import - import de date de la "decision" output-ul Fandu (excel stuff) - autocompletare campuri mai mult
+		Old - old metadata import from Etonia etc. - ce momentan foloseste doar IMEI
+	✔ Claims view @done (17-06-17 20:00)
+	✔ Administrative interface @done (17-06-17 20:00)
 	✔ vendor pagination bootstrap @done (17-06-17 00:40)
 	✔ types @done (17-06-17 00:40)
 	✔ tipuri de request-uri. @done (17-06-17 00:40)

@@ -80,8 +80,7 @@ return new $adaptorName;
 			\item \verb|ExcelOutputer| - Interfața implementată de toate clasele din acest director.
 			\item \verb|YearlyOutputer|, împreună cu clasa suport \verb|NegativeSale|, scoate un raport detaliat despre produsele ce încă sunt asigurate, împreună cu posibila cerere de despăgubire asociată.
 
-			Momentan trebuie să fie luate la rând toate asocierile rezultante, deoarece nu mai sunt corelate vânzările de cererile de despăgubire și există un algoritm euristic în locul lui.
-			\item \verb|MonthlyOutputer| - Clasă ce adaugă raportului generat de \\
-			\verb|YearlyOutputer| câmpul lunii.
+			Momentan toate asocierile cu cererile de despăgubire trebuie verificate manual, deoarece nu mai sunt corelate vânzările de cererile de despăgubire, iar algoritmul euristic nu are valabil numărul facturii.
+			\item \verb|MonthlyOutputer| - Generează un raport asemănător clasei \verb|YearlyOutputer| adăugând câmpul lunii.
 		\end{itemize}
 	\end{itemize}

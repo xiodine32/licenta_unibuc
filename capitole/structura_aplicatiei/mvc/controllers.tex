@@ -136,7 +136,7 @@ Route::group([
 					\item \verb|product_expire_date| - data expirării asigurării.
 				\end{itemize}
 
-				Dacă se salvează cu succes decizia, ea va apărea asincron, integrată în pagina de vizualizării a cererii de despăgubire, în josul paginii.
+				Dacă se salvează cu succes decizia, ea va apărea asincron, integrată în pagina de vizualizării a cererii de despăgubire, în partea de jos a paginii.
 				\item \verb|HomeController.php| - gestionează o interfață simplă cu două rapoarte, împreună datele de contact personale, în cazul în care apare vreo problemă.
 
 				Sistemul arată precum în figura~\ref{fig:home_page}.
@@ -162,12 +162,6 @@ Route::group([
 
 				Sistemul arată precum în figura~\ref{fig:reports}.
 
-				\begin{figure}
-					\includegraphics[width=\linewidth]{../imagini/reports.png}
-					\caption{Sistemul de rapoarte}
-					\label{fig:reports}
-				\end{figure}
-
 				\item \verb|SalesController.php| - gestionează existența, modificarea, afișarea și căutarea vânzărilor introduse în sistem.
 
 				Funcția de căutare, prezentă în figura~\ref{fig:sales_search} se referă la:
@@ -179,11 +173,6 @@ Route::group([
 					\item \verb|Date Added| - Data când a fost importat fișierul (acest câmp, conform statisticilor Google Analytics, este degeaba și va fi scos într-o variantă ulterioară, cel mai probabil).
 					\item \verb|External ID| - Numărul facturii.
 				\end{itemize}
-				\begin{figure}
-					\includegraphics[width=\linewidth]{../imagini/sales_search.png}
-					\caption{Căutarea vânzărilor}
-					\label{fig:sales_search}
-				\end{figure}
 				\item \verb|ProductsController.php| și \verb|AssurancesController.php| - gestionează doar construirea și ștergea
 					produselor, respectiv asigurărilor, din interfața ce modifică vânzările.
 					Nu au niciun alt rol.
