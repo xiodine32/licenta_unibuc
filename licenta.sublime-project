@@ -20,7 +20,7 @@
 	"settings": {
 		"TEXroot": "main.tex",
 		"font_face": "Cambria",
-		"font_size": 12,
+		"font_size": 14,
 		"bibtex_file": "bibliografie.bib",
 		"spell_check": true,
 		"dictionary": "Packages/User/Romanian (Modern).dic",

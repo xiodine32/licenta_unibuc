@@ -26,7 +26,7 @@
 \BOOKMARK [2][-]{subsection.1.8.8}{LaTeX și Sublime Text}{section.1.8}% 26
 \BOOKMARK [0][-]{chapter.2}{O scurtă istorie a dezvoltării aplicației}{}% 27
 \BOOKMARK [1][-]{section.2.1}{Primul\040modul}{chapter.2}% 28
-\BOOKMARK [1][-]{section.2.2}{Problema datelor reale săptămânale introduse în sistem}{chapter.2}% 29
+\BOOKMARK [1][-]{section.2.2}{Problema\040datelor\040incomplete}{chapter.2}% 29
 \BOOKMARK [1][-]{section.2.3}{Modulul de rapoarte și decizii}{chapter.2}% 30
 \BOOKMARK [1][-]{section.2.4}{Decuplarea deciziilor de vânzări}{chapter.2}% 31
 \BOOKMARK [2][-]{subsection.2.4.1}{Modificări în viitorul apropiat}{section.2.4}% 32
@@ -47,11 +47,9 @@
 \BOOKMARK [1][-]{section.4.1}{Înregistrarea unei cereri}{chapter.4}% 47
 \BOOKMARK [1][-]{section.4.2}{Secțiunea de mesaje din cadrul cererilor de despăgubire}{chapter.4}% 48
 \BOOKMARK [1][-]{section.4.3}{Interfața de administrare}{chapter.4}% 49
-\BOOKMARK [2][-]{subsection.4.3.1}{Claims\040view}{section.4.3}% 50
-\BOOKMARK [2][-]{subsection.4.3.2}{Import}{section.4.3}% 51
+\BOOKMARK [2][-]{subsection.4.3.1}{Modulul de administrare a cererilor de despăgubire}{section.4.3}% 50
+\BOOKMARK [2][-]{subsection.4.3.2}{Modulul introducerii datelor în sistem}{section.4.3}% 51
 \BOOKMARK [2][-]{subsection.4.3.3}{Sales}{section.4.3}% 52
 \BOOKMARK [2][-]{subsection.4.3.4}{Decisions}{section.4.3}% 53
 \BOOKMARK [2][-]{subsection.4.3.5}{Reports}{section.4.3}% 54
-\BOOKMARK [1][-]{section.4.4}{Settings}{chapter.4}% 55
-\BOOKMARK [1][-]{section.4.5}{Uploading\040photos}{chapter.4}% 56
-\BOOKMARK [2][-]{subsection.4.5.1}{Modificări necesare asupra structurii bazei de date}{section.4.5}% 57
+\BOOKMARK [2][-]{subsection.4.3.6}{Modificări necesare asupra structurii bazei de date}{section.4.3}% 55

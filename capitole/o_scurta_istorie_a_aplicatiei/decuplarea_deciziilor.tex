@@ -1,6 +1,6 @@
 \section{Decuplarea deciziilor de vânzări}
 
-	La scurt timp după ce a intrat modulul de legare a deciziilor de vânzări în funcțiune, eleganța gândirii s-a izbit de prima problemă a lumii reale, datele incomplete sau lipsă.
+	La scurt timp după ce a intrat modulul de legare a deciziilor de vânzări în funcțiune, structura bazei de date s-a izbit de prima problemă a lumii reale, datele incomplete sau lipsă.
 
 	Utilizatorii sistemului nu găseau vânzările asociate cererilor, din cauza incompatibilităților datelor săptămânale trimise de Altex / Media Galaxy.
 	Problema aceasta a fost accentuată de adăugarea obligativității de a asocia decizia cu cererea de despăgubire.
@@ -12,16 +12,14 @@
 	Problema apare când se dorește scoaterea unui raport de vânzare într-o anumită perioadă, deoarece nu se știe magazinul ce a vândut produsul.
 
 	Deci, într-un final, am decuplat decizia de vânzare.
-	Am renunțat la abordarea elegantă de descoperire a deciziilor multiple în favoarea căutării manuale.
+	Am renunțat la structura strâns legată a cererilor de vânzări, în favoarea căutării manuale.
 	Fiecare decizie acum conține detalii și despre produs și despre asigurare.
 
 	Altă soluție mai elegantă nu s-ar fi putut găsi, deoarece lipsa de informații ce n-ar putea să difere din cadrul cererii de despăgubire și a datelor primite nu există.
 
 	\subsection{Modificări în viitorul apropiat}
 
-	Din fericire, mai există speranță.
-
-	Doresc să reintroduc în viitorul apropiat soluția elegantă înapoi prin adăugarea unui câmp de factură la asocierea unei noi cereri de o vânzare.
+	Doresc să reintroduc în viitorul apropiat descoperirea automată a deciziilor vechi înapoi prin adăugarea unui câmp de factură la asocierea unei noi cereri de o vânzare.
 
 	Diferența acum, față de sistemul decuplat, este că pot să aflu ce decizii au fost legate înainte, mulțumită serviciului de backup, dar și a modului actual de legare a informațiilor, pentru că informațiile legate de vânzare nu au fost modificate până acum de mână.
 

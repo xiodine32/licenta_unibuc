@@ -141,12 +141,6 @@ Route::group([
 
 				Sistemul arată precum în figura~\ref{fig:home_page}.
 
-				\begin{figure}
-					\includegraphics[width=\linewidth]{../imagini/home_page.png}
-					\caption{Pagina acasă}
-					\label{fig:home_page}
-				\end{figure}
-
 				\item \verb|ImportController.php| - gestionează sistemul de introducere de date prin fișierele Excel în sistem.
 
 				Acesta construiește automat un adaptor ce preia fișierul Excel și afișează un răspuns, de obicei printr-un View.
@@ -155,12 +149,6 @@ Route::group([
 				Această diferențiere apare mulțumită notificării trimise pe email în momentul salvării cu succes a datelor din fișierele standard.
 
 				Sistemul arată precum în figura~\ref{fig:imports}.
-
-				\begin{figure}
-					\includegraphics[width=\linewidth]{../imagini/imports.png}
-					\caption{Sistemul de introducere a datelor}
-					\label{fig:imports}
-				\end{figure}
 
 				\item \verb|ReportsController.php| - gestionează sistemul de rapoarte.
 				Inițial scris astfel încât dintr-o singură metodă să reiasă un raport, acum funcționează modular și necesită cod asincron JavaScript pentru a scoate un raport.
