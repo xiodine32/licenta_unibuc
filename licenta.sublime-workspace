@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"register",
+				"fig:register_avariator"
+			],
+			[
 				"categ",
 				"category_name"
 			]
@@ -12,101 +16,19 @@
 	"buffers":
 	[
 		{
-			"file": "capitole/structura_aplicatiei/mvc/controllers.tex",
+			"file": "capitole/user_workflow/administrative_interface.tex",
 			"settings":
 			{
-				"buffer_size": 13372,
+				"buffer_size": 18968,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "capitole/structura_aplicatiei/mvc/helpers.tex",
+			"file": "meeting.todo",
 			"settings":
 			{
-				"buffer_size": 2521,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"contents": "Searching 46 files for \"enumerate\"\n\nC:\\Users\\xiodine\\Desktop\\licenta\\capitole\\structura_aplicatiei\\baza_de_date.tex:\n   15  \n   16  \tAceasta este salvată o dată pe săptămână și conține datele despre:\n   17: \t\\begin{enumerate}\n   18  \t\t\\item \\verb|claims| - Cererile de despăgubire.\n   19  \t\t\\item \\verb|sales| - Vânzări, cu legăturile de cheie primară (una-la-multe) la următoarele tabele:\n   20: \t\t\t\\begin{enumerate}\n   21  \t\t\t\t\\item \\verb|products| - Produse\n   22  \t\t\t\t\\item \\verb|assurances| - Asigurări\n   23: \t\t\t\\end{enumerate}\n   24  \t\t\\item \\verb|decisions| - Decizii, cu legătura circulară folosind tabelul \\\\ \\verb|decisions_decisions|.\n   25  \t\t\\item \\verb|chat_claims| - Mesajele trimise în cadrul cererilor între utilizatorii sistemului, ce depinde de tabelul de cereri.\n   ..\n   28  \t\t\\item \\verb|users| - Utilizatorii aplicației, cu parola encriptată.\n   29  \t\t\\item \\verb|photos| - Legăturile între locația pozelor și cererea, respectiv categoriilor lor, ce depinde de tabelul de cereri.\n   30: \t\\end{enumerate}\n   31  \n   32  \t\\pagebreak\n\nC:\\Users\\xiodine\\Desktop\\licenta\\capitole\\structura_aplicatiei\\request_life_cycle.tex:\n    3  \tPentru a recapitula tehnologiile folosite și pentru a putea intra în detalii despre cum funcționează aplicația per ansamblu, voi detalia cum interacționează un utilizator cu acest sistem de gestiune a cererilor de despăgubire, bazat pe Laravel.\n    4  \tCererea pornește de la premiza accesării paginii scrise în regulamentul contractului „Mobile Protect” și parcurge pașii unui client web (ceea ce nu se observă când se încarcă pagina).\n    5: \t\\begin{enumerate}\n    6  \t\t\\item\n    7  \t\t\tClientul navighează spre \\url{www.fandu.uk/claims}.\n    .\n   34  \t\t\tÎn cazul în care răspunsul nu este o directivă Blade, se va afișa sau va redirecționa clientul web.\n   35  \t\t\tAltfel, se va compila directiva Blade dacă nu există fișierul deja compilat, sau dacă timpul ultimei modificări directivei e mai recent decât timpul ultimului rezultat al compilării.\n   36: \t\\end{enumerate}\n   37  \n\nC:\\Users\\xiodine\\Desktop\\licenta\\capitole\\structura_aplicatiei\\mvc\\helpers.tex:\n    4  \tFișierele astfel folositoare sunt:\n    5  \n    6: \t\\begin{enumerate}\n    7  \t\t\\list\n    8: \t\\end{enumerate}\n    9  \n   10  \t\\subsubsection{FormHelper}\n\nC:\\Users\\xiodine\\Desktop\\licenta\\capitole\\structura_aplicatiei\\mvc\\models.tex:\n    4  \tSpre exemplu, cererea de despăgubire poate că este legată la o decizie.\n    5  \tEloquent ORM ajută gestionarea și lucrul cu aceste legături foarte ușor și suportă majoritatea legăturilor, printre care:\n    6: \t\\begin{enumerate}\n    7  \t\t\\item One To One\n    8  \t\t\\item One To Many\n    9  \t\t\\item Many To Many\n   10: \t\\end{enumerate}\n   11  \n   12  \tRelațiile Eloquent sunt definite ca metode în clasele noastre.\n\nC:\\Users\\xiodine\\Desktop\\licenta\\capitole\\tehnologii_folosite\\knockout_js.tex:\n   13  \n   14  \tSistemul de gestiune a pozelor este împărțit în cele patru categorii:\n   15: \t\\begin{enumerate}\n   16  \t\t\\item Facturi.\n   17  \t\t\\item Pozele cu produsul avariat.\n   18  \t\t\\item Foile cu termenii și condiții.\n   19  \t\t\\item Raportul poliției, în caz de nevoie.\n   20: \t\\end{enumerate}\n   21  \tPentru fiecare element, se construiește o funcție nouă, pentru că JavaScript nu are clase.\n   22  \tFuncția respectivă gestionează identic modelul și vizualizarea acestuia prin păstrarea detașată de celelalte modele a datelor proprii.\n\nC:\\Users\\xiodine\\Desktop\\licenta\\capitole\\tehnologii_folosite\\mentiuni_speciale.tex:\n   47  \n   48  \t\tSoluția, la care s-a ajuns drept compromis în urma dezbaterilor cu departamentul tehnic, ce migrează codul și baza de date a server-ului, este:\n   49: \t\t\\begin{enumerate}\n   50  \t\t\t\\item\n   51  \t\t\t\tSe salvează toate datele existente, folosind utilitarul oferit de xServers.\n   ..\n   82  \t\t\t\t\\end{verbatim}\n   83  \t\t\t\tși astfel migrația va fi completă.\n   84: \t\t\\end{enumerate}\n   85  \n   86  \t\tÎn cazul unor migrări minore, ce nu implică baza de date, se pot suprascrie direct fișierele modificate în cadrul aplicației.\n   ..\n  242  \t\tÎn cadrul aplicației, am transformat simplul fișier dat implicit de Laravel \\verb|„gulpfile.js”| într-o platformă elegantă.\n  243  \t\tAlgoritmul constă în următorii pași:\n  244: \t\t\\begin{enumerate}\n  245  \t\t\t\\item Citesc toate fișierele aflate la calea:\n  246  \t\t\t\\begin{verbatim}\n  ...\n  255  \t\t\t\t/public/build/rev-manifest.json\n  256  \t\t\t\\end{verbatim}\n  257: \t\t\\end{enumerate}\n  258  \n  259  \t\tFolosesc „Webpack”, un utilitar ce combină mai multe fișiere JavaScript într-unul singur.\n\n16 matches across 6 files\n\n\nSearching 46 files for \"Blade\"\n\nC:\\Users\\xiodine\\Desktop\\licenta\\tabel.todo:\n   35  \t\t\t\t\t\tReportRequest\n   36  \t\t\t\t\t\tStoreClaimRequest\n   37: \t\t\t\t☐ Views - blade chemat de Controller\n   38  \t\t\t\t\to idee generala a structurii\n   39  \t\t\t\t\t☐ vendor pagination bootstrap\n   ..\n  217  \t\truleaza guard-urile pentru controller-ul respectiv.\n  218  \t\truleaza controller-ul pentru a primi un view\n  219: \t\truleaza view-ul (si-l compileaza daca e necesar - blade)\n  220  \t\tafiseaza pe ecran.\n  221  \t\tuser-ul incepe sa completeze\n  ...\n  329  \t\tde ce n-a mai functionat - Chrome / Firefox blacklisting\n  330  \t\tsolutie - folosirea unui certificat valid (semnat), dar ce trece prin Cloudflare pentru a asigura ca totusi e HTTPS si green icon.\n  331: \t✔ Blade directives @done (17-06-15 17:54)\n  332: \t\tblade extending\n  333  \t\tescape text\n  334  \t\timport\n\nC:\\Users\\xiodine\\Desktop\\licenta\\capitole\\structura_aplicatiei\\mvc.tex:\n    8  \tModelele sunt gestionate de Controller, ce acceptă datele de la utilizator și le transformă în comenzi pentru model și/sau View.\n    9  \n   10: \tView-ul este orice metodă de vizualizare a informației unui Model -  în cazul nostru directivele Blade.\n   11  \n   12  \tLaravel construiește astfel aplicații web bazate pe arhitectura „Model-View-Controller”.\n\nC:\\Users\\xiodine\\Desktop\\licenta\\capitole\\structura_aplicatiei\\request_life_cycle.tex:\n   32  \t\t\tSe va primi un răspuns.\n   33  \t\t\\item\n   34: \t\t\tÎn cazul în care răspunsul nu este o directivă Blade, se va afișa sau va redirecționa clientul web.\n   35: \t\t\tAltfel, se va compila directiva Blade dacă nu există fișierul deja compilat, sau dacă timpul ultimei modificări directivei e mai recent decât timpul ultimului rezultat al compilării.\n   36  \t\\end{enumerate}\n   37  \n\nC:\\Users\\xiodine\\Desktop\\licenta\\capitole\\structura_aplicatiei\\mvc\\helpers.tex:\n    5  \n    6  \t\\begin{enumerate}\n    7: \t\t\\list \\verb|FormHelper| - Utilitar ce înregistrează o directivă Blade de compunere a\n    8  \t\t\\list \\verb|Helpers| -\n    9  \t\t\\list \\verb|TemporaryFiles| -\n\nC:\\Users\\xiodine\\Desktop\\licenta\\capitole\\structura_aplicatiei\\mvc\\views.tex:\n    4  \n    5  \tDe menționat că multe directoare conțin un director numit „includes”.\n    6: \tAcest director conține directive Blade parțiale ce sunt utilizate pe parcursul afișării, modificării sau interacțiunii cu paginile principale.\n    7  \n    8  \tAstfel, interfața e împărțită în mai multe directoare:\n    .\n   25  \n   26  \t\tDirectorul \\verb|includes| conține împărțit pe componente toate marile arii acoperite de cererea de despăgubire, printre care și un parțial inclus în mail-ul trimis mai departe.\n   27: \t\tAcest parțial Blade se referă la actele necesare a fi încărcate în a doua parte a aplicației. (partea de încărcare imagini)\n   28  \t\t\\item \\verb|messages| - elementele de paginație ce sunt incluse cu fiecare tranzacție, ce asigură un canal de comunicare între client și operatorul aplicației.\n   29: \t\t\\item \\verb|mail| - Înăuntrul acestui director se află fișierul \\verb|layout.blade.php|, ce conține stilul general valabil tuturor email-urilor trimise.\n   30  \n   31  \t\tDe asemenea include pentru fiecare tip de obiect o acțiune desăvârșită ca nume.\n   32: \t\t\\item \\verb|layouts| - conține singurul fișier \\verb|app.blade.php|, de care depinde toate celelalte View-uri.\n   33  \n   34  \t\tÎn cazul în care utilizatorul nu este înregistrat, nu îi se arată bara de navigație în cadrul aplicației de administrare.\n   ..\n   36  \t\tDe asemenea, conține referințe la Laravel Elixir, mai ales la stilul și codul precompilat și optimizat de „gulp” (pentru că până la urmă, gulp lucrează cel mai mult).\n   37  \n   38: \t\tÎn afară de aceste mici modificări, împreună cu Google Analytics și metoda specială de a picura câte o cerere de actualizare a sesiunii la câteva minute, tranformă această pagină a aplicației într-un adevărat utilitar și arată funcționalitatea pe deplină a directivelor Blade.\n   39  \n   40  \t\t\\item \\verb|import| - elementele de paginație ce sunt vizualizate de cei ce doresc să introducerii date în sistem.\n   ..\n   57  \n   58  \t\t\\item \\verb|auth| - elementele originale de înregistrare, logare și resetare parolă.\n   59: \t\t\\item \\verb|home.blade.php| - Pagina de introducere când intri în sistem.\n   60  \t\\end{itemize}\n   61  .\n\nC:\\Users\\xiodine\\Desktop\\licenta\\capitole\\tehnologii_folosite\\jquery.tex:\n   31  \n   32  \tO altă bună integrare cu „jQuery” vine din partea librăriei „Bootstrap Validator”, un „plug-in” simplu de folosit pentru a adăuga elemente de validare pentru formulare. \\cite{boostrap_validator}\n   33: \tMulțumită directivelor Blade, am integrat ușor construirea unor câmpuri cu validare necesară, pentru a ajuta utilizatorul să completeze cât mai corect formularul de despăgubire.\n   34  \n   35  \tAm reușit astfel de a scurta timpul de dezvoltare și de a asigura o interfață unificată în modul de abordare a înfățișării aplicației, mulțumită acestor trei platforme.\n\nC:\\Users\\xiodine\\Desktop\\licenta\\capitole\\tehnologii_folosite\\laravel.tex:\n   16  \tDar din păcate, trebuie studiată în detaliu, pentru că nu este ușoară de folosit pragmatic.\n   17  \n   18: \t\\subsection{Directive Blade}\n   19  \n   20  \n   21: \t\tUn mare avantaj al librăriei este un simplu, dar foarte puternic și eficient sistem de șablonare --- Blade.\n   22: \t\tSpre deosebire de alte sisteme de șablon, Blade nu inhibă dezvoltatorul a folosi cod PHP în View-uri.\n   23: \t\tDe fapt, toate View-urile Blade sunt traduse în cod simplu PHP și salvate până ce sunt modificate.\n   24  \t\tAstfel reușește să adauge aproape zero logică în plus aplicației.\n   25  \n   ..\n   32  \t\tXSS (Cross Side Scripting) este o vulnerabilitate a securității unei aplicații, des întâlnită în aplicațiile web, ce permite adăugarea oricărui cod, fie el malițios sau inocent, paginilor vizualizate de clienții normali.\n   33  \n   34: \t\tAstfel, pentru a preveni exploatarea datelor trimise de la Controller, pentru a afișa valorile variabilelor trimise, directivele Blade indică folosirea sintagmei:\n   35  \t\t\t\\begin{Verbatim}\n   36  \t\t\t{{$variabila}}\n   ..\n   40  \t\t\\verb|htmlspecialchars| a PHP-ului.\n   41  \n   42: \t\tPrintre cele mai folositoare beneficii folosind Blade se află și construirea fișierelor ce definesc structura HTML-ului aplicației.\n   43  \t\tNu se definește practic o pagină principală, doar se specifică pentru paginile existente deja a se folosi structura găsită în pagina specificată prin comanda:\n   44  \t\t\\begin{Verbatim}\n   45  \t\t\t@extends('layouts.app')\n   46  \t\t\\end{Verbatim}\n   47: \t\tunde în acest caz în folderul „layouts” găsim fișierul „app.blade.php”.\n   48  \n   49: \t\tPentru a introduce conținutul paginii ce extinde șablonul, Blade folosește secțiuni.\n   50  \t\tDeclarate în pagina principală, acestea indică locul unde se așteaptă conținut, putând fi denumite după nevoile șablonului.\n   51  \t\tDe asemenea, în cazul definirii unei secțiuni, se poate folosi și o valoare implicită.\n   ..\n   54  \n   55  \t\tFolosind secțiuni, am descoperit o problemă la refolosirea unor componente vizuale.\n   56: \t\tBlade adaugă precum PHP conținutul fișierului ce trebuie să existe unde ai scris instrucțiunea respectivă folosind comanda:\n   57  \t\t\\begin{Verbatim}\n   58  @include('decisions.includes.search')\n   59  // ce adaugă fișierul\n   60: // resources/views/decisions/includes/search.blade.php\n   61  \t\t\\end{Verbatim}\n   62  \n   63: \t\tContinuând șirul dezvoltării, descopăr o altă problemă la introducerea a mai multor segmente de cod JavaScript în aplicație, din fișiere Blade separate.\n   64: \t\tPentru a rezolva și această problemă, Blade se folosește de:\n   65  \t\t\\begin{Verbatim}\n   66  \t\t\t@push('scripts')\n   ..\n   71  \t\t\\end{Verbatim}\n   72  \n   73: \t\tPrintre marile îmbunătățiri aduse de Blade, folosite în acest proiect, se numără și directivele.\n   74  \t\tAcestea sunt propriile comenzi, definite de programator, ce extind limbajul.\n   75  \t\tSunt traduse în simple instrucțiuni de cod PHP.\n   ..\n   96  \t\tDe asemenea, un al treilea parametru lasă loc programatorului să completeze celelalte atribute ale nodului HTML printr-un vector unde cheia reprezintă numele atributului și valoarea reprezintă conținutul.\n   97  \n   98: \t\tNu doar metode ajutătoare, „Forms \\& Html” acceptă și componente specializate, definite de programator, ca șabloane Blade.\n   99  \t\tPrin definirea lor într-un folder special, acestea pot fi folosite precum cele deja definite, pentru a ușura clasele și atributele necesare pentru dezvoltatorii ce folosesc „Bootstrap”.\n  100  \t\tCum acest proiect se folosește de Bootstrap și „Forms \\& Html”, vă pot da un exemplu de două componente des folosite în aplicație:\n\nC:\\Users\\xiodine\\Desktop\\licenta\\capitole\\tehnologii_folosite\\mentiuni_speciale.tex:\n   70  \t\t\t\t\t\t\\item \\verb|database| - migrările bazei de date\n   71  \t\t\t\t\t\t\\item \\verb|public| - pentru că folosim „Laravel Elixir”, ce se ocupă de gestiunea variantelor codului JavaScript și CSS, se vor copia și în calea publică \\verb|public_html|, pentru că acestea vor fi servite clienților și trebuie să poată să fie accesibile.\n   72: \t\t\t\t\t\t\\item \\verb|resources| - directivele Blade, codul JavaScript și SASS.\n   73  \t\t\t\t\t\t\\item \\verb|routes| - rutele ce determină Controller-ul apelat.\n   74: \t\t\t\t\t\t\\item \\verb|storage| - doar structura, pentru că va conține fișierele temporare traduse din Blade în PHP.\n   75  \t\t\t\t\t\t\\item \\verb|tests| - se poate sări, pentru că nu afectează rezultatul final.\n   76  \t\t\t\t\t\t\\item \\verb|vendor| - dacă s-a modificat \\verb|composer.json|, adăugând sau modificând sau ștergând pachete.\n   ..\n  105  \t\tPhpStorm este un mediu de dezvoltare comercial, oferit de JetBrains. Suportă completarea avansată a codului PHP 5.6 (și mai nou 7.0), dar și analiza sintactică, prevenirea erorilor.\n  106  \t\tSuportă oficial și sistemul relațional de bază de date MySQL.\n  107: \t\tChiar și directivele Blade sunt înțelese de analizatorul sintactic.\n  108  \t\tStilul și codul scris în JavaScript, cunoștințele despre cum poți să rescrii mult mai ușor codul PHP.\n  109  \t\tIntegrarea cu modul de depanare „XDebug” îl ajută să ajungă în fața multor simple editoare de text.\n\n32 matches across 8 files\n",
-			"settings":
-			{
-				"buffer_size": 14663,
-				"line_ending": "Windows",
-				"name": "Find Results",
-				"scratch": true
-			}
-		},
-		{
-			"file": "capitole/tehnologii_folosite/laravel.tex",
-			"settings":
-			{
-				"buffer_size": 11713,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "capitole/structura_aplicatiei/excel.tex",
-			"settings":
-			{
-				"buffer_size": 7009,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "capitole/structura_aplicatiei/mvc.tex",
-			"settings":
-			{
-				"buffer_size": 1250,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "capitole/structura_aplicatiei.tex",
-			"settings":
-			{
-				"buffer_size": 249,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "capitole/structura_aplicatiei/baza_de_date.tex",
-			"settings":
-			{
-				"buffer_size": 1536,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "capitole/structura_aplicatiei/mvc/views.tex",
-			"settings":
-			{
-				"buffer_size": 4389,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "capitole/tehnologii_folosite/mentiuni_speciale.tex",
-			"settings":
-			{
-				"buffer_size": 20593,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "capitole/structura_aplicatiei/mvc/models.tex",
-			"settings":
-			{
-				"buffer_size": 4678,
+				"buffer_size": 348,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -115,7 +37,7 @@
 			"file": "main.tex",
 			"settings":
 			{
-				"buffer_size": 1259,
+				"buffer_size": 1326,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -173,13 +95,29 @@
 			]
 		]
 	],
-	"build_varint": "",
+	"build_varint": "Basic Builder - XeLaTeX",
 	"command_palette":
 	{
-		"height": 45.0,
-		"last_filter": "",
+		"height": 357.0,
+		"last_filter": "latextools",
 		"selected_items":
 		[
+			[
+				"latextools",
+				"LaTeXTools: Build cache of LaTeX packages"
+			],
+			[
+				"latex",
+				"LaTeXTools: Show toggles"
+			],
+			[
+				"tog ta",
+				"View: Toggle Tabs"
+			],
+			[
+				"tog tabs",
+				"View: Toggle Tabs"
+			],
 			[
 				"preferenf",
 				"Preferences: Settings – Syntax Specific"
@@ -187,10 +125,6 @@
 			[
 				"toglge min",
 				"View: Toggle Minimap"
-			],
-			[
-				"tog ta",
-				"View: Toggle Tabs"
 			],
 			[
 				"fig",
@@ -337,10 +271,6 @@
 				"CiteBibTeX: Extract citations in current file"
 			],
 			[
-				"latex",
-				"LaTeXTools: Show toggles"
-			],
-			[
 				"reind",
 				"Indentation: Reindent Lines"
 			],
@@ -355,10 +285,6 @@
 			[
 				"instal",
 				"Package Control: Install Package"
-			],
-			[
-				"latextools",
-				"LaTeXTools: Show toggles"
 			],
 			[
 				"tasks ",
@@ -462,21 +388,62 @@
 		"show_minimap": false,
 		"show_open_files": false,
 		"show_tabs": false,
-		"side_bar_visible": false,
+		"side_bar_visible": true,
 		"status_bar_visible": false
 	},
 	"expanded_folders":
 	[
 		"/C/Users/xiodine/Desktop/licenta",
 		"/C/Users/xiodine/Desktop/licenta/capitole",
-		"/C/Users/xiodine/Desktop/licenta/capitole/o_scurta_istorie_a_aplicatiei",
-		"/C/Users/xiodine/Desktop/licenta/capitole/structura_aplicatiei",
 		"/C/Users/xiodine/Desktop/licenta/capitole/structura_aplicatiei/mvc",
-		"/C/Users/xiodine/Desktop/licenta/capitole/user_workflow",
 		"/C/Users/xiodine/Desktop/licenta/imagini"
 	],
 	"file_history":
 	[
+		"/C/Users/xiodine/Desktop/licenta/capitole/structura_aplicatiei/excel.tex",
+		"/C/Users/xiodine/Desktop/licenta/capitole/structura_aplicatiei/mvc/controllers.tex",
+		"/C/Users/xiodine/Desktop/licenta/todo",
+		"/C/Users/xiodine/Desktop/licenta/tabel.todo",
+		"/C/Users/xiodine/Desktop/licenta/capitole/user_workflow/administrative_interface.tex",
+		"/C/Users/xiodine/Desktop/licenta/capitole/user_workflow.tex",
+		"/C/Users/xiodine/Desktop/licenta/capitole/o_scurta_istorie_a_aplicatiei/modulul_de_rapoarte_decizii.tex",
+		"/C/Users/xiodine/Desktop/licenta/capitole/introducere/detalii_despre_relatia_firma_altex.tex",
+		"/C/Users/xiodine/Desktop/licenta/capitole/introducere/despre_aplicatie.tex",
+		"/C/xampp/htdocs/dbconfig.php",
+		"/C/Users/xiodine/Desktop/licenta/capitole/user_workflow/register_a_claim.tex",
+		"/C/Users/xiodine/Desktop/licenta/capitole/tehnologii_folosite/jquery.tex",
+		"/C/Users/xiodine/Desktop/licenta/capitole/o_scurta_istorie_a_aplicatiei/problema_datelor_reale.tex",
+		"/C/Users/xiodine/Desktop/licenta/main.tex",
+		"/C/Users/xiodine/Desktop/licenta/capitole/structura_aplicatiei/baza_de_date.tex",
+		"/C/Users/xiodine/Desktop/licenta/licenta.sublime-project",
+		"/C/Users/xiodine/Desktop/licenta/capitole/o_scurta_istorie_a_aplicatiei.tex",
+		"/C/Users/xiodine/Desktop/licenta/capitole/o_scurta_istorie_a_aplicatiei/viitor.tex",
+		"/C/Users/xiodine/Desktop/licenta/capitole/o_scurta_istorie_a_aplicatiei/decuplarea_deciziilor.tex",
+		"/C/xampp/htdocs/delta_evrm.sql",
+		"/C/xampp/apache/conf/httpd.conf",
+		"/C/xampp/apache/conf/extra/httpd-vhosts.conf",
+		"/C/Users/xiodine/Downloads/notifier/errors_reports.php",
+		"/C/Users/xiodine/Downloads/notifier/index.php",
+		"/C/Users/xiodine/Desktop/licenta/capitole/introducere/de_ce_am_fost_angajat_eu.tex",
+		"/C/Users/xiodine/Desktop/licenta/capitole/tehnologii_folosite/laravel.tex",
+		"/C/Users/xiodine/Desktop/licenta/capitole/user_workflow/responding_to_messages.tex",
+		"/C/Users/xiodine/Desktop/licenta/capitole/concluzii.tex",
+		"/C/Users/xiodine/AppData/Roaming/Sublime Text 3/Packages/User/LaTeX_verb.sublime-snippet",
+		"/C/Users/xiodine/AppData/Roaming/Sublime Text 3/Packages/User/LaTeX_vverbatim.sublime-snippet",
+		"/X/fandu/resources/views/newclaim/create.blade.php",
+		"/X/fandu/resources/assets/js/pages/claims.js",
+		"/C/Users/xiodine/Desktop/licenta/capitole/_modele.tex",
+		"/C/Users/xiodine/Desktop/licenta/capitole/structura_aplicatiei/mvc/helpers.tex",
+		"/C/Users/xiodine/Desktop/licenta/capitole/structura_aplicatiei/mvc.tex",
+		"/C/Users/xiodine/Desktop/licenta/capitole/structura_aplicatiei/mvc/views.tex",
+		"/C/Users/xiodine/Desktop/licenta/capitole/tehnologii_folosite/mentiuni_speciale.tex",
+		"/C/Users/xiodine/Desktop/licenta/capitole/structura_aplicatiei/mvc/models.tex",
+		"/C/Users/xiodine/Desktop/licenta/capitole/introducere.tex",
+		"/C/Users/xiodine/Desktop/licenta/capitole/concluzii/sistem_modular_de_rapoarte.tex",
+		"/C/Users/xiodine/Desktop/licenta/capitole/introducere/detalii_despre_dezvoltarea_aplicatiei.tex",
+		"/C/Users/xiodine/Desktop/licenta/capitole/concluzii/business_continuity_plan.tex",
+		"/C/Users/xiodine/Desktop/licenta/capitole/concluzii/extragerea_din_modele.tex",
+		"/C/Users/xiodine/Desktop/licenta/capitole/concluzii/luna_dec_teste_automate.tex",
 		"/X/fandu/app/Excel/AdaptorFacade.php",
 		"/X/fandu/app/Excel/FileData.php",
 		"/X/fandu/app/Excel/FileDataExcelAdaptor.php",
@@ -489,53 +456,28 @@
 		"/X/fandu/app/Excel/Outputers/YearlyOutputer.php",
 		"/X/fandu/app/Excel/Adaptors/OldAdaptor.php",
 		"/X/fandu/app/Excel/Adaptors/ExcelAdaptor.php",
-		"/C/Users/xiodine/Desktop/licenta/todo",
 		"/X/fandu/app/Helpers/Helpers.php",
-		"/C/Users/xiodine/Desktop/licenta/licenta.sublime-project",
 		"/X/fandu/app/Excel/Facade.php",
-		"/C/Users/xiodine/Desktop/licenta/tabel.todo",
 		"/C/Users/xiodine/Desktop/licenta/bibliografie.bib",
 		"/C/Users/xiodine/Desktop/licenta/capitole/structura_aplicatiei.tex",
-		"/C/Users/xiodine/Desktop/licenta/capitole/structura_aplicatiei/baza_de_date.tex",
-		"/C/Users/xiodine/Desktop/licenta/capitole/introducere/despre_aplicatie.tex",
-		"/C/Users/xiodine/Desktop/licenta/capitole/structura_aplicatiei/excel.tex",
-		"/C/Users/xiodine/Desktop/licenta/capitole/tehnologii_folosite/laravel.tex",
-		"/C/Users/xiodine/Desktop/licenta/capitole/structura_aplicatiei/mvc.tex",
-		"/C/Users/xiodine/Desktop/licenta/main.tex",
-		"/C/Users/xiodine/Desktop/licenta/capitole/structura_aplicatiei/mvc/controllers.tex",
-		"/C/Users/xiodine/Desktop/licenta/capitole/structura_aplicatiei/mvc/models.tex",
 		"/C/Users/xiodine/Desktop/licenta/capitole/structura_aplicatiei/mds_related_stuff.tex",
-		"/C/Users/xiodine/Desktop/licenta/capitole/tehnologii_folosite/mentiuni_speciale.tex",
 		"/C/Users/xiodine/Desktop/licenta/capitole/structura_aplicatiei/request_life_cycle.tex",
 		"/C/Users/xiodine/Desktop/licenta/capitole/tehnologii_folosite/cloudflare.tex",
-		"/C/Users/xiodine/Desktop/licenta/capitole/o_scurta_istorie_a_aplicatiei.tex",
-		"/C/Users/xiodine/Desktop/licenta/capitole/o_scurta_istorie_a_aplicatiei/modulul_de_rapoarte_decizii.tex",
-		"/C/Users/xiodine/Desktop/licenta/capitole/o_scurta_istorie_a_aplicatiei/viitor.tex",
 		"/C/Users/xiodine/Desktop/licenta/capitole/tehnologii_folosite/baza_de_date_mysql.tex",
-		"/C/Users/xiodine/Desktop/licenta/capitole/o_scurta_istorie_a_aplicatiei/decuplarea_deciziilor.tex",
-		"/C/Users/xiodine/Desktop/licenta/capitole/concluzii.tex",
-		"/C/Users/xiodine/Desktop/licenta/capitole/concluzii/luna_dec_teste_automate.tex",
 		"/C/Users/xiodine/Desktop/licenta/capitole/o_scurta_istorie_a_aplicatiei/viitorul_apropiat.tex",
 		"/C/Users/xiodine/Desktop/licenta/capitole/o_scurta_istorie_a_aplicatiei/backup.tex",
 		"/C/Users/xiodine/Desktop/licenta/capitole/o_scurta_istorie_a_aplicatiei/generic_sale.tex",
-		"/C/Users/xiodine/Desktop/licenta/capitole/o_scurta_istorie_a_aplicatiei/problema_datelor_reale.tex",
 		"/C/Users/xiodine/Desktop/licenta/capitole/o_scurta_istorie_a_aplicatiei/primul_modul.tex",
-		"/C/Users/xiodine/Desktop/licenta/capitole/_modele.tex",
 		"/C/Users/xiodine/Desktop/licenta/capitole/structura_aplicatiei/o_scurta_istorie_a_aplicatiei.tex",
 		"/X/php/App/CacheManager.php",
 		"/X/fandu_build/build.sh",
 		"/C/Users/xiodine/Desktop/licenta/capitole/tehnologii_folosite/knockout_js.tex",
-		"/C/Users/xiodine/Desktop/licenta/capitole/tehnologii_folosite/jquery.tex",
 		"/C/Users/xiodine/Desktop/licenta/capitole/tehnologiile_folosite.tex",
 		"/C/Users/xiodine/Desktop/licenta/capitole/tehnologii_folosite/latex.tex",
 		"/C/Users/xiodine/Desktop/licenta/meeting.todo",
 		"/C/Users/xiodine/AppData/Roaming/Sublime Text 3/Packages/WordCount/WordCount.sublime-settings",
 		"/C/Users/xiodine/Desktop/licenta/capitole/tehnologii_folosite/google_analytics.tex",
 		"/C/Users/xiodine/Desktop/licenta/capitole/tehnologii_folosite/github.tex",
-		"/C/Users/xiodine/Desktop/licenta/capitole/introducere/de_ce_am_fost_angajat_eu.tex",
-		"/C/Users/xiodine/Desktop/licenta/capitole/introducere.tex",
-		"/C/Users/xiodine/Desktop/licenta/capitole/introducere/detalii_despre_relatia_firma_altex.tex",
-		"/C/Users/xiodine/Desktop/licenta/capitole/introducere/detalii_despre_dezvoltarea_aplicatiei.tex",
 		"/C/Users/xiodine/Desktop/licenta/capitole/introducere/detalii_despre_firma_angajatoare.tex",
 		"/C/Users/xiodine/Downloads/Patterns_of_Enterprise_Application_Archi.bibtex",
 		"/C/Users/xiodine/Downloads/encrypted.html",
@@ -544,17 +486,9 @@
 		"/C/Users/xiodine/Desktop/licenta/capitole/tehnologii_folosite/composer.tex",
 		"/C/Users/xiodine/Desktop/licenta/capitole/tehnologii_folosite/npm.tex",
 		"/C/Users/xiodine/Desktop/licenta/README.md",
-		"/C/Users/xiodine/Desktop/licenta/capitole/concluzii/sistem_modular_de_rapoarte.tex",
-		"/C/Users/xiodine/Desktop/licenta/capitole/concluzii/extragerea_din_modele.tex",
-		"/C/Users/xiodine/Desktop/licenta/capitole/user_workflow/register_a_claim.tex",
 		"/C/Users/xiodine/Desktop/licenta/capitole/user_workflow/uplading_photos.tex",
-		"/C/Users/xiodine/Desktop/licenta/capitole/user_workflow/responding_to_messages.tex",
-		"/C/Users/xiodine/Desktop/licenta/capitole/user_workflow/administrative_interface.tex",
-		"/C/Users/xiodine/Desktop/licenta/capitole/structura_aplicatiei/mvc/views.tex",
 		"/C/Users/xiodine/Desktop/licenta/capitole/structura_aplicatiei/dba_meta_administrator.tex",
-		"/C/Users/xiodine/Desktop/licenta/capitole/structura_aplicatiei/mvc/helpers.tex",
 		"/C/Users/xiodine/Desktop/licenta/capitole/structura_aplicatiei/apache.tex",
-		"/C/Users/xiodine/Desktop/licenta/capitole/user_workflow.tex",
 		"/C/Users/xiodine/Desktop/licenta/main.out",
 		"/C/Users/xiodine/Desktop/licenta/nou",
 		"/C/Users/xiodine/Dropbox/Facultate/licenta/main.toc",
@@ -593,18 +527,7 @@
 		"/C/Users/xiodine/Dropbox/Facultate/licenta/capitole/tehnologii_folosite/09_google_analytics.tex",
 		"/C/Users/xiodine/Dropbox/Facultate/licenta/capitole/tehnologii_folosite/08_jquery.tex",
 		"/C/Users/xiodine/Dropbox/Facultate/licenta/capitole/tehnologii_folosite/07_cloudflare.tex",
-		"/C/Users/xiodine/Dropbox/Facultate/licenta/capitole/tehnologii_folosite/06_github.tex",
-		"/C/Users/xiodine/Dropbox/Facultate/licenta/capitole/tehnologii_folosite/05_composer.tex",
-		"/C/Users/xiodine/Dropbox/Facultate/licenta/capitole/tehnologii_folosite/03_laravel.tex",
-		"/C/Users/xiodine/Dropbox/Facultate/licenta/capitole/tehnologii_folosite/04_baza_de_date_mysql.tex",
-		"/C/Users/xiodine/Dropbox/Facultate/licenta/capitole/tehnologii_folosite/02_mentiuni_speciale.tex",
-		"/C/Users/xiodine/Dropbox/Facultate/licenta/capitole/tehnologii_folosite/01_php.tex",
-		"/C/Users/xiodine/Dropbox/Facultate/licenta/capitole/tehnologii_folosite/10_knockout_js.tex",
-		"/C/Users/xiodine/Dropbox/Facultate/licenta/capitole/tehnologii_folosite/11_npm.tex",
-		"/C/Users/xiodine/Dropbox/Facultate/licenta/capitole/structura_aplicatiei.tex",
-		"/C/Users/xiodine/Dropbox/Facultate/licenta/capitole/introducere.tex",
-		"/C/Users/xiodine/Dropbox/Facultate/licenta/capitole/03_structura_aplicatiei.tex",
-		"/C/Users/xiodine/Dropbox/Facultate/licenta/capitole/04_concluzii.tex"
+		"/C/Users/xiodine/Dropbox/Facultate/licenta/capitole/tehnologii_folosite/06_github.tex"
 	],
 	"find":
 	{
@@ -623,6 +546,61 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"[h!]",
+			"[h]",
+			"h",
+			"reports",
+			"fig:reports",
+			"nător generat ",
+			"u câmpul luni",
+			"u mai sunt corelate vânzările de cererile d",
+			"statistics",
+			"decisions",
+			"decisions_add_old",
+			"tbl",
+			"josul paginii",
+			"../imagini/",
+			"\\linewidth",
+			"sales_search",
+			"search",
+			"claims_view",
+			"sales",
+			"reports",
+			"statistics",
+			"sales",
+			"backups",
+			"|:\n",
+			"fig:imports",
+			"0.4",
+			"message_mail",
+			"Ușoara",
+			"jQuery",
+			"am",
+			"\n\t",
+			"elegantă",
+			"\t\t\\end{figure}\n\t\t\\begin{figure}\n",
+			"Directo",
+			"color_coding",
+			"fig:home_page",
+			"verbatim",
+			"verb",
+			"4",
+			"\\caption{",
+			"\\label{fig:",
+			"\\caption{fig:",
+			"../imagini/",
+			"\\end{subfigure}",
+			"begin{subfigure}",
+			"figure",
+			"verbatim",
+			"Observație",
+			"Observatie",
+			"observatie",
+			"register_a_claim",
+			"Concluzii",
+			"\\begin{figure}",
+			"\\linewidth",
+			"figure",
 			"verbatim",
 			"Facade",
 			"itemize",
@@ -695,62 +673,7 @@
 			"Verbatim",
 			"_",
 			"\\",
-			"\\today",
-			"\\cite{laravel}",
-			" ",
-			"\\subparagraph",
-			"\\cite",
-			"\\citre",
-			"Ruby on",
-			"rails",
-			"user_workflow",
-			"manual",
-			"paragraph",
-			"subsubsection",
-			"tex",
-			"paragraph",
-			"\\subsection",
-			"subparagraph",
-			"\\subsection",
-			"paragraph",
-			"susubsection",
-			"paragraph{",
-			"paragraph",
-			"\\subsubsection",
-			"\\subsection",
-			"setting",
-			"settings",
-			"ein",
-			"einstein",
-			"\\sub",
-			" ",
-			"istorie",
-			"idee scurta",
-			"\\section",
-			"section",
-			"-",
-			" ",
-			"\\section",
-			"\\sub",
-			"sub",
-			"-",
-			" ",
-			"\\subsection",
-			"\\section",
-			"{",
-			"Custom",
-			"subsubsection",
-			"}\n",
-			"{}",
-			"    ☐ ",
-			"Claims",
-			"Auth",
-			"}\n",
-			"{}\n",
-			"$",
-			"&",
-			"_",
-			"^   ☐ *(.+)$"
+			"\\today"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -773,407 +696,87 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "capitole/structura_aplicatiei/mvc/controllers.tex",
+					"file": "capitole/user_workflow/administrative_interface.tex",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 13372,
+						"buffer_size": 18968,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								10792,
-								10792
+								11651,
+								11651
+							],
+							[
+								11849,
+								11849
+							],
+							[
+								12025,
+								12025
 							]
 						],
 						"settings":
 						{
+							"WordCount":
+							{
+								"changes": 13,
+								"count": 1705,
+								"modified": false,
+								"selection": false,
+								"status": -1,
+								"syntax": "plain text"
+							},
 							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 5257.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "capitole/structura_aplicatiei/mvc/helpers.tex",
+					"file": "meeting.todo",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2521,
+						"buffer_size": 348,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1923,
-								1923
+								348,
+								348
 							]
 						],
 						"settings":
 						{
 							"WordCount":
 							{
-								"changes": 0,
-								"count": 334,
+								"changes": 6,
+								"count": 47,
 								"modified": false,
 								"selection": false,
 								"status": -1,
 								"syntax": "plain text"
 							},
-							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 740.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 14663,
-						"regions":
-						{
-							"match":
-							{
-								"flags": 112,
-								"regions":
-								[
-									[
-										215,
-										224
-									],
-									[
-										407,
-										416
-									],
-									[
-										523,
-										532
-									],
-									[
-										1017,
-										1026
-									],
-									[
-										1603,
-										1612
-									],
-									[
-										2013,
-										2022
-									],
-									[
-										2179,
-										2188
-									],
-									[
-										2218,
-										2227
-									],
-									[
-										2577,
-										2586
-									],
-									[
-										2682,
-										2691
-									],
-									[
-										2953,
-										2962
-									],
-									[
-										3142,
-										3151
-									],
-									[
-										3658,
-										3667
-									],
-									[
-										3864,
-										3873
-									],
-									[
-										4219,
-										4228
-									],
-									[
-										4401,
-										4410
-									],
-									[
-										4704,
-										4709
-									],
-									[
-										4994,
-										4999
-									],
-									[
-										5289,
-										5294
-									],
-									[
-										5338,
-										5343
-									],
-									[
-										5714,
-										5719
-									],
-									[
-										6020,
-										6025
-									],
-									[
-										6115,
-										6120
-									],
-									[
-										6486,
-										6491
-									],
-									[
-										6784,
-										6789
-									],
-									[
-										7189,
-										7194
-									],
-									[
-										7554,
-										7559
-									],
-									[
-										7793,
-										7798
-									],
-									[
-										8455,
-										8460
-									],
-									[
-										8728,
-										8733
-									],
-									[
-										9133,
-										9138
-									],
-									[
-										9687,
-										9692
-									],
-									[
-										9820,
-										9825
-									],
-									[
-										9878,
-										9883
-									],
-									[
-										9973,
-										9978
-									],
-									[
-										10511,
-										10516
-									],
-									[
-										10713,
-										10718
-									],
-									[
-										11118,
-										11123
-									],
-									[
-										11206,
-										11211
-									],
-									[
-										11577,
-										11582
-									],
-									[
-										11853,
-										11858
-									],
-									[
-										12041,
-										12046
-									],
-									[
-										12104,
-										12109
-									],
-									[
-										12264,
-										12269
-									],
-									[
-										12820,
-										12825
-									],
-									[
-										13630,
-										13635
-									],
-									[
-										13845,
-										13850
-									],
-									[
-										14369,
-										14374
-									]
-								],
-								"scope": ""
-							}
-						},
-						"selection":
-						[
+							"plain_tasks_remain_time_phantoms":
 							[
-								9687,
-								9687
-							]
-						],
-						"settings":
-						{
-							"detect_indentation": false,
-							"line_numbers": false,
-							"output_tag": 2,
-							"result_base_dir": "",
-							"result_file_regex": "^([^ \t].*):$",
-							"result_line_regex": "^ +([0-9]+):",
-							"scroll_past_end": true,
-							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 1700.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "capitole/tehnologii_folosite/laravel.tex",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 11713,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4532,
-								5005
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 175.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "capitole/structura_aplicatiei/excel.tex",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 7009,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								5396,
-								5396
-							]
-						],
-						"settings":
-						{
-							"WordCount":
-							{
-								"changes": 11193,
-								"count": 895,
-								"modified": false,
-								"selection": true,
-								"status": -1,
-								"syntax": "plain text"
-							},
-							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1756.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "capitole/structura_aplicatiei/mvc.tex",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1250,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"WordCount":
-							{
-								"changes": 0,
-								"count": 115,
-								"modified": false,
-								"selection": false,
-								"status": -1,
-								"syntax": "plain text"
-							},
-							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax",
-							"translate_tabs_to_spaces": false
+							],
+							"syntax": "Packages/PlainTasks/PlainTasks.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1183,28 +786,28 @@
 					"type": "text"
 				},
 				{
-					"buffer": 6,
-					"file": "capitole/structura_aplicatiei.tex",
-					"semi_transient": true,
+					"buffer": 2,
+					"file": "main.tex",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 249,
+						"buffer_size": 1326,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								776,
+								776
 							]
 						],
 						"settings":
 						{
 							"WordCount":
 							{
-								"changes": 0,
-								"count": 1,
+								"changes": 10,
+								"count": 33,
 								"modified": false,
 								"selection": false,
 								"status": -1,
@@ -1216,151 +819,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "capitole/structura_aplicatiei/baza_de_date.tex",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1536,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								831,
-								831
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 22.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "capitole/structura_aplicatiei/mvc/views.tex",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4389,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								770,
-								770
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 850.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "capitole/tehnologii_folosite/mentiuni_speciale.tex",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 20593,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								20593,
-								20593
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 2944.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "capitole/structura_aplicatiei/mvc/models.tex",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4678,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4441,
-								4441
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 450.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 11,
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "main.tex",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1259,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								794,
-								794
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 275.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 10,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -1427,6 +886,58 @@
 		"selected_items":
 		[
 			[
+				"main",
+				"main.tex"
+			],
+			[
+				"admin",
+				"capitole\\user_workflow\\administrative_interface.tex"
+			],
+			[
+				"exce",
+				"capitole\\structura_aplicatiei\\excel.tex"
+			],
+			[
+				"excel",
+				"capitole\\structura_aplicatiei\\excel.tex"
+			],
+			[
+				"despre",
+				"capitole\\introducere\\detalii_despre_relatia_firma_altex.tex"
+			],
+			[
+				"pro",
+				"capitole\\o_scurta_istorie_a_aplicatiei\\problema_datelor_reale.tex"
+			],
+			[
+				"inter",
+				"capitole\\user_workflow\\administrative_interface.tex"
+			],
+			[
+				"viitor",
+				"capitole\\o_scurta_istorie_a_aplicatiei\\viitor.tex"
+			],
+			[
+				"oscu",
+				"capitole\\o_scurta_istorie_a_aplicatiei.tex"
+			],
+			[
+				"mai",
+				"main.tex"
+			],
+			[
+				"ma",
+				"main.tex"
+			],
+			[
+				"regis",
+				"capitole\\user_workflow\\register_a_claim.tex"
+			],
+			[
+				"todo",
+				"tabel.todo"
+			],
+			[
 				"mvc",
 				"capitole\\structura_aplicatiei\\mvc.tex"
 			],
@@ -1435,20 +946,12 @@
 				"capitole\\tehnologii_folosite\\mentiuni_speciale.tex"
 			],
 			[
-				"todo",
-				"tabel.todo"
-			],
-			[
 				"views",
 				"capitole\\structura_aplicatiei\\mvc\\views.tex"
 			],
 			[
 				"bib",
 				"bibliografie.bib"
-			],
-			[
-				"main",
-				"main.tex"
 			],
 			[
 				"baze_de",
