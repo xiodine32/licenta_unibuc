@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6350 64-bit) (preloaded format=xelatex 2017.6.13)  17 JUN 2017 02:54
+This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6350 64-bit) (preloaded format=xelatex 2017.6.13)  17 JUN 2017 03:15
 entering extended mode
 **./main.tex
 (main.tex
@@ -617,9 +617,6 @@ LaTeX Warning: Label `fig:TEMP' multiply defined.
 
 LaTeX Warning: Label `fig:TEMP' multiply defined.
 
-
-LaTeX Warning: Label `fig:TEMP' multiply defined.
-
 )
 \openout1 = `main.aux'.
 
@@ -802,9 +799,6 @@ m)
 File: ./capitole/../imagini/claims_filtered.png Graphic file (type QTm)
 
 <use  "./capitole/../imagini/claims_filtered.png" >
-File: ./capitole/../imagini/claims_import_filters.png Graphic file (type QTm)
-
-<use  "./capitole/../imagini/claims_import_filters.png" >
 File: ./capitole/../imagini/claims_manual_sale.png Graphic file (type QTm)
 
 <use  "./capitole/../imagini/claims_manual_sale.png" >
@@ -891,10 +885,8 @@ File: ./capitole/../imagini/register_informatii_generale.png Graphic file (type
  QTm)
 
 <use  "./capitole/../imagini/register_informatii_generale.png" >
-
-LaTeX Warning: Float too large for page by 31.15752pt on input line 167.
-
 File: ./capitole/../imagini/register_poze.png Graphic file (type QTm)
+
 <use  "./capitole/../imagini/register_poze.png" >
 File: ./capitole/../imagini/report_incarcare_poze.png Graphic file (type QTm)
 
@@ -930,14 +922,13 @@ File: ./capitole/../imagini/statistics.png Graphic file (type QTm)
 (capitole/user_workflow/administrative_interface.tex [50
 
 ] [51] [52] [53]
-[54] [55] [56] [57] [58] [59] [60] [61] [62] [63] [64] [65] [66])
+[54] [55] [56] [57] [58] [59] [60] [61] [62] [63] [64] [65])
 (capitole/user_workflow/settings.tex)
-(capitole/user_workflow/uploading_photos.tex)) [67] [68]
-(capitole/concluzii.tex [69] [70] [71] [72] [73] [74] [75]
-(capitole/concluzii/business_continuity_plan.tex)
+(capitole/user_workflow/uploading_photos.tex)) [66] [67] [68] [69] [70]
+[71] (capitole/concluzii.tex (capitole/concluzii/business_continuity_plan.tex)
 (capitole/concluzii/luna_dec_teste_automate.tex)
 (capitole/concluzii/extragerea_din_modele.tex)
-(capitole/concluzii/sistem_modular_de_rapoarte.tex)) [76
+(capitole/concluzii/sistem_modular_de_rapoarte.tex)) [72
 
 ]
 Overfull \hbox (24.79211pt too wide) in paragraph at lines 48--48
@@ -960,7 +951,7 @@ m/n/10 . \TU/lmr/m/sc/10 url\TU/lmr/m/n/10 : []$[][][][][] [] [] [] [][][][][][
 ][][][][][][][][][][][] []
  []
 
-[77
+[73
 
 ]
 Overfull \hbox (6.68214pt too wide) in paragraph at lines 48--48
@@ -994,9 +985,9 @@ U/lmr/m/sc/10 url\TU/lmr/m/n/10 : []$[][][][] [] [] [] [][][][][][] [] [][][][]
 [][] [] [][] [] [][][][][][][][][] [][]
  []
 
-[78]
+[74]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 50.
- [79]
+ [75]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 50.
  (main.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 50.
@@ -1011,12 +1002,12 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 50.
  ) 
 Here is how much of TeX's memory you used:
- 16536 strings out of 427834
- 262488 string characters out of 3155872
+ 16534 strings out of 427834
+ 262416 string characters out of 3155872
  738833 words of memory out of 3000000
- 20201 multiletter control sequences out of 15000+200000
+ 20200 multiletter control sequences out of 15000+200000
  6856 words of font info for 39 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
  44i,7n,69p,960b,4941s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on main.pdf (80 pages).
+Output written on main.pdf (76 pages).
