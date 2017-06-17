@@ -1,5 +1,44 @@
+% pagebreak e pentru a termina de desenat toate pozele inainte...
 \pagebreak
-\section{Administrative interface}
+\section{Interfața de administrare}
+
+	Interfața de administrare nu poate fi accesată dacă nu se cunoaște ori calea, ori dacă nu se navighează din cadrul vizualizării cererii (pentru client, acest pas reprezintă încărcarea pozelor) pe pagina principală.
+
+	Pagina principală a interfeței de administrare se găsește la:
+
+	\begin{verbatim}
+	/admin/
+	\end{verbatim}
+
+	În momentul în care utilizatorul navighează la \textit{orice} parte a aplicației de administrare și nu este înregistrat, pagina apare ca în figura~\ref{fig:login}.
+	\begin{figure}
+		\includegraphics[width=\linewidth]{../imagini/login.png}
+		\caption{Pagina de înregistrare pentru interfața de administrare}
+		\label{fig:login}
+	\end{figure}
+
+	După ce utilizatorul introduce email-ul și parola sa corect în sistem, sistemul va naviga la pagina ce utilizatorul încerca să acceseze.
+
+	Pagina principală a interfeței de administrare arată ca în figura~\ref{fig:home_page}.
+	În cazul oricărei probleme, sunt lăsate datele mele de contact pentru a le remedia cât mai rapid.
+	De aici, utilizatorul poate introduce rapid un număr de cerere de despăgubire folosind câmpul din bara de navigație.
+
+	În pagina principală, se găsesc două grafice:
+	\begin{enumerate}
+		\item Primul se referă la cererile de despăgubire noi în această săptămână, raportat la numărul lor pe luna respectivă.
+		\item Al doilea se referă la numărul total de decizii terminate, active și refuzate.
+	\end{enumerate}
+
+	Numerele folosite în aceste grafice apar atunci când se navighează cu cursorul deasupra lor.
+
+	Bara de navigație conține toate modulele aplicației.
+
+	\begin{figure}
+		\includegraphics[width=\linewidth]{../imagini/home_page.png}
+		\caption{Pagina principală a interfeței de administrare}
+		\label{fig:home_page}
+	\end{figure}
+
 	\subsection{Claims view}
 		\subsubsection{Color code}
 		\subsubsection{Search}

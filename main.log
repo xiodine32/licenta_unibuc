@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6350 64-bit) (preloaded format=xelatex 2017.6.13)  17 JUN 2017 05:04
+This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6350 64-bit) (preloaded format=xelatex 2017.6.13)  17 JUN 2017 15:14
 entering extended mode
 **./main.tex
 (main.tex
@@ -492,6 +492,9 @@ Package biblatex Warning: Language 'romanian' not supported.
 
 (main.aux
 
+LaTeX Warning: Label `fig:home_page' multiply defined.
+
+
 LaTeX Warning: Label `fig:TEMP' multiply defined.
 
 
@@ -788,15 +791,21 @@ File: ./capitole/../imagini/claim_mesaje.png Graphic file (type QTm)
 
 <use  "./capitole/../imagini/claim_mesaje.png" >)
 (capitole/user_workflow/administrative_interface.tex [53] [54] [55]
+File: ./capitole/../imagini/login.png Graphic file (type QTm)
+
+<use  "./capitole/../imagini/login.png" >
+File: ./capitole/../imagini/home_page.png Graphic file (type QTm)
+
+<use  "./capitole/../imagini/home_page.png" > [56]
 File: ./capitole/../imagini/claims_edit.png Graphic file (type QTm)
 
 <use  "./capitole/../imagini/claims_edit.png" >
 File: ./capitole/../imagini/claims_edit_with_decision.png Graphic file (type QT
 m)
 
-<use  "./capitole/../imagini/claims_edit_with_decision.png" > [56])
+<use  "./capitole/../imagini/claims_edit_with_decision.png" > [57])
 (capitole/user_workflow/settings.tex)
-(capitole/user_workflow/uploading_photos.tex)
+(capitole/user_workflow/uploading_photos.tex [58])
 File: ./capitole/../imagini/backups.png Graphic file (type QTm)
 
 <use  "./capitole/../imagini/backups.png" >
@@ -887,12 +896,12 @@ File: ./capitole/../imagini/sales_view.png Graphic file (type QTm)
 <use  "./capitole/../imagini/sales_view.png" >
 File: ./capitole/../imagini/statistics.png Graphic file (type QTm)
 
-<use  "./capitole/../imagini/statistics.png" >) [57] [58] [59] [60] [61]
-(capitole/concluzii.tex [62] [63] [64] [65] [66] [67] [68] [69] [70]
+<use  "./capitole/../imagini/statistics.png" >) [59] [60] [61] [62] [63]
+[64] [65] [66] [67] [68] [69] [70] (capitole/concluzii.tex [71]
 (capitole/concluzii/business_continuity_plan.tex)
 (capitole/concluzii/luna_dec_teste_automate.tex)
 (capitole/concluzii/extragerea_din_modele.tex)
-(capitole/concluzii/sistem_modular_de_rapoarte.tex)) [71
+(capitole/concluzii/sistem_modular_de_rapoarte.tex)) [72
 
 ]
 Overfull \hbox (24.79211pt too wide) in paragraph at lines 48--48
@@ -915,7 +924,7 @@ m/n/10 . \TU/lmr/m/sc/10 url\TU/lmr/m/n/10 : []$[][][][][] [] [] [] [][][][][][
 ][][][][][][][][][][][] []
  []
 
-[72
+[73
 
 ]
 Overfull \hbox (6.68214pt too wide) in paragraph at lines 48--48
@@ -949,9 +958,9 @@ U/lmr/m/sc/10 url\TU/lmr/m/n/10 : []$[][][][] [] [] [] [][][][][][] [] [][][][]
 [][] [] [][] [] [][][][][][][][][] [][]
  []
 
-[73]
+[74]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 50.
- [74]
+ [75]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 50.
  (main.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 50.
@@ -966,12 +975,12 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 50.
  ) 
 Here is how much of TeX's memory you used:
- 16558 strings out of 427834
- 263038 string characters out of 3155872
- 740093 words of memory out of 3000000
- 20223 multiletter control sequences out of 15000+200000
+ 16559 strings out of 427834
+ 263049 string characters out of 3155872
+ 739207 words of memory out of 3000000
+ 20224 multiletter control sequences out of 15000+200000
  6864 words of font info for 40 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
  44i,7n,69p,960b,4941s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on main.pdf (75 pages).
+Output written on main.pdf (76 pages).
