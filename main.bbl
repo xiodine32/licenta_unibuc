@@ -98,16 +98,16 @@
     \endentry
     \entry{xservers}{online}{}
       \name{author}{1}{}{%
-        {{hash=7bdcd754907543ba7a12dea1a7bd9608}{%
+        {{hash=76b81d0a6a200cf682846df4eda4903b}{%
            family={SRL},
            familyi={S\bibinitperiod},
-           given={S.C.\bibnamedelimi CLAX\bibnamedelima TELECOM},
+           given={S.C.\bibnamedelimi Clax\bibnamedelima Telecom},
            giveni={S\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
       }
-      \strng{namehash}{7bdcd754907543ba7a12dea1a7bd9608}
-      \strng{fullhash}{7bdcd754907543ba7a12dea1a7bd9608}
-      \strng{authornamehash}{7bdcd754907543ba7a12dea1a7bd9608}
-      \strng{authorfullhash}{7bdcd754907543ba7a12dea1a7bd9608}
+      \strng{namehash}{76b81d0a6a200cf682846df4eda4903b}
+      \strng{fullhash}{76b81d0a6a200cf682846df4eda4903b}
+      \strng{authornamehash}{76b81d0a6a200cf682846df4eda4903b}
+      \strng{authorfullhash}{76b81d0a6a200cf682846df4eda4903b}
       \field{sortinit}{7}
       \field{sortinithash}{6ac7fe70cdec8cba8f65694411ce2532}
       \field{labelnamesource}{author}
@@ -169,16 +169,16 @@
     \endentry
     \entry{laravel}{online}{}
       \name{author}{1}{}{%
-        {{hash=02b9efafdf5e8c75daa7060e3d7dcc1d}{%
-           family={OTWELL},
+        {{hash=014fa26b3b0c59e1bdec61314fc8d11b}{%
+           family={Otwell},
            familyi={O\bibinitperiod},
-           given={TAYLOR},
+           given={Taylor},
            giveni={T\bibinitperiod}}}%
       }
-      \strng{namehash}{02b9efafdf5e8c75daa7060e3d7dcc1d}
-      \strng{fullhash}{02b9efafdf5e8c75daa7060e3d7dcc1d}
-      \strng{authornamehash}{02b9efafdf5e8c75daa7060e3d7dcc1d}
-      \strng{authorfullhash}{02b9efafdf5e8c75daa7060e3d7dcc1d}
+      \strng{namehash}{014fa26b3b0c59e1bdec61314fc8d11b}
+      \strng{fullhash}{014fa26b3b0c59e1bdec61314fc8d11b}
+      \strng{authornamehash}{014fa26b3b0c59e1bdec61314fc8d11b}
+      \strng{authorfullhash}{014fa26b3b0c59e1bdec61314fc8d11b}
       \field{sortinit}{1}
       \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
       \field{labelnamesource}{author}

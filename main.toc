@@ -104,44 +104,44 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.1}Înregistrarea unei cereri}{50}{section.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Responding to messages}{50}{section.4.2}
+\contentsline {section}{\numberline {4.2}Secțiunea de mesaje din cadrul cererilor de despăgubire}{53}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Administrative interface}{50}{section.4.3}
+\contentsline {section}{\numberline {4.3}Administrative interface}{56}{section.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.1}Claims view}{50}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.1}Claims view}{56}{subsection.4.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.1.1}Color code}{50}{subsubsection.4.3.1.1}
+\contentsline {subsubsection}{\numberline {4.3.1.1}Color code}{56}{subsubsection.4.3.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.1.2}Search}{50}{subsubsection.4.3.1.2}
+\contentsline {subsubsection}{\numberline {4.3.1.2}Search}{56}{subsubsection.4.3.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {4.3.1.2.1}Navbar ID}{50}{paragraph.4.3.1.2.1}
+\contentsline {paragraph}{\numberline {4.3.1.2.1}Navbar ID}{56}{paragraph.4.3.1.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.1.3}View claim}{50}{subsubsection.4.3.1.3}
+\contentsline {subsubsection}{\numberline {4.3.1.3}View claim}{56}{subsubsection.4.3.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.1.4}Edit Claim}{64}{subsubsection.4.3.1.4}
+\contentsline {subsubsection}{\numberline {4.3.1.4}Edit Claim}{56}{subsubsection.4.3.1.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.1.5}Reminders}{64}{subsubsection.4.3.1.5}
+\contentsline {subsubsection}{\numberline {4.3.1.5}Reminders}{56}{subsubsection.4.3.1.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.2}Import}{64}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.2}Import}{56}{subsection.4.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.2.1}Weekly Sale import}{64}{subsubsection.4.3.2.1}
+\contentsline {subsubsection}{\numberline {4.3.2.1}Weekly Sale import}{56}{subsubsection.4.3.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.2.2}Custom imports}{64}{subsubsection.4.3.2.2}
+\contentsline {subsubsection}{\numberline {4.3.2.2}Custom imports}{56}{subsubsection.4.3.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.3}Sales}{64}{subsection.4.3.3}
+\contentsline {subsection}{\numberline {4.3.3}Sales}{57}{subsection.4.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.3.1}View}{66}{subsubsection.4.3.3.1}
+\contentsline {subsubsection}{\numberline {4.3.3.1}View}{57}{subsubsection.4.3.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.4}Decisions}{66}{subsection.4.3.4}
+\contentsline {subsection}{\numberline {4.3.4}Decisions}{57}{subsection.4.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.4.1}View}{66}{subsubsection.4.3.4.1}
+\contentsline {subsubsection}{\numberline {4.3.4.1}View}{57}{subsubsection.4.3.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.5}Reports}{66}{subsection.4.3.5}
+\contentsline {subsection}{\numberline {4.3.5}Reports}{57}{subsection.4.3.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Settings}{66}{section.4.4}
+\contentsline {section}{\numberline {4.4}Settings}{57}{section.4.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.5}Uploading photos}{66}{section.4.5}
+\contentsline {section}{\numberline {4.5}Uploading photos}{57}{section.4.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5.1}Modificări necesare asupra structurii bazei de date}{72}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.1}Modificări necesare asupra structurii bazei de date}{71}{subsection.4.5.1}
 \defcounter {refsection}{0}\relax 
 \select@language {english}
