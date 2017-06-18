@@ -4,130 +4,144 @@
 \defcounter {refsection}{0}\relax 
 \select@language {romanian}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {1}Tehnologiile folosite}{6}{chapter.1}
+\contentsline {chapter}{\numberline {1}Introducere}{3}{chapter.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.1}PHP 5.6}{6}{section.1.1}
+\contentsline {section}{\numberline {1.1}Condițiile inițiale}{3}{section.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.2}Laravel 5.3}{6}{section.1.2}
+\contentsline {section}{\numberline {1.2}Accesul la aplicație}{4}{section.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2.1}Directive Blade}{6}{subsection.1.2.1}
+\contentsline {section}{\numberline {1.3}Detalii despre dezvoltarea aplicației}{4}{section.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2.2}Laravel Forms / HTML}{7}{subsection.1.2.2}
+\contentsline {section}{\numberline {1.4}Soluțiile software adoptate}{5}{section.1.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2.3}Consola Artisan}{8}{subsection.1.2.3}
+\contentsline {section}{\numberline {1.5}Structura aplicației}{6}{section.1.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2.4}Eloquent ORM}{8}{subsection.1.2.4}
+\contentsline {chapter}{\numberline {2}Tehnologiile folosite}{7}{chapter.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2.5}Migrări}{8}{subsection.1.2.5}
+\contentsline {section}{\numberline {2.1}PHP 5.6}{7}{section.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.3}Baza de date - MySQL}{9}{section.1.3}
+\contentsline {section}{\numberline {2.2}Laravel 5.3}{7}{section.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.3.1}Relații}{9}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {2.2.1}Directive Blade}{8}{subsection.2.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.3.2}PhpMyAdmin}{10}{subsection.1.3.2}
+\contentsline {subsection}{\numberline {2.2.2}Laravel Forms / HTML}{9}{subsection.2.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.4}GitHub}{10}{section.1.4}
+\contentsline {subsection}{\numberline {2.2.3}Consola Artisan}{9}{subsection.2.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.5}Certificat SSL}{11}{section.1.5}
+\contentsline {subsection}{\numberline {2.2.4}Eloquent ORM}{10}{subsection.2.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.5.1}StartCom}{11}{subsection.1.5.1}
+\contentsline {subsection}{\numberline {2.2.5}Migrări}{10}{subsection.2.2.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.5.2}CloudFlare}{11}{subsection.1.5.2}
+\contentsline {section}{\numberline {2.3}Baza de date - MySQL}{11}{section.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.6}jQuery \& jQuery UI}{12}{section.1.6}
+\contentsline {subsection}{\numberline {2.3.1}Relații}{11}{subsection.2.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.7}Knockout.js}{12}{section.1.7}
+\contentsline {subsection}{\numberline {2.3.2}PhpMyAdmin}{12}{subsection.2.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.8}Mențiuni speciale}{13}{section.1.8}
+\contentsline {section}{\numberline {2.4}Găzduire partajată}{13}{section.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.8.1}Google Analytics}{13}{subsection.1.8.1}
+\contentsline {section}{\numberline {2.5}GitHub}{14}{section.2.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.8.2}Găzduire partajată}{14}{subsection.1.8.2}
+\contentsline {section}{\numberline {2.6}Certificat SSL}{15}{section.2.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.8.3}PhpStorm IDE}{15}{subsection.1.8.3}
+\contentsline {subsection}{\numberline {2.6.1}StartCom}{15}{subsection.2.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.8.4}Heroku}{15}{subsection.1.8.4}
+\contentsline {subsection}{\numberline {2.6.2}CloudFlare}{15}{subsection.2.6.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.8.5}Amazon Web Services}{15}{subsection.1.8.5}
+\contentsline {section}{\numberline {2.7}jQuery \& jQuery UI}{16}{section.2.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.8.5.1}Integrarea cu Laravel}{16}{subsubsection.1.8.5.1}
+\contentsline {section}{\numberline {2.8}Knockout.js}{17}{section.2.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.8.6}Composer}{16}{subsection.1.8.6}
+\contentsline {section}{\numberline {2.9}Utilitare}{18}{section.2.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.8.7}Laravel Elixir și npm}{17}{subsection.1.8.7}
+\contentsline {subsection}{\numberline {2.9.1}Google Analytics}{18}{subsection.2.9.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.8.8}LaTeX și Sublime Text}{17}{subsection.1.8.8}
+\contentsline {subsection}{\numberline {2.9.2}PhpStorm IDE}{18}{subsection.2.9.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}O scurtă istorie a dezvoltării aplicației}{19}{chapter.2}
+\contentsline {subsection}{\numberline {2.9.3}Heroku}{19}{subsection.2.9.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Primul modul}{20}{section.2.1}
+\contentsline {subsection}{\numberline {2.9.4}Composer}{19}{subsection.2.9.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Problema datelor incomplete}{21}{section.2.2}
+\contentsline {subsection}{\numberline {2.9.5}Laravel Elixir}{20}{subsection.2.9.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Modulul de rapoarte și decizii}{21}{section.2.3}
+\contentsline {subsection}{\numberline {2.9.6}LaTeX}{21}{subsection.2.9.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}Decuplarea deciziilor de vânzări}{21}{section.2.4}
+\contentsline {chapter}{\numberline {3}Arhitectura software a aplicației}{22}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.1}Modificări în viitorul apropiat}{22}{subsection.2.4.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.5}După planul inițial de dezvoltare}{22}{section.2.5}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5.1}Introducerea datelor și rapoartele avansate}{22}{subsection.2.5.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5.2}În continuare}{22}{subsection.2.5.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Structura aplicației}{23}{chapter.3}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Un exemplu de cerere}{23}{section.3.1}
+\contentsline {section}{\numberline {3.1}Rutina de apelare a programului}{22}{section.3.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.2}Baza de date}{23}{section.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Laravel MVC}{26}{section.3.3}
+\contentsline {section}{\numberline {3.3}Structura Model-View-Controller}{25}{section.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.1}Controllers}{26}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.1}Controllers}{25}{subsection.3.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.2}Models - Eloquent ORM}{30}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.2}Models}{30}{subsection.3.3.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.3.3}Views}{31}{subsection.3.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.4}Funcții ajutătoare}{32}{subsection.3.3.4}
+\contentsline {subsection}{\numberline {3.3.4}Funcții ajutătoare}{33}{subsection.3.3.4}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {3.3.4.1}Request-uri}{33}{subsubsection.3.3.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.3.4.2}Mediul de dezvoltare}{33}{subsubsection.3.3.4.2}
+\contentsline {subsubsection}{\numberline {3.3.4.2}Mediul de dezvoltare}{34}{subsubsection.3.3.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}Excel}{33}{section.3.4}
+\contentsline {section}{\numberline {3.4}Rapoarte}{34}{section.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.1}Implementarea platformei de rapoarte Excel}{34}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.1}Implementarea platformei de rapoarte Excel}{35}{subsection.3.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Manual de utilizare}{36}{chapter.4}
+\contentsline {chapter}{\numberline {4}Probleme apărute în timpul dezvoltării aplicației}{37}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Înregistrarea unei cereri}{36}{section.4.1}
+\contentsline {section}{\numberline {4.1}Primul modul}{38}{section.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Secțiunea de mesaje din cadrul cererilor de despăgubire}{36}{section.4.2}
+\contentsline {section}{\numberline {4.2}Problema datelor incomplete}{39}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Interfața de administrare}{42}{section.4.3}
+\contentsline {section}{\numberline {4.3}Modulul de rapoarte și decizii}{40}{section.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.1}Modulul cererilor de despăgubire}{42}{subsection.4.3.1}
+\contentsline {section}{\numberline {4.4}Decuplarea deciziilor de vânzări}{40}{section.4.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.1.1}Vizualizarea și modificarea cererilor}{43}{subsubsection.4.3.1.1}
+\contentsline {subsection}{\numberline {4.4.1}Modificări în viitorul apropiat}{41}{subsection.4.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.1.2}Aducerea aminte a cererilor}{43}{subsubsection.4.3.1.2}
+\contentsline {section}{\numberline {4.5}După planul inițial de dezvoltare}{41}{section.4.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.2}Modulul introducerii datelor în sistem}{46}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.5.1}Introducerea datelor și rapoartele avansate}{41}{subsection.4.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.3}Modulul de vânzări}{46}{subsection.4.3.3}
+\contentsline {subsection}{\numberline {4.5.2}În continuare}{41}{subsection.4.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.3.1}Vizualizarea vânzării}{47}{subsubsection.4.3.3.1}
+\contentsline {chapter}{\numberline {5}Manual de utilizare}{43}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.4}Crearea unei decizii}{49}{subsection.4.3.4}
+\contentsline {section}{\numberline {5.1}Înregistrarea unei cereri}{43}{section.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.5}Modulul de decizii}{49}{subsection.4.3.5}
+\contentsline {section}{\numberline {5.2}Secțiunea de mesaje din cadrul cererilor de despăgubire}{48}{section.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.5.1}Modificarea deciziilor}{51}{subsubsection.4.3.5.1}
+\contentsline {section}{\numberline {5.3}Interfața de administrare}{50}{section.5.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.6}Modulul de raportări}{51}{subsection.4.3.6}
+\contentsline {subsection}{\numberline {5.3.1}Modulul cererilor de despăgubire}{51}{subsection.5.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.7}Modificări necesare asupra structurii bazei de date}{56}{subsection.4.3.7}
+\contentsline {subsubsection}{\numberline {5.3.1.1}Vizualizarea și modificarea cererilor}{51}{subsubsection.5.3.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.3.1.2}Reminders}{53}{subsubsection.5.3.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.3.2}Modulul introducerii datelor în sistem}{53}{subsection.5.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.3.3}Modulul de vânzări}{55}{subsection.5.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.3.3.1}Vizualizarea vânzării}{56}{subsubsection.5.3.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.3.4}Crearea unei decizii}{58}{subsection.5.3.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.3.5}Modulul de decizii}{58}{subsection.5.3.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.3.5.1}Modificarea deciziilor}{60}{subsubsection.5.3.5.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.3.6}Modulul de raportări}{61}{subsection.5.3.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.4}Modificări în viitorul apropiat}{65}{section.5.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.4.1}Introducerea câmpului de factură în decizie}{65}{subsection.5.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.4.2}Modularizarea tabelelor}{65}{subsection.5.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.4.3}Sistem modular de rapoarte}{65}{subsection.5.4.3}
 \defcounter {refsection}{0}\relax 
 \select@language {english}

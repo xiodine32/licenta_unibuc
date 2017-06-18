@@ -19,58 +19,6 @@
 
 \refsection{0}
   \sortlist[entry]{none/global/}
-    \entry{fandu_uk}{online}{}
-      \name{author}{1}{}{%
-        {{hash=02793f2027e7187875fe0df682694660}{%
-           family={Ltd.},
-           familyi={L\bibinitperiod},
-           given={Fandu\bibnamedelima Holdings},
-           giveni={F\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
-      }
-      \strng{namehash}{02793f2027e7187875fe0df682694660}
-      \strng{fullhash}{02793f2027e7187875fe0df682694660}
-      \strng{authornamehash}{02793f2027e7187875fe0df682694660}
-      \strng{authorfullhash}{02793f2027e7187875fe0df682694660}
-      \field{sortinit}{1}
-      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Fandu.UK}
-      \field{urlday}{14}
-      \field{urlmonth}{6}
-      \field{urlyear}{2017}
-      \field{year}{2015}
-      \field{urldateera}{ce}
-      \verb{url}
-      \verb http://www.fandu.uk/claims
-      \endverb
-    \endentry
-    \entry{wsgp_claims}{online}{}
-      \name{author}{1}{}{%
-        {{hash=06175ad123cca96e0d2bd3f4af706178}{%
-           family={Solutions},
-           familyi={S\bibinitperiod},
-           given={Warranty},
-           giveni={W\bibinitperiod}}}%
-      }
-      \strng{namehash}{06175ad123cca96e0d2bd3f4af706178}
-      \strng{fullhash}{06175ad123cca96e0d2bd3f4af706178}
-      \strng{authornamehash}{06175ad123cca96e0d2bd3f4af706178}
-      \strng{authorfullhash}{06175ad123cca96e0d2bd3f4af706178}
-      \field{sortinit}{2}
-      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Raportul avariilor}
-      \field{urlday}{14}
-      \field{urlmonth}{6}
-      \field{urlyear}{2017}
-      \field{year}{2015}
-      \field{urldateera}{ce}
-      \verb{url}
-      \verb http://wsgp.co.uk/claims/
-      \endverb
-    \endentry
     \entry{media_galaxy}{online}{}
       \name{author}{1}{}{%
         {{hash=98e7da5c830a22b31611695dc38b8b85}{%
@@ -83,8 +31,8 @@
       \strng{fullhash}{98e7da5c830a22b31611695dc38b8b85}
       \strng{authornamehash}{98e7da5c830a22b31611695dc38b8b85}
       \strng{authorfullhash}{98e7da5c830a22b31611695dc38b8b85}
-      \field{sortinit}{3}
-      \field{sortinithash}{197da6d6c34c6b20ce45c4d4baace5a4}
+      \field{sortinit}{1}
+      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Regulament Mobile Protect}
@@ -108,8 +56,8 @@
       \strng{fullhash}{76b81d0a6a200cf682846df4eda4903b}
       \strng{authornamehash}{76b81d0a6a200cf682846df4eda4903b}
       \strng{authorfullhash}{76b81d0a6a200cf682846df4eda4903b}
-      \field{sortinit}{7}
-      \field{sortinithash}{6ac7fe70cdec8cba8f65694411ce2532}
+      \field{sortinit}{4}
+      \field{sortinithash}{d221becdd544034cf9082056cd6e6d2d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Hosting | Servere dedicate | VPS - xServers}
@@ -131,8 +79,8 @@
       \strng{fullhash}{b3b3a6ac74ecbd56bcdbefa4799fb9df}
       \strng{authornamehash}{b3b3a6ac74ecbd56bcdbefa4799fb9df}
       \strng{authorfullhash}{b3b3a6ac74ecbd56bcdbefa4799fb9df}
-      \field{sortinit}{8}
-      \field{sortinithash}{2f1b0e69e7617f99664f1cd00bb9603c}
+      \field{sortinit}{5}
+      \field{sortinithash}{c9df3c9fb8f555dd9201cedc5e343021}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Amazon Web Services S3}
@@ -142,29 +90,6 @@
       \field{urldateera}{ce}
       \verb{url}
       \verb https://aws.amazon.com/s3/
-      \endverb
-    \endentry
-    \entry{veracrypt}{online}{}
-      \name{author}{1}{}{%
-        {{hash=7dc40e9841a8b9d37742f90344b27121}{%
-           family={IDRIX},
-           familyi={I\bibinitperiod}}}%
-      }
-      \strng{namehash}{7dc40e9841a8b9d37742f90344b27121}
-      \strng{fullhash}{7dc40e9841a8b9d37742f90344b27121}
-      \strng{authornamehash}{7dc40e9841a8b9d37742f90344b27121}
-      \strng{authorfullhash}{7dc40e9841a8b9d37742f90344b27121}
-      \field{sortinit}{1}
-      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{VeraCrypt \- Free Open source disk encryption with strong security for the Paranoid}
-      \field{urlday}{14}
-      \field{urlmonth}{6}
-      \field{urlyear}{2017}
-      \field{urldateera}{ce}
-      \verb{url}
-      \verb https://www.veracrypt.fr/en/Home.html
       \endverb
     \endentry
     \entry{laravel}{online}{}
@@ -179,8 +104,8 @@
       \strng{fullhash}{014fa26b3b0c59e1bdec61314fc8d11b}
       \strng{authornamehash}{014fa26b3b0c59e1bdec61314fc8d11b}
       \strng{authorfullhash}{014fa26b3b0c59e1bdec61314fc8d11b}
-      \field{sortinit}{1}
-      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
+      \field{sortinit}{6}
+      \field{sortinithash}{02bbed3ed82f61ae046619460488516d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Laravel - The PHP Framework For Web Artisans}
@@ -204,8 +129,8 @@
       \strng{fullhash}{014fa26b3b0c59e1bdec61314fc8d11b}
       \strng{authornamehash}{014fa26b3b0c59e1bdec61314fc8d11b}
       \strng{authorfullhash}{014fa26b3b0c59e1bdec61314fc8d11b}
-      \field{sortinit}{1}
-      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
+      \field{sortinit}{7}
+      \field{sortinithash}{6ac7fe70cdec8cba8f65694411ce2532}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Taylor Otwell on Twitter: "Average cyclomatic complexity per method}
@@ -227,8 +152,8 @@
       \strng{fullhash}{568cb057981cea66555e44eab3d5197e}
       \strng{authornamehash}{568cb057981cea66555e44eab3d5197e}
       \strng{authorfullhash}{568cb057981cea66555e44eab3d5197e}
-      \field{sortinit}{1}
-      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
+      \field{sortinit}{8}
+      \field{sortinithash}{2f1b0e69e7617f99664f1cd00bb9603c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Web framework rankings}
@@ -255,8 +180,8 @@
       \strng{fullhash}{0665103124b7d0c3fc20e6c935e7aba7}
       \strng{authornamehash}{0665103124b7d0c3fc20e6c935e7aba7}
       \strng{authorfullhash}{0665103124b7d0c3fc20e6c935e7aba7}
-      \field{sortinit}{1}
-      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
+      \field{sortinit}{9}
+      \field{sortinithash}{2999ebab86052e6d71b434385f8b4ed2}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{0-9763857-4-0}
@@ -400,8 +325,8 @@
       \strng{fullhash}{bfef4a731e5f839d1a797f9e351ee5f3}
       \strng{authornamehash}{bfef4a731e5f839d1a797f9e351ee5f3}
       \strng{authorfullhash}{bfef4a731e5f839d1a797f9e351ee5f3}
-      \field{sortinit}{2}
-      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
+      \field{sortinit}{1}
+      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{About The Collective}
@@ -425,8 +350,8 @@
       \strng{fullhash}{2c0c248fee2bb92822a6bfd6f1b2fa95}
       \strng{authornamehash}{2c0c248fee2bb92822a6bfd6f1b2fa95}
       \strng{authorfullhash}{2c0c248fee2bb92822a6bfd6f1b2fa95}
-      \field{sortinit}{2}
-      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
+      \field{sortinit}{1}
+      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Forms \& HTML}
@@ -461,8 +386,8 @@
       \strng{fullhash}{ed6c6781217d510ee48904fd5eba4bd4}
       \strng{authornamehash}{ed6c6781217d510ee48904fd5eba4bd4}
       \strng{authorfullhash}{ed6c6781217d510ee48904fd5eba4bd4}
-      \field{sortinit}{2}
-      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
+      \field{sortinit}{1}
+      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0018-9162}
@@ -491,8 +416,8 @@
       \strng{fullhash}{7d73be78bdae55dc3acc2220c86ecfb9}
       \strng{authornamehash}{7d73be78bdae55dc3acc2220c86ecfb9}
       \strng{authorfullhash}{7d73be78bdae55dc3acc2220c86ecfb9}
-      \field{sortinit}{2}
-      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
+      \field{sortinit}{1}
+      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{9780321127426}
@@ -515,8 +440,8 @@
       \strng{fullhash}{0246394b6185f4f7f82134a6dc9f445a}
       \strng{authornamehash}{0246394b6185f4f7f82134a6dc9f445a}
       \strng{authorfullhash}{0246394b6185f4f7f82134a6dc9f445a}
-      \field{sortinit}{2}
-      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
+      \field{sortinit}{1}
+      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{PSR-1: Basic Coding Standard - PHP-FIG}
@@ -689,8 +614,8 @@
       \strng{fullhash}{e3145adaf6bb1c436fb5714635dc5d95}
       \strng{authornamehash}{e3145adaf6bb1c436fb5714635dc5d95}
       \strng{authorfullhash}{e3145adaf6bb1c436fb5714635dc5d95}
-      \field{sortinit}{3}
-      \field{sortinithash}{197da6d6c34c6b20ce45c4d4baace5a4}
+      \field{sortinit}{2}
+      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{9781491901595}
@@ -709,8 +634,8 @@
       \strng{fullhash}{5cdd2d397c0e185a8ae11c3a60862a29}
       \strng{authornamehash}{5cdd2d397c0e185a8ae11c3a60862a29}
       \strng{authorfullhash}{5cdd2d397c0e185a8ae11c3a60862a29}
-      \field{sortinit}{3}
-      \field{sortinithash}{197da6d6c34c6b20ce45c4d4baace5a4}
+      \field{sortinit}{2}
+      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{GitHub Pours Energies into Enterprise. Raises \$100 Million From Power VC Andreessen Horowitz}
@@ -722,30 +647,6 @@
       \verb http://techcrunch.com/2012/07/09/github-pours-energies-into-enterprise-raises-100-million-from-power-vc-andreesen-horowitz/
       \endverb
     \endentry
-    \entry{ssl}{book}{}
-      \name{author}{1}{}{%
-        {{hash=1510100b06a9344cccbe924758a87b1d}{%
-           family={Oppliger},
-           familyi={O\bibinitperiod},
-           given={Rolf},
-           giveni={R\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Artech House}%
-      }
-      \strng{namehash}{1510100b06a9344cccbe924758a87b1d}
-      \strng{fullhash}{1510100b06a9344cccbe924758a87b1d}
-      \strng{authornamehash}{1510100b06a9344cccbe924758a87b1d}
-      \strng{authorfullhash}{1510100b06a9344cccbe924758a87b1d}
-      \field{sortinit}{3}
-      \field{sortinithash}{197da6d6c34c6b20ce45c4d4baace5a4}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{isbn}{9781596934474}
-      \field{month}{8}
-      \field{title}{SSL and Tls: Theory and Practice (Artech House Information Security and Privacy)}
-      \field{year}{2009}
-    \endentry
     \entry{chrome_wosign}{online}{}
       \name{author}{1}{}{%
         {{hash=65d5644b4049b4215a6faa532e7e5ad5}{%
@@ -756,8 +657,8 @@
       \strng{fullhash}{65d5644b4049b4215a6faa532e7e5ad5}
       \strng{authornamehash}{65d5644b4049b4215a6faa532e7e5ad5}
       \strng{authorfullhash}{65d5644b4049b4215a6faa532e7e5ad5}
-      \field{sortinit}{3}
-      \field{sortinithash}{197da6d6c34c6b20ce45c4d4baace5a4}
+      \field{sortinit}{2}
+      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{26}
@@ -771,6 +672,29 @@
       \field{urldateera}{ce}
       \verb{url}
       \verb https://bugs.chromium.org/p/chromium/issues/detail?id=685826
+      \endverb
+    \endentry
+    \entry{cloudflare_ssl}{online}{}
+      \name{author}{1}{}{%
+        {{hash=a40a06e8a5436eb21403fc33e2ed40d9}{%
+           family={CloudFlare},
+           familyi={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{a40a06e8a5436eb21403fc33e2ed40d9}
+      \strng{fullhash}{a40a06e8a5436eb21403fc33e2ed40d9}
+      \strng{authornamehash}{a40a06e8a5436eb21403fc33e2ed40d9}
+      \strng{authorfullhash}{a40a06e8a5436eb21403fc33e2ed40d9}
+      \field{sortinit}{2}
+      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Secure Socket Layer (SSL)/TLS}
+      \field{urlday}{14}
+      \field{urlmonth}{6}
+      \field{urlyear}{2017}
+      \field{urldateera}{ce}
+      \verb{url}
+      \verb https://www.cloudflare.com/ssl/
       \endverb
     \endentry
     \entry{jquery}{book}{}
@@ -791,8 +715,8 @@
       \strng{fullhash}{84873f5a95c25fd4b6018acef0ed28af}
       \strng{authornamehash}{84873f5a95c25fd4b6018acef0ed28af}
       \strng{authorfullhash}{84873f5a95c25fd4b6018acef0ed28af}
-      \field{sortinit}{3}
-      \field{sortinithash}{197da6d6c34c6b20ce45c4d4baace5a4}
+      \field{sortinit}{2}
+      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{1118531647}
@@ -940,8 +864,8 @@
       \strng{fullhash}{7c1e549bb1fa0dcff9d45718fc656756}
       \strng{authornamehash}{7c1e549bb1fa0dcff9d45718fc656756}
       \strng{authorfullhash}{7c1e549bb1fa0dcff9d45718fc656756}
-      \field{sortinit}{4}
-      \field{sortinithash}{d221becdd544034cf9082056cd6e6d2d}
+      \field{sortinit}{3}
+      \field{sortinithash}{197da6d6c34c6b20ce45c4d4baace5a4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Composer}
@@ -968,8 +892,8 @@
       \strng{fullhash}{65e64f6404f032bdac341e94bffa3e23}
       \strng{authornamehash}{65e64f6404f032bdac341e94bffa3e23}
       \strng{authorfullhash}{65e64f6404f032bdac341e94bffa3e23}
-      \field{sortinit}{4}
-      \field{sortinithash}{d221becdd544034cf9082056cd6e6d2d}
+      \field{sortinit}{3}
+      \field{sortinithash}{197da6d6c34c6b20ce45c4d4baace5a4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{25}
@@ -1003,8 +927,8 @@
       \strng{fullhash}{f2aca6a6bffec8f78f1feff9cbc08caa}
       \strng{authornamehash}{f2aca6a6bffec8f78f1feff9cbc08caa}
       \strng{authorfullhash}{f2aca6a6bffec8f78f1feff9cbc08caa}
-      \field{sortinit}{4}
-      \field{sortinithash}{d221becdd544034cf9082056cd6e6d2d}
+      \field{sortinit}{3}
+      \field{sortinithash}{197da6d6c34c6b20ce45c4d4baace5a4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{1847199860}
@@ -1029,8 +953,8 @@
       \strng{fullhash}{1041ae168df991c8f9f3f43285c134c1}
       \strng{authornamehash}{1041ae168df991c8f9f3f43285c134c1}
       \strng{authorfullhash}{1041ae168df991c8f9f3f43285c134c1}
-      \field{sortinit}{4}
-      \field{sortinithash}{d221becdd544034cf9082056cd6e6d2d}
+      \field{sortinit}{3}
+      \field{sortinithash}{197da6d6c34c6b20ce45c4d4baace5a4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{1292025948}

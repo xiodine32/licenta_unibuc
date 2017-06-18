@@ -1,10 +1,30 @@
-\section*{Condițiile preexistente}
-	În momentul în care am interacționat prima oară cu Fandu, doreau o redirectare simplă a paginii de internet
-	\url{http://www.fandu.uk/claims}\cite{fandu_uk} către \\
-	\url{http://wsgp.co.uk/claims/}\cite{wsgp_claims}.
+\section{Condițiile inițiale}
 
-	Proiectul era administrat pe server-ul companiei angajate să scrie codul. Pagina principală încânta utilizatorul cu o avertizare în engleză ce spunea că sistemul ales de gestionare a bazei de date va fi în curând scos din limbajul de programare ales de ei. Nu aveau validări a datelor, nu scoteau rapoartele necesare. Sistemul de gestiune a cererilor de despăgubire era centrat în jurul unor fișiere Excel, ținute de angajați și distribuite între ei.
+	Societatea „Fandu Holdings Ltd.” este o societate ce se ocupă cu cererile de despăgubire pentru Altex și Media Galaxy\cite{media_galaxy}, ca asigurator în numele lui „AmTrust International Underwriters Limited”, care gestionează cererile de despăgubire ale clienților unor lanțuri de magazine, conform asigurărilor încheiate pentru echipamente mobile achiziționate.
 
-	Astfel, Fandu și-a dorit să poată să scoată rapoartele dintr-o aplicație. Fără să treacă cineva prin fiecare daună înregistrată. Fără să copieze informațiile dintr-un mail trimis automat. Au dorit să automatizeze o mare parte din munca asiduă a angajaților Fandu. De a putea scoate oricând rapoartele necesare pe orice perioadă de timp, fie ea o lună, un an, sau de la prima cerere de despăgubire.
+	Inițial aplicația conținea un ecran de introducere a cererilor de despăgubire și salvare a pozelor cu documentele necesare finalizării cererii de despăgubire.
+	Restul operațiilor de gestionare și raportare a daunelor se întocmeau manual prin fișiere Excel.
 
-	Soluția a venit din partea mea. Dorind să mă afirm și să am experiență în domeniu, m-am oferit ca în timpul liber să ajut Fandu. Să scot problema umană din ecuația rapoartelor, să trimit automat mail și să ofer o soluție completă, eficientă, construită de jos în sus pentru fiecare parte a dorințelor lor. Ei au fost sceptici că pot, așa că de menționat ar fi că metoda „rudimentară” de a păstra datele în fișierele Excel a fost activă pe perioada dezvoltării aplicației, pentru a se asigura exactitatea rapoartelor scoase de sistem cu cele „manuale”. Și asta a ajutat enorm. Multe probleme mici au apărut în timpul dezvoltării, ce au fost reparate o dată ce au fost comparate datele.
+	S-a dorit deci o automatizare a întregului sistem, pentru a asigura următoarele funcții:
+	\begin{enumerate}
+		\item Corectitudinea datelor.
+		\item Posibilitatea de modificare a datelor.
+		\item Trasabilitatea datelor.
+		\item Confidențialitatea datelor.
+		\item Preluarea datelor existente și omogenizarea lor, conform noii structuri.
+		\item Gestionarea datelor nestructurate prin digitalizare și introducere în sistem.
+		\item Asigurarea unui sistem flexibil de raportare.
+		\item Asigurarea continuității afacerii prin soluții de salvare a datelor în cloud.
+	\end{enumerate}
+
+	După asimilarea cunoștințelor specifice domeniului de activitate -- asigurări -- și aprofundarea temei de proiectare, a fost întocmit, împreună cu reprezentanții societății, diagrama logică a aplicației, cu modulele aferente.
+	De asemenea, s-au adoptat următoarele măsuri:
+
+	\begin{enumerate}
+		\item Aplicația va fi dezvoltată pe un mediu de test, folosind date reale depersonalizate.
+		\item Fiecare modul va fi testat inițial de către dezvoltator, urmărind și interdependența cu restul aplicației.
+		\item Modulul va fi testat de utilizatori și aprobat de către conducere.
+		\item Modulul va fi integrat în sistemul de producție.
+	\end{enumerate}
+
+	Simultan cu dezvoltarea aplicației și implementarea modulară în producție, s-a păstrat sistemul anterior de gestionare și raportare în Excel, pentru a se asigura exactitatea rapoartelor scoase de sistem.

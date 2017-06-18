@@ -1,5 +1,5 @@
 %  basic builder - xelatex
-\documentclass[a4paper]{report}
+\documentclass[a4paper,12pt]{report}
 
 \usepackage[a4paper,margin=2cm]{geometry}
 \usepackage{indentfirst}
@@ -23,7 +23,7 @@
 \titlespacing*{\paragraph}{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
 
 \title{Sistem de gestionare a cererilor de despăgubire pentru o societate de asigurări}
-\author{Rareș-Neagu Florian}
+\author{Rareș-Florian Neagu}
 \date{\today}
 \pagebreak
 \renewcommand*\contentsname{Tabel de conținut}
@@ -38,9 +38,9 @@
 \newpage
 \import*{./capitole/}{tehnologiile_folosite}
 \newpage
-\import*{./capitole/}{o_scurta_istorie_a_aplicatiei}
-\newpage
 \import*{./capitole/}{structura_aplicatiei}
+\newpage
+\import*{./capitole/}{o_scurta_istorie_a_aplicatiei}
 \newpage
 \import*{./capitole/}{user_workflow}
 \newpage

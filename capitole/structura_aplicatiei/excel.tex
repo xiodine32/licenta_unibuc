@@ -1,4 +1,4 @@
-\section{Excel}
+\section{Rapoarte}
 
 	Pentru a asigura compatibilitatea cu sistemele folosite de personalul companiei, s-a dorit un ușor acces pentru rapoartele extrase.
 	S-a decis la începutul dezvoltării folosirii sistemului „.csv”, a valorilor delimitate de virgulă.
@@ -6,21 +6,17 @@
 
 	Mulțumită pachetului de dezvoltare \verb|phpoffice/phpexcel|, am putut integra, la finalul construirii modulelor, un sistem ce salvează direct în formatul Excel.
 	Apăruse, folosind o implementare naivă a algoritmului de salvare în Excel, o problemă de timp.
-	Consuma din ce în ce mai multe resurse și eram în impas, având următoarele opțiuni:
-	\begin{itemize}
-		\item Să-l las așa cum este, dar dacă numărul de linii o să crească, s-ar putea să rămână fără memorie sistemul.
-		\item Să-l optimizez cât de bine pot și să adaug o interfață ce anunță utilizatorul într-un mod interactiv care-i situația curentă.
-	\end{itemize}
+	Consuma din ce în ce mai multe resurse și pentru că numărului de linii urma să crească, sistemul ar fi rămas fără memorie.
 
-	Până la urmă am ales să optimizez cât de bine pot, pentru a reduce din complexitatea programului, făcând următoarele modificări:
+	Până la urmă am ales să-l optimizez pentru a reduce din complexitatea programului, făcând următoarele modificări:
 	\begin{enumerate}
 		\item Majoritatea vectorilor în cadrul aplicației ce interacționează cu sistemele de raportare au fost înlocuite cu \verb|SplFixedArray|.
 		Astfel se reduce memoria și se optimizează accesul la elementele vectorului, prin declararea de la începutul construirii obiectului a dimensiunii vectorului.
-		\item S-a activa folosirea unei baze de date auxiliare pentru „PhpExcel”, pentru a reduce consumul memorie.
+		\item S-a activat folosirea unei baze de date auxiliare pentru „PhpExcel”, pentru a reduce consumul memorie.
 		\item Atunci când se trimit informațiile către librăria de „PhpExcel”, se trimite tot vectorul deodată.
 		Înainte, se trimitea fiecare element, rând cu rând, coloană cu coloană.
 		\item Împărțirea memoriei ce trebuia gestionată prin apeluri secvențiale și la final concatenarea lor.
-		Această metodă a fost folosită des în sistemele distribuite -- „Map-Reduce”:
+		Această metodă este folosită des în sistemele distribuite -- „Map-Reduce”:
 		\begin{enumerate}
 			\item Se aplică metoda de calcul dorită informației împărțită în mod egal --- „Map”.
 			\item Se combină la final toate rezultatele parțiale în cel final --- „Reduce”.

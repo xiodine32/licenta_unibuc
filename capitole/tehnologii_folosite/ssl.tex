@@ -1,8 +1,8 @@
 \section{Certificat SSL}
 	Certificatele SSL sunt fișiere mici ce leagă digital o cheie criptografică de detaliile unei organizații.
-	Atunci când este instalat pe un server web, activează protocolul HTTPS și permite legăturilor encriptate de la server la clienți.
+	Atunci când este instalat pe un server web, activează protocolul HTTPS și permite comunicare criptată între server și clienți.
 	De obicei, SSL este folosit pentru a securiza tranzacțiile cu cărțile de credit și transferul de date sau de înregistrări.
-	Dar mai nou, este normal să fie folosit la orice, de la media la paginile personale.\cite{ssl}
+	Dar mai nou, este folosit la orice activitate pe internet, de la media la paginile personale și/sau pagini cu date personale.
 
 	Certificatele SSL leagă împreună:
 
@@ -20,34 +20,28 @@
 	StartSSL face partea din compania StartCom, fondată de „Eddu Nigg” în Israel.
 	Aceasta oferă gratuit certificate SSL clasa 1, ce funcționează pentru un singur domeniu al unui website.
 
-	Mai nou se promovează „Let's Encrypt”, o altă autoritate de certificate, ce oferă gratuit certificate HTTPS (SSL/TLS), pentru a opri terțele din a vedea traficul de la client la server.
-	Dar din păcate, pentru sistemele găzduite la comun, în acest caz xServers, această opțiune nu este valabilă și nici preferată.
-	Pentru că oricine poate să semneze un certificat, se pune problema legării acelui certificat la identitatea organizațională.
-
-	În concluzie, am preferat să mergem cu StartCom.
-
 	\subsection{StartCom}
 
 		La începutul dezvoltării aplicației, o mare necesitate era o puternică securitate a paginilor.
-		Pentru că mai folosisem înainte StartCom și aveam o oarecare încredere în ei, am ales pentru a activa rapid modulul HTTPS pe gazda de producție un certificat de la ei.
+		Pentru că mai folosisem înainte StartCom și aveam o oarecare încredere în ei, am ales, pentru a activa rapid modulul HTTPS pe gazda de producție, un certificat de la ei.
 
 		StartCom a fost achiziționat în secret de „WoSign Limited” (Shenzen, China), o altă autoritate de certificate.
 		Din cauza numeroaselor probleme cu ei, Mozilla, Apple și Google au anunțat retragerea încrederii în certificatele după 21 octombrie 2016 (Mozilla, Google), 30 septembrie 2016 (Apple).
 		În continuare, Google Chrome 57 va avea încredere în certificatele website-urilor în topul Alexa 1M, iar Chrome 58 va avea încredere în cele în topul 500000. \cite{chrome_wosign}
 
-		Din păcate, acest proiect de gestionare a cererilor de despăgubiri a fost prins la mijloc, pentru că aveam o oarecare încredere în această autoritate de certificate.
+		Din păcate, acest proiect de gestionare a cererilor de despăgubiri a fost prins în cadrul acestei conjuncturi, folosind un certificat semnat de StartCom.
 		Apăruse astfel problema că după o perioadă de timp nu o să mai funcționeze sistemul HTTPS.
 
 	\subsection{CloudFlare}
 
-		Din fericire, știam o soluție temporară, ce după multe dezbateri cu personalul de la Fandu, a intrat în funcțiune cât de curând posibil.
+		După multe dezbateri cu personalul de la Fandu, a intrat în funcțiune cât de curând soluția unui certificat CloudFlare.
 
 		CloudFlare este o companie în Statele Unite ale Americii.
 		Oferă un sistem de livrare al conținutului și un sistem distribuit de nume de domeniu.
 		Sistemul distribuit de nume de domeniu stă între serverul administratorului aplicației și aplicația mobilă a clientului.
 		Astfel, nu numai că poate să prevină orice atac malițios, dar poate să și optimizeze paginile trimise.
 
-		Un alt mare avantaj pentru CloudFlare, introdus recent, este un sistem de gestiune a certificatelor SSL.
+		Un alt mare avantaj pentru CloudFlare, introdus recent, este un sistem de gestiune a certificatelor SSL \cite{cloudflare_ssl}.
 		Astfel, am putut folosi certificatul ce nu mai putea fi folosit pentru a face o legătură „Full SSL”:
 		\begin{itemize}
 			\item
@@ -68,5 +62,5 @@
 		Se poate renunța la spațiile inutile din stilul sau codul interactiv JavaScript.
 		Dar nu este nevoie de optimizarea la nivel de CloudFlare, deoarece se face la nivelul dezvoltării aplicației de Laravel.
 
-		Mulțumită „Laravel Mix”, se optimizează, concatenează și minimizează tot codul și stilul afișat utilizatorului.
+		Mulțumită „Laravel Mix”, se optimizează, concatenează și minimizează tot codul și stilul afișat.
 		Cu cât mai puține dependențe externe, cu atât mai bine pentru securitatea aplicației.

@@ -1,8 +1,13 @@
-Baza de date a fost gândită în jurul a trei obiecte: cererea, decizia și vânzarea.
+Baza de date a fost gândită în jurul a trei entități: cererea, decizia și vânzarea.
 
 Cererea este scrisă de clientul ce are produsul avariat și îl dorește înlocuit sau reparat.
-Constă din detaliile despre sine, obiect, circumstanțe, locație.
-Este legată conceptual și relațional de pozele pentru:
+În cerere trebuiesc completate următoarele date:
+\begin{itemize}
+	\item Date personale.
+	\item Descrierea avariei și a evenimentului ce a produs avaria.
+	\item Existența sau nu a altei polițe de asigurare.
+\end{itemize}
+Este legată relațional de imagini încărcate pentru:
 \begin{itemize}
 	\item Paginile contractului.
 	\item Raportul poliției în caz de furt agravat.

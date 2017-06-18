@@ -1,118 +1,42 @@
-\section{Mențiuni speciale}
+\section{Utilitare}
 
-	Fără părinți nu ajungeai cea mai bună variantă a ta.
-	Eu n-aș fi putut să obțin tot ceea ce mi-am propus, în timpul alocat, dacă n-ar fi existat aceste utilitare.
 
-	Așa cum pentru Laravel există consola Artisan, pentru gestionarea proiectului am folosit PhpStorm, un mediu de dezvoltare integrat oferit de cei de la JetBrains.
+	Am folosit utilitare pentru a scurta din timpul de dezvoltare.
+	Dacă pentru Laravel există consola Artisan, pentru gestionarea proiectului am folosit PhpStorm, un mediu de dezvoltare integrat oferit de cei de la JetBrains.
 
-	Pentru a gestiona cunoștințele dobândite despre acest proiect în particular, mai ales ce pași trebuiesc respectați în momentul în care încarc pe server-ul partajat ultima variantă a codului, fără să uit ceva și ulterior codul pentru a face asta automat, am folosit o tablă Kanban.
-
-	Pentru a testa, am folosit Heroku, iar pentru a asigura salvarea eficientă a datelor am folosit AWS („Amazon Web Services”).
-
-	Pentru a include diverse mici proiecte, scrise de alți oameni puși în aceeași situație, am folosit Composer împreună cu npm.
+	Composer împreună cu npm au fost folosite pentru interfețe cu formatul Excel și asigurarea completarea câmpurilor obligatorii de client.
 
 	Iar pentru lucrarea de licență am folosit Sublime Text 3 și \LaTeX .
 
 	\subsection{Google Analytics}
 
-	Pentru a înțelege traficul venind, am ales să folosesc analizatorul gratuit (cu elemente premium) oferit de Google.
-	Oferă o sumedenie de detalii despre cum interacționează utilizatorul cu aplicația, de la cât timp petrece un client web pe o anumită pagină, la cele mai des folosite butoane sau cele mai des folosite drumuri (legături între mai multe pagini). \cite{google_analytics}
-	De asemenea, poți vedea ce a declanșat o eroare, ceea ce pentru un dezvoltator ajută la identificarea și rezolvarea problemelor din momentul în care apar, nu după ce primești un apel furios de la unul dintre fondatorii companiei.
+		Pentru a înțelege traficul venind, am ales să folosesc analizatorul gratuit oferit de Google.
+		Astfel, aceasta oferă detalii despre interacțiunea paginilor web, de la cât timp petrece un client web pe o anumită pagină, la cele mai des folosite butoane sau cele mai des folosite drumuri (legături între mai multe pagini). \cite{google_analytics}
+		De asemenea, poți vedea ce a declanșat o eroare, ceea ce pentru un dezvoltator ajută la identificarea și rezolvarea problemelor din momentul în care apar, nu după ce primești un apel furios de la unul dintre fondatorii companiei.
 
-	Am descoperit, urmărind traficul pentru o săptămână, că punctul sensibil și cel mai des folosit era în momentul în care se căuta o cerere de despăgubire.
-	De cele mai multe ori, se știa deja numărul cererii, trebuia doar să se acceseze panoul de căutare și să se introducă numărul în căsuță.
+		Urmărind traficul pentru o săptămână, că punctul sensibil și cel mai des folosit era în momentul în care se căuta o cerere de despăgubire.
+		De cele mai multe ori, se știa deja numărul cererii, trebuia doar să se acceseze panoul de căutare și să se introducă numărul în căsuță.
+		Astfel am modificat panoul de navigare principal, regăsit pe fiecare pagină, prin introducerea unui câmp „ID Claim”, ce oferă  aceeași funcție regăsită în panoul de căutare a modulului cererilor de despăgubire.
 
-	Astfel am realizat o mică modificare a panoului de navigare principal.
-	Se regăsește mulțumită structurii Laravel de organizare a unei aplicații, pe fiecare pagină.
-	Modificarea constă în includerea unui câmp completabil rapid.
-	După ce s-a completat și utilizatorul a validat codul, se apelează aceeași funcție de căutare în spate, precum accesare panoului de căutarea și introducerea sa în căsuță.
-
-	S-a mai observat durata lungă petrecută de clienți în momentul introducerii datelor cererii de despăgubire.
-	Din fericire, Laravel a fost conceput cu un sistem avansat de „uitare” a sesiunii, pentru a preveni abuzurile.
-	Dar acesta interfera cu durata lungă în care clienții își completau probabil informațiile și apărea des o eroare a expirării sesiunii.
-	Am reușit să previn această problemă apelând constant, prin jQuery, un punct al aplicației ce avea singurul rol de a actualiza sesiunea pentru Laravel, declarând-o activă.
-	Utilizator putea în final să stea liniștit și să completeze toate datele, indiferent de cât i-ar fi luat.
-
-	\subsection{Găzduire partajată}
-
-		Găzduirea partajată se folosește pentru a pune un web server conectat la internet valabil pentru mai multe persoane.
-		Partajându-se mai multor clienți, se amortizează costul îngrijirii și astfel prețurile sunt reduse.
-
-		Am ales pentru Fandu soluția oferită de xServers\cite{xservers} pentru că nu era doar convenabilă și aveam încredere în ei, pentru că mai găzduisem înainte propria mea pagină, ci pentru certificatele ce asigură calitatea și securitatea.
-
-		Aplicația se mișcă rapid, totul fiind salvat pe servere virtuale cu SSD-uri („Solid State Drive”).
-
-		Un mare avantaj, dar în același timp și dezavantaj este oprirea comenzii de interpretare și executare a codului PHP, \verb|eval|.
-		Din păcate, este problematic pentru consola Artisan, pentru că nu poate să aplice în momentul actualizării bazei de date tot codul de migrare.
-
-		Soluția, la care s-a ajuns drept compromis în urma dezbaterilor cu departamentul tehnic, ce migrează codul și baza de date a server-ului, este:
-		\begin{enumerate}
-			\item
-				Se salvează toate datele existente, folosind utilitarul oferit de xServers.
-			\item
-				Se introduce un fișier nou în directorul aplicației la:
-				\begin{verbatim}
-					storage/framework/down
-				\end{verbatim}
-				Se închide astfel accesul la server cât timp se migrează baza de date și conținutul aplicației în sine.
-			\item
-				Se află codul necesar migrării bazei de date prin comanda:
-				\begin{verbatim}
-					php artisan migrate --pretend -vvv
-				\end{verbatim}
-				Ce reiese va fi cod SQL ce va fi copiat cu ușurință în phpMyAdmin-ul de pe server.
-			\item
-				După ce s-a migrat cu succes baza de date, se copiază următoarele foldere:
-					\begin{itemize}
-						\item \verb|app| - tot codul important al aplicației.
-						\item \verb|bootstrap| - sistemul de încărcare a platformei Laravel.
-						\item \verb|config| - setările implicite Laravel, în lipsa valorilor în fișierul mediului curent (\verb|.env|).
-						\item \verb|database| - migrările bazei de date
-						\item \verb|public| - pentru că folosim „Laravel Elixir”, ce se ocupă de gestiunea variantelor codului JavaScript și CSS, se vor copia și în calea publică \verb|public_html|, pentru că acestea vor fi servite clienților și trebuie să poată să fie accesibile.
-						\item \verb|resources| - directivele Blade, codul JavaScript și SASS.
-						\item \verb|routes| - rutele ce determină Controller-ul apelat.
-						\item \verb|storage| - doar structura, pentru că va conține fișierele temporare traduse din Blade în PHP.
-						\item \verb|tests| - se poate sări, pentru că nu afectează rezultatul final.
-						\item \verb|vendor| - dacă s-a modificat \verb|composer.json|, adăugând sau modificând sau ștergând pachete.
-					\end{itemize}
-			\item
-				Se va șterge fișierul nou creat:
-				\begin{verbatim}
-					storage/framework/down
-				\end{verbatim}
-				și astfel migrația va fi completă.
-		\end{enumerate}
-
-		În cazul unor migrări minore, ce nu implică baza de date, se pot suprascrie direct fișierele modificate în cadrul aplicației.
-		PhpStorm ajută aici prin opțiunea de a încărca prin FTP (encriptat) fișierele modificate.
-
-		\textbf{\underline{Observație:}} Se copiază directorul \verb|public| de două ori, când se fac modificări la stil sau la codul JavaScript: o dată în cadrul directorului ce conține întregul proiect Laravel și o dată în directorul \verb|public_html|.
-
-		„Laravel Elixir” funcționează bazându-se pe un fișier JSON, ce spune ce versiune de stil și cod să folosească, aflat la:
-		\begin{verbatim}
-			/public/build/rev-manifest.json
-		\end{verbatim}
-
-		Această cale nu este valabilă clienților, pentru că aplicația nu se află în directorul public.
-		S-au făcut deci mici modificări asupra fișierului \verb|index.php|, aflat tot în directorul public, pentru a arăta calea corectă.
-
-		Trebuie să se copieze, în concluzie, codul și stilul și în acest director.
+		Urmărind traficul, s-a mai observat durata lungă petrecută de clienți în momentul introducerii datelor cererii de despăgubire.
+		Laravel a fost conceput cu un sistem avansat de gestionare a sesiunii, pentru a preveni abuzurile, dar aceasta interfera cu durata lungă în care clienții își completau probabil informațiile și apărea des o eroare a expirării sesiunii.
+		Astfel am rezolvat problema apelând constant, prin jQuery, un punct al aplicației cu singurul rol de a actualiza sesiunea Laravel (declarând sesiunea activă).
+		Clientul va putea în final să completeze toate datele, sesiunea rămânând activă.
 
 	\subsection{PhpStorm IDE}
 
-		Chiar dacă Laravel a fost gândit cu cât mai puține referințe, cu cât mai mult cod ajutător pentru dezvoltator și o grămadă de resurse valabile pe diverse site-uri, nu se poate compara cu un mediu de dezvoltare avansat, ce se ocupă de fișierele dependente, regulile de scriere și formatare a codului.
-
-		PhpStorm este un mediu de dezvoltare comercial, oferit de JetBrains. Suportă completarea avansată a codului PHP 5.6 (și mai nou 7.0), dar și analiza sintactică, prevenirea erorilor.
-		Suportă oficial și sistemul relațional de bază de date MySQL.
-		Chiar și directivele Blade sunt înțelese de analizatorul sintactic.
-		Stilul și codul scris în JavaScript, cunoștințele despre cum poți să rescrii mult mai ușor codul PHP.
+		PhpStorm este un mediu de dezvoltare comercial, oferit de JetBrains.
+		Suportă completarea avansată a codului PHP 5.6 (și mai nou 7.0), dar și analiza sintactică, prevenirea erorilor.
+		Suportă oficial și sistemul relațional de bază de date MySQL, stilul CSS, JavaScript și are puternice metode de restructurare a codului PHP.
 		Integrarea cu modul de depanare „XDebug” îl ajută să ajungă în fața multor simple editoare de text.
-		Pentru mine, este cel mai de nădejde prieten în bătălia cu codul dezorganizat și inabordabil.
+
+		Laravel a fost gândit cu cât mai puține referințe, cu cât mai mult cod ajutător pentru dezvoltator și o grămadă de resurse valabile pe diverse site-uri.
+		Directivele Blade, introduse de platforma Laravel, sunt înțelese de analizatorul sintactic al mediului de dezvoltare PhpStorm.
 
 		Pentru a profita din plin de cunoștințele sintactice acestui mediu de dezvoltare, un pachet des întâlnit în PhpStorm când se construiește o aplicație folosind platforma Laravel este: \\
 		„Laravel PhpStorm IDE Helper” (\verb|barryvdh/laravel-ide-helper|)
 
-		Mulțumită „Eloquent ORM”, de cele mai multe ori PhpStorm nu poate înțelege de ce a fost apelată o metodă ce nu există - pentru că se va interpreta codul scris în metoda magică \verb|__callStatic|, ce va traduce numele metodei statice într-un text, iar apoi într-o clasă ce va construi o cerere SQL.
+		„Eloquent ORM” de cele mai multe ori PhpStorm nu poate înțelege de ce a fost apelată o metodă ce nu există - pentru că se va interpreta codul scris în metoda magică \verb|__callStatic|, ce va traduce numele metodei statice într-un text, iar apoi într-o clasă ce va construi o cerere SQL.
 		Dar aici intervine „phpDoc”, sistemul preferat de adnotare a funcțiilor, metodelor și variabilelor PHP.
 		Pachetul astfel introduce trei funcții ce pot fi apelate de dezvoltator prin intermediul consolei:
 			\begin{itemize}
@@ -128,72 +52,34 @@
 		Poate să și încarce automat modificările făcute pe server-ul de producție, folosind protocolul FTP (encriptat, desigur).
 
 		Asigură deci rapiditatea și fluența necesară reparării unor probleme critice și a dezvoltării codului concis, după ghidul dorit de stil.
+
 	\subsection{Heroku}
 
-		N-ar trebui niciodată să scrii cod direct pe mediul de producție.
-		Dacă ceva nu merge de prima oară, ai clienți și operatori nemulțumiți.
-		Dar poate că nu ai testat destul pe mediul tău local schimbările făcute.
-		Nu ai avea de unde să-ți dai seama de toate scenariile posibile.
+		Pentru a minimiza impactul unei migrări, s-a folosit în cazul acestui proiect Heroku.
 
-		Pentru a minimiza impactul unei migrări de asemenea proporții, se recomandă un mediu de testare.
 		Heroku este o platformă distribuită ce oferă platforma sa ca un serviciu („PaaS”).
-		Oferă servicii pentru mai multe limbaje de programare, printre care și PHP.
+		Această platformă oferă următoarele avantaje:
 
-		Un mare avantaj al platformei Heroku nu este doar modelul gratuit (până la un punct) de implementare.
-		Este implementarea ultimelor modificări prin intermediul proiectului aflat în sistemul de gestiune a codului.
-		Preluând ultimele modificări, se pot verifica ultimele modificări aduse codului înainte de a fi urcate pe serverul de producție.
-
-		Oferind și acces în cadrul aplicației la consola Artisan, se pot verifica mai multe sisteme deodată, inclusiv testele automate.
-		Testele automate pot fi rulate înainte de a se schimba versiunea activă a mediului de testare pe ultima versiune, pentru a se asigura că nu s-a stricat nimic critic în aplicație.
+		\begin{itemize}
+			\item Servicii pentru mai multe limbaje de programare, printre care și PHP.
+			\item Implementarea ultimelor modificări preluate de pe GitHub, sistemul de gestiune a codului ales în cadrul proiectului.
+			\item Acces în cadrul aplicației la consola Artisan, pentru a rula migrările bazei de date, dar și a testelor automate.
+			\item Testele automate pot fi rulate înainte de a se schimba versiunea activă a mediului de testare pe ultima versiune, pentru a se asigura că nu s-a schimbat o parte critică a aplicației.
+		\end{itemize}
 
 		Toate aceste motive fac din Heroku mediul meu de testare favorit, ce și-a văzut folosința în cadrul acestui proiect de gestionare a cererilor de despăgubire.
 		Mulțumită ușurinței de a schimba variabilele de mediu, am putut să testez de fiecare dată când modificam codul sursă al aplicației schimbările.
-		Folosesc în momentul actual o bază de date de test, inclusă gratuit în pachet.
 
-		Doresc să mai investesc timp și să înțeleg mai bine platforma de teste automate, pentru a mă asigura că majoritatea funcționalității existente, la o schimbare, va continua să funcționeze.
-
-	\subsection{Amazon Web Services}
-
-		Inițial, tot proiectul ar fi fost într-o platformă distribuită.
-		Dar problema datelor tot rămânea.
-		Trebuia să asigur existența și valabilitatea lor pentru o perioadă de minim doi ani.
-		Pentru asta, îmi trebuia un sistem distribuit de salvare a datelor.
-
-		Inițial, mă gândeam să aleg soluția oferită de Azure, pentru că mai interacționasem cu ei.
-		Dar după ce am mai prospectat piața, am ajuns la concluzia că ar fi mult mai benefic din punctul de vedere al costului întreținerii și a numărului mare de date să aleg „Amazon Web Services” --- S3.
-
-		\subsubsection{Integrarea cu Laravel}
-
-		Integrarea cu Laravel s-a făcut aproape instantaneu, mulțumită fișierului:
-		\begin{verbatim}
-		config/filesystems.php
-		\end{verbatim}
-		ce se ocupă cu gestionarea fișierelor aplicației.
-
-		Tot ce a trebuit să se modifice a fost valoarea implicită pentru „cloud” și să se introducă în fișierul de mediu cheia (publică și secretă), precum și regiunea server-ului S3 oferit de AWS.
-
-		Inițial gândisem un sistem de construire a unei imagini cu o rezoluție mult mai mică și a unei imagini normale ca dimensiuni, pentru a păstra cât mai mică dimensiunea imaginilor transferate.
-
-		După o scurtă perioadă de dezvoltare, după ce s-a ajuns la o variantă finală a algoritmului, descoperisem că până la urmă, problema era constrângerea de \verb|5000| de acțiuni de a pune în sistemul de date.
-		Optimizasem prematur o problemă inexistentă.
-		Astfel am renunțat la construirea imaginii cu rezoluție mult mai mică și nu mai modific imaginea normală.
-		Cu această modificare a crescut imens și numărul de tranzacții posibile de server-ul găzduit, pentru că nu mai trebuia să modifice fiecare imagine în parte.
-
-		Dar eram limitați și de numărul de „GET”-uri (i.e: afișarea unei poze de către un client web).
-		Am setat ca fiecare obiect încărcat să fie agresiv salvat în memoria clientului web.
-		Atunci când se redeschide cererea de despăgubire, se află deja salvat în „cache” și nu numai că nu mai face o cerere sistemului de date, dar se și încarcă instantaneu, ca prin magie.
-
-		O problemă ușor rezolvabilă este ștergerea datelor vechi.
-		Am propus și încă aștept un răspuns din partea firmei ca atunci când o cerere de despăgubire nu va mai fi valabilă, să poată să fie salvate pe calculatorul unei persoane autorizate din firmă datele încărcate de client și șterse din sistemul distribuit.
+		Fiecare modul al aplicației a fost implementată și testată mai întâi în Heroku, iar apoi migrată în producție.
 
 	\subsection{Composer}
 
 		Composer este un utilitar pentru a gestiona referințele externe într-un proiect PHP.
-		Permite dezvoltatorului să declare librăriile de care depinde proiectului tău și le va gestiona (instala sau actualiza) pentru tine.
-		Spre diferență de un sistem de gestionează pachetele pentru un sistem de operare bazat pe Linux (precum „Yum” sau „Apt”), acesta instalează pachetele în folderul proiectului numit \verb|„vendor”|, dar permite restrâns instalarea într-un spațiu \verb|„global”|, a unor referințe. \cite{composer}
+		Permite dezvoltatorului să declare librăriile de care depinde proiectul, pentru a le gestiona (instala sau actualiza) automat.
+		Spre diferență de un sistem care gestionează pachetele pentru un sistem de operare bazat pe Linux (precum „Yum” sau „Apt”), acesta instalează pachetele în folderul proiectului numit \verb|„vendor”|, dar permite restrâns instalarea într-un spațiu \verb|„global”|, a unor referințe. \cite{composer}
 
 		Laravel depinde de Composer pentru a gestiona referințele.
-		Pentru a porni un nou proiect de Laravel, trebuie să-l descarci folosind comanda:
+		Pentru a porni un nou proiect de Laravel, trebuie să-l instalezi folosind comanda:
 		\begin{verbatim}
 			composer global require "laravel/installer"
 		\end{verbatim}
@@ -211,7 +97,7 @@
 			\item \verb|golonka/bbcodeparser| - librărie ce se ocupă de traducerea „BBCode -- HTML” și viceversa.
 		\end{itemize}
 
-		Composer mai are opțiuni de a porni mai multe aplicații după ce se asigură existența celor mai nou pachete, prin adăugarea următorului câmp obiect în \verb|composer.json|:
+		După ce se actualizează lista și proiectele folosite în aplicație, Composer poate să ruleze script-uri, prin adăugarea următorului câmp obiect în \verb|composer.json|:
 		\begin{Verbatim}
 "post-update-cmd": [
 	"Illuminate\\Foundation\\ComposerScripts::postUpdate",
@@ -220,9 +106,9 @@
 	"php artisan ide-helper:models -W"
 ]
 	\end{Verbatim}
-	După cum observați, comenzile adăugate generează codul ajutător pentru mediul meu de dezvoltare, asigurând un mediu gata de dezvoltare.
+	Exemplul de mai sus generează codul ajutător pentru mediul de dezvoltare PhpStorm.
 
-	\subsection{Laravel Elixir și npm}
+	\subsection{Laravel Elixir}
 
 		„npm” este un utilitar de gestionare a librăriilor pentru limbajul de programare JavaScript.
 		De asemenea, este utilitarul folosit implicit de mediul de dezvoltare „Node.js”.
@@ -232,11 +118,11 @@
 		„gulp” este un utilitar găsit pe platforma „npm” ce are ca scop automatizarea elementelor ce necesită mult timp, precum compilarea și mutarea fișierelor dintr-o parte în alta.
 		Acesta preferă codul peste configurație, ce asigură un sistem rapid de dezvoltare, fără a scrie în fișiere intermediare pe disc.
 
-		Laravel a extins interfața sa ușoară de folosit și atunci când vine vorba despre trebuirile legate de „gulp”.
-		Elixir astfel știe despre cele mai des folosite procesoare de „CSS” (i.e: „SASS”) și JavaScript (i.e: „Webpack”).
-		Folosind sintaxa de a concatena metode una după alta, Elixir ajută dezvoltatorul a defini propria structură.
+		Laravel Elixir a extins interfața sa ușoară de folosit și atunci când vine vorba despre automatizarea cu „gulp”.
+		Astfel, acesta știe despre cele mai des folosite procesoare de „CSS” (i.e: „SASS”) și JavaScript (i.e: „Webpack”).
+		Folosind sintaxa de a concatena metode una după alta, Laravel Elixir ajută dezvoltatorul a defini propria structură.
 
-		De asemenea, împreună cu Laravel, poate gestiona foarte ușor versionare fișierelor.
+		Laravel Elixir mai este folosit și pentru gestionarea foarte ușor versionare fișierelor.
 		Asigura de fiecare dată când un client vizitează orice pagină că fișierele de stil și cod sunt actualizate.
 
 		În cadrul aplicației, am transformat simplul fișier dat implicit de Laravel \verb|„gulpfile.js”| într-o platformă elegantă.
@@ -275,25 +161,17 @@
 		require('./extensions');
 		\end{verbatim}
 
-	\subsection{LaTeX și Sublime Text}
+	\subsection{LaTeX}
 
-	Din momentul în care m-am apucat să scriu licența, mi-am dat seama de importanța unui sistem ce îmi asigură legătura între tabelul de conținut și bibliografia.
-	Dar în același timp, trebuie să-mi ofere flexibilitatea de a putea modifica ordinea instantaneu și de a nu duplica informațiile.
-	Astfel am ajuns la concluzia că cel mai bun mod de a-mi scrie documentația este să folosesc \LaTeX.
-
-	TeX este un program de calculator pentru a redacta documente, conceput de „Donald Knuth”.
+	TeX este un utilitar pentru a redacta documente, conceput de „Donald Knuth”.
 	Programul preia un fișier pregătit și-l transformă într-un format ce poate fi tipărit în diferite moduri, cu diferite imprimante.
 
-	LaTeX este un set de macro-uri pentru TeX ce țintesc a reduce din treburile utilizatorului, pentru a se concentra pe scrisul propriu-zis. \cite{latex}
+	LaTeX este un set de macro-uri pentru TeX, conceput pentru a reduce din textul necesar formatării în pagină \cite{latex}.
 
-	Știam că puteam să folosesc conceptele de la programarea „DRY” („Don't Repeat Yourself” - „Nu Te Repeta”) și astfel am împărțit fiecare capitol în fișierul său separat, cu fiecare fișier având la nevoie sub-directoare cu secțiunile importante.
+	Folosind conceptul de la programarea „DRY” („Don't Repeat Yourself” - „Nu Te Repeta”), am împărțit fiecare capitol în fișierul său separat, cu fiecare fișier având la nevoie sub-directoare cu secțiunile importante.
 
-	Am ales să folosesc „Sublime Text 3” pentru că este unul dintre cele mai versatile editoare de text în momentul actual.
+	Pentru a edita documentația licenței, am ales să folosesc „Sublime Text 3”, pentru că este unul dintre cele mai versatile editoare de text în momentul actual.
 	Folosind o extensie, m-a  ajutat să pot compila întregul proiect, oriunde m-aș afla în cadrul lui, în formatul PDF („Portable Document Format”), ce poate fi deschis pe orice calculator, cu orice sistem de operare.
 
-	Folosind gândirea de proiect, am setat în „Sublime Text 3” folosirea unui font cu diacritice. De asemenea, am activat și descărcat un dicționar gratuit pentru Română.
-
-	Asigurându-mă că văd doar ceea ce-mi trebuie în afișajul proiectului, am pornit la scris și nu m-am mai oprit până când nu am vrut să-mi salvez datele.
-	Știind cât de important este să ai mereu salvat documentele importante, am decis să-mi țin toată licența pe GitHub, pentru a-mi putea analiza modelul de lucru și orele cele mai productive.
-
-	Codul sursă \LaTeX \hspace{1pt} și setările proiectului „Sublime Text 3” se pot găsi la \url{https://github.com/xiodine32/licenta_unibuc}.
+	Folosind gândirea de proiect, am setat în „Sublime Text 3” folosirea unui font cu diacritice.
+	De asemenea, am activat și descărcat un dicționar pentru Română.

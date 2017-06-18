@@ -1,22 +1,26 @@
 \section{Laravel 5.3}
 
-
 	Laravel este o librărie gratuită de PHP.
-	Pentru Laravel 5.3, minimul necesar librăriei este PHP 5.5.9 sau mai nou.
-	Librăria a fost concepută de „Taylor Otwell”, pentru a construi aplicații web bazate pe arhitectura „Model-View-Controller”.
-	Printre numeroasele avantaje de a folosi Laravel se află sistemul modular de pachete, cu propriul său sistem de gestionare, moduri diferite de a accesa bazele de date relaționale, utilitare pentru scrierea și menținerea aplicației și orientarea spre expresivitatea codului.\cite{laravel_book}
+	Pentru Laravel 5.3, minimul necesar librăriei este PHP 5.5.9 sau o versiune mai nouă.
+	Librăria a fost concepută de Taylor Otwell, pentru a construi aplicații web bazate pe arhitectura „Model View Controller”.
+	Avantajele oferite de Laravel sunt\cite{laravel_book}:
+	\begin{itemize}
+		\item Sistemul modular de pachete, cu propriul său sistem de gestionare.
+		\item Moduri diferite de a accesa bazele de date relaționale.
+		\item Utilitare pentru scrierea și menținerea aplicației.
+		\item Orientarea spre expresivitatea codului.
+	\end{itemize}
 
-	Arhitectura „Model-View-Controller” se bazează pe cele trei componente inter-conectate slab ale unei aplicații: Modelul, Controller-ul, respectiv View-ul.
-	Modelul este componenta centrală a șablonului, pentru că se ocupă de datele, logica și regulile aplicației.
-	Acest model este gestionat de Controller, ce acceptă datele de la utilizator și le transformă în comenzi pentru model și/sau View.
+	Arhitectura „Model View Controller” se bazează pe cele trei componente inter-conectate „slab” ale unei aplicații: Model-ul, Controller-ul, respectiv View-ul.
+	Model-ul este componenta centrală a șablonului, pentru că se ocupă de datele, logica și regulile aplicației.
+	Controller-ul gestionează modelele. Acceptă datele de la utilizator și le transformă în comenzi pentru model și/sau View.
 	View-ul este orice metodă de vizualizare a informației unui Model.\cite{poo_sa}
 
 	Avantajele arhitecturii, mulțumită separării conceptuale, ajută dezvoltarea simultană și ușurința modificărilor.
 	Astfel, mai multe persoane pot lucra simultan la o parte a aplicației.
-	Dar din păcate, trebuie studiată în detaliu, pentru că nu este ușoară de folosit pragmatic.
+	Adoptarea unei astfel de arhitecturi trebuie studiată în detaliu, pentru că nu este ușor de folosit pragmatic.
 
 	\subsection{Directive Blade}
-
 
 		Un mare avantaj al librăriei este un simplu, dar foarte puternic și eficient sistem de șablonare --- Blade.
 		Spre deosebire de alte sisteme de șablon, Blade nu inhibă dezvoltatorul a folosi cod PHP în View-uri.

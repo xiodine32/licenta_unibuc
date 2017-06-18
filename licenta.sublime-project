@@ -19,12 +19,17 @@
 	],
 	"settings": {
 		"TEXroot": "main.tex",
+		"line_numbers": false,
 		"font_face": "Cambria",
-		"font_size": 14,
+		"font_size": 18,
+
 		"bibtex_file": "bibliografie.bib",
 		"spell_check": true,
 		"dictionary": "Packages/User/Romanian (Modern).dic",
 		"draw_white_space": "all",
+		"line_padding_top": 2,
+		"line_padding_bottom": 2,
+
 		 "builder_settings": {
 			 "options": ["--shell-escape"]
 		 }

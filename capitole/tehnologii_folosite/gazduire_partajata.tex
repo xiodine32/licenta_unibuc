@@ -1,0 +1,62 @@
+\section{Găzduire partajată}
+
+		Găzduirea partajată se folosește pentru a pune un web server conectat la internet valabil pentru mai multe persoane.
+		Partajându-se mai multor clienți, se amortizează costul îngrijirii și astfel prețurile sunt reduse.
+
+		Am ales pentru Fandu soluția oferită de xServers\cite{xservers} pentru certificatele ce asigură calitatea (ISO 9001) și securitatea (ISO 27001) informației, suport tehnic non-stop, infrastructură și echipamente profesionale, cu o disponibilitate de 99.9\% lunară, viteza aplicației fiind asigurată și de către soluția de stocare adoptată --- SSD („Solid State Drive”).
+
+		Un mare avantaj, dar în același timp și dezavantaj este oprirea comenzii de interpretare și executare a codului PHP, \verb|eval|.
+		Din păcate, este problematic pentru consola Artisan, pentru că nu poate să aplice în momentul actualizării bazei de date tot codul de migrare.
+
+		Soluția, la care s-a ajuns drept compromis în urma dezbaterilor cu departamentul tehnic, ce migrează codul și baza de date a server-ului, este:
+		\begin{enumerate}
+			\item
+				Se salvează toate datele existente, folosind utilitarul oferit de xServers.
+			\item
+				Se introduce un fișier nou în directorul aplicației la:
+				\begin{verbatim}
+					storage/framework/down
+				\end{verbatim}
+				Se închide astfel accesul la server cât timp se migrează baza de date și conținutul aplicației în sine.
+			\item
+				Se află codul necesar migrării bazei de date prin comanda:
+				\begin{verbatim}
+					php artisan migrate --pretend -vvv
+				\end{verbatim}
+				Ce reiese va fi cod SQL ce va fi copiat cu ușurință în phpMyAdmin-ul de pe server.
+			\item
+				După ce s-a migrat cu succes baza de date, se copiază următoarele foldere:
+					\begin{itemize}
+						\item \verb|app| - tot codul important al aplicației.
+						\item \verb|bootstrap| - sistemul de încărcare a platformei Laravel.
+						\item \verb|config| - setările implicite Laravel, în lipsa valorilor în fișierul mediului curent (\verb|.env|).
+						\item \verb|database| - migrările bazei de date
+						\item \verb|public| - pentru că folosim „Laravel Elixir”, ce se ocupă de gestiunea variantelor codului JavaScript și CSS, se vor copia și în calea publică \verb|public_html|, pentru că acestea vor fi servite clienților și trebuie să poată să fie accesibile.
+						\item \verb|resources| - directivele Blade, codul JavaScript și SASS.
+						\item \verb|routes| - rutele ce determină Controller-ul apelat.
+						\item \verb|storage| - doar structura, pentru că va conține fișierele temporare traduse din Blade în PHP.
+						\item \verb|tests| - se poate sări, pentru că nu afectează rezultatul final.
+						\item \verb|vendor| - dacă s-a modificat \verb|composer.json|, adăugând sau modificând sau ștergând pachete.
+					\end{itemize}
+			\item
+				Se va șterge fișierul nou creat:
+				\begin{verbatim}
+					storage/framework/down
+				\end{verbatim}
+				și astfel migrația va fi completă.
+		\end{enumerate}
+
+		În cazul unor migrări minore, ce nu implică baza de date, se pot suprascrie direct fișierele modificate în cadrul aplicației.
+		PhpStorm ajută aici prin opțiunea de a încărca prin FTP (encriptat) fișierele modificate.
+
+		\textbf{\underline{Observație:}} Se copiază directorul \verb|public| de două ori, când se fac modificări la stil sau la codul JavaScript: o dată în cadrul directorului ce conține întregul proiect Laravel și o dată în directorul \verb|public_html|.
+
+		„Laravel Elixir” funcționează bazându-se pe un fișier JSON, ce spune ce versiune de stil și cod să folosească, aflat la:
+		\begin{verbatim}
+			/public/build/rev-manifest.json
+		\end{verbatim}
+
+		Această cale nu este valabilă clienților, pentru că aplicația nu se află în directorul public.
+		S-au făcut deci mici modificări asupra fișierului \verb|index.php|, aflat tot în directorul public, pentru a arăta calea corectă.
+
+		Trebuie să se copieze, în concluzie, codul și stilul și în acest director.

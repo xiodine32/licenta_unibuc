@@ -1,0 +1,33 @@
+\section{Amazon Web Services}
+
+	Inițial, tot proiectul ar fi fost într-o platformă distribuită.
+	Dar problema datelor tot rămânea.
+	Trebuia să asigur existența și valabilitatea lor pentru o perioadă de minim doi ani.
+	Pentru asta, îmi trebuia un sistem distribuit de salvare a datelor.
+
+	Inițial, mă gândeam să aleg soluția oferită de Azure, pentru că mai interacționasem cu ei.
+	Dar după ce am mai prospectat piața, am ajuns la concluzia că ar fi mult mai benefic din punctul de vedere al costului întreținerii și a numărului mare de date să aleg „Amazon Web Services” --- S3.
+
+	\subsubsection{Integrarea cu Laravel}
+
+	Integrarea cu Laravel s-a făcut aproape instantaneu, mulțumită fișierului:
+	\begin{verbatim}
+	config/filesystems.php
+	\end{verbatim}
+	ce se ocupă cu gestionarea fișierelor aplicației.
+
+	Tot ce a trebuit să se modifice a fost valoarea implicită pentru „cloud” și să se introducă în fișierul de mediu cheia (publică și secretă), precum și regiunea server-ului S3 oferit de AWS.
+
+	Inițial gândisem un sistem de construire a unei imagini cu o rezoluție mult mai mică și a unei imagini normale ca dimensiuni, pentru a păstra cât mai mică dimensiunea imaginilor transferate.
+
+	După o scurtă perioadă de dezvoltare, după ce s-a ajuns la o variantă finală a algoritmului, descoperisem că până la urmă, problema era constrângerea de \verb|5000| de acțiuni de a pune în sistemul de date.
+	Optimizasem prematur o problemă inexistentă.
+	Astfel am renunțat la construirea imaginii cu rezoluție mult mai mică și nu mai modific imaginea normală.
+	Cu această modificare a crescut imens și numărul de tranzacții posibile de server-ul găzduit, pentru că nu mai trebuia să modifice fiecare imagine în parte.
+
+	Dar eram limitați și de numărul de „GET”-uri (i.e: afișarea unei poze de către un client web).
+	Am setat ca fiecare obiect încărcat să fie agresiv salvat în memoria clientului web.
+	Atunci când se redeschide cererea de despăgubire, se află deja salvat în „cache” și nu numai că nu mai face o cerere sistemului de date, dar se și încarcă instantaneu, ca prin magie.
+
+	O problemă ușor rezolvabilă este ștergerea datelor vechi.
+	Am propus și încă aștept un răspuns din partea firmei ca atunci când o cerere de despăgubire nu va mai fi valabilă, să poată să fie salvate pe calculatorul unei persoane autorizate din firmă datele încărcate de client și șterse din sistemul distribuit.
