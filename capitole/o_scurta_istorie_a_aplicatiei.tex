@@ -1,15 +1,20 @@
 \chapter{Probleme apărute în timpul dezvoltării aplicației}
 
-	Conform metodologiei de lucru „Agile”, ce se concentrează pe modificări incrementale a cerințelor și a livrării rapide unei baze funcționale \cite{agile},
+	\begin{itemize}
+		\item
+		S-a introdus verificarea IMEI-ului clienților ce salvau o cerere de despăgubire, datorită cererilor multiple de la aceeași persoană.
+		\item
+		Inițial, s-au construit rapoarte în format „.csv” (valori delimitate prin virgule).
 
-	.. Chiar dacă am fost singurul dezvoltator al aplicației și nu am avut un lider de echipă sau o echipă, am vrut să câștig experiența lucrului rapid și să mă folosesc de un canal deschis de discuții cu persoanele cărora le voi dezvolta aplicația.
+		Datorită problemelor de compatibilitate între sistemele de operare folosite în cadrul companiei, s-a trecut la exportul de rapoarte în format Excel.
 
-	Doresc să fac acum distincția între cele trei obiecte în jurul cărora a fost gândită baza de date, înainte de a vorbi despre structura aplicației.
+		\item La înregistrarea cererii de despăgubire, fiecărui client îi se asociază un identificator unic, format din 64 caractere.
 
-	\import*{./capitole/}{_modele}
+		Acest „token” era folosit doar pentru a încărca poze, dar s-a adăugat opțiunea și de comunicare client -- utilizator sistem.
 
-	\import*{./capitole/o_scurta_istorie_a_aplicatiei/}{primul_modul}
-	\import*{./capitole/o_scurta_istorie_a_aplicatiei/}{problema_datelor_reale}
-	\import*{./capitole/o_scurta_istorie_a_aplicatiei/}{modulul_de_rapoarte_decizii}
-	\import*{./capitole/o_scurta_istorie_a_aplicatiei/}{decuplarea_deciziilor}
-	\import*{./capitole/o_scurta_istorie_a_aplicatiei/}{viitor}
+		\item
+		Din cauza neconcordanțelor coloanelor din tabelul de introdus în sistem, s-a decis a nu se ține cont de numărul coloanelor prestabilit, ci de ce câmpuri se aflau pe prima linie în raport, folosind un algoritm generic dezvoltat.
+
+		\item
+		Datorita inconsistentelor rapoartelor de vânzări săptămânale, ce nu conțineau coloane predefinite în structura aplicației, a fost necesară introducerea unui câmpului  „GENERIC”, pentru a evidenția aceste înregistrări.
+	\end{itemize}

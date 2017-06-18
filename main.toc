@@ -82,66 +82,54 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.3.4}Funcții ajutătoare}{33}{subsection.3.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.3.4.1}Request-uri}{33}{subsubsection.3.3.4.1}
+\contentsline {subsubsection}{Request-uri}{33}{Item.65}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.3.4.2}Mediul de dezvoltare}{34}{subsubsection.3.3.4.2}
+\contentsline {subsubsection}{Mediul de dezvoltare}{34}{Item.67}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.4}Rapoarte}{34}{section.3.4}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.4.1}Implementarea platformei de rapoarte Excel}{35}{subsection.3.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Probleme apărute în timpul dezvoltării aplicației}{37}{chapter.4}
+\contentsline {chapter}{\numberline {4}Manual de utilizare}{37}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Primul modul}{38}{section.4.1}
+\contentsline {section}{\numberline {4.1}Înregistrarea unei cereri}{37}{section.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Problema datelor incomplete}{39}{section.4.2}
+\contentsline {section}{\numberline {4.2}Secțiunea de mesaje din cadrul cererilor de despăgubire}{42}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Modulul de rapoarte și decizii}{40}{section.4.3}
+\contentsline {section}{\numberline {4.3}Interfața de administrare}{44}{section.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Decuplarea deciziilor de vânzări}{40}{section.4.4}
+\contentsline {subsection}{\numberline {4.3.1}Modulul cererilor de despăgubire}{45}{subsection.4.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.1}Modificări în viitorul apropiat}{41}{subsection.4.4.1}
+\contentsline {subsubsection}{Vizualizarea și modificarea cererilor}{45}{Item.83}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.5}După planul inițial de dezvoltare}{41}{section.4.5}
+\contentsline {subsubsection}{Reminders}{47}{figure.4.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5.1}Introducerea datelor și rapoartele avansate}{41}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.3.2}Modulul introducerii datelor în sistem}{47}{subsection.4.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5.2}În continuare}{41}{subsection.4.5.2}
+\contentsline {subsection}{\numberline {4.3.3}Modulul de vânzări}{49}{subsection.4.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Manual de utilizare}{43}{chapter.5}
+\contentsline {subsubsection}{Vizualizarea vânzării}{50}{figure.4.14}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Înregistrarea unei cereri}{43}{section.5.1}
+\contentsline {subsection}{\numberline {4.3.4}Crearea unei decizii}{52}{subsection.4.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Secțiunea de mesaje din cadrul cererilor de despăgubire}{48}{section.5.2}
+\contentsline {subsection}{\numberline {4.3.5}Modulul de decizii}{52}{subsection.4.3.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}Interfața de administrare}{50}{section.5.3}
+\contentsline {subsubsection}{Modificarea deciziilor}{54}{figure.4.20}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.1}Modulul cererilor de despăgubire}{51}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {4.3.6}Modulul de raportări}{55}{subsection.4.3.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.3.1.1}Vizualizarea și modificarea cererilor}{51}{subsubsection.5.3.1.1}
+\contentsline {chapter}{\numberline {5}Probleme apărute în timpul dezvoltării aplicației}{59}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.3.1.2}Reminders}{53}{subsubsection.5.3.1.2}
+\contentsline {chapter}{\numberline {6}Concluzie}{60}{chapter.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.2}Modulul introducerii datelor în sistem}{53}{subsection.5.3.2}
+\contentsline {section}{\numberline {6.1}Soluții de salvare a datelor}{60}{section.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.3}Modulul de vânzări}{55}{subsection.5.3.3}
+\contentsline {section}{\numberline {6.2}Modificări în viitorul apropiat}{60}{section.6.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.3.3.1}Vizualizarea vânzării}{56}{subsubsection.5.3.3.1}
+\contentsline {subsection}{\numberline {6.2.1}Implementarea testelor automate}{60}{subsection.6.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.4}Crearea unei decizii}{58}{subsection.5.3.4}
+\contentsline {subsection}{\numberline {6.2.2}Introducerea câmpului de factură în decizie}{60}{subsection.6.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.5}Modulul de decizii}{58}{subsection.5.3.5}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.3.5.1}Modificarea deciziilor}{60}{subsubsection.5.3.5.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.6}Modulul de raportări}{61}{subsection.5.3.6}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.4}Modificări în viitorul apropiat}{65}{section.5.4}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.4.1}Introducerea câmpului de factură în decizie}{65}{subsection.5.4.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.4.2}Modularizarea tabelelor}{65}{subsection.5.4.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.4.3}Sistem modular de rapoarte}{65}{subsection.5.4.3}
+\contentsline {subsection}{\numberline {6.2.3}Sistem modular de rapoarte}{60}{subsection.6.2.3}
 \defcounter {refsection}{0}\relax 
 \select@language {english}

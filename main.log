@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6350 64-bit) (preloaded format=xelatex 2017.6.13)  18 JUN 2017 18:38
+This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6350 64-bit) (preloaded format=xelatex 2017.6.13)  18 JUN 2017 20:10
 entering extended mode
 **./main.tex
 (main.tex
@@ -515,29 +515,29 @@ Package biblatex Info: ... file 'romanian.lbx' not found.
 
 
 Package biblatex Warning: Language 'romanian' not supported.
-(biblatex)                Using fallback language 'english' on input line 32.
+(biblatex)                Using fallback language 'english' on input line 30.
 
 (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
 
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -573,7 +573,7 @@ LaTeX Font Info:    ... okay on input line 32.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \AtBeginShipoutBox=\box29
-Package hyperref Info: Link coloring OFF on input line 32.
+Package hyperref Info: Link coloring OFF on input line 30.
 (C:\MiKTeX\tex\latex\hyperref\nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
@@ -582,9 +582,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count303
 )
-LaTeX Info: Redefining \ref on input line 32.
-LaTeX Info: Redefining \pageref on input line 32.
-LaTeX Info: Redefining \nameref on input line 32.
+LaTeX Info: Redefining \ref on input line 30.
+LaTeX Info: Redefining \pageref on input line 30.
+LaTeX Info: Redefining \nameref on input line 30.
  (main.out) (main.out)
 \@outlinefile=\write6
 \openout6 = `main.out'.
@@ -599,26 +599,22 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
 
 (main.bbl)
-Package biblatex Info: Reference section=0 on input line 32.
-Package biblatex Info: Reference segment=0 on input line 32.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 35.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 35.
+Package biblatex Info: Reference section=0 on input line 30.
+Package biblatex Info: Reference segment=0 on input line 30.
  (C:\MiKTeX\tex\generic\oberdiek\se-ascii-print.def
 File: se-ascii-print.def 2016/05/16 v1.11 stringenc: Printable ASCII characters
 
 ) [1
 
-] (main.toc
+] [1]
+(main.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 9.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 9.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 9.
-
-[1
+ [1
 
 ])
 \tf@toc=\write7
@@ -635,7 +631,10 @@ File: ./capitole/../imagini/main.png Graphic file (type QTm)
 
 <use  "./capitole/../imagini/main.png" >)
 (capitole/introducere/despre_aplicatie.tex [5])
-(capitole/introducere/structura_aplicatiei.tex)) [6]
+(capitole/introducere/structura_aplicatiei.tex
+File: ./capitole/../imagini/diagrama_aplicatiei.png Graphic file (type QTm)
+
+<use  "./capitole/../imagini/diagrama_aplicatiei.png" >)) [6]
 (capitole/tehnologiile_folosite.tex
 Capitolul 2.
 (capitole/tehnologii_folosite/php.tex)
@@ -668,9 +667,9 @@ File: ./capitole/../imagini/backups.png Graphic file (type QTm)
 
 <use  "./capitole/../imagini/backups.png" > [29])
 (capitole/structura_aplicatiei/mvc/models.tex
-Overfull \hbox (9.0853pt too wide) in paragraph at lines 39--42
-\TU/lmr/m/n/12 o simplă precizie, am putea să definim un accesor. Un accesor cu
- numele [][]\TU/lmtt/m/n/12 getFirstNameAttribute
+Overfull \hbox (2.01917pt too wide) in paragraph at lines 39--42
+[][]\TU/lmtt/m/n/12 getFirstNameAttribute []\TU/lmr/m/n/12 va fi apelat în mome
+ntul apelării aflării valorii proprietății [][]\TU/lmtt/m/n/12 first_name
  []
 
 [30]
@@ -688,27 +687,8 @@ Overfull \hbox (11.2773pt too wide) in paragraph at lines 33--35
 ouă „trait”-uri, [][]\TU/lmtt/m/n/12 AdaptorFacade
  []
 
-[34] [35]
-Overfull \hbox (16.44714pt too wide) in paragraph at lines 75--76
-[][][]\TU/lmtt/m/n/12 AbstractDateOutputer []\TU/lmr/m/n/12 - Clasă abstractă c
-e toate rapoartele momentan „sub-clasează”,
- []
-
-)) [36] (capitole/o_scurta_istorie_a_aplicatiei.tex
+[34] [35])) [36] (capitole/user_workflow.tex
 Capitolul 4.
-(capitole/_modele.tex [37
-
-])
-(capitole/o_scurta_istorie_a_aplicatiei/primul_modul.tex
-File: ./capitole/../imagini/descriere_eveniment.png Graphic file (type QTm)
-
-<use  "./capitole/../imagini/descriere_eveniment.png" > [38])
-(capitole/o_scurta_istorie_a_aplicatiei/problema_datelor_reale.tex)
-(capitole/o_scurta_istorie_a_aplicatiei/modulul_de_rapoarte_decizii.tex
-[39]) (capitole/o_scurta_istorie_a_aplicatiei/decuplarea_deciziilor.tex
-[40]) (capitole/o_scurta_istorie_a_aplicatiei/viitor.tex [41])) [42]
-(capitole/user_workflow.tex
-Capitolul 5.
 (capitole/user_workflow/register_a_claim.tex
 File: ./capitole/../imagini/register_informatii_generale.png Graphic file (type
  QTm)
@@ -739,9 +719,9 @@ File: ./capitole/../imagini/message_new_claim.png Graphic file (type QTm)
 File: ./capitole/../imagini/report_incarcare_poze.png Graphic file (type QTm)
 
 <use  "./capitole/../imagini/report_incarcare_poze.png" >)
-(capitole/user_workflow/responding_to_messages.tex [43
+(capitole/user_workflow/responding_to_messages.tex [37
 
-] [44] [45] [46] [47]
+] [38] [39] [40] [41]
 File: ./capitole/../imagini/message_mail_from_person.png Graphic file (type QTm
 )
 
@@ -753,7 +733,7 @@ File: ./capitole/../imagini/message_mail_from_office.png Graphic file (type QTm
 File: ./capitole/../imagini/claim_mesaje.png Graphic file (type QTm)
 
 <use  "./capitole/../imagini/claim_mesaje.png" >)
-(capitole/user_workflow/administrative_interface.tex [48] [49]
+(capitole/user_workflow/administrative_interface.tex [42] [43]
 File: ./capitole/../imagini/login.png Graphic file (type QTm)
 
 <use  "./capitole/../imagini/login.png" >
@@ -791,7 +771,7 @@ Overfull \hbox (7.824pt too wide) in paragraph at lines 50--63
 [][] 
  []
 
-[50] [51] [52]
+[44] [45] [46]
 File: ./capitole/../imagini/claims_view.png Graphic file (type QTm)
  <use  "./capitole/../imagini/claims_view.png" >
 File: ./capitole/../imagini/claims_edit.png Graphic file (type QTm)
@@ -803,7 +783,7 @@ m)
 <use  "./capitole/../imagini/claims_edit_with_decision.png" >
 File: ./capitole/../imagini/claims_reminder_view.png Graphic file (type QTm)
 
-<use  "./capitole/../imagini/claims_reminder_view.png" > [53] [54]
+<use  "./capitole/../imagini/claims_reminder_view.png" > [47] [48]
 File: ./capitole/../imagini/imports.png Graphic file (type QTm)
 
 <use  "./capitole/../imagini/imports.png" >
@@ -816,7 +796,7 @@ File: ./capitole/../imagini/import_great.png Graphic file (type QTm)
 <use  "./capitole/../imagini/import_great.png" >
 File: ./capitole/../imagini/import_duplicate.png Graphic file (type QTm)
 
-<use  "./capitole/../imagini/import_duplicate.png" > [55]
+<use  "./capitole/../imagini/import_duplicate.png" > [49]
 File: ./capitole/../imagini/sales.png Graphic file (type QTm)
 
 <use  "./capitole/../imagini/sales.png" >
@@ -837,7 +817,7 @@ File: ./capitole/../imagini/sales_delete_assurance.png Graphic file (type QTm)
 <use  "./capitole/../imagini/sales_delete_assurance.png" >
 File: ./capitole/../imagini/sales_delete_product.png Graphic file (type QTm)
 
-<use  "./capitole/../imagini/sales_delete_product.png" > [56] [57]
+<use  "./capitole/../imagini/sales_delete_product.png" > [50] [51]
 File: ./capitole/../imagini/claims_match_confirm.png Graphic file (type QTm)
 
 <use  "./capitole/../imagini/claims_match_confirm.png" >
@@ -846,7 +826,7 @@ File: ./capitole/../imagini/claims_match_sale.png Graphic file (type QTm)
 <use  "./capitole/../imagini/claims_match_sale.png" >
 File: ./capitole/../imagini/claims_manual_sale.png Graphic file (type QTm)
 
-<use  "./capitole/../imagini/claims_manual_sale.png" > [58] [59]
+<use  "./capitole/../imagini/claims_manual_sale.png" > [52] [53]
 File: ./capitole/../imagini/decisions_filter.png Graphic file (type QTm)
 
 <use  "./capitole/../imagini/decisions_filter.png" >
@@ -859,7 +839,7 @@ nlocuit produsul va fi prețul din câmpul [][]\TU/lmtt/m/n/12 Payee Cost[]\TU/l
 r/m/n/12 . 
  []
 
-[60]
+[54]
 File: ./capitole/../imagini/decisions_edit.png Graphic file (type QTm)
  <use  "./capitole/../imagini/decisions_edit.png" >
 File: ./capitole/../imagini/decisions_add_old.png Graphic file (type QTm)
@@ -873,57 +853,61 @@ File: ./capitole/../imagini/statistics.png Graphic file (type QTm)
 <use  "./capitole/../imagini/statistics.png" >
 File: ./capitole/../imagini/reports.png Graphic file (type QTm)
 
-<use  "./capitole/../imagini/reports.png" >)) [61] [62] [63] [64]
-(capitole/concluzii.tex (capitole/concluzii/business_continuity_plan.tex)
-(capitole/concluzii/luna_dec_teste_automate.tex)
-(capitole/concluzii/modificari_in_viitorul_apropiat.tex)) [65
+<use  "./capitole/../imagini/reports.png" >)) [55] [56] [57] [58]
+(capitole/o_scurta_istorie_a_aplicatiei.tex
+Capitolul 5.
+) [59
+
+] (capitole/concluzii.tex
+Capitolul 6.
+) [60
 
 ]
-Overfull \hbox (12.20296pt too wide) in paragraph at lines 50--50
+Overfull \hbox (12.20296pt too wide) in paragraph at lines 88--88
 []\TU/lmr/m/n/12 Anne Nelson and William Nelson. \TU/lmr/m/it/12 Building Elect
 ronic Commerce with Web-Driven Databases
  []
 
 
-Overfull \hbox (10.09058pt too wide) in paragraph at lines 50--50
+Overfull \hbox (10.09058pt too wide) in paragraph at lines 88--88
 []$[][][][][] [] [] [] [][][] [] [][][][][][][] [] [][][] [] [][][] [] [][][][]
 [][][][][][][][][][] [] [][][][] [] [] [] [][][] [] [][][][][][][][][][][][][][
 ][][][][][][] []
  []
 
-[66
+[61
 
 ]
-Overfull \hbox (4.94333pt too wide) in paragraph at lines 50--50
+Overfull \hbox (4.94333pt too wide) in paragraph at lines 88--88
 []\TU/lmr/m/n/12 Stefan Kottwitz. \TU/lmr/m/it/12 LaTeX beginner’s guide\TU/lmr
 /m/n/12 . Birmingham, UK: Packt, 2011. \TU/lmr/m/sc/12 isbn\TU/lmr/m/n/12 : 184
 7199860. 
  []
 
-[67]
-Overfull \hbox (40.91316pt too wide) in paragraph at lines 50--50
+[62]
+Overfull \hbox (40.91316pt too wide) in paragraph at lines 88--88
 []\TU/lmr/m/n/12 Grady Booch. \TU/lmr/m/it/12 Object oriented design with appli
 cations\TU/lmr/m/n/12 . Redwood City, Calif: Benjamin/Cummings
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 52.
-[68]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 52.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 90.
+[63]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 90.
  (main.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 52.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 52.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 90.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 90.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 52.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 90.
  ) 
 Here is how much of TeX's memory you used:
- 17044 strings out of 427834
- 270297 string characters out of 3155872
- 757988 words of memory out of 3000000
- 20699 multiletter control sequences out of 15000+200000
- 7761 words of font info for 41 fonts, out of 3000000 for 9000
+ 17006 strings out of 427834
+ 268947 string characters out of 3155872
+ 758054 words of memory out of 3000000
+ 20691 multiletter control sequences out of 15000+200000
+ 6856 words of font info for 39 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
  44i,7n,69p,960b,4941s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on main.pdf (69 pages).
+Output written on main.pdf (65 pages).

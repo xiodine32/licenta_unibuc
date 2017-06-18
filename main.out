@@ -39,26 +39,20 @@
 \BOOKMARK [2][-]{subsection.3.3.4}{Funcții ajutătoare}{section.3.3}% 39
 \BOOKMARK [1][-]{section.3.4}{Rapoarte}{chapter.3}% 40
 \BOOKMARK [2][-]{subsection.3.4.1}{Implementarea\040platformei\040de\040rapoarte\040Excel}{section.3.4}% 41
-\BOOKMARK [0][-]{chapter.4}{Probleme apărute în timpul dezvoltării aplicației}{}% 42
-\BOOKMARK [1][-]{section.4.1}{Primul\040modul}{chapter.4}% 43
-\BOOKMARK [1][-]{section.4.2}{Problema\040datelor\040incomplete}{chapter.4}% 44
-\BOOKMARK [1][-]{section.4.3}{Modulul de rapoarte și decizii}{chapter.4}% 45
-\BOOKMARK [1][-]{section.4.4}{Decuplarea deciziilor de vânzări}{chapter.4}% 46
-\BOOKMARK [2][-]{subsection.4.4.1}{Modificări în viitorul apropiat}{section.4.4}% 47
-\BOOKMARK [1][-]{section.4.5}{După planul inițial de dezvoltare}{chapter.4}% 48
-\BOOKMARK [2][-]{subsection.4.5.1}{Introducerea datelor și rapoartele avansate}{section.4.5}% 49
-\BOOKMARK [2][-]{subsection.4.5.2}{În continuare}{section.4.5}% 50
-\BOOKMARK [0][-]{chapter.5}{Manual\040de\040utilizare}{}% 51
-\BOOKMARK [1][-]{section.5.1}{Înregistrarea unei cereri}{chapter.5}% 52
-\BOOKMARK [1][-]{section.5.2}{Secțiunea de mesaje din cadrul cererilor de despăgubire}{chapter.5}% 53
-\BOOKMARK [1][-]{section.5.3}{Interfața de administrare}{chapter.5}% 54
-\BOOKMARK [2][-]{subsection.5.3.1}{Modulul cererilor de despăgubire}{section.5.3}% 55
-\BOOKMARK [2][-]{subsection.5.3.2}{Modulul introducerii datelor în sistem}{section.5.3}% 56
-\BOOKMARK [2][-]{subsection.5.3.3}{Modulul de vânzări}{section.5.3}% 57
-\BOOKMARK [2][-]{subsection.5.3.4}{Crearea\040unei\040decizii}{section.5.3}% 58
-\BOOKMARK [2][-]{subsection.5.3.5}{Modulul\040de\040decizii}{section.5.3}% 59
-\BOOKMARK [2][-]{subsection.5.3.6}{Modulul de raportări}{section.5.3}% 60
-\BOOKMARK [1][-]{section.5.4}{Modificări în viitorul apropiat}{chapter.5}% 61
-\BOOKMARK [2][-]{subsection.5.4.1}{Introducerea câmpului de factură în decizie}{section.5.4}% 62
-\BOOKMARK [2][-]{subsection.5.4.2}{Modularizarea\040tabelelor}{section.5.4}% 63
-\BOOKMARK [2][-]{subsection.5.4.3}{Sistem\040modular\040de\040rapoarte}{section.5.4}% 64
+\BOOKMARK [0][-]{chapter.4}{Manual\040de\040utilizare}{}% 42
+\BOOKMARK [1][-]{section.4.1}{Înregistrarea unei cereri}{chapter.4}% 43
+\BOOKMARK [1][-]{section.4.2}{Secțiunea de mesaje din cadrul cererilor de despăgubire}{chapter.4}% 44
+\BOOKMARK [1][-]{section.4.3}{Interfața de administrare}{chapter.4}% 45
+\BOOKMARK [2][-]{subsection.4.3.1}{Modulul cererilor de despăgubire}{section.4.3}% 46
+\BOOKMARK [2][-]{subsection.4.3.2}{Modulul introducerii datelor în sistem}{section.4.3}% 47
+\BOOKMARK [2][-]{subsection.4.3.3}{Modulul de vânzări}{section.4.3}% 48
+\BOOKMARK [2][-]{subsection.4.3.4}{Crearea\040unei\040decizii}{section.4.3}% 49
+\BOOKMARK [2][-]{subsection.4.3.5}{Modulul\040de\040decizii}{section.4.3}% 50
+\BOOKMARK [2][-]{subsection.4.3.6}{Modulul de raportări}{section.4.3}% 51
+\BOOKMARK [0][-]{chapter.5}{Probleme apărute în timpul dezvoltării aplicației}{}% 52
+\BOOKMARK [0][-]{chapter.6}{Concluzie}{}% 53
+\BOOKMARK [1][-]{section.6.1}{Soluții de salvare a datelor}{chapter.6}% 54
+\BOOKMARK [1][-]{section.6.2}{Modificări în viitorul apropiat}{chapter.6}% 55
+\BOOKMARK [2][-]{subsection.6.2.1}{Implementarea\040testelor\040automate}{section.6.2}% 56
+\BOOKMARK [2][-]{subsection.6.2.2}{Introducerea câmpului de factură în decizie}{section.6.2}% 57
+\BOOKMARK [2][-]{subsection.6.2.3}{Sistem\040modular\040de\040rapoarte}{section.6.2}% 58

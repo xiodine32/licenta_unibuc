@@ -1,4 +1,32 @@
 \chapter{Concluzie}
-\import*{./capitole/concluzii/}{business_continuity_plan}
-\import*{./capitole/concluzii/}{luna_dec_teste_automate}
-\import*{./capitole/concluzii/}{modificari_in_viitorul_apropiat}
+\section{Soluții de salvare a datelor}
+
+	Pe lângă facilitățile celor doi prestatori de servicii xServers, respectiv Amazon Web Services S3, ce asigură redundanța bunei funcționări ale aplicației, în proporție de 99.9\%, s-au implementat următoarele:
+	\begin{enumerate}
+		\item Salvarea săptămânală a bazei de date criptată în a terța parte.
+		\item Păstrarea istoricului dezvoltării aplicației în sistemul de gestiune a codului pe GitHub.
+	\end{enumerate}
+
+\section{Modificări în viitorul apropiat}
+
+	\subsection{Implementarea testelor automate}
+
+		Testele automate, mai ales „testele unitare”, sunt o metodă de verificare a modulelor individuale, asocierilor datelor, procedurilor de modificare a datelor. \cite{testare_automata}
+
+		Acestea pornesc de la premiza că un modul detașat de modificările externe, odată testat, se va comporta corect și atunci când va fi folosit în conjuncție cu alte module, ce la rândul lor vor fi testate.
+		Astfel, de la cele mai mici module, se asigură comportamentul corect al aplicației. De la nivelul microscopic de funcție, până la nivelul macroscopic de funcționalitate.
+
+		Se va extinde aplicația să folosească codul scris de cadrul Laravel pentru dezvolta teste automate.
+		Pe mediul de testate se vor efectua aceste teste cu date reale nepersonale, pentru a se verifica funcționalitatea modulelor .
+		 Acest principiu se mai numește și „integrare continuă”, propusă prima oară de Grady Booch \cite{integrare_continua} și folosit de majoritatea dezvoltatorilor moderni.
+
+
+	\subsection{Introducerea câmpului de factură în decizie}
+
+	Se va introduce în viitorul apropiat căutarea automată a deciziilor vechi, prin adăugarea unui câmp opțional cu numărul facturii în cadrul deciziei.
+	Acesta va facilita deciziilor asociate aceleași vânzări.
+
+	\subsection{Sistem modular de rapoarte}
+
+	Se va introduce în locul sistemului actual de raportare limitat, cu un algoritm de generare în funcție de parametrii aleși de utilizatorul sistemului.
+

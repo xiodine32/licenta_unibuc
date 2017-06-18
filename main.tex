@@ -16,8 +16,6 @@
 
 \addbibresource{./bibliografie.bib}
 
-\setcounter{secnumdepth}{4}
-
 \titleformat{\paragraph}
 {\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
 \titlespacing*{\paragraph}{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
@@ -31,7 +29,47 @@
 
 \begin{document}
 \selectlanguage{romanian}
-\maketitle
+
+\begin{titlepage}
+	\centering
+	{\scshape\Large Facultatea de Matematica și Informatică \\ Universitatea București\par}
+	\vspace{6cm}
+	{\Huge\bfseries LUCRARE DE LICENȚĂ\par}
+	\vspace{5.5cm}
+	\vfill
+	{\flushleft\Large Coordonator științific:\par
+	Prof.~univ.~dr.~ \textsc{Andrei Păun}\par}
+	\vspace{1cm}
+	{\flushright\Large Absolvent:\par Rareș-Florian Neagu\par}
+
+	\vfill
+
+	% Bottom of the page
+	{\large București\par 2017\par}
+\end{titlepage}
+
+
+\begin{titlepage}
+	\centering
+	{\scshape\Large Facultatea de Matematica și Informatică \\ Universitatea București\par}
+	\vspace{6cm}
+	{\huge\bfseries LUCRARE DE LICENȚĂ\par}
+	\vspace{1.5cm}
+	{\scshape\LARGE Sistem de gestionare a cererilor de despăgubire pentru o societate de asigurări  \par}
+	\vspace{2cm}
+	\vfill
+	{\flushleft\Large Coordonator științific:\par
+	Prof.~univ.~dr.~ \textsc{Andrei Păun}\par}
+	\vspace{1cm}
+	{\flushright\Large Absolvent:\par Rareș-Florian Neagu\par}
+
+	\vfill
+
+	% Bottom of the page
+	{\large București\par 2017\par}
+\end{titlepage}
+
+% \maketitle
 \tableofcontents
 \newpage
 \import*{./capitole/}{introducere}
@@ -40,9 +78,9 @@
 \newpage
 \import*{./capitole/}{structura_aplicatiei}
 \newpage
-\import*{./capitole/}{o_scurta_istorie_a_aplicatiei}
-\newpage
 \import*{./capitole/}{user_workflow}
+\newpage
+\import*{./capitole/}{o_scurta_istorie_a_aplicatiei}
 \newpage
 \import*{./capitole/}{concluzii}
 \newpage

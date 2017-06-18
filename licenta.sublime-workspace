@@ -16,19 +16,47 @@
 	"buffers":
 	[
 		{
-			"file": "capitole/user_workflow/administrative_interface.tex",
+			"file": "capitole/concluzii.tex",
 			"settings":
 			{
-				"buffer_size": 18968,
+				"buffer_size": 1995,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "meeting.todo",
+			"file": "capitole/structura_aplicatiei/excel.tex",
 			"settings":
 			{
-				"buffer_size": 348,
+				"buffer_size": 6785,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "Searching 42 files for \"dorin\"\n\nC:\\Users\\xiodine\\Desktop\\licenta\\capitole\\introducere\\detalii_despre_dezvoltarea_aplicatiei.tex:\n   25  \t\\end{enumerate}\n   26  \n   27: \tAccentul s-a pus pe dorința de a scoate rapoarte, unitare și flexibile, și micșorarea numărului de fișiere accesate.\n   28  \n   29  \tPe tot parcursul dezvoltării aplicației, am fost singurul decident și dezvoltator, referitor la:\n\n1 match in 1 file\n",
+			"settings":
+			{
+				"buffer_size": 418,
+				"line_ending": "Windows",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": "capitole/introducere/detalii_despre_dezvoltarea_aplicatiei.tex",
+			"settings":
+			{
+				"buffer_size": 3638,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "capitole/structura_aplicatiei/mvc/models.tex",
+			"settings":
+			{
+				"buffer_size": 4664,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -37,7 +65,16 @@
 			"file": "main.tex",
 			"settings":
 			{
-				"buffer_size": 1326,
+				"buffer_size": 2314,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "capitole/introducere/de_ce_am_fost_angajat_eu.tex",
+			"settings":
+			{
+				"buffer_size": 2096,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -95,24 +132,36 @@
 			]
 		]
 	],
-	"build_varint": "Basic Builder - XeLaTeX",
+	"build_varint": "",
 	"command_palette":
 	{
-		"height": 357.0,
-		"last_filter": "latextools",
+		"height": 277.0,
+		"last_filter": "fig",
 		"selected_items":
 		[
 			[
-				"latextools",
-				"LaTeXTools: Build cache of LaTeX packages"
+				"fig",
+				"Snippet: figure"
 			],
 			[
 				"latex",
 				"LaTeXTools: Show toggles"
 			],
 			[
+				"ta",
+				"View: Toggle Tabs"
+			],
+			[
+				"tost as",
+				"View: Toggle Status Bar"
+			],
+			[
 				"tog ta",
 				"View: Toggle Tabs"
+			],
+			[
+				"latextools",
+				"LaTeXTools: Build cache of LaTeX packages"
 			],
 			[
 				"tog tabs",
@@ -125,10 +174,6 @@
 			[
 				"toglge min",
 				"View: Toggle Minimap"
-			],
-			[
-				"fig",
-				"Snippet: Figure"
 			],
 			[
 				"tabs",
@@ -388,62 +433,78 @@
 		"show_minimap": false,
 		"show_open_files": false,
 		"show_tabs": false,
-		"side_bar_visible": true,
+		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
 	"expanded_folders":
 	[
 		"/C/Users/xiodine/Desktop/licenta",
 		"/C/Users/xiodine/Desktop/licenta/capitole",
-		"/C/Users/xiodine/Desktop/licenta/capitole/structura_aplicatiei/mvc",
-		"/C/Users/xiodine/Desktop/licenta/imagini"
+		"/C/Users/xiodine/Desktop/licenta/capitole/introducere",
+		"/C/Users/xiodine/Desktop/licenta/capitole/o_scurta_istorie_a_aplicatiei",
+		"/C/Users/xiodine/Desktop/licenta/capitole/user_workflow"
 	],
 	"file_history":
 	[
+		"/C/Users/xiodine/Desktop/licenta/capitole/concluzii/modificari_in_viitorul_apropiat.tex",
+		"/C/Users/xiodine/Desktop/licenta/capitole/concluzii/luna_dec_teste_automate.tex",
+		"/C/Users/xiodine/Desktop/licenta/capitole/o_scurta_istorie_a_aplicatiei/primul_modul.tex",
+		"/C/Users/xiodine/Desktop/licenta/capitole/o_scurta_istorie_a_aplicatiei.tex",
+		"/C/Users/xiodine/Desktop/licenta/main.tex",
+		"/C/Users/xiodine/Desktop/licenta/capitole/concluzii.tex",
+		"/C/Users/xiodine/Desktop/licenta/capitole/concluzii/business_continuity_plan.tex",
 		"/C/Users/xiodine/Desktop/licenta/capitole/structura_aplicatiei/excel.tex",
+		"/C/Users/xiodine/Desktop/licenta/capitole/structura_aplicatiei/mvc/helpers.tex",
+		"/C/Users/xiodine/Desktop/licenta/capitole/o_scurta_istorie_a_aplicatiei/problema_datelor_reale.tex",
+		"/C/Users/xiodine/Desktop/licenta/capitole/o_scurta_istorie_a_aplicatiei/viitor.tex",
+		"/C/Users/xiodine/Desktop/licenta/capitole/o_scurta_istorie_a_aplicatiei/modulul_de_rapoarte_decizii.tex",
+		"/C/Users/xiodine/Desktop/licenta/capitole/introducere/structura_aplicatiei.tex",
+		"/C/Users/xiodine/Desktop/licenta/capitole/introducere.tex",
+		"/C/Users/xiodine/Desktop/licenta/capitole/introducere/detalii_despre_dezvoltarea_aplicatiei.tex",
+		"/C/Users/xiodine/Desktop/licenta/capitole/structura_aplicatiei.tex",
+		"/C/Users/xiodine/Desktop/licenta/capitole/structura_aplicatiei/mvc.tex",
+		"/C/Users/xiodine/Desktop/licenta/capitole/structura_aplicatiei/mvc/models.tex",
+		"/C/Users/xiodine/Desktop/licenta/capitole/structura_aplicatiei/request_life_cycle.tex",
+		"/C/Users/xiodine/Desktop/licenta/capitole/user_workflow/administrative_interface.tex",
+		"/C/Users/xiodine/Desktop/licenta/capitole/_modele.tex",
+		"/C/Users/xiodine/Desktop/licenta/capitole/tehnologii_folosite/mentiuni_speciale.tex",
+		"/C/Users/xiodine/Desktop/licenta/capitole/o_scurta_istorie_a_aplicatiei/decuplarea_deciziilor.tex",
+		"/C/Users/xiodine/Desktop/licenta/capitole/tehnologii_folosite/gazduire_partajata.tex",
+		"/C/Users/xiodine/Desktop/licenta/capitole/tehnologiile_folosite.tex",
+		"/C/Users/xiodine/Desktop/licenta/capitole/tehnologii_folosite/aws.tex",
+		"/C/Users/xiodine/Desktop/licenta/capitole/tehnologii_folosite/knockout_js.tex",
+		"/C/Users/xiodine/Desktop/licenta/capitole/tehnologii_folosite/google_analytics.tex",
+		"/C/Users/xiodine/Desktop/licenta/capitole/user_workflow/responding_to_messages.tex",
+		"/C/Users/xiodine/Desktop/licenta/capitole/user_workflow/register_a_claim.tex",
+		"/C/Users/xiodine/Desktop/licenta/capitole/tehnologii_folosite/ssl.tex",
+		"/C/Users/xiodine/Desktop/licenta/capitole/tehnologii_folosite/laravel.tex",
+		"/C/Users/xiodine/Desktop/licenta/capitole/tehnologii_folosite/jquery.tex",
+		"/C/Users/xiodine/Desktop/licenta/capitole/concluzii/extragerea_din_modele.tex",
+		"/C/Users/xiodine/Desktop/licenta/capitole/concluzii/sistem_modular_de_rapoarte.tex",
+		"/C/Users/xiodine/Desktop/licenta/capitole/user_workflow.tex",
+		"/C/Users/xiodine/Desktop/licenta/capitole/tehnologii_folosite/php.tex",
+		"/C/Users/xiodine/Desktop/licenta/capitole/introducere/despre_aplicatie.tex",
+		"/C/Users/xiodine/Desktop/licenta/capitole/tehnologii_folosite/cloudflare.tex",
+		"/C/Users/xiodine/Desktop/licenta/bibliografie.bib",
+		"/C/Users/xiodine/Desktop/licenta/capitole/introducere/de_ce_am_fost_angajat_eu.tex",
+		"/C/Users/xiodine/Desktop/licenta/capitole/introducere/detalii_despre_relatia_firma_altex.tex",
+		"/C/Users/xiodine/Desktop/licenta/meeting.todo",
+		"/C/Users/xiodine/Desktop/licenta/licenta.sublime-project",
 		"/C/Users/xiodine/Desktop/licenta/capitole/structura_aplicatiei/mvc/controllers.tex",
 		"/C/Users/xiodine/Desktop/licenta/todo",
 		"/C/Users/xiodine/Desktop/licenta/tabel.todo",
-		"/C/Users/xiodine/Desktop/licenta/capitole/user_workflow/administrative_interface.tex",
-		"/C/Users/xiodine/Desktop/licenta/capitole/user_workflow.tex",
-		"/C/Users/xiodine/Desktop/licenta/capitole/o_scurta_istorie_a_aplicatiei/modulul_de_rapoarte_decizii.tex",
-		"/C/Users/xiodine/Desktop/licenta/capitole/introducere/detalii_despre_relatia_firma_altex.tex",
-		"/C/Users/xiodine/Desktop/licenta/capitole/introducere/despre_aplicatie.tex",
 		"/C/xampp/htdocs/dbconfig.php",
-		"/C/Users/xiodine/Desktop/licenta/capitole/user_workflow/register_a_claim.tex",
-		"/C/Users/xiodine/Desktop/licenta/capitole/tehnologii_folosite/jquery.tex",
-		"/C/Users/xiodine/Desktop/licenta/capitole/o_scurta_istorie_a_aplicatiei/problema_datelor_reale.tex",
-		"/C/Users/xiodine/Desktop/licenta/main.tex",
 		"/C/Users/xiodine/Desktop/licenta/capitole/structura_aplicatiei/baza_de_date.tex",
-		"/C/Users/xiodine/Desktop/licenta/licenta.sublime-project",
-		"/C/Users/xiodine/Desktop/licenta/capitole/o_scurta_istorie_a_aplicatiei.tex",
-		"/C/Users/xiodine/Desktop/licenta/capitole/o_scurta_istorie_a_aplicatiei/viitor.tex",
-		"/C/Users/xiodine/Desktop/licenta/capitole/o_scurta_istorie_a_aplicatiei/decuplarea_deciziilor.tex",
 		"/C/xampp/htdocs/delta_evrm.sql",
 		"/C/xampp/apache/conf/httpd.conf",
 		"/C/xampp/apache/conf/extra/httpd-vhosts.conf",
 		"/C/Users/xiodine/Downloads/notifier/errors_reports.php",
 		"/C/Users/xiodine/Downloads/notifier/index.php",
-		"/C/Users/xiodine/Desktop/licenta/capitole/introducere/de_ce_am_fost_angajat_eu.tex",
-		"/C/Users/xiodine/Desktop/licenta/capitole/tehnologii_folosite/laravel.tex",
-		"/C/Users/xiodine/Desktop/licenta/capitole/user_workflow/responding_to_messages.tex",
-		"/C/Users/xiodine/Desktop/licenta/capitole/concluzii.tex",
 		"/C/Users/xiodine/AppData/Roaming/Sublime Text 3/Packages/User/LaTeX_verb.sublime-snippet",
 		"/C/Users/xiodine/AppData/Roaming/Sublime Text 3/Packages/User/LaTeX_vverbatim.sublime-snippet",
 		"/X/fandu/resources/views/newclaim/create.blade.php",
 		"/X/fandu/resources/assets/js/pages/claims.js",
-		"/C/Users/xiodine/Desktop/licenta/capitole/_modele.tex",
-		"/C/Users/xiodine/Desktop/licenta/capitole/structura_aplicatiei/mvc/helpers.tex",
-		"/C/Users/xiodine/Desktop/licenta/capitole/structura_aplicatiei/mvc.tex",
 		"/C/Users/xiodine/Desktop/licenta/capitole/structura_aplicatiei/mvc/views.tex",
-		"/C/Users/xiodine/Desktop/licenta/capitole/tehnologii_folosite/mentiuni_speciale.tex",
-		"/C/Users/xiodine/Desktop/licenta/capitole/structura_aplicatiei/mvc/models.tex",
-		"/C/Users/xiodine/Desktop/licenta/capitole/introducere.tex",
-		"/C/Users/xiodine/Desktop/licenta/capitole/concluzii/sistem_modular_de_rapoarte.tex",
-		"/C/Users/xiodine/Desktop/licenta/capitole/introducere/detalii_despre_dezvoltarea_aplicatiei.tex",
-		"/C/Users/xiodine/Desktop/licenta/capitole/concluzii/business_continuity_plan.tex",
-		"/C/Users/xiodine/Desktop/licenta/capitole/concluzii/extragerea_din_modele.tex",
-		"/C/Users/xiodine/Desktop/licenta/capitole/concluzii/luna_dec_teste_automate.tex",
 		"/X/fandu/app/Excel/AdaptorFacade.php",
 		"/X/fandu/app/Excel/FileData.php",
 		"/X/fandu/app/Excel/FileDataExcelAdaptor.php",
@@ -458,30 +519,20 @@
 		"/X/fandu/app/Excel/Adaptors/ExcelAdaptor.php",
 		"/X/fandu/app/Helpers/Helpers.php",
 		"/X/fandu/app/Excel/Facade.php",
-		"/C/Users/xiodine/Desktop/licenta/bibliografie.bib",
-		"/C/Users/xiodine/Desktop/licenta/capitole/structura_aplicatiei.tex",
 		"/C/Users/xiodine/Desktop/licenta/capitole/structura_aplicatiei/mds_related_stuff.tex",
-		"/C/Users/xiodine/Desktop/licenta/capitole/structura_aplicatiei/request_life_cycle.tex",
-		"/C/Users/xiodine/Desktop/licenta/capitole/tehnologii_folosite/cloudflare.tex",
 		"/C/Users/xiodine/Desktop/licenta/capitole/tehnologii_folosite/baza_de_date_mysql.tex",
 		"/C/Users/xiodine/Desktop/licenta/capitole/o_scurta_istorie_a_aplicatiei/viitorul_apropiat.tex",
 		"/C/Users/xiodine/Desktop/licenta/capitole/o_scurta_istorie_a_aplicatiei/backup.tex",
 		"/C/Users/xiodine/Desktop/licenta/capitole/o_scurta_istorie_a_aplicatiei/generic_sale.tex",
-		"/C/Users/xiodine/Desktop/licenta/capitole/o_scurta_istorie_a_aplicatiei/primul_modul.tex",
 		"/C/Users/xiodine/Desktop/licenta/capitole/structura_aplicatiei/o_scurta_istorie_a_aplicatiei.tex",
 		"/X/php/App/CacheManager.php",
 		"/X/fandu_build/build.sh",
-		"/C/Users/xiodine/Desktop/licenta/capitole/tehnologii_folosite/knockout_js.tex",
-		"/C/Users/xiodine/Desktop/licenta/capitole/tehnologiile_folosite.tex",
 		"/C/Users/xiodine/Desktop/licenta/capitole/tehnologii_folosite/latex.tex",
-		"/C/Users/xiodine/Desktop/licenta/meeting.todo",
 		"/C/Users/xiodine/AppData/Roaming/Sublime Text 3/Packages/WordCount/WordCount.sublime-settings",
-		"/C/Users/xiodine/Desktop/licenta/capitole/tehnologii_folosite/google_analytics.tex",
 		"/C/Users/xiodine/Desktop/licenta/capitole/tehnologii_folosite/github.tex",
 		"/C/Users/xiodine/Desktop/licenta/capitole/introducere/detalii_despre_firma_angajatoare.tex",
 		"/C/Users/xiodine/Downloads/Patterns_of_Enterprise_Application_Archi.bibtex",
 		"/C/Users/xiodine/Downloads/encrypted.html",
-		"/C/Users/xiodine/Desktop/licenta/capitole/tehnologii_folosite/php.tex",
 		"/C/Users/xiodine/Desktop/licenta/main.bbl",
 		"/C/Users/xiodine/Desktop/licenta/capitole/tehnologii_folosite/composer.tex",
 		"/C/Users/xiodine/Desktop/licenta/capitole/tehnologii_folosite/npm.tex",
@@ -522,12 +573,7 @@
 		"/C/Users/xiodine/Dropbox/Facultate/licenta/capitole/introducere/05_despre_aplicatie.tex",
 		"/C/Users/xiodine/Dropbox/Facultate/licenta/capitole/introducere/02_detalii_despre_firma_angajatoare.tex",
 		"/C/Users/xiodine/Dropbox/Facultate/licenta/capitole/introducere/03_detalii_despre_relatia_firma_altex.tex",
-		"/C/Users/xiodine/Dropbox/Facultate/licenta/capitole/introducere/01_de_ce_am_fost_angajat_eu.tex",
-		"/C/Users/xiodine/Dropbox/Facultate/licenta/capitole/02_Tehnologiile_folosite.tex",
-		"/C/Users/xiodine/Dropbox/Facultate/licenta/capitole/tehnologii_folosite/09_google_analytics.tex",
-		"/C/Users/xiodine/Dropbox/Facultate/licenta/capitole/tehnologii_folosite/08_jquery.tex",
-		"/C/Users/xiodine/Dropbox/Facultate/licenta/capitole/tehnologii_folosite/07_cloudflare.tex",
-		"/C/Users/xiodine/Dropbox/Facultate/licenta/capitole/tehnologii_folosite/06_github.tex"
+		"/C/Users/xiodine/Dropbox/Facultate/licenta/capitole/introducere/01_de_ce_am_fost_angajat_eu.tex"
 	],
 	"find":
 	{
@@ -546,6 +592,30 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"dorin",
+			"modular de",
+			"FormHelper",
+			"128MB",
+			"Business",
+			"descriere_eveniment",
+			"{figure}",
+			"subsections",
+			"\t\t\\item ",
+			"aducerea aminte",
+			"gratuit",
+			".\n",
+			"ACESTA",
+			"mulțumită",
+			"utilizator",
+			"subsub",
+			"utilizatorul",
+			"utilizatorul este",
+			"utilizator",
+			"-",
+			"enumerate",
+			"\\verb",
+			".\n",
+			"itemize",
 			"[h!]",
 			"[h]",
 			"h",
@@ -649,31 +719,7 @@
 			": \"",
 			"phpDoc",
 			"php",
-			"phpstorm",
-			"sec:phpstorm",
-			"folderul",
-			"verb",
-			"LAMP",
-			"fandu.info",
-			"itemize",
-			"item",
-			"\"",
-			"\\{",
-			"itemize",
-			"begin",
-			"itemize",
-			"csquotes",
-			"LAMP",
-			"phpmyadmin",
-			"Google",
-			"ce",
-			".\n",
-			"@online{github,\n    author = {Alex William},\n    title = {GitHub Pours Energies into Enterprise. Raises \\$100 Million From Power VC Andreessen Horowitz},\n    url = {http://techcrunch.com/2012/07/09/github-pours-energies-into-enterprise-raises-100-million-from-power-vc-andreesen-horowitz/},\n    urldate = {2012-07-09}\n}",
-			"verbatim",
-			"Verbatim",
-			"_",
-			"\\",
-			"\\today"
+			"phpstorm"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -696,40 +742,60 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "capitole/user_workflow/administrative_interface.tex",
+					"file": "capitole/concluzii.tex",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 18968,
+						"buffer_size": 1995,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								11651,
-								11651
-							],
+								549,
+								549
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "capitole/structura_aplicatiei/excel.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6785,
+						"regions":
+						{
+						},
+						"selection":
+						[
 							[
-								11849,
-								11849
-							],
-							[
-								12025,
-								12025
+								1412,
+								1412
 							]
 						],
 						"settings":
 						{
 							"WordCount":
 							{
-								"changes": 13,
-								"count": 1705,
+								"changes": 0,
+								"count": 851,
 								"modified": false,
 								"selection": false,
 								"status": -1,
@@ -739,44 +805,59 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 5257.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "meeting.todo",
+					"buffer": 2,
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 348,
+						"buffer_size": 418,
 						"regions":
 						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										189,
+										194
+									]
+								],
+								"scope": ""
+							}
 						},
 						"selection":
 						[
 							[
-								348,
-								348
+								196,
+								196
 							]
 						],
 						"settings":
 						{
 							"WordCount":
 							{
-								"changes": 6,
-								"count": 47,
+								"changes": 3,
+								"count": 40,
 								"modified": false,
-								"selection": false,
+								"selection": true,
 								"status": -1,
 								"syntax": "plain text"
 							},
-							"plain_tasks_remain_time_phantoms":
-							[
-							],
-							"syntax": "Packages/PlainTasks/PlainTasks.sublime-syntax"
+							"detect_indentation": false,
+							"line_numbers": false,
+							"output_tag": 1,
+							"result_base_dir": "",
+							"result_file_regex": "^([^ \t].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -786,40 +867,127 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "main.tex",
+					"buffer": 3,
+					"file": "capitole/introducere/detalii_despre_dezvoltarea_aplicatiei.tex",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1326,
+						"buffer_size": 3638,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								776,
-								776
+								1476,
+								1476
 							]
 						],
 						"settings":
 						{
 							"WordCount":
 							{
-								"changes": 10,
-								"count": 33,
+								"changes": 0,
+								"count": 456,
 								"modified": false,
 								"selection": false,
 								"status": -1,
 								"syntax": "plain text"
 							},
+							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 683.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "capitole/structura_aplicatiei/mvc/models.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4664,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2541,
+								2541
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 856.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "main.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2314,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1735,
+								1735
+							]
+						],
+						"settings":
+						{
 							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 214.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "capitole/introducere/de_ce_am_fost_angajat_eu.tex",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 2096,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 6,
 					"type": "text"
 				}
 			]
@@ -886,6 +1054,58 @@
 		"selected_items":
 		[
 			[
+				"excel",
+				"capitole\\structura_aplicatiei\\excel.tex"
+			],
+			[
+				"knokcou",
+				"capitole\\tehnologii_folosite\\knockout_js.tex"
+			],
+			[
+				"men",
+				"capitole\\tehnologii_folosite\\mentiuni_speciale.tex"
+			],
+			[
+				"bibl",
+				"bibliografie.bib"
+			],
+			[
+				"larave",
+				"capitole\\tehnologii_folosite\\laravel.tex"
+			],
+			[
+				"php",
+				"capitole\\tehnologii_folosite\\php.tex"
+			],
+			[
+				"_md",
+				"capitole\\_modele.tex"
+			],
+			[
+				"oscu",
+				"capitole\\o_scurta_istorie_a_aplicatiei.tex"
+			],
+			[
+				"introdu",
+				"capitole\\introducere.tex"
+			],
+			[
+				"detalii",
+				"capitole\\introducere\\detalii_despre_dezvoltarea_aplicatiei.tex"
+			],
+			[
+				"dece",
+				"capitole\\introducere\\de_ce_am_fost_angajat_eu.tex"
+			],
+			[
+				"introducere",
+				"capitole\\introducere.tex"
+			],
+			[
+				"intro",
+				"capitole\\introducere\\de_ce_am_fost_angajat_eu.tex"
+			],
+			[
 				"main",
 				"main.tex"
 			],
@@ -895,10 +1115,6 @@
 			],
 			[
 				"exce",
-				"capitole\\structura_aplicatiei\\excel.tex"
-			],
-			[
-				"excel",
 				"capitole\\structura_aplicatiei\\excel.tex"
 			],
 			[
@@ -916,10 +1132,6 @@
 			[
 				"viitor",
 				"capitole\\o_scurta_istorie_a_aplicatiei\\viitor.tex"
-			],
-			[
-				"oscu",
-				"capitole\\o_scurta_istorie_a_aplicatiei.tex"
 			],
 			[
 				"mai",
@@ -1002,10 +1214,6 @@
 				"capitole\\tehnologii_folosite\\laravel.tex"
 			],
 			[
-				"bibl",
-				"bibliografie.bib"
-			],
-			[
 				"bibla",
 				"bibliografie.bib"
 			],
@@ -1058,10 +1266,6 @@
 				"capitole\\introducere\\despre_aplicatie.tex"
 			],
 			[
-				"intro",
-				"capitole\\introducere\\de_ce_am_fost_angajat_eu.tex"
-			],
-			[
 				"clod",
 				"capitole\\tehnologii_folosite\\cloudflare.tex"
 			],
@@ -1084,10 +1288,6 @@
 			[
 				"teh",
 				"capitole\\tehnologiile_folosite.tex"
-			],
-			[
-				"php",
-				"capitole\\tehnologii_folosite\\php.tex"
 			],
 			[
 				"php.tex",
@@ -1147,7 +1347,7 @@
 	"show_tabs": true,
 	"side_bar_visible": false,
 	"side_bar_width": 281.0,
-	"status_bar_visible": true,
+	"status_bar_visible": false,
 	"template_settings":
 	{
 	}
