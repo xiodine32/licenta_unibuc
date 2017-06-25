@@ -792,15 +792,6 @@
 						],
 						"settings":
 						{
-							"WordCount":
-							{
-								"changes": 0,
-								"count": 851,
-								"modified": false,
-								"selection": false,
-								"status": -1,
-								"syntax": "plain text"
-							},
 							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax",
 							"translate_tabs_to_spaces": false
 						},
@@ -841,15 +832,6 @@
 						],
 						"settings":
 						{
-							"WordCount":
-							{
-								"changes": 3,
-								"count": 40,
-								"modified": false,
-								"selection": true,
-								"status": -1,
-								"syntax": "plain text"
-							},
 							"detect_indentation": false,
 							"line_numbers": false,
 							"output_tag": 1,
